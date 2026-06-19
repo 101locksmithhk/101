@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>101開鎖 | 三星電子鎖開唔到門・專業自救指南與維修</title>
+    <meta name="description" content="三星電子鎖開唔到門？電池無電、指紋失靈、鎖舌卡死？提供詳細自救步驟、9V緊急供電、重置教學及專業開鎖服務，即時解決問題。">
+    <meta name="keywords" content="三星電子鎖,開唔到門,電子鎖故障,Samsung智能鎖,電子鎖無電,電子鎖重置">
+    <meta name="author" content="101開鎖公司">
+    <link rel="shortcut icon" href="../image/logo.webp">    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="../fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <!-- Critical CSS: first paint shell for article/case pages -->
+    <style>
+        body{margin:0;background:#f9fafc;color:#1e2a3e;font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}.container{max-width:1280px;margin:0 auto;padding:0 24px}.navbar{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}.nav-container{display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto;padding:12px 24px}.logo{display:flex;align-items:center;gap:12px}.logo img{width:72px;height:72px;display:block;border-radius:12px;object-fit:cover}.logo h1{font-size:1.6rem;line-height:1.2;margin:0}.logo h1 span{color:#d4af37}.breadcrumb-bar{background:#f9fafc;border-bottom:1px solid #edf2f7;padding:12px 0}.section-title{text-align:center;font-size:2.2rem;margin-bottom:48px}.card{background:#fff;border:1px solid #edf2f7;border-radius:16px;box-shadow:0 6px 16px rgba(30,42,62,.06);padding:28px;margin-bottom:32px}.float-buttons{position:fixed;right:28px;bottom:28px;z-index:1100;display:flex;flex-direction:column;gap:16px}@media(max-width:768px){.desktop-nav,.quick-actions{display:none}.logo img{width:56px;height:56px}.section-title{font-size:1.75rem}.card{padding:22px}}
+    </style>
+    <link rel="preload" href="../css/news.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../css/news.css"></noscript>
+    <link rel="preload" href="../js/news.js" as="script">
+
+    <style>
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #d4af37;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+            border: 1px solid #edf2f7;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin: 32px 0;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin: 40px 0 20px;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s;
+            border: 1px solid #edf2f7;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 28px rgba(30, 42, 62, 0.12);
+            border-color: #d4af37;
+        }
+
+        .case-image {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            display: block;
+            background-color: #eef2fa;
+        }
+
+        .case-content {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-region {
+            display: inline-block;
+            background: #f0f2f5;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #d4af37;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            align-self: flex-start;
+        }
+
+        .case-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1e2a3e;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .case-reason {
+            background: #fef7e0;
+            padding: 12px 16px;
+            border-radius: 16px;
+            margin: 16px 0 12px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .case-reason i {
+            color: #d4af37;
+            margin-right: 8px;
+        }
+
+        .case-reason strong {
+            font-weight: 700;
+            color: #b38f2a;
+        }
+
+        .case-desc {
+            color: #4a627a;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            margin-top: 8px;
+        }
+
+        .badge-success {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #e6f4ea;
+            color: #2e7d32;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-top: 14px;
+            align-self: flex-start;
+        }
+
+        .highlight {
+            background: #fef7e0;
+            border-left: 5px solid #d4af37;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+        }
+
+        .warning-box {
+            background: #fff5eb;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 20px 0;
+            border: 1px solid #ffe0b5;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+            margin: 20px 0;
+        }
+
+        .step-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 48px;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .step-list li:before {
+            content: counter(step-counter);
+            background: #d4af37;
+            color: #1e2a3e;
+            font-weight: bold;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1rem;
+        }
+
+        .fault-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .fault-table th,
+        .fault-table td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .fault-table th {
+            background: #1e2a3e;
+            color: white;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://101locksmith.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "開鎖知識",
+          "item": "https://101locksmith.com/news.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "三星電子鎖開唔到門・專業自救指南與維修",
+          "item": "https://101locksmith.com/news/samsung-lock-intro.html"
+        }
+      ]
+    }
+    </script>
+        <!-- JSON-LD 結構化資料：核心 SEO Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://101locksmith.com/news/samsung-lock-intro.html#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://101locksmith.com/news/samsung-lock-intro.html"
+      },
+      "headline": "101開鎖 | 三星電子鎖開唔到門・專業自救指南與維修",
+      "description": "三星電子鎖開唔到門？電池無電、指紋失靈、鎖舌卡死？提供詳細自救步驟、9V緊急供電、重置教學及專業開鎖服務，即時解決問題。",
+      "image": [
+        "https://picsum.photos/id/20/600/800"
+      ],
+      "author": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "inLanguage": "zh-HK"
+    }
+  ]
+}
+    </script>
+    <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
+    <!-- SEO 社群分享與 canonical -->
+    <link rel="canonical" href="https://101locksmith.com/news/samsung-lock-intro.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://101locksmith.com/news/samsung-lock-intro.html">
+    <meta property="og:title" content="101開鎖 | 三星電子鎖開唔到門・專業自救指南與維修">
+    <meta property="og:description" content="三星電子鎖開唔到門？電池無電、指紋失靈、鎖舌卡死？提供詳細自救步驟、9V緊急供電、重置教學及專業開鎖服務，即時解決問題。">
+    <meta property="og:image" content="https://picsum.photos/id/20/600/800">
+    <meta property="og:site_name" content="101開鎖">
+    <meta property="og:locale" content="zh_HK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="101開鎖 | 三星電子鎖開唔到門・專業自救指南與維修">
+    <meta name="twitter:description" content="三星電子鎖開唔到門？電池無電、指紋失靈、鎖舌卡死？提供詳細自救步驟、9V緊急供電、重置教學及專業開鎖服務，即時解決問題。">
+    <meta name="twitter:image" content="https://picsum.photos/id/20/600/800">
+    <!-- /SEO 社群分享與 canonical -->
+</head>
+
+<body>
+    <!-- Shared floating CTA: generated from src/_data/site.json -->
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <h1>101<span>開鎖</span></h1>
+            </div>
+            <div class="desktop-nav">
+                <a href="../index.html">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../service.html">開鎖</a>
+                        <a href="../service.html">換鎖</a>
+                        <a href="../service.html">電子鎖</a>
+                        <a href="../service.html">門禁系統</a>
+                        <a href="../service.html">車鎖</a>
+                        <a href="../service.html">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../faq.html">常見問題</a>
+                        <a href="../news.html">知識文章</a>
+                    </div>
+                </div>
+                <a href="../locksmith-real-case.html">真實案例</a>
+                <a href="../price.html">收費參考</a>
+                <a href="../index.html#about">關於我們</a>
+                <a href="../index.html#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub">
+                <li><a href="../service.html">開鎖</a></li>
+                <li><a href="../service.html">換鎖</a></li>
+                <li><a href="../service.html">電子鎖</a></li>
+                <li><a href="../service.html">門禁系統</a></li>
+                <li><a href="../service.html">車鎖</a></li>
+                <li><a href="../service.html">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="../faq.html">常見問題</a></li>
+                <li><a href="../news.html">知識文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
+    <nav class="breadcrumb-bar" aria-label="麵包屑">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../news.html"><span itemprop="name">開鎖知識</span></a><meta itemprop="position" content="2"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">三星電子鎖開唔到門・專業自救指南與維修</span><meta itemprop="position" content="3"></li>
+            </ol>
+        </div>
+    </nav>
+
+    <section style="background: linear-gradient(105deg, #ffffff 0%, #fefaf0 100%); padding: 80px 0;">
+        <div class="container">
+            <div class="section-title"><span> 三星電子鎖・開唔到門？</span><div style="font-size: 1rem; font-weight: normal; margin-top: 8px;">立即按步驟自救 | 9V電池應急供電 | 專業維修支援</div></div>
+
+            <div class="card"><h2>一、三星電子鎖在香港極普及，但突然開唔到點算？</h2><p>三星智能電子鎖（Samsung Digital Door Lock）憑藉時尚設計同方便性，已經成為香港新樓及裝修嘅主流選擇。不過電子鎖始終依賴電力同電子零件，突然開唔到門嘅情況時有發生——多數唔係壞咗，而係電池冇電、鎖左機或設定錯誤。只要掌握正確步驟，好多問題可以即時解決，唔使搵開鎖師傅幫手。</p><div class="highlight"> <strong>常見原因：</strong><br>1. 電池耗盡或電壓不足（約70%案例）<br>2. 指紋感應器污糟或手指太濕/太乾<br>3. 鎖機<br>4. 鎖舌機械卡死（門框變形或天氣影響）</div></div>
+
+            <div class="card"><h2> 二、三星電子鎖開唔到門・逐步自救指南</h2><p>保持冷靜，跟住以下順序檢查，有機會自己開到門，唔使等師傅。</p><ul class="step-list">
+
+                <li><strong>搵出備用機械鑰匙</strong> — 絕大部分三星電子鎖都有隱藏式機械鎖匙孔，通常喺鎖體底部或滑蓋下面。用後備鎖匙直接開門係最穩妥嘅方法。建議平時將後備鎖匙放喺可靠親友屋企或辦公室。</li>
+
+                <li><strong>使用9V電池/尿袋緊急供電</strong> — 去便利店買一粒9V鹼性電池/租借叉電尿袋。如果係由9V電池提供緊急電源，搵兩個金屬接觸點，將電池正負極貼緊該兩個觸點，維持5-10秒;如果係由尿袋提供緊急電源，搵叉電位後插入叉電。 聽到音樂聲一聲後立即用已登記密碼，指紋同拍卡開鎖。入屋後立即更換全部8粒新嘅鹼性電池。</li>
+                
+                
+                <div class="warning-box"> <strong>重要提醒：</strong> 如果鎖匙可以扭動但無法開門、或者鎖匙扭動後卡死，即係鎖體內部零件可能故障。切勿強行扭動，否則可能損壞鎖體，應立即聯絡101開鎖鎖匠。</div></div>
+
+            <div class="card"><h2> 三、三星電子鎖常見故障現象及快速處理</h2><div style="overflow-x: auto;"><table class="fault-table"><thead><tr><th>故障現象</th><th>可能原因</th><th>自救/維修建議</th></tr></thead><tbody>
+                
+            <tr>
+                <td>完全冇聲冇燈，面板全黑</td>
+                <td>電池耗盡 / 鎖機</td>
+                <td>優先使用應急鎖匙直接開門
+                    <br>如果冇鎖匙，請用9V電池或尿袋緊急供電開門，入屋後換新電池</td>
+            </tr>
+                
+            <tr>
+                <td>顯示電量提示燈</td>
+                <td>電量極低，摩打推唔到方閂</td>
+                <td>優先使用應急鎖匙直接開門
+                <br>如果冇鎖匙，請用9V電池或尿袋緊急供電開門，入屋後換新電池</td>
+            </tr>
+            
+            <tr>
+                <td>顯示「UNLOCK」但未能開門</td>
+                <td>斜利唔識變軟</td>
+                <td>無法自行處理，請聯絡101開鎖</td>
+            </tr>
+            <tr>
+                <td>輸入密碼後顯示「TRY AGAIN」</td>
+                <td>密碼錯誤或感應面板污糟</td>
+                <td>請輸入正確密碼/使用應急鎖匙</td>
+            </tr>
+
+            <tr>
+                <td>使用匙卡後顯示「TRY AGAIN」</td>
+                <td>匙卡未有登記</td>
+                <td>請使用已登記既匙卡/使用應急鎖匙</td>
+            </tr>
+
+            <tr>
+                <td>使用指紋後顯示「TRY AGAIN」</td>
+                <td>手紋花左或感應面板污糟</td>
+                <td>請使用密碼，已登記既匙卡/使用應急鎖匙</td>
+            </tr>
+
+            <tr>
+                <td>門外鎖匙扭唔到／插唔入</td>
+                <td>細匙筒移位或異物阻塞</td>
+                <td>輕輕搖動鎖匙，唔好暴力；若果依然插唔入，找101開鎖鎖匠處理</td>
+            </tr>
+            
+            <tr>
+                <td>室內反鎖制失效 / 無法反鎖</td>
+                <td>內部機械結構卡死</td>
+                <td>嘗試拉動門板同時扭動鎖制，若無法解決需拆檢鎖體</td>
+            </tr>
+            
+            <tr>
+                <td>關門後不會自動上鎖</td>
+                <td>關閉左自然上鎖功能</td>
+                <td>打開電池蓋，將A/M按鈕調整去A位置</td>
+            </tr>
+            
+            <tr>
+                <td>經常低電量警告（換電一兩個月就冇電）</td>
+                <td>電池品質差或底板有問題</td>
+                <td>使用Energizer勁量鹼性電池；若仍快速耗電，代表底板有問題，需維修/換鎖</td>
+            </tr>
+            
+            <div class="warning-box"> <strong>重要提醒：</strong> 如果鎖匙可以直接繞過電子部分，帶動鎖體開門，所以即使使用電子鎖，仍然建設客人帶上應急鎖匙，避免電子鎖因為電子部分有問題而無法入屋。</div></div>
+
+        </tbody></table></div></div>
+
+            <div class="card"><h2></i> 四、三星電子鎖注意事項</h2><div class="grid-2"><div class="highlight">
+                <strong>電池一定要用鹼性電</strong><br>建議：只使用高品質鹼性電池（勁量、金霸王），嚴禁混合新舊電池或不同牌子，否則容易漏液腐蝕電路板，甚至令鎖報廢。</div>
+                
+                <div class="highlight"><strong>保持感應器清潔</strong><br>用柔軟乾布定期擦拭指紋讀頭及密碼鍵盤，唔好用酒精或清潔劑，以免損害塗層。</div>
+                
+                <div class="highlight"> <strong>後備機械鎖匙一定要帶</strong><br>建議平時一定要鎖匙跟身。如果真係唔想帶鎖匙，可以考慮將後備鎖匙放喺可靠親友屋企或車上。當電子鎖有問題可以靠應急鎖匙入屋，避免浪費金錢搵開鎖師傅。</div>
+                
+                <div class="highlight"> <strong>鎖體部件切勿自行拆解</strong><br>鎖體部件一旦拆壞好難還原，加上有保養貼紙保護拆開鎖體既螺絲，一旦貼紙被破壞，會失去保養。</div>
+            
+            </div><h3><i class="fas fa-briefcase"></i> 真實維修案例（三星電子鎖）</h3><div class="case-grid"><div class="case-card"><img class="case-image" src="https://picsum.photos/id/20/600/800" alt="九龍塘三星電子鎖" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 九龍塘 · 又一居</div><div class="case-title"><i class="fas fa-battery-dead"></i> 電池漏水導致完全死機</div><div class="case-reason"><strong>事主求助：</strong> 三星鎖突然冇反應完全開唔到門。</div><div class="case-desc">101開鎖鎖匠上門開鎖後檢查發現舊電池漏電池水腐蝕底主板，結果需更換新電子鎖。</div></div>
+        
+        
+            </div><div class="case-card"><img class="case-image" src="https://picsum.photos/id/107/600/800" alt="荃灣三星電子鎖" loading="lazy" decoding="async" width="600" height="800"><div class="case-content">
+            <div class="case-region"><i class="fas fa-map-marker-alt"></i> 荃灣 · 荃灣中心</div><div class="case-title"> 匙卡無法開門</div><div class="case-reason"><strong>開唔到原因：</strong> 使用匙卡後顯示「TRY AGAIN」</div><div class="case-desc">客人曾經重設電子鎖，但之後只登記番密碼，冇做到匙卡登記。101開鎖鎖匠上門開鎖後重新為客人登記匙卡。</div></div></div></div>
+                
+                <div class="warning-box"></i> <strong>資料只供參考，本公司不會為客人自行操作或判斷所引致的損失負責。如不確定故障原因，建議即時聯絡101開鎖。</strong></div></div>
+
+            <div class="card" style="background:#eef2fa;"><h3> 101開鎖・三星電子鎖專業支援</h3><p>我哋熟悉Samsung全系列電子鎖（DP系列、P系列、SHP系列），可提供快速上門維修、開鎖鎖及更換服務。絕大部分情況可無損開鎖，唔使破壞門身。24小時緊急支援，即日解決問題。</p><div style="text-align: center; margin-top: 20px;"><div class="contact-buttons" style="margin-top: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;"><a href="tel:+85266101101" class="btn btn-primary btn-split"><span class="btn-line1"><i class="fas fa-phone-alt"></i> 24小時 緊急熱線</span><span class="btn-line2">66 101 101</span></a><a href="https://wa.me/85266101101?text=開鎖查詢報價" target="_blank" class="btn btn-outline btn-split"><span class="btn-line1"><i class="fab fa-whatsapp"></i> WhatsApp</span><span class="btn-line2">即時查詢報價</span></a></div></div></div>
+
+            <div class="card"><h4>三星官方售後（僅供參考）</h4><p><strong>香港總代理PLC集團</strong>:<strong>三星電子鎖服務熱線：</strong><strong>27659667</strong><strong> / 技術支援熱線:</strong><strong>23306979</strong>。</p><p>如需緊急開鎖或維修，101開鎖提供24小時支援，最快半小時到達。</p></div>
+        </div>
+    </section>
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>開鎖</span></div>
+                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <h4>Blog</h4>
+                <a href="../news.html" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="../locksmith-real-case.html" class="footer-blog-link">真實個案</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                    <li><a href="../service.html">服務項目</a></li>
+                    <li><a href="../index.html#commitment">服務承諾</a></li>
+                    <li><a href="../price.html">收費參考</a></li>
+                    <li><a href="../faq.html">常見問題</a></li>
+                    <li><a href="../index.html#about">關於我們</a></li>
+                    <li><a href="../index.html#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>追蹤我們</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 101開鎖 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/news.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>101開鎖 | 歐式鎖(葫蘆膽)全面解構・零件・故障・DIY注意</title>
+    <meta name="description" content="詳細介紹香港常見嘅歐式鎖（葫蘆膽鎖芯）：組成部分、7種常見故障及處理方法、DIY更換注意事項。鎖匠必讀，家居維修參考。">
+    <meta name="keywords" content="歐式鎖,葫蘆膽,葫蘆鎖芯,鎖體,故障維修,DIY換鎖,鎖膽">
+    <meta name="author" content="101開鎖公司">
+    <link rel="shortcut icon" href="../image/logo.webp">    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="../fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <!-- Critical CSS: first paint shell for article/case pages -->
+    <style>
+        body{margin:0;background:#f9fafc;color:#1e2a3e;font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}.container{max-width:1280px;margin:0 auto;padding:0 24px}.navbar{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}.nav-container{display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto;padding:12px 24px}.logo{display:flex;align-items:center;gap:12px}.logo img{width:72px;height:72px;display:block;border-radius:12px;object-fit:cover}.logo h1{font-size:1.6rem;line-height:1.2;margin:0}.logo h1 span{color:#d4af37}.breadcrumb-bar{background:#f9fafc;border-bottom:1px solid #edf2f7;padding:12px 0}.section-title{text-align:center;font-size:2.2rem;margin-bottom:48px}.card{background:#fff;border:1px solid #edf2f7;border-radius:16px;box-shadow:0 6px 16px rgba(30,42,62,.06);padding:28px;margin-bottom:32px}.float-buttons{position:fixed;right:28px;bottom:28px;z-index:1100;display:flex;flex-direction:column;gap:16px}@media(max-width:768px){.desktop-nav,.quick-actions{display:none}.logo img{width:56px;height:56px}.section-title{font-size:1.75rem}.card{padding:22px}}
+    </style>
+    <link rel="preload" href="../css/news.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../css/news.css"></noscript>
+    <link rel="preload" href="../js/news.js" as="script">
+
+    <style>
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #d4af37;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+            border: 1px solid #edf2f7;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin: 32px 0;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin: 40px 0 20px;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s;
+            border: 1px solid #edf2f7;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 28px rgba(30, 42, 62, 0.12);
+            border-color: #d4af37;
+        }
+
+        .case-image {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            display: block;
+            background-color: #eef2fa;
+        }
+
+        .case-content {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-region {
+            display: inline-block;
+            background: #f0f2f5;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #d4af37;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            align-self: flex-start;
+        }
+
+        .case-region i {
+            margin-right: 6px;
+            font-size: 0.8rem;
+        }
+
+        .case-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1e2a3e;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .case-reason {
+            background: #fef7e0;
+            padding: 12px 16px;
+            border-radius: 16px;
+            margin: 16px 0 12px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .case-reason i {
+            color: #d4af37;
+            margin-right: 8px;
+        }
+
+        .case-reason strong {
+            font-weight: 700;
+            color: #b38f2a;
+        }
+
+        .case-desc {
+            color: #4a627a;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            margin-top: 8px;
+        }
+
+        .badge-success {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #e6f4ea;
+            color: #2e7d32;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-top: 14px;
+            align-self: flex-start;
+        }
+
+        .highlight {
+            background: #fef7e0;
+            border-left: 5px solid #d4af37;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+        }
+
+        .warning-box {
+            background: #fff5eb;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 20px 0;
+            border: 1px solid #ffe0b5;
+        }
+
+        .component-diagram {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .component-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 20px;
+            flex: 1;
+            min-width: 150px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .component-icon {
+            font-size: 2.8rem;
+            color: #d4af37;
+        }
+
+        .fault-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .fault-table th,
+        .fault-table td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .fault-table th {
+            background: #1e2a3e;
+            color: white;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://101locksmith.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "開鎖知識",
+          "item": "https://101locksmith.com/news.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "歐式鎖(葫蘆膽)全面解構・零件・故障・DIY注意",
+          "item": "https://101locksmith.com/news/euro-profile-lock-intro.html"
+        }
+      ]
+    }
+    </script>
+        <!-- JSON-LD 結構化資料：核心 SEO Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://101locksmith.com/news/euro-profile-lock-intro.html#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://101locksmith.com/news/euro-profile-lock-intro.html"
+      },
+      "headline": "101開鎖 | 歐式鎖(葫蘆膽)全面解構・零件・故障・DIY注意",
+      "description": "詳細介紹香港常見嘅歐式鎖（葫蘆膽鎖芯）：組成部分、7種常見故障及處理方法、DIY更換注意事項。鎖匠必讀，家居維修參考。",
+      "image": [
+        "https://picsum.photos/id/105/600/800"
+      ],
+      "author": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "inLanguage": "zh-HK"
+    }
+  ]
+}
+    </script>
+    <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
+    <!-- SEO 社群分享與 canonical -->
+    <link rel="canonical" href="https://101locksmith.com/news/euro-profile-lock-intro.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://101locksmith.com/news/euro-profile-lock-intro.html">
+    <meta property="og:title" content="101開鎖 | 歐式鎖(葫蘆膽)全面解構・零件・故障・DIY注意">
+    <meta property="og:description" content="詳細介紹香港常見嘅歐式鎖（葫蘆膽鎖芯）：組成部分、7種常見故障及處理方法、DIY更換注意事項。鎖匠必讀，家居維修參考。">
+    <meta property="og:image" content="https://picsum.photos/id/105/600/800">
+    <meta property="og:site_name" content="101開鎖">
+    <meta property="og:locale" content="zh_HK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="101開鎖 | 歐式鎖(葫蘆膽)全面解構・零件・故障・DIY注意">
+    <meta name="twitter:description" content="詳細介紹香港常見嘅歐式鎖（葫蘆膽鎖芯）：組成部分、7種常見故障及處理方法、DIY更換注意事項。鎖匠必讀，家居維修參考。">
+    <meta name="twitter:image" content="https://picsum.photos/id/105/600/800">
+    <!-- /SEO 社群分享與 canonical -->
+</head>
+
+<body>
+    <!-- Shared floating CTA: generated from src/_data/site.json -->
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <h1>101<span>開鎖</span></h1>
+            </div>
+            <div class="desktop-nav">
+                <a href="../index.html">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../service.html">開鎖</a>
+                        <a href="../service.html">換鎖</a>
+                        <a href="../service.html">電子鎖</a>
+                        <a href="../service.html">門禁系統</a>
+                        <a href="../service.html">車鎖</a>
+                        <a href="../service.html">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../faq.html">常見問題</a>
+                        <a href="../news.html">知識文章</a>
+                    </div>
+                </div>
+                <a href="../locksmith-real-case.html">真實案例</a>
+                <a href="../price.html">收費參考</a>
+                <a href="../index.html#about">關於我們</a>
+                <a href="../index.html#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub">
+                <li><a href="../service.html">開鎖</a></li>
+                <li><a href="../service.html">換鎖</a></li>
+                <li><a href="../service.html">電子鎖</a></li>
+                <li><a href="../service.html">門禁系統</a></li>
+                <li><a href="../service.html">車鎖</a></li>
+                <li><a href="../service.html">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="../faq.html">常見問題</a></li>
+                <li><a href="../news.html">知識文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
+    <nav class="breadcrumb-bar" aria-label="麵包屑">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../news.html"><span itemprop="name">開鎖知識</span></a><meta itemprop="position" content="2"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">歐式鎖(葫蘆膽)全面解構・零件・故障・DIY注意</span><meta itemprop="position" content="3"></li>
+            </ol>
+        </div>
+    </nav>
+
+    <section style="background: linear-gradient(105deg, #ffffff 0%, #fefaf0 100%); padding: 80px 0;">
+        <div class="container">
+            <div class="section-title"><span><i class="fas fa-lock" style="color:#d4af37; margin-right: 12px;"></i> 歐式鎖全面解構 | 葫蘆膽鎖芯</span><div style="font-size: 1rem; font-weight: normal; margin-top: 8px;">零件・故障・DIY更換・防盜須知</div></div>
+
+            <div class="card"><h2>一、歐式鎖（葫蘆膽）係香港有幾普及？</h2><p>歐式鎖（又稱葫蘆膽鎖）係香港近年最多人選用嘅大門鎖類型之一，尤其常見於私人屋苑、新型居屋及公屋。最大特點係採用<strong>「葫蘆形鎖芯」</strong>，安全性高，同時避免忘記帶鎖匙既風險。</p><div class="highlight" style="margin-top: 16px;"> <strong>主要特點：耐用且更換方便</strong><br>葫蘆膽可獨立更換而無需拆整個鎖體，升級防盜只需換鎖芯。但要注意關門後需要用鎖匙鎖門，唔會自動鎖門，避免意外鎖喺門外嘅風險。</div></div>
+
+            <div class="card"><h2>歐式鎖（葫蘆膽）主要構成部分</h2><p>一套標準歐式鎖主要由 <strong>葫蘆鎖芯</strong>、<strong>鎖體</strong>、<strong>前后面板</strong> / <strong>把手</strong> 構成。以下係詳細組件說明：</p><table style="width:100%; border-collapse: collapse; margin-top: 12px;"><thead><tr style="background:#eef2fa;"><th style="padding:10px;">編號</th><th style="padding:10px;">組件</th><th style="padding:10px;">功能/備註</th></tr></thead><tbody><tr><td style="padding:8px; border-bottom:1px solid #ddd;">01</td><td style="padding:8px; border-bottom:1px solid #ddd;">葫蘆鎖膽(室外插鎖匙)</td><td style="padding:8px; border-bottom:1px solid #ddd;">控制方閂及斜利</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">02</td><td style="padding:8px; border-bottom:1px solid #ddd;">外面板把手</td><td style="padding:8px; border-bottom:1px solid #ddd;">通常配置標準把手，可下壓控制斜利。</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">03</td><td style="padding:8px; border-bottom:1px solid #ddd;">外面板</td><td style="padding:8px; border-bottom:1px solid #ddd;">遮蓋舊孔</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">04</td><td style="padding:8px; border-bottom:1px solid #ddd;">鎖體</td><td style="padding:8px; border-bottom:1px solid #ddd;">內置斜利、方閂、天地勾連桿（選配）。</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">05</td><td style="padding:8px; border-bottom:1px solid #ddd;">斜利</td><td style="padding:8px; border-bottom:1px solid #ddd;">門關上同停到正確位置之後，斜利卡住鎖口上鎖。</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">06</td><td style="padding:8px; border-bottom:1px solid #ddd;">方閂</td><td style="padding:8px; border-bottom:1px solid #ddd;">反鎖後，完全沒法以膠片/信出卡等攝開門鎖</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">07</td><td style="padding:8px; border-bottom:1px solid #ddd;">葫蘆鎖膽(室外扭手)</td><td style="padding:8px; border-bottom:1px solid #ddd;">控制方閂及斜利</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">08</td><td style="padding:8px; border-bottom:1px solid #ddd;">內面板把手</td><td style="padding:8px; border-bottom:1px solid #ddd;">通常配置標準把手，可下壓控制斜利</td></tr><tr><td style="padding:8px; border-bottom:1px solid #ddd;">09</td><td style="padding:8px; border-bottom:1px solid #ddd;">內面板</td><td style="padding:8px; border-bottom:1px solid #ddd;">遮蓋舊孔</td></tr><tr><td style="padding:8px;">10</td><td style="padding:8px;">鎖口片</td><td style="padding:8px;">安裝係門框，配合斜舌及方舌咬合，加強防撞。</td></tr></tbody></table>
+
+            <div class="case-grid"><div class="case-card"><img class="case-image" src="https://picsum.photos/id/105/600/800" alt="屯門鎖芯斷匙案例" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"> 屯門 · 豫豐花園</div><div class="case-title"></i> 鎖匙斷喺葫蘆膽入面</div><div class="case-reason"><strong>搵開鎖原因：</strong> 業主用鎖匙開門時用力過猛，鎖匙斷裂卡死喺鎖芯內，門外無法開啟。</div><div class="case-desc">101師傅到場使用專業斷匙提取器，十分鐘內完整取出斷匙，並檢查鎖芯無損。收費$480，同時建議加裝防斷匙保護套。</div><div class="badge-success">斷匙取出成功</div></div></div><div class="case-card"><img class="case-image" src="https://picsum.photos/id/22/600/800" alt="九龍灣鎖體故障案例" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 九龍灣 · 德福花園</div><div class="case-title"><i class="fas fa-door-closed" style="color:#d4af37;"></i> 鎖體機械故障/方舌卡死</div><div class="case-reason"><i class="fas fa-microchip"></i> <strong>搵開鎖原因：</strong> 大門方舌無法完全縮回，鎖匙轉動時非常吃力，夜晚差點被困屋外。</div><div class="case-desc">檢查發現鎖體內部齒輪磨損，即場更換同款歐式鎖體（70mm鎖中），收費$850，並測試天地勾順暢度，恢復正常。</div><div class="badge-success"><i class="fas fa-check-circle"></i> 鎖體更換完成</div></div></div></div></div>
+
+            <div class="card"><h2><i class="fas fa-exclamation-triangle"></i> 三、歐式鎖（葫蘆膽）常見7種故障及應對</h2><p>根據香港前線鎖匠經驗，歐式鎖最常見故障包括鎖芯老化、鎖體磨損、天地勾卡死等。以下整理對策：</p><div style="overflow-x: auto;"><table class="fault-table"><thead><tr><th>常見故障現象</th><th>可能原因</th><th>簡易應對/維修建議</th></tr></thead><tbody><tr><td>鎖膽細匙筒位置正確，但鎖匙插唔入</td><td>鎖膽細匙筒有異物，導致鎖匙無法插入。</td><td>移除鎖膽細匙筒內既異物</td></tr><tr><td>鎖膽細匙筒位置不正確，鎖匙插唔入</td><td>上一次抆鎖匙時未有係正確位置強行抆出</td><td>輕輕將細匙筒扭回正常位置，如未歸回正常位置，請聯繫101開鎖，我地有專用工具扭正細匙筒</td></tr><tr><td>師父匙插到扭唔到</td><td>師父匙/紅綠燈鎖匙失效</td><td>使用主人匙開啟</td></tr><tr><td>鎖膽正常控制斜利，但把手無法控制斜利</td><td>把手方軸滑出</td><td>拆開內面板檢查方軸是否滑出，若斷裂需更換把手組件。</td></tr><tr><td>關門後斜舌無法彈出，門會自動彈開</td><td>鎖口位置不正確 / 門扇下垂</td><td>調整鎖口位置斜舌損壞則需更換鎖體或彈簧。</td></tr><tr><td>細匙筒被抽出</td><td>細匙筒固定扣完全脫落</td><td>更換鎖膽</td></tr><tr><td>鎖膽可以空轉</td><td>鎖膽踢腳鬆脫</td><td>更換鎖芯，需更換鎖體</td></tr><tr><td>鎖膽可以空轉但鎖膽正常</td><td>鎖體內零件有問題</td><td>更換鎖體</td></tr><tr><td>鎖膽被整個抽出</td><td>側面固定螺絲完全脫落</td><td>重新安裝固定螺絲</td></tr><tr><td>開門情況下，斜利無法正常彈出</td><td>鎖體有問題</td><td>更換鎖體</td></tr><tr><td>開門情況下，方閂無法正常彈</td><td>鎖體有問題</td><td>更換鎖體</td></tr><tr><td>鎖匙拔出困難，甚至扭斷</td><td>鎖膽磨損公差變大 / 鎖匙老化</td><td>更換鎖膽</td></tr></tbody></table></div></div>
+
+            <div class="card"><h2> 四、DIY更換歐式鎖芯/鎖體注意事項</h2><p>葫蘆膽鎖嘅優點就係換鎖芯非常簡單，但尺寸揀錯就會裝唔到。以下係香港最常見嘅「中伏位」：</p><div class="grid-2" style="margin: 16px 0;"><div class="highlight" style="margin:0;"> <strong>鎖芯長度要精準</strong><br>葫蘆膽總長度分為兩邊（門外+門內），常見規格：30+30=60mm、35+35=70mm、40+40=80mm、45+45=90mm等。一定要度清楚門既厚度及兩邊突出尺寸，買錯會凸出太多或凹入。</div><div class="highlight" style="margin:0;"><strong>鎖體「鎖中」尺寸</strong>及鎖距<br>歐式鎖體既鎖中（鎖膽中心到門邊距離）大多為60mm/70mm，同鎖距(手把到鎖膽距離）大多為72mm/80m。購買鎖體時務必確認同舊鎖體一致，否則門窿唔對位。</div><div class="highlight" style="margin:0;"><strong>鎖體方向：分左手門/右手門</strong><br>斜舌斜面向外方向決定鎖體係左手定右手，買錯會導致無法關門，強行安裝會損壞。</div></div></div>
+
+            <div class="card" style="background:#eef2fa;"><h3>101開鎖 歐式鎖專業支援</h3><p>無論你嘅歐式鎖出現鎖芯卡死、鎖體故障、斷匙，我哋提供24小時上門檢查、維修及更換服務。備有過百款葫蘆膽及歐式鎖體現貨，即場匹配，唔使你周圍撲零件。</p><div style="text-align: center; margin-top: 20px;"><div class="contact-buttons" style="margin-top: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;"><a href="tel:+85266101101" class="btn btn-primary btn-split"><span class="btn-line1"><i class="fas fa-phone-alt"></i> 24小時 緊急熱線</span><span class="btn-line2">66 101 101</span></a><a href="https://wa.me/85266101101?text=開鎖查詢報價" target="_blank" class="btn btn-outline btn-split"><span class="btn-line1"><i class="fab fa-whatsapp"></i> WhatsApp</span><span class="btn-line2">即時查詢報價</span></a></div></div></div>
+        </div>
+    </section>
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>開鎖</span></div>
+                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <h4>Blog</h4>
+                <a href="../news.html" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="../locksmith-real-case.html" class="footer-blog-link">真實個案</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                    <li><a href="../service.html">服務項目</a></li>
+                    <li><a href="../index.html#commitment">服務承諾</a></li>
+                    <li><a href="../price.html">收費參考</a></li>
+                    <li><a href="../faq.html">常見問題</a></li>
+                    <li><a href="../index.html#about">關於我們</a></li>
+                    <li><a href="../index.html#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>追蹤我們</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 101開鎖 版權所有</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/news.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>101開鎖 | 開鎖方法全面睇・技術・鬼馬・破壞 | 詳細解說</title>
+    <meta name="description" content="深入講解三種主流開鎖方法：技術開鎖（百合匙無損開鎖）、鬼馬開鎖（繞過鎖膽巧妙解鎖）、破壞開鎖（緊急切割）。附詳細對比圖表，了解每種方法嘅原理、工具、優缺點及適用場景。">
+    <meta name="keywords" content="開鎖方法,技術開鎖,鬼馬開鎖,破壞開鎖,百合匙,無損開鎖,鎖匠工具,開鎖對比">
+    <meta name="author" content="101開鎖公司">
+    <link rel="shortcut icon" href="../image/logo.webp">    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="../fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <!-- Critical CSS: first paint shell for article/case pages -->
+    <style>
+        body{margin:0;background:#f9fafc;color:#1e2a3e;font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}.container{max-width:1280px;margin:0 auto;padding:0 24px}.navbar{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}.nav-container{display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto;padding:12px 24px}.logo{display:flex;align-items:center;gap:12px}.logo img{width:72px;height:72px;display:block;border-radius:12px;object-fit:cover}.logo h1{font-size:1.6rem;line-height:1.2;margin:0}.logo h1 span{color:#d4af37}.breadcrumb-bar{background:#f9fafc;border-bottom:1px solid #edf2f7;padding:12px 0}.section-title{text-align:center;font-size:2.2rem;margin-bottom:48px}.card{background:#fff;border:1px solid #edf2f7;border-radius:16px;box-shadow:0 6px 16px rgba(30,42,62,.06);padding:28px;margin-bottom:32px}.float-buttons{position:fixed;right:28px;bottom:28px;z-index:1100;display:flex;flex-direction:column;gap:16px}@media(max-width:768px){.desktop-nav,.quick-actions{display:none}.logo img{width:56px;height:56px}.section-title{font-size:1.75rem}.card{padding:22px}}
+    </style>
+    <link rel="preload" href="../css/news.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../css/news.css"></noscript>
+    <link rel="preload" href="../js/news.js" as="script">
+
+    <style>
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #d4af37;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+
+        .method-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+            border: 1px solid #edf2f7;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .method-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 28px rgba(30, 42, 62, 0.12);
+            border-color: #d4af37;
+        }
+
+        .method-card h3 {
+            font-size: 1.7rem;
+            margin-bottom: 16px;
+            border-left: 5px solid #d4af37;
+            padding-left: 16px;
+        }
+
+        .sub-title {
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            color: #2c3e4e;
+            font-size: 1rem;
+            display: inline-block;
+            background: #f0f4f9;
+            padding: 4px 10px;
+            border-radius: 999px;
+        }
+
+        .tool-list {
+            background: #f8fafc;
+            padding: 12px 16px;
+            border-radius: 16px;
+            margin: 12px 0;
+            list-style: none;
+        }
+
+        .tool-list li {
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tool-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .pro-con {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .pro {
+            background: #e3f5e8;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1f6e43;
+        }
+
+        .con {
+            background: #ffe6e5;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #b33a34;
+        }
+
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            margin: 40px 0 30px;
+            border-radius: 16px;
+            background: white;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+            border: 1px solid #edf2f7;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+            min-width: 600px;
+        }
+
+        .comparison-table th {
+            background-color: #1e2a3e;
+            color: white;
+            padding: 16px 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .comparison-table td {
+            padding: 14px 12px;
+            border-bottom: 1px solid #e9edf2;
+            vertical-align: top;
+            background: white;
+        }
+
+        .method-name {
+            font-weight: 700;
+            color: #b38f2a;
+            font-size: 1.05rem;
+        }
+
+        .badge {
+            background: #d4af37;
+            color: #1e2a3e;
+            border-radius: 999px;
+            padding: 2px 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-left: 8px;
+        }
+
+        .tip-box {
+            background: #eef2fa;
+            border-radius: 16px;
+            padding: 28px;
+            margin-top: 30px;
+            border-left: 5px solid #d4af37;
+        }
+
+        .warning-box {
+            background: #fff5eb;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 24px;
+            border: 1px solid #ffe0b5;
+        }
+
+        @media (max-width: 768px) {
+            .method-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://101locksmith.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "開鎖知識",
+          "item": "https://101locksmith.com/news.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "開鎖方法全面睇・技術・鬼馬・破壞 | 詳細解說",
+          "item": "https://101locksmith.com/news/unlock-method.html"
+        }
+      ]
+    }
+    </script>
+        <!-- JSON-LD 結構化資料：核心 SEO Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://101locksmith.com/news/unlock-method.html#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://101locksmith.com/news/unlock-method.html"
+      },
+      "headline": "101開鎖 | 開鎖方法全面睇・技術・鬼馬・破壞 | 詳細解說",
+      "description": "深入講解三種主流開鎖方法：技術開鎖（百合匙無損開鎖）、鬼馬開鎖（繞過鎖膽巧妙解鎖）、破壞開鎖（緊急切割）。附詳細對比圖表，了解每種方法嘅原理、工具、優缺點及適用場景。",
+      "image": [
+        "https://101locksmith.com/image/logo.webp"
+      ],
+      "author": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "inLanguage": "zh-HK"
+    }
+  ]
+}
+    </script>
+    <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
+    <!-- SEO 社群分享與 canonical -->
+    <link rel="canonical" href="https://101locksmith.com/news/unlock-method.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://101locksmith.com/news/unlock-method.html">
+    <meta property="og:title" content="101開鎖 | 開鎖方法全面睇・技術・鬼馬・破壞 | 詳細解說">
+    <meta property="og:description" content="深入講解三種主流開鎖方法：技術開鎖（百合匙無損開鎖）、鬼馬開鎖（繞過鎖膽巧妙解鎖）、破壞開鎖（緊急切割）。附詳細對比圖表，了解每種方法嘅原理、工具、優缺點及適用場景。">
+    <meta property="og:image" content="https://101locksmith.com/image/logo.webp">
+    <meta property="og:site_name" content="101開鎖">
+    <meta property="og:locale" content="zh_HK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="101開鎖 | 開鎖方法全面睇・技術・鬼馬・破壞 | 詳細解說">
+    <meta name="twitter:description" content="深入講解三種主流開鎖方法：技術開鎖（百合匙無損開鎖）、鬼馬開鎖（繞過鎖膽巧妙解鎖）、破壞開鎖（緊急切割）。附詳細對比圖表，了解每種方法嘅原理、工具、優缺點及適用場景。">
+    <meta name="twitter:image" content="https://101locksmith.com/image/logo.webp">
+    <!-- /SEO 社群分享與 canonical -->
+</head>
+
+<body>
+    <!-- Shared floating CTA: generated from src/_data/site.json -->
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <h1>101<span>開鎖</span></h1>
+            </div>
+            <div class="desktop-nav">
+                <a href="../index.html">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../service.html">開鎖</a>
+                        <a href="../service.html">換鎖</a>
+                        <a href="../service.html">電子鎖</a>
+                        <a href="../service.html">門禁系統</a>
+                        <a href="../service.html">車鎖</a>
+                        <a href="../service.html">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../faq.html">常見問題</a>
+                        <a href="../news.html">知識文章</a>
+                    </div>
+                </div>
+                <a href="../locksmith-real-case.html">真實案例</a>
+                <a href="../price.html">收費參考</a>
+                <a href="../index.html#about">關於我們</a>
+                <a href="../index.html#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub">
+                <li><a href="../service.html">開鎖</a></li>
+                <li><a href="../service.html">換鎖</a></li>
+                <li><a href="../service.html">電子鎖</a></li>
+                <li><a href="../service.html">門禁系統</a></li>
+                <li><a href="../service.html">車鎖</a></li>
+                <li><a href="../service.html">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="../faq.html">常見問題</a></li>
+                <li><a href="../news.html">知識文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
+    <nav class="breadcrumb-bar" aria-label="麵包屑">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../news.html"><span itemprop="name">開鎖知識</span></a><meta itemprop="position" content="2"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">開鎖方法全面睇・技術・鬼馬・破壞 | 詳細解說</span><meta itemprop="position" content="3"></li>
+            </ol>
+        </div>
+    </nav>
+
+    <section style="background: linear-gradient(105deg, #ffffff 0%, #fefaf0 100%); padding: 80px 0;">
+        <div class="container">
+            <div class="section-title"><span><i class="fas fa-unlock-alt" style="color:#d4af37; margin-right: 12px;"></i> 開鎖方法全面睇</span><div style="font-size: 1rem; font-weight: normal; margin-top: 8px;">技術・鬼馬・破壞 — 鎖匠工具箱嘅三大絕技（詳細解構）</div></div>
+
+            <div class="method-grid">
+                <div class="method-card"><h3>技術開鎖 <span class="badge">Lock Pick</span></h3><p><strong>原理：</strong> 利用百合匙、鉤針等工具，逐個撥動鎖膽內嘅下珠，模擬原裝鎖匙插入時嘅狀態，令鎖膽轉動。完全唔破壞門鎖結構。</p><div class="sub-title">常用工具</div><ul class="tool-list"><li>百合匙／鉤針 (Hook Pick)</li><li>扭力扳手 (Tension Wrench)</li><li>撞匙 (Bump Key)</li><li>電動開鎖槍</li><li>解碼工具</li></ul><div class="sub-title">適用情況</div><p>傳統機械鎖；客戶想保留原有門鎖；鎖匠擁有熟練手感。</p><div class="pro-con"><span class="pro"><i class="fas fa-check"></i> 無損開鎖，保留原鎖匙</span><span class="con"><i class="fas fa-times"></i> 需極高技巧，複雜鎖膽需時較長</span></div></div>
+                <div class="method-card"><h3>鬼馬開鎖 <span class="badge">Bypass</span></h3><p><strong>原理：</strong> 繞過鎖膽，利用門鎖設計漏洞或機械弱點開門，例如信用卡撬斜舌、貓眼工具拉內部把手。</p><div class="sub-title">常用方法</div><ul class="tool-list"><li>信用卡／膠片開鎖</li><li>充氣氣袋＋長桿</li><li>貓眼工具</li><li>磁力干擾舊式電鎖</li></ul><div class="sub-title">適用情況</div><p>門鎖安裝有漏洞、斜舌鎖、門縫較大；緊急情況要極速開門。</p><div class="pro-con"><span class="pro"><i class="fas fa-check"></i> 非常快速，幾秒至一分鐘</span><span class="con"><i class="fas fa-times"></i> 只適用有設計漏洞嘅鎖，對現代高保安鎖無效</span></div></div>
+                <div class="method-card"><h3>破壞開鎖 <span class="badge">Destroy</span></h3><p><strong>原理：</strong> 使用暴力直接破壞鎖體或門嘅結構，例如鑽穿鎖膽、切斷鎖舌。最後手段。</p><div class="sub-title">常用方法</div><ul class="tool-list"><li>電鑽破壞鎖膽</li><li>磨機切割鎖舌</li><li>暴力撬開</li><li>液壓剪</li></ul><div class="sub-title">適用情況</div><p>鎖膽嚴重鏽蝕、電子鎖死機、火災或有人被困緊急破門。</p><div class="pro-con"><span class="pro"><i class="fas fa-check"></i> 100%直接，無視鎖類型</span><span class="con"><i class="fas fa-times"></i> 破壞門鎖，事後需更換新鎖，可能損壞門/門框</span></div></div>
+            </div>
+
+            <h3 style="text-align: center; margin: 20px 0 20px;"><i class="fas fa-chart-simple"></i> 三種方法快速對比</h3>
+            <div class="comparison-table-wrapper"><table class="comparison-table"><thead><tr><th>方法</th><th>優點</th><th>缺點</th><th>適合場景</th></tr></thead><tbody><tr><td class="method-name">技術開鎖</td><td>無損開鎖，保留原有門鎖</td><td>需熟練技巧及時間，複雜鎖膽成功率下降</td><td>冇帶鎖匙、鎖膽正常、客戶希望不破壞門鎖</td></tr><tr><td class="method-name">鬼馬開鎖</td><td>極速，工具簡單，唔傷鎖膽</td><td>只適用有設計漏洞嘅鎖，對現代防撬門無效</td><td>門鎖安裝漏洞、緊急情況要最快入屋</td></tr><tr><td class="method-name">破壞開鎖</td><td>100%直接，危急時最快開門</td><td>破壞門鎖或門，需要額外換鎖成本</td><td>鎖膽壞死、電子鎖完全死機、生命危險情況</td></tr></tbody></table></div>
+
+            <div class="tip-box"><h3><i class="fas fa-hand-peace"></i> 101開鎖嘅專業取態</h3><p>我哋一直以「<strong>技術優先，破壞為後</strong>」為原則。絕大部分情況下，師傅會先嘗試無損技術開鎖，保留你嘅門鎖完整。只有當鎖膽損壞或緊急生命安全受到威脅時，先會考慮破壞開鎖，並事前溝通清楚報價。</p><div class="warning-box"><strong>小提醒：</strong> 如果好擔心需要破壞先開到，你可以先Whatsapp將相send比我地睇睇，如果真係需要破壞先開到，我地會事先講明。</div></div>
+
+            <div style="margin-top: 48px;"><div class="contact-buttons" style="margin-top: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;"><a href="tel:+85266101101" class="btn btn-primary btn-split"><span class="btn-line1"><i class="fas fa-phone-alt"></i> 24小時 緊急熱線</span><span class="btn-line2">66 101 101</span></a><a href="https://wa.me/85266101101?text=開鎖查詢報價" target="_blank" class="btn btn-outline btn-split"><span class="btn-line1"><i class="fab fa-whatsapp"></i> WhatsApp</span><span class="btn-line2">即時查詢報價</span></a></div></div><p style="text-align: center; margin-top: 24px; font-size: 0.85rem; color: #5a6e7c;">101開鎖團隊精通技術、鬼馬及破壞開鎖，24小時全港支援，先報價後施工。</p>
+        </div>
+    </section>
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>開鎖</span></div>
+                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <h4>Blog</h4>
+                <a href="../news.html" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="../locksmith-real-case.html" class="footer-blog-link">真實個案</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                    <li><a href="../service.html">服務項目</a></li>
+                    <li><a href="../index.html#commitment">服務承諾</a></li>
+                    <li><a href="../price.html">收費參考</a></li>
+                    <li><a href="../faq.html">常見問題</a></li>
+                    <li><a href="../index.html#about">關於我們</a></li>
+                    <li><a href="../index.html#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>追蹤我們</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 101開鎖 版權所有</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/news.js" defer></script>
+</body>
+
+</html>

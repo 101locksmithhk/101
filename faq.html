@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- 主要 SEO 標籤 -->
+    <title>常見問題｜101開鎖｜24小時專業開鎖換鎖｜香港鎖匠FAQ</title>
+    <meta name="description" content="101開鎖常見問題解答：開鎖收費標準、電子鎖開鎖、緊急上門時間、證明文件要求、智能鎖安裝等15項專業解答。香港持牌鎖匠團隊，24小時支援。">
+    <meta name="keywords" content="開鎖常見問題,開鎖收費,電子鎖開鎖,24小時開鎖,101開鎖,開鎖證明文件,智能鎖安裝,開鎖課程">
+    <meta name="author" content="101開鎖">
+
+    <!-- Open Graph / Facebook -->
+
+    <!-- Twitter Card -->
+
+    <link rel="shortcut icon" href="image/logo.webp" type="image/webp">
+
+    <!-- 外部資源 -->    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <link rel="preload" href="fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/site.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </noscript>
+
+    <style>
+/* 浮動按鈕 (與主站一致) */
+        .float-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .float-buttons {
+                bottom: 20px;
+                right: 20px;
+                gap: 12px;
+            }
+        }
+
+        /* ========= 手風琴專用樣式 (保留原內容) ========= */
+        .faq-accordion-section {
+            background: #f9fafc;
+            padding: 60px 0 80px;
+        }
+
+        .faq-accordion {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+            border-radius: 16px;
+        }
+
+        .accordion-item {
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+            border: 1px solid #edf2f9;
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+
+        .accordion-item:hover {
+            border-color: #d4af37;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+        }
+
+        .accordion-question {
+            width: 100%;
+            background: white;
+            border: none;
+            text-align: left;
+            padding: 22px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: #1e2a3e;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            transition: background 0.2s;
+        }
+
+        .accordion-question i:first-child {
+            color: #d4af37;
+            font-size: 1.3rem;
+            width: 28px;
+        }
+
+        .accordion-question .question-text {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .accordion-icon {
+            font-size: 1.3rem;
+            color: #8e9eae;
+            transition: transform 0.25s ease;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+            color: #d4af37;
+        }
+
+        .accordion-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1), opacity 0.25s ease;
+            background: #ffffff;
+            border-top: 1px solid transparent;
+        }
+
+        .accordion-item.active .accordion-answer {
+            max-height: 400px;
+            opacity: 1;
+            border-top-color: #f0f2f6;
+        }
+
+        .accordion-answer p {
+            padding: 24px 28px 28px 28px;
+            margin: 0;
+            color: #2c4c6c;
+            line-height: 1.65;
+            font-size: 1rem;
+        }
+
+        .faq-contact-card {
+            max-width: 860px;
+            margin: 42px auto 0;
+            background: #fff7e5;
+            border-radius: 16px;
+            padding: 24px 32px;
+            text-align: center;
+            border-left: 6px solid #d4af37;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .faq-contact-card p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .btn-small {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #d4af37;
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #1e2a3e;
+            transition: 0.2s;
+        }
+
+        .btn-small:hover {
+            background: #c4a228;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #d4af37;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        h1.section-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 640px) {
+            .accordion-question {
+                padding: 18px 20px;
+                font-size: 1rem;
+            }
+
+            .accordion-answer p {
+                padding: 20px 22px 24px;
+                font-size: 0.95rem;
+            }
+
+            .faq-contact-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-title,
+            h1.section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD 結構化資料：FAQ Schema (保留) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"開鎖後門鎖會不會損壞？","acceptedAnswer":{"@type":"Answer","text":"專業師傅採用無損開鎖技術，大多數情況下可完整保留鎖具，您可繼續使用原有門鎖。若鎖芯已老化或損壞，我們亦會主動告知並建議更換，絕不強迫消費。"}},
+        {"@type":"Question","name":"緊急開鎖師傅多久能到？","acceptedAnswer":{"@type":"Answer","text":"確認地址後，最快10-30分鐘內抵達！覆蓋港島、九龍、新界全區，設有夜間值班團隊，保證24小時極速支援。"}},
+        {"@type":"Question","name":"開鎖需要提供什麼證明文件？","acceptedAnswer":{"@type":"Answer","text":"根據香港警方指引，必需出示身份證、租約或水電費單以確認合法居住權。若無法提供證明，師傅有權拒絕開鎖，保障所有住戶安全。"}},
+        {"@type":"Question","name":"電子/智能鎖可以開鎖嗎？","acceptedAnswer":{"@type":"Answer","text":"當然可以。我們熟悉Samsung、Yale、Philips等主流智能鎖的構造，支援電子鎖技術性開啟、指紋模組重置及斷電應急處理，無需破壞門板。"}},
+        {"@type":"Question","name":"汽車開鎖會刮花內飾或車漆嗎？","acceptedAnswer":{"@type":"Answer","text":"請放心！專門配備汽車專用充氣開鎖工具及防護墊，所有操作均在保護下進行，絕對不傷車漆及內飾。同時支援晶片車匙遺失編程。"}},
+        {"@type":"Question","name":"夾萬保險箱忘記密碼怎麼辦？","acceptedAnswer":{"@type":"Answer","text":"專業夾萬師傅能透過技術開啟大部分電子及機械保險箱（包括入牆夾萬），非破壞方式成功率高，並可協助重設密碼及更換鎖芯。"}},
+        {"@type":"Question","name":"換鎖/升級智能鎖要多久時間？","acceptedAnswer":{"@type":"Answer","text":"更換一般門鎖約15-20分鐘；安裝電子鎖（三星、耶魯等）含設定約30-45分鐘，並且免費教學使用，讓您立刻入住安心。"}},
+        {"@type":"Question","name":"收費模式是什麼？會濫收費用嗎？","acceptedAnswer":{"@type":"Answer","text":"明碼實價！開鎖前會WhatsApp或當面報價總金額，絕無隱藏「夜間附加費」、「交通費」。深夜時段僅額外+$200起，開工前100%獲得客戶同意。"}},
+        {"@type":"Question","name":"商業大廈門禁系統可以維護安裝嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。我們處理多款門禁機、密碼卡機、人臉識別系統的安裝、維修及升級，並可配合物業管理進行遠程權限設定。"}},
+        {"@type":"Question","name":"農曆新年或颱風天是否照常服務？","acceptedAnswer":{"@type":"Answer","text":"365日無休，包括紅日、八號風球及黑色暴雨。只要路面情況許可，師傅會堅持上門為您解決被鎖的困境。"}},
+        {"@type":"Question","name":"師傅是否持有專業牌照？安全可靠嗎？","acceptedAnswer":{"@type":"Answer","text":"所有鎖匠均持有香港警察開鎖牌照、已登記商業登記證，且經過嚴格的背景審查。服務全程可錄影，保證絕對正規。"}},
+        {"@type":"Question","name":"如果開鎖失敗或無法開啟會收費嗎？","acceptedAnswer":{"@type":"Answer","text":"不成功不收費！師傅評估後若無法正常開啟（特殊高安全性鎖具除外）完全不收取任何費用，包括交通費。"}},
+        {"@type":"Question","name":"智能鎖安裝後手機連不到網絡怎麼辦？","acceptedAnswer":{"@type":"Answer","text":"安裝後我們會完整測試藍牙/Wi-Fi配對，並提供專屬售後支援。若家中路由器距離較遠，師傅會建議網關擺放位置，確保連線穩定。"}},
+        {"@type":"Question","name":"更換門鎖可以自行買鎖請師傅安裝嗎？","acceptedAnswer":{"@type":"Answer","text":"當然可以。客戶可自備門鎖，我們僅收安裝費用（約$150-$300）。同時也提供代理歐洲/日本鎖具，品質保養更安心。"}},
+        {"@type":"Question","name":"開鎖課程適合初學者嗎？內容有哪些？","acceptedAnswer":{"@type":"Answer","text":"適合零基礎！課程涵蓋傳統彈子鎖原理、鋁合金門鎖維修、電子鎖故障排除等，並由資深導師一對一指導，完成後協助考牌。"}}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://101locksmith.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "常見問題",
+          "item": "https://101locksmith.com/faq.html"
+        }
+      ]
+    }
+    </script>
+        <!-- JSON-LD 結構化資料：核心 SEO Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "Locksmith"
+      ],
+      "@id": "https://101locksmith.com/#locksmith",
+      "name": "101開鎖",
+      "url": "https://101locksmith.com/",
+      "logo": "https://101locksmith.com/image/logo.webp",
+      "image": "https://101locksmith.com/image/logo.webp",
+      "telephone": "+85266101101",
+      "priceRange": "HKD 500+",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "香港"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "香港",
+        "addressCountry": "HK"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61589121282796",
+        "https://www.instagram.com/101_locksmith_hk"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+85266101101",
+          "contactType": "customer service",
+          "areaServed": "HK",
+          "availableLanguage": [
+            "zh-HK",
+            "zh",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://101locksmith.com/faq.html#webpage",
+      "url": "https://101locksmith.com/faq.html",
+      "name": "常見問題｜101開鎖｜24小時專業開鎖換鎖｜香港鎖匠FAQ",
+      "description": "101開鎖常見問題解答：開鎖收費標準、電子鎖開鎖、緊急上門時間、證明文件要求、智能鎖安裝等15項專業解答。香港持牌鎖匠團隊，24小時支援。",
+      "isPartOf": {
+        "@id": "https://101locksmith.com/#website"
+      },
+      "about": {
+        "@id": "https://101locksmith.com/#locksmith"
+      }
+    }
+  ]
+}
+    </script>
+    <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
+    <!-- SEO 社群分享與 canonical -->
+    <link rel="canonical" href="https://101locksmith.com/faq.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://101locksmith.com/faq.html">
+    <meta property="og:title" content="常見問題｜101開鎖｜24小時專業開鎖換鎖｜香港鎖匠FAQ">
+    <meta property="og:description" content="101開鎖常見問題解答：開鎖收費標準、電子鎖開鎖、緊急上門時間、證明文件要求、智能鎖安裝等15項專業解答。香港持牌鎖匠團隊，24小時支援。">
+    <meta property="og:image" content="https://101locksmith.com/image/logo.webp">
+    <meta property="og:site_name" content="101開鎖">
+    <meta property="og:locale" content="zh_HK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="常見問題｜101開鎖｜24小時專業開鎖換鎖｜香港鎖匠FAQ">
+    <meta name="twitter:description" content="101開鎖常見問題解答：開鎖收費標準、電子鎖開鎖、緊急上門時間、證明文件要求、智能鎖安裝等15項專業解答。香港持牌鎖匠團隊，24小時支援。">
+    <meta name="twitter:image" content="https://101locksmith.com/image/logo.webp">
+    <!-- /SEO 社群分享與 canonical -->
+</head>
+
+<body>
+
+    <!-- 浮動按鈕 -->
+    <!-- Shared floating CTA: generated from src/_data/site.json -->
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <h1>101<span>開鎖</span></h1>
+            </div>
+            <div class="desktop-nav">
+                <a href="index.html">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="service.html">開鎖</a>
+                        <a href="service.html">換鎖</a>
+                        <a href="service.html">電子鎖</a>
+                        <a href="service.html">門禁系統</a>
+                        <a href="service.html">車鎖</a>
+                        <a href="service.html">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="faq.html">常見問題</a>
+                        <a href="news.html">知識文章</a>
+                    </div>
+                </div>
+                <a href="locksmith-real-case.html">真實案例</a>
+                <a href="price.html">收費參考</a>
+                <a href="index.html#about">關於我們</a>
+                <a href="index.html#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="index.html" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub">
+                <li><a href="service.html">開鎖</a></li>
+                <li><a href="service.html">換鎖</a></li>
+                <li><a href="service.html">電子鎖</a></li>
+                <li><a href="service.html">門禁系統</a></li>
+                <li><a href="service.html">車鎖</a></li>
+                <li><a href="service.html">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="faq.html">常見問題</a></li>
+                <li><a href="news.html">知識文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 手風琴 FAQ 專區 (內容保留) -->
+    <nav class="breadcrumb-bar" aria-label="麵包屑">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">常見問題</span><meta itemprop="position" content="2"></li>
+            </ol>
+        </div>
+    </nav>
+    <section class="faq-accordion-section" id="faq-accordion-section">
+        <div class="container">
+            <h1 class="section-title">📋 常見問題解答</h1>
+            <div class="faq-accordion" id="faqAccordion">
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-key"></i><span
+                            class="question-text">開鎖後門鎖會不會損壞？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>✅ 專業師傅採用無損開鎖技術，大多數情況下可完整保留鎖具，您可繼續使用原有門鎖。若鎖芯已老化或損壞，我們亦會主動告知並建議更換，絕不強迫消費。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-stopwatch"></i><span
+                            class="question-text">緊急開鎖師傅多久能到？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>⏱️ 確認地址後，最快10-30分鐘內抵達！我們覆蓋港島、九龍、新界全區，並設有夜間值班團隊，保證24小時極速支援。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-id-card"></i><span
+                            class="question-text">開鎖需要提供什麼證明文件？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>📄 根據香港警方指引，必需出示身份證、租約或水電費單以確認合法居住權。若無法提供證明，師傅有權拒絕開鎖，保障所有住戶安全。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-fingerprint"></i><span
+                            class="question-text">電子/智能鎖可以開鎖嗎？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🔓 當然可以。我們熟悉Samsung、Yale、Philips等主流智能鎖的構造，支援電子鎖技術性開啟、指紋模組重置及斷電應急處理，無需破壞門板。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-car"></i><span
+                            class="question-text">汽車開鎖會刮花內飾或車漆嗎？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🚗 請放心！我們專門配備汽車專用充氣開鎖工具及防護墊，所有操作均在保護下進行，絕對不傷車漆及內飾。同時支援晶片車匙遺失編程。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-vault"></i><span
+                            class="question-text">夾萬保險箱忘記密碼怎麼辦？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🏦 專業夾萬師傅能透過技術開啟大部分電子及機械保險箱（包括入牆夾萬），非破壞方式成功率高，並可協助重設密碼及更換鎖芯。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-door-open"></i><span
+                            class="question-text">換鎖/升級智能鎖要多久時間？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>⏲️ 更換一般門鎖約15-20分鐘；安裝電子鎖（三星、耶魯等）含設定約30-45分鐘，並且免費教學使用，讓您立刻入住安心。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-dollar-sign"></i><span
+                            class="question-text">收費模式是什麼？會濫收費用嗎？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>💰 明碼實價！開鎖前會WhatsApp或當面報價總金額，絕無隱藏「夜間附加費」、「交通費」。深夜時段僅額外+$200起，開工前100%獲得客戶同意。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-building"></i><span
+                            class="question-text">商業大廈門禁系統可以維護安裝嗎？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🏢 可以。我們處理多款門禁機、密碼卡機、人臉識別系統的安裝、維修及升級，並可配合物業管理進行遠程權限設定。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-clock"></i><span
+                            class="question-text">農曆新年或颱風天是否照常服務？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🌪️ 365日無休，包括紅日、八號風球及黑色暴雨。只要路面情況許可，師傅會堅持上門為您解決被鎖的困境。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-file-contract"></i><span
+                            class="question-text">師傅是否持有專業牌照？安全可靠嗎？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>✅ 所有鎖匠均持有香港警察開鎖牌照、已登記商業登記證，且經過嚴格的背景審查。服務全程可錄影，保證絕對正規。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-shield-alt"></i><span
+                            class="question-text">如果開鎖失敗或無法開啟會收費嗎？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>✔️ 不成功不收費！師傅評估後若無法正常開啟（特殊高安全性鎖具除外）完全不收取任何費用，包括交通費。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-wifi"></i><span
+                            class="question-text">智能鎖安裝後手機連不到網絡怎麼辦？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>📱 安裝後我們會完整測試藍牙/Wi-Fi配對，並提供專屬售後支援。若家中路由器距離較遠，師傅會建議網關擺放位置，確保連線穩定。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i
+                            class="fas fa-hand-holding-usd"></i><span class="question-text">更換門鎖可以自行買鎖請師傅安裝嗎？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🛠️ 當然可以。客戶可自備門鎖，我們僅收安裝費用（約$150-$300）。同時也提供代理歐洲/日本鎖具，品質保養更安心。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i
+                            class="fas fa-chalkboard-user"></i><span class="question-text">開鎖課程適合初學者嗎？內容有哪些？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🎓 適合零基礎！課程涵蓋傳統彈子鎖原理、鋁合金門鎖維修、電子鎖故障排除等，並由資深導師一對一指導，完成後協助考牌。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-contact-card">
+                <p><i class="fas fa-phone-alt"></i> 仍有疑問？立即聯絡專人解答</p>
+                <div>
+                    <a href="tel:+85266101101" class="btn-small"><i class="fas fa-phone"></i> 24小時 熱線</a>
+                    <a href="https://wa.me/85266101101?text=請問關於開鎖的問題..." class="btn-small"
+                        style="background:#25D366; color:white; margin-left:12px;"><i class="fab fa-whatsapp"></i>
+                        WhatsApp 諮詢</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (與主站一致) -->
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>開鎖</span></div>
+                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <h4>Blog</h4>
+                <a href="news.html" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="locksmith-real-case.html" class="footer-blog-link">真實個案</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                    <li><a href="service.html">服務項目</a></li>
+                    <li><a href="index.html#commitment">服務承諾</a></li>
+                    <li><a href="price.html">收費參考</a></li>
+                    <li><a href="faq.html">常見問題</a></li>
+                    <li><a href="index.html#about">關於我們</a></li>
+                    <li><a href="index.html#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>追蹤我們</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 101開鎖 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            // 手風琴功能
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            function closeAllItems() { accordionItems.forEach(item => item.classList.remove('active')); }
+            function toggleItem(item) {
+                if (item.classList.contains('active')) item.classList.remove('active');
+                else { closeAllItems(); item.classList.add('active'); }
+            }
+            accordionItems.forEach(item => {
+                const btn = item.querySelector('.accordion-question');
+                btn.addEventListener('click', (e) => { e.preventDefault(); toggleItem(item); });
+            });
+
+            // 導航欄和抽屜菜單互動
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const drawer = document.getElementById('mobileDrawer');
+            const overlay = document.getElementById('drawerOverlay');
+            const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+            function openDrawer() { drawer.classList.add('open'); overlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+            function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('active'); document.body.style.overflow = ''; }
+            if (mobileBtn) mobileBtn.addEventListener('click', openDrawer);
+            if (closeDrawerBtn) closeDrawerBtn.addEventListener('click', closeDrawer);
+            if (overlay) overlay.addEventListener('click', closeDrawer);
+
+            const drawerItems = document.querySelectorAll('.drawer-nav-item[data-has-sub="true"]');
+            drawerItems.forEach(item => {
+                const btn = item.querySelector('.drawer-nav-link');
+                const submenu = item.querySelector('.drawer-submenu');
+                if (btn && submenu) {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        submenu.classList.toggle('show');
+                        const icon = btn.querySelector('i');
+                        if (icon) icon.style.transform = submenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+                    });
+                }
+            });
+
+            // 平滑滾動 (本頁錨點)
+            const allNavLinks = document.querySelectorAll('.desktop-nav a, .dropdown-content a, .drawer-nav-link, .drawer-submenu a, .quick-actions a');
+            allNavLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#') && !href.includes('index.html')) {
+                        const targetId = href.substring(1);
+                        const targetEl = document.getElementById(targetId);
+                        if (targetEl) {
+                            e.preventDefault();
+                            closeDrawer();
+                            setTimeout(() => { window.scrollTo({ top: targetEl.offsetTop - 80, behavior: 'smooth' }); }, 100);
+                        }
+                    }
+                });
+            });
+
+            // 浮動WhatsApp文字滾動隱藏
+            const whatsappTextEl = document.getElementById('whatsappText');
+            if (whatsappTextEl) {
+                let hideTimer = null, isHiddenByScroll = false;
+                function showText() { if (whatsappTextEl.classList.contains('hide-on-scroll')) { whatsappTextEl.classList.remove('hide-on-scroll'); isHiddenByScroll = false; } if (hideTimer) clearTimeout(hideTimer); }
+                function hideTextAndStartTimer() { if (!whatsappTextEl.classList.contains('hide-on-scroll')) { whatsappTextEl.classList.add('hide-on-scroll'); isHiddenByScroll = true; } if (hideTimer) clearTimeout(hideTimer); hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 20000); }
+                let scrollTimeout = null;
+                window.addEventListener('scroll', () => { if (scrollTimeout) cancelAnimationFrame(scrollTimeout); scrollTimeout = requestAnimationFrame(() => { if (window.scrollY > 100) hideTextAndStartTimer(); else showText(); }); });
+                showText();
+            }
+
+            // ========= 多語言跳轉：繁體(zh-HK)、簡體(zh-CN)、英文(en) 跳轉至對應語言的 faq.html =========
+            const langBtns = document.querySelectorAll('.lang-option, .drawer-lang-option');
+            langBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = btn.getAttribute('data-lang');
+                    let langFolder = '';
+                    if (lang === 'zh') {
+                        langFolder = 'zh-CN';
+                    } else if (lang === 'en') {
+                        langFolder = 'en';
+                    } else if (lang === 'hk') {
+                        langFolder = 'zh-HK';
+                    } else {
+                        return;
+                    }
+                    // 獲取當前路徑的目錄前綴（支援子目錄部署）
+                    let currentPath = window.location.pathname;
+                    let baseDir = '';
+                    const lastSlash = currentPath.lastIndexOf('/');
+                    if (lastSlash > 0) {
+                        const lastSegment = currentPath.substring(lastSlash + 1);
+                        if (lastSegment === 'faq.html' || lastSegment === 'index.html' || lastSegment === '') {
+                            baseDir = currentPath.substring(0, lastSlash);
+                        } else {
+                            baseDir = currentPath.substring(0, lastSlash);
+                        }
+                    } else {
+                        baseDir = '';
+                    }
+                    // 組裝目標 URL (例如: /zh-CN/faq.html 或 /subdir/zh-CN/faq.html)
+                    let targetUrl = baseDir ? (baseDir + '/' + langFolder + '/faq.html') : ('/' + langFolder + '/faq.html');
+                    const currentUrlWithoutHash = window.location.href.split('#')[0].split('?')[0];
+                    const targetFullUrl = window.location.origin + targetUrl;
+                    if (currentUrlWithoutHash !== targetFullUrl) {
+                        window.location.href = targetUrl;
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

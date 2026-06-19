@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>101開鎖 | 美式鎖膽全面解構：螺絲膽 vs 插針膽</title>
+    <meta name="description" content="深入剖析美式鎖兩大核心鎖膽：螺絲膽與插針膽。詳解結構差異、優缺點對比、常見故障維修及DIY更換要點。鎖匠必讀，家居維修專家指南。">
+    <meta name="keywords" content="美式鎖,螺絲膽,插針膽,鎖膽分別,更換鎖膽,鎖膽故障,DIY換鎖">
+    <meta name="author" content="101開鎖公司">
+    <link rel="shortcut icon" href="../image/logo.webp">    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="../fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <!-- Critical CSS: first paint shell for article/case pages -->
+    <style>
+        body{margin:0;background:#f9fafc;color:#1e2a3e;font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}.container{max-width:1280px;margin:0 auto;padding:0 24px}.navbar{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}.nav-container{display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto;padding:12px 24px}.logo{display:flex;align-items:center;gap:12px}.logo img{width:72px;height:72px;display:block;border-radius:12px;object-fit:cover}.logo h1{font-size:1.6rem;line-height:1.2;margin:0}.logo h1 span{color:#d4af37}.breadcrumb-bar{background:#f9fafc;border-bottom:1px solid #edf2f7;padding:12px 0}.section-title{text-align:center;font-size:2.2rem;margin-bottom:48px}.card{background:#fff;border:1px solid #edf2f7;border-radius:16px;box-shadow:0 6px 16px rgba(30,42,62,.06);padding:28px;margin-bottom:32px}.float-buttons{position:fixed;right:28px;bottom:28px;z-index:1100;display:flex;flex-direction:column;gap:16px}@media(max-width:768px){.desktop-nav,.quick-actions{display:none}.logo img{width:56px;height:56px}.section-title{font-size:1.75rem}.card{padding:22px}}
+    </style>
+    <link rel="preload" href="../css/news.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../css/news.css"></noscript>
+    <link rel="preload" href="../js/news.js" as="script">
+
+
+    <style> 
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #d4af37;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+            border: 1px solid #edf2f7;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin: 32px 0;
+        }
+
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin: 40px 0;
+        }
+
+        .compare-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+            border: 1px solid #edf2f7;
+            transition: transform 0.2s;
+        }
+
+        .compare-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .img-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #eef2fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: #64748b;
+            flex-direction: column;
+            gap: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .img-placeholder i {
+            font-size: 3rem;
+            color: #d4af37;
+        }
+
+        .compare-content {
+            padding: 24px;
+        }
+
+        .badge-type {
+            display: inline-block;
+            background: #1e2a3e;
+            color: #d4af37;
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin: 40px 0 20px;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s;
+            border: 1px solid #edf2f7;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 28px rgba(30, 42, 62, 0.12);
+        }
+
+        .case-image {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            background: #e2e8f0;
+        }
+
+        .case-content {
+            padding: 24px;
+            flex: 1;
+        }
+
+        .case-region {
+            background: #f0f2f5;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #d4af37;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .highlight {
+            background: #fef7e0;
+            border-left: 5px solid #d4af37;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+        }
+
+        .warning-box {
+            background: #fff5eb;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 20px 0;
+            border: 1px solid #ffe0b5;
+        }
+
+        .fault-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .fault-table th,
+        .fault-table td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .fault-table th {
+            background: #1e2a3e;
+            color: white;
+        }
+
+        .estate-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .estate-tag {
+            background: #f1f5f9;
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #1e2a3e;
+            border: 1px solid #e2e8f0;
+        }
+
+        .estate-tag i {
+            color: #d4af37;
+            margin-right: 6px;
+        }
+
+        .side-by-side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 20px 0;
+        }
+
+        .disclaimer-note {
+            background: #f1f5f9;
+            border-radius: 16px;
+            padding: 16px 24px;
+            font-size: 0.85rem;
+            color: #475569;
+            margin-bottom: 40px;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://101locksmith.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "開鎖知識",
+          "item": "https://101locksmith.com/news.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "美式鎖膽全面解構：螺絲膽 vs 插針膽",
+          "item": "https://101locksmith.com/news/different-between-Screw-and-pin-cylinder.html"
+        }
+      ]
+    }
+    </script>
+        <!-- JSON-LD 結構化資料：核心 SEO Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://101locksmith.com/news/different-between-Screw-and-pin-cylinder.html#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://101locksmith.com/news/different-between-Screw-and-pin-cylinder.html"
+      },
+      "headline": "101開鎖 | 美式鎖膽全面解構：螺絲膽 vs 插針膽",
+      "description": "深入剖析美式鎖兩大核心鎖膽：螺絲膽與插針膽。詳解結構差異、優缺點對比、常見故障維修及DIY更換要點。鎖匠必讀，家居維修專家指南。",
+      "image": [
+        "https://picsum.photos/id/20/600/800"
+      ],
+      "author": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://101locksmith.com/#locksmith",
+        "name": "101開鎖",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://101locksmith.com/image/logo.webp"
+        }
+      },
+      "inLanguage": "zh-HK"
+    }
+  ]
+}
+    </script>
+    <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
+    <!-- SEO 社群分享與 canonical -->
+    <link rel="canonical" href="https://101locksmith.com/news/different-between-Screw-and-pin-cylinder.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://101locksmith.com/news/different-between-Screw-and-pin-cylinder.html">
+    <meta property="og:title" content="101開鎖 | 美式鎖膽全面解構：螺絲膽 vs 插針膽">
+    <meta property="og:description" content="深入剖析美式鎖兩大核心鎖膽：螺絲膽與插針膽。詳解結構差異、優缺點對比、常見故障維修及DIY更換要點。鎖匠必讀，家居維修專家指南。">
+    <meta property="og:image" content="https://picsum.photos/id/20/600/800">
+    <meta property="og:site_name" content="101開鎖">
+    <meta property="og:locale" content="zh_HK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="101開鎖 | 美式鎖膽全面解構：螺絲膽 vs 插針膽">
+    <meta name="twitter:description" content="深入剖析美式鎖兩大核心鎖膽：螺絲膽與插針膽。詳解結構差異、優缺點對比、常見故障維修及DIY更換要點。鎖匠必讀，家居維修專家指南。">
+    <meta name="twitter:image" content="https://picsum.photos/id/20/600/800">
+    <!-- /SEO 社群分享與 canonical -->
+</head>
+
+<body>
+    <!-- 浮動按鈕 -->
+    <!-- Shared floating CTA: generated from src/_data/site.json -->
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <h1>101<span>開鎖</span></h1>
+            </div>
+            <div class="desktop-nav">
+                <a href="../index.html">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../service.html">開鎖</a>
+                        <a href="../service.html">換鎖</a>
+                        <a href="../service.html">電子鎖</a>
+                        <a href="../service.html">門禁系統</a>
+                        <a href="../service.html">車鎖</a>
+                        <a href="../service.html">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../faq.html">常見問題</a>
+                        <a href="../news.html">知識文章</a>
+                    </div>
+                </div>
+                <a href="../locksmith-real-case.html">真實案例</a>
+                <a href="../price.html">收費參考</a>
+                <a href="../index.html#about">關於我們</a>
+                <a href="../index.html#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub">
+                <li><a href="../service.html">開鎖</a></li>
+                <li><a href="../service.html">換鎖</a></li>
+                <li><a href="../service.html">電子鎖</a></li>
+                <li><a href="../service.html">門禁系統</a></li>
+                <li><a href="../service.html">車鎖</a></li>
+                <li><a href="../service.html">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="../faq.html">常見問題</a></li>
+                <li><a href="../news.html">知識文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要內容：美式鎖膽解密 -->
+    <nav class="breadcrumb-bar" aria-label="麵包屑">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../news.html"><span itemprop="name">開鎖知識</span></a><meta itemprop="position" content="2"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">美式鎖膽全面解構：螺絲膽 vs 插針膽</span><meta itemprop="position" content="3"></li>
+            </ol>
+        </div>
+    </nav>
+    <section style="background: linear-gradient(105deg, #ffffff 0%, #fefaf0 100%); padding: 80px 0;">
+        <div class="container">
+            <div class="section-title"><span>美式鎖膽解密：螺絲膽 vs 插針膽</span><div style="font-size: 1rem; font-weight: normal; margin-top: 8px;">固定方式・維修建議・DIY 更換全攻略</div></div>
+
+            <div class="card"><h2></i> 一、美式鎖喺香港嘅主流地位</h2><p>香港住宅以至村屋，經常見到<strong>美式鎖（American Mortise Lock）</strong>既出現。而鎖膽作為核心部分，主要分為兩大陣營：<strong class="text-warning">「螺絲膽」</strong> 同 <strong>「插針膽」</strong>。兩者雖然外形相似，但固定方法完全唔同，唔少業主/租客買錯鎖膽搞到新鎖膽浪廢，更有唔識更換而將鎖體搞到報廢。本文將深入剖析兩種鎖膽嘅分別，助你精明維修。</p></div>
+
+            <div class="card"><h2></i> 二、螺絲膽 vs 插針膽：結構差異一目了然</h2>
+                <div class="compare-grid"><div class="compare-card"><div class="img-placeholder"><span>螺絲膽示意圖</span><small style="font-size:12px;">實際產品圖：側面可見固定螺絲孔</small></div><div class="compare-content"><div class="badge-type">螺絲膽 </div><p><strong>固定方式：</strong> 鎖膽側面有凹位，通過鎖體上一粒橫向螺絲直接收緊固定。更換時只需鬆開螺絲即可。</p><p><strong>優點：</strong> 普及度高、五金舖容易配到；更換成本較低。</p><p><strong>缺點：</strong> 螺絲日久鬆脫可能導致鎖膽晃動，更換需要技巧</p></div></div>
+                <div class="compare-card"><div class="img-placeholder"><span>插針膽示意圖</span><small style="font-size:12px;">實際產品圖：插銷固定結構</small></div><div class="compare-content"><div class="badge-type">插針膽</div><p><strong>固定方式：</strong> 利用插銷固定鎖膽，沒有外露，更換時只需即可抽出即可。</p><p><strong>優點：</strong> 穩固耐用、更換簡單，無螺絲鬆脫風險。</p><p><strong>缺點：</strong> 普及度低、一般五金舖難買/配到；更換成本較高。</p></div></div></div>
+                <div class="highlight"><strong>核心區別總結：</strong> 螺絲膽靠螺絲固定；插針膽靠插銷鎖死。兩者絕不通用，購買前務必確認自家鎖膽類型。</div>
+            </div>
+
+            <div class="card"><h2>三、美式鎖膽 7 大常見故障及解決方案</h2><p>無論螺絲膽定插針膽，用得耐都會出現不同問題。以下根據香港鎖匠維修經驗整合常見故障：</p><div style="overflow-x: auto;"><table class="fault-table"><thead><tr><th>故障現象</th><th>可能原因</th><th>建議處理方法</th></tr></thead><tbody><tr><td>鎖匙插入後扭不動／卡死</td><td>鎖膽內部珠片磨損、有異物或潤滑不足</td><td>噴專用鎖芯潤滑劑 (WD40不建議)，若無效需更換鎖膽</td></tr><tr><td>鎖膽可空轉但無法收回鎖舌</td><td>螺絲膽固定螺絲鬆脫，或插針膽聯動件斷裂</td><td>拆開面板檢查，螺絲膽請重新鎖緊螺絲；插針膽需由師傅更換聯動套件</td></tr><tr><td>鎖膽成個被抽出門外</td><td>螺絲膽螺絲完全甩掉 / 插針膽插銷遺失</td><td>即時更換固定件，否則安全隱患極大，需專業維修</td></tr><tr><td>鎖匙插唔入或插到一半卡住</td><td>鎖膽匙孔有異物、珠片移位或鎖膽變形</td><td>嘗試用壓縮空氣清潔，無效請更換鎖膽</td></tr><tr><td>室內把手正常但室外鎖匙無法開門</td><td>鎖膽與鎖體離合機制故障，或鎖膽損壞</td><td>測試鎖膽是否運作正常，必要時更換鎖膽並重新匹配</td></tr><tr><td>鎖膽轉動時發出刺耳金屬聲</td><td>內部零件鏽蝕或磨損嚴重</td><td>需更換全新鎖膽，避免鎖死困於門外</td></tr><tr><td>插針膽鎖匙轉動順暢但鎖體無反應</td><td>插針與鎖體撥動片脫離</td><td>必須拆鎖重組，屬複雜故障，即時call 101開鎖上門處理</td></tr></tbody></table></div></div>
+
+            <div class="card"><h2><i class="fas fa-tools"></i> 四、DIY更換鎖膽必讀：螺絲膽 vs 插針膽注意事項</h2><div class="grid-2"><div class="highlight"><i class="fas fa-check-double"></i> <strong>螺絲膽更換要點</strong><br>1. 先鬆開門邊鎖體側面的固定螺絲 (喺鎖膽水平側邊)<br>2. 扭出舊鎖膽，量度鎖膽長度（常見尺寸有 寸2/寸3/寸5/寸2寸2）<br>3. 選購相同尺寸既螺絲膽<br>4. 安裝後螺絲必須擰緊，但要避免過度用力滑牙。</div><div class="highlight"><i class="fas fa-exclamation-circle"></i> <strong>插針膽更換警告</strong><br>1. 插針膽冇外露螺絲，固定插銷藏於鎖體內部。<br>2. 拆出舊鎖膽，量度鎖膽長度<br>3. 選購相同尺寸既螺絲膽，市場五金鋪零售插針膽型號較少，或需向鎖鋪或專業鎖匠購買。<br>4. 安裝後插銷必須插緊，但要避免插錯位置。</div></div><div class="warning-box"><i class="fas fa-lightbulb"></i> <strong>101開鎖貼士：</strong> 唔肯定自己係螺絲膽定插針膽？可以由門邊望入鎖體：見到有螺絲就係螺絲膽，見到有插銷即為插針膽。如有懷疑可whatsapp傳相俾我哋免費代辨認。</div></div>
+
+            <div class="card"><h2><i class="fas fa-briefcase"></i> 五、真實案例：兩種鎖膽維修實錄</h2><div class="case-grid"><div class="case-card"><img class="case-image" src="https://picsum.photos/id/20/600/800" alt="螺絲膽鬆脫維修" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 將軍澳 · 新都城</div><h3>螺絲膽鬆脫引致鎖匙空轉</h3><div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-exclamation-triangle"></i> <strong>原因：</strong> 固定螺絲日久移位，鎖膽輕微外移，鎖匙無法帶動鎖體。</div><p>師傅到場後重新定位鎖膽，收緊螺絲並加上防鬆墊片，15分鐘解決問題。收費$380，並提醒定期檢查螺絲。</p></div></div><div class="case-card"><img class="case-image" src="https://picsum.photos/id/104/600/800" alt="插針膽老化更換" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 九龍塘 · 又一居</div><h3>插針膽老化導致鎖匙斷裂</h3><div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-microchip"></i> <strong>原因：</strong> 插針膽內部珠片鏽蝕，鎖匙卡死扭斷。</div><p>由於插針膽結構特殊，師傅使用專用退銷器取出舊膽並更換全新原廠插針膽，同時保養鎖體，全程約45分鐘，客戶大讚專業。</p></div></div></div></div>
+
+            <div class="card"><h2><i class="fas fa-building"></i> 六、原裝採用插針鎖膽嘅香港屋苑參考</h2><p>以下屋苑/物業發展商原廠配置較多採用<strong>插針鎖膽 </strong>。如果你居住喺下列屋苑，更換鎖膽時請特別注意原結構，避免買錯螺絲膽導致無法安裝。</p><div class="estate-list">
+            <span class="estate-tag">洪水橋丹桂軒</span>
+            <span class="estate-tag">洪水橋泉薈</span>
+            <span class="estate-tag">葵涌盛景居</span>
+            <span class="estate-tag">紅磡城中匯</span>
+            <span class="estate-tag">屯門豫豐花園</span>
+            <span class="estate-tag">上水御景峰</span>
+            <span class="estate-tag">屯門湖康警察宿舍</span>
+            <span class="estate-tag">旺角 i-Home</span>
+            <span class="estate-tag"> 西灣河嘉亨灣</span>
+            <span class="estate-tag"> 元朗 Yoho Midtown</span></div><div class="highlight"><i class="fas fa-info-circle"></i> 溫馨提示：以上為綜合市場經驗整理，實際鎖膽類型可能因不同期數、年份或業主自行更換而有變化。購買鎖膽前前最好先拆出鎖膽確認。</div></div>
+
+            <div class="card"><h2>七、鎖體實物對比：插針膽鎖體 vs 螺絲膽鎖體</h2><p>鎖體結構係決定買邊款鎖膽因素，兩者結構完全唔同。以下圖片位置展示兩種鎖體嘅實際分別，認清特徵先唔會買錯零件。</p><div class="side-by-side"><div class="compare-card" style="margin:0;"><div class="img-placeholder" style="aspect-ratio: 4 / 3;"><span>插針鎖膽專用鎖體</span><small style="font-size:12px;">特徵：冇螺絲孔，鎖膽插入後以插銷固定</small></div><div class="compare-content"><div class="badge-type" style="background:#2c3e4e;">插針鎖體</div><ul style="margin-left: 20px; color: #4a627a;"><li>鎖體上冇固定鎖膽既螺絲</li><li>明顯見到插銷</li><li>常見於某些屋苑原裝鎖</li></ul></div></div><div class="compare-card" style="margin:0;"><div class="img-placeholder" style="aspect-ratio: 4 / 3;"><span>螺絲膽專用鎖體</span><small style="font-size:12px;">特徵：可見螺絲孔位，以螺絲收緊鎖膽</small></div><div class="compare-content"><div class="badge-type" style="background:#2c3e4e;">螺絲鎖體</div><ul style="margin-left: 20px; color: #4a627a;"><li>鎖膽側邊或正下方有螺絲固定孔</li><li>更換時只需螺絲批，DIY容易</li><li>香港主流門鎖品牌 (如耶魯(YALE)、MUL-T-LOCK、Bonco) 常見配置</li></ul></div></div></div><div class="warning-box"><i class="fas fa-arrow-right"></i> 點樣快速分辨？望門邊鎖體側面：<strong>有螺絲就係螺絲膽系統；只有針銷冇螺絲就係插針膽系統</strong>。</div></div>
+
+            <div class="card" style="background:#eef2fa;"><h3>101開鎖｜美式鎖膽專業支援</h3><p>無論您嘅美式鎖係鎖膽定鎖體出現故障，我地101開鎖多年經驗，即場快速判斷問題並提供更換、維修服務。全港18區上門，收費透明，絕不濫收。</p><div style="text-align: center; margin-top: 24px;"><div class="contact-buttons" style="margin-top: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;"><a href="tel:+85266101101" class="btn btn-primary btn-split"><span class="btn-line1"><i class="fas fa-phone-alt"></i> 24小時 緊急熱線</span><span class="btn-line2">66 101 101</span></a><a href="https://wa.me/85266101101?text=開鎖查詢報價" target="_blank" class="btn btn-outline btn-split"><span class="btn-line1"><i class="fab fa-whatsapp"></i> WhatsApp</span><span class="btn-line2">即時查詢報價</span></a></div></div></div>
+        </div>
+    </section>
+
+    <div class="container" style="margin-bottom: 40px;"><div class="disclaimer-note"><i class="fas fa-file-contract"></i> 資料只供參考，更換鎖膽涉及精密零件，自行操作可能引致門鎖損壞或安全風險。本公司不會為客人自行維修所引致的損失負責。如有疑問請即聯絡專業鎖匠。屋苑清單僅供參考，實際配置以現場為準。</div></div>
+
+    <!-- 頁腳 -->
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>開鎖</span></div>
+                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <h4>Blog</h4>
+                <a href="../news.html" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="../locksmith-real-case.html" class="footer-blog-link">真實個案</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                    <li><a href="../service.html">服務項目</a></li>
+                    <li><a href="../index.html#commitment">服務承諾</a></li>
+                    <li><a href="../price.html">收費參考</a></li>
+                    <li><a href="../faq.html">常見問題</a></li>
+                    <li><a href="../index.html#about">關於我們</a></li>
+                    <li><a href="../index.html#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>追蹤我們</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 101開鎖 版權所有</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/news.js" defer></script>
+</body>
+
+</html>
