@@ -8,7 +8,10 @@
     <meta name="description" content="按地區分類開鎖服務文章：中西區、東區、灣仔、九龍城、觀塘、沙田、元朗等十七區開鎖知識、電子鎖安裝案例及社區防盜資訊。">
     <meta name="keywords" content="地區開鎖, 香港開鎖, 中西區開鎖, 觀塘開鎖, 沙田換鎖, 十七區鎖匠">
     <meta name="author" content="101開鎖">
-    <link rel="shortcut icon" href="image/logo.webp">    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="image/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="image/favicon.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" sizes="180x180">    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <link rel="preload" as="image" href="image/wallpaper.jpeg" fetchpriority="high">
 
@@ -26,7 +29,7 @@
 .hero-small {
             position: relative;
             background: url('image/wallpaper.jpeg') no-repeat center center / cover;
-            padding: 80px 0;
+            padding: 56px 0;
             color: white;
             text-align: center;
             isolation: isolate;
@@ -51,6 +54,10 @@
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
 
+        .hero-small h1 {
+            font-size: 1.8rem;
+        }
+
         .category-tabs {
             display: flex;
             flex-wrap: wrap;
@@ -69,9 +76,10 @@
             color: #2c3e4e;
             text-decoration: none;
             transition: all 0.2s;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             cursor: pointer;
-            white-space: nowrap;
+            white-space: normal;
+            padding: 4px 12px;
         }
 
         .category-tab.active,
@@ -83,9 +91,9 @@
 
         .news-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 60px;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 48px;
         }
 
         .news-article-link {
@@ -102,7 +110,8 @@
         .news-image-block {
             position: relative;
             width: 100%;
-            height: 320px;
+            height: auto;
+            aspect-ratio: 3 / 4;
             background: linear-gradient(135deg, #e0e7ef 0%, #cbd5e1 100%);
             border-radius: 16px;
             overflow: hidden;
@@ -121,13 +130,13 @@
 
         .news-date {
             position: absolute;
-            top: 16px;
-            right: 16px;
+            top: 8px;
+            right: 8px;
             background: rgba(0, 0, 0, 0.65);
             backdrop-filter: blur(4px);
-            padding: 4px 12px;
+            padding: 2px 8px;
             border-radius: 999px;
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             font-weight: 500;
             color: #f5f5f5;
             letter-spacing: 0.5px;
@@ -197,8 +206,9 @@
 
         .news-layout {
             display: flex;
-            gap: 40px;
-            margin-bottom: 60px;
+            flex-direction: column;
+            gap: 32px;
+            margin-bottom: 48px;
         }
 
         .main-content {
@@ -327,70 +337,59 @@
 
         .float-buttons {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1000;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            gap: 15px;
+            gap: 12px;
         }
 
-        /* 统一图片显示方式：与 news.html 完全一致，确保移动端 3:4 比例完美覆盖 */
-        @media (max-width: 900px) {
-            .news-image-block {
-                height: auto !important;
-                aspect-ratio: 3 / 4;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
-
-        @media (max-width: 600px) {
+        @media (min-width: 601px) {
             .float-buttons {
-                bottom: 20px;
-                right: 20px;
-                gap: 12px;
+                bottom: 30px;
+                right: 30px;
+                gap: 15px;
             }
 
-            .news-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .news-image-block {
-                height: auto !important;
-                aspect-ratio: 3 / 4;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .hero-small h1 {
-                font-size: 1.8rem;
-            }
-
-            .category-tab {
-                white-space: normal;
-                font-size: 0.75rem;
-                padding: 4px 12px;
-            }
-
-            .news-date {
-                top: 8px;
-                right: 8px;
-                padding: 2px 8px;
-                font-size: 0.6rem;
-            }
-        }
-
-        @media (max-width: 900px) {
             .news-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .category-tab {
+                white-space: nowrap;
+                font-size: 0.85rem;
+                padding: 6px 18px;
+            }
+
+            .news-date {
+                top: 16px;
+                right: 16px;
+                padding: 4px 12px;
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (min-width: 901px) {
+            .hero-small {
+                padding: 80px 0;
+            }
+
+            .hero-small h1 {
+                font-size: revert;
+            }
+
+            .news-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                margin-bottom: 60px;
+            }
+
             .news-layout {
-                flex-direction: column;
+                flex-direction: row;
+                gap: 40px;
+                margin-bottom: 60px;
             }
         }
     </style>
@@ -1131,9 +1130,9 @@
                     e.preventDefault();
                     const lang = btn.getAttribute('data-lang');
                     let targetUrl = '';
-                    if (lang === 'zh') targetUrl = '/zh-CN/index.html';
-                    else if (lang === 'en') targetUrl = '/en/index.html';
-                    else if (lang === 'hk') targetUrl = '/zh-HK/index.html';
+                    if (lang === 'zh') targetUrl = 'zh-CN/index.html';
+                    else if (lang === 'en') targetUrl = 'en/index.html';
+                    else if (lang === 'hk') targetUrl = 'index.html';
                     if (targetUrl && window.location.pathname !== targetUrl) window.location.href = targetUrl;
                 });
             });

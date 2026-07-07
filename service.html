@@ -10,7 +10,10 @@
     <meta name="description" content="101開鎖提供全港24小時開鎖、換鎖、電子鎖安裝維修、門禁系統、車鎖及夾萬服務。專業鎖匠團隊，不成功不收費，極速30分鐘到達。">
     <meta name="keywords" content="24小時開鎖,換鎖,電子鎖安裝,門禁系統,車鎖,夾萬開鎖,香港開鎖公司">
     <meta name="author" content="101開鎖公司">
-    <link rel="shortcut icon" href="image/logo.webp">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="image/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="image/favicon.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" sizes="180x180">
 
     <!-- Google Fonts & Font Awesome -->    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
@@ -26,14 +29,14 @@
     </noscript>
     <style>
 section {
-            padding: 80px 0;
+            padding: 40px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 48px;
+            font-size: 1.8rem;
+            margin-bottom: 28px;
             position: relative;
         }
 
@@ -49,14 +52,14 @@ section {
 
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
         }
 
         .need-router {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: 1fr;
             gap: 16px;
             margin: -16px 0 40px;
         }
@@ -106,7 +109,7 @@ section {
         .service-card {
             background: white;
             border-radius: 16px;
-            padding: 32px 24px;
+            padding: 24px 20px;
             box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
             border: 1px solid #edf2f7;
             transition: all 0.25s ease;
@@ -177,13 +180,13 @@ section {
         .commitment-mini {
             background: #eef2fa;
             border-radius: 16px;
-            padding: 32px;
+            padding: 24px 20px;
             margin: 32px 0 24px;
             text-align: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 32px;
+            gap: 20px;
         }
 
         .commit-point {
@@ -246,63 +249,98 @@ section {
 
         .float-buttons {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1000;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            gap: 15px;
+            gap: 12px;
         }
 
-        @media (max-width: 600px) {
+        @media (min-width: 601px) {
             .float-buttons {
-                bottom: 20px;
-                right: 20px;
-                gap: 12px;
+                bottom: 30px;
+                right: 30px;
+                gap: 15px;
             }
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
         }
 
         .btn-split {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            white-space: nowrap;
+            flex: 1 1 0;
+            min-width: 160px;
+            flex-direction: column;
+            gap: 6px;
+            white-space: normal;
+            padding: 12px 12px;
+            text-align: center;
+            box-sizing: border-box;
+            min-height: 85px;
         }
 
-        @media (max-width: 768px) {
-            .contact-buttons {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-                margin-top: 30px;
+        .btn-split .btn-line1,
+        .btn-split .btn-line2 {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-split i {
+            margin-right: 0;
+            margin-bottom: 2px;
+        }
+
+        @media (min-width: 769px) {
+            section {
+                padding: 80px 0;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+                margin-bottom: 48px;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 30px;
+                margin-bottom: 60px;
+            }
+
+            .need-router {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+
+            .service-card {
+                padding: 32px 24px;
+            }
+
+            .commitment-mini {
+                padding: 32px;
+                gap: 32px;
             }
 
             .btn-split {
-                flex: 1 1 0;
-                min-width: 160px;
-                flex-direction: column;
-                gap: 6px;
-                white-space: normal;
-                padding: 12px 12px;
-                text-align: center;
-                box-sizing: border-box;
-                min-height: 85px;
-                justify-content: center;
-            }
-
-            .btn-split .btn-line1,
-            .btn-split .btn-line2 {
-                display: block;
-                width: 100%;
-                text-align: center;
+                flex: 0 0 auto;
+                min-width: 0;
+                flex-direction: row;
+                gap: 10px;
+                white-space: nowrap;
+                min-height: 0;
             }
 
             .btn-split i {
-                margin-right: 0;
-                margin-bottom: 2px;
+                margin-bottom: 0;
             }
         }
     </style>
@@ -876,38 +914,16 @@ section {
                 });
             });
 
-            // 語言切換跳轉：支援繁體(zh-HK)、簡體(zh-CN)、英文(en)
+            // 語言切換：所有語言按鈕都跳回對應首頁
             const langBtns = document.querySelectorAll('.lang-option, .drawer-lang-option');
             langBtns.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     const lang = btn.getAttribute('data-lang');
-                    let langFolder = '';
-                    if (lang === 'zh') {
-                        langFolder = 'zh-CN';
-                    } else if (lang === 'en') {
-                        langFolder = 'en';
-                    } else if (lang === 'hk') {
-                        langFolder = 'zh-HK';
-                    } else {
-                        return;
-                    }
-                    // 獲取當前路徑的目錄前綴（支援子目錄部署）
-                    let currentPath = window.location.pathname;
-                    let baseDir = '';
-                    const lastSlash = currentPath.lastIndexOf('/');
-                    if (lastSlash > 0) {
-                        baseDir = currentPath.substring(0, lastSlash);
-                    }
-                    // 目標文件名為 service.html
-                    let targetUrl = baseDir ? (baseDir + '/' + langFolder + '/service.html') : ('/' + langFolder + '/service.html');
-                    // 避免重複跳轉相同路徑
-                    if (window.location.pathname !== targetUrl && window.location.href.split('?')[0].split('#')[0] !== window.location.origin + targetUrl) {
-                        window.location.href = targetUrl;
-                    }
+                    const targetUrl = lang === 'zh' ? 'zh-CN/index.html' : (lang === 'en' ? 'en/index.html' : 'index.html');
+                    if (targetUrl) window.location.href = targetUrl;
                 });
             });
-
             // WhatsApp 文字滾動隱藏 + 20秒後自動顯示
             const whatsappTextEl = document.getElementById('whatsappText');
             if (whatsappTextEl) {

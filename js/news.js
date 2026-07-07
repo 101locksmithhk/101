@@ -106,11 +106,17 @@
         });
     }
 
-    // 語言切換按鈕（暫不實現翻譯）
+    // 語言切換按鈕：所有語言都跳回對應首頁
     document.querySelectorAll('.lang-option, .drawer-lang-option').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log("語言切換功能暫未啟用，敬請期待完整多語言版。");
+            const lang = btn.getAttribute('data-lang');
+            const isNestedPage = window.location.pathname.includes('/news/') || window.location.pathname.includes('/case/');
+            const prefix = isNestedPage ? '../' : '';
+            const targetUrl = lang === 'zh'
+                ? `${prefix}zh-CN/index.html`
+                : (lang === 'en' ? `${prefix}en/index.html` : `${prefix}index.html`);
+            if (targetUrl) window.location.href = targetUrl;
         });
     });
 })();

@@ -10,7 +10,10 @@
     <meta name="description" content="101開鎖透明收費指南：家居開鎖$500起，電子鎖$800起，商業門鎖$900起。先報價後施工，不成功不收費，絕無隱藏收費。24小時開鎖報價即時回覆。">
     <meta name="keywords" content="開鎖價錢,開鎖收費,開鎖幾多錢,家居開鎖價格,電子鎖開鎖費用,24小時開鎖收費,透明報價,香港鎖匠收費">
     <meta name="author" content="101開鎖公司">
-    <link rel="shortcut icon" href="image/logo.webp">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="image/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="image/favicon.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" sizes="180x180">
 
     <!-- Google Fonts & Font Awesome -->    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
@@ -27,14 +30,14 @@
     <style>
 /* 收費頁面卡片、表格區塊樣式 (保留原有專業設計) */
         section {
-            padding: 80px 0;
+            padding: 40px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 48px;
+            font-size: 1.8rem;
+            margin-bottom: 28px;
             position: relative;
         }
 
@@ -50,15 +53,15 @@
 
         .commitment-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
         }
 
         .commit-card {
             background: white;
             border-radius: 16px;
-            padding: 32px 24px;
+            padding: 24px 20px;
             box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
             border: 1px solid #edf2f7;
             transition: all 0.25s ease;
@@ -167,51 +170,71 @@
         .button-group-responsive {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 48px;
-            flex-wrap: wrap;
-            /* 極窄螢幕可換行，但仍保持居中 */
+            gap: 16px;
+            margin-top: 36px;
+            flex-wrap: nowrap;
         }
 
         .button-group-responsive .btn {
-            flex: 0 0 auto;
-            white-space: nowrap;
+            flex: 1 1 0;
+            min-width: 0;
+            white-space: normal;
+            text-align: center;
+            padding: 12px 8px;
+            font-size: 0.85rem;
         }
 
-        /* 手機版調整：讓按鈕等寬並稍微縮小內距，仍保持居中 */
-        @media (max-width: 768px) {
+        @media (min-width: 769px) {
+            section {
+                padding: 80px 0;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+                margin-bottom: 48px;
+            }
+
+            .commitment-grid {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 30px;
+                margin-bottom: 60px;
+            }
+
+            .commit-card {
+                padding: 32px 24px;
+            }
+
             .button-group-responsive {
-                flex-wrap: nowrap;
-                gap: 16px;
+                gap: 20px;
+                margin-top: 48px;
+                flex-wrap: wrap;
             }
 
             .button-group-responsive .btn {
-                flex: 1 1 0;
-                min-width: 0;
-                white-space: normal;
-                text-align: center;
-                padding: 12px 8px;
-                font-size: 0.85rem;
+                flex: 0 0 auto;
+                white-space: nowrap;
+                padding: 12px 28px;
+                font-size: 1rem;
             }
         }
 
         /* 浮動按鈕 (與主站一致) */
         .float-buttons {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1000;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            gap: 15px;
+            gap: 12px;
         }
 
-        @media (max-width: 600px) {
+        @media (min-width: 601px) {
             .float-buttons {
-                bottom: 20px;
-                right: 20px;
-                gap: 12px;
+                bottom: 30px;
+                right: 30px;
+                gap: 15px;
             }
         }
 
@@ -714,52 +737,16 @@
                 link.addEventListener('click', () => { closeDrawer(); });
             });
 
-            // ========= 多語言跳轉：支援繁體(zh-HK)、簡體(zh-CN)、英文(en) 並跳轉至對應資料夾下的 price.html =========
-            function switchToLanguage(lang) {
-                let langFolder = '';
-                if (lang === 'zh') langFolder = 'zh-CN';
-                else if (lang === 'en') langFolder = 'en';
-                else if (lang === 'hk') langFolder = 'zh-HK';
-                else return;
-
-                let currentPath = window.location.pathname;
-                const langPattern = /\/(zh-CN|en|zh-HK)\//;
-                let targetUrl = '';
-
-                if (langPattern.test(currentPath)) {
-                    targetUrl = currentPath.replace(langPattern, `/${langFolder}/`);
-                } else {
-                    let baseDir = '';
-                    const lastSlash = currentPath.lastIndexOf('/');
-                    let fileName = 'price.html';
-                    if (lastSlash !== -1) {
-                        const maybeFile = currentPath.substring(lastSlash + 1);
-                        if (maybeFile.includes('.') && !maybeFile.endsWith('/')) {
-                            fileName = maybeFile;
-                            baseDir = currentPath.substring(0, lastSlash + 1);
-                        } else {
-                            baseDir = currentPath;
-                        }
-                    } else {
-                        baseDir = '/';
-                    }
-                    if (!baseDir.endsWith('/')) baseDir += '/';
-                    targetUrl = baseDir + langFolder + '/' + fileName;
-                }
-                if (window.location.pathname !== targetUrl && window.location.href.split('?')[0].split('#')[0] !== window.location.origin + targetUrl) {
-                    window.location.href = targetUrl;
-                }
-            }
-
+            // 語言切換：所有語言按鈕都跳回對應首頁
             const langBtns = document.querySelectorAll('.lang-option, .drawer-lang-option');
             langBtns.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     const lang = btn.getAttribute('data-lang');
-                    if (lang) switchToLanguage(lang);
+                    const targetUrl = lang === 'zh' ? 'zh-CN/index.html' : (lang === 'en' ? 'en/index.html' : 'index.html');
+                    if (targetUrl) window.location.href = targetUrl;
                 });
             });
-
             // WhatsApp 文字滾動隱藏效果
             const whatsappTextEl = document.getElementById('whatsappText');
             if (whatsappTextEl) {

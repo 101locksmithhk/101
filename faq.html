@@ -15,7 +15,10 @@
 
     <!-- Twitter Card -->
 
-    <link rel="shortcut icon" href="image/logo.webp" type="image/webp">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="image/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="image/favicon.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" sizes="180x180">
 
     <!-- 外部資源 -->    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
@@ -34,20 +37,20 @@
 /* 浮動按鈕 (與主站一致) */
         .float-buttons {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1000;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            gap: 15px;
+            gap: 12px;
         }
 
-        @media (max-width: 600px) {
+        @media (min-width: 601px) {
             .float-buttons {
-                bottom: 20px;
-                right: 20px;
-                gap: 12px;
+                bottom: 30px;
+                right: 30px;
+                gap: 15px;
             }
         }
 
@@ -84,8 +87,8 @@
             background: white;
             border: none;
             text-align: left;
-            padding: 22px 28px;
-            font-size: 1.1rem;
+            padding: 18px 20px;
+            font-size: 1rem;
             font-weight: 600;
             font-family: 'Poppins', sans-serif;
             color: #1e2a3e;
@@ -135,11 +138,11 @@
         }
 
         .accordion-answer p {
-            padding: 24px 28px 28px 28px;
+            padding: 20px 22px 24px;
             margin: 0;
             color: #2c4c6c;
             line-height: 1.65;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .faq-contact-card {
@@ -151,8 +154,9 @@
             text-align: center;
             border-left: 6px solid #d4af37;
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             gap: 20px;
         }
@@ -183,7 +187,7 @@
 
         .section-title {
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             margin-bottom: 48px;
             position: relative;
         }
@@ -199,30 +203,31 @@
         }
 
         h1.section-title {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 48px;
         }
 
-        @media (max-width: 640px) {
+        @media (min-width: 641px) {
             .accordion-question {
-                padding: 18px 20px;
-                font-size: 1rem;
+                padding: 22px 28px;
+                font-size: 1.1rem;
             }
 
             .accordion-answer p {
-                padding: 20px 22px 24px;
-                font-size: 0.95rem;
+                padding: 24px 28px 28px 28px;
+                font-size: 1rem;
             }
 
             .faq-contact-card {
-                flex-direction: column;
-                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
             }
 
             .section-title,
             h1.section-title {
-                font-size: 1.8rem;
+                font-size: 2.2rem;
             }
         }
     </style>
@@ -706,43 +711,14 @@
                 showText();
             }
 
-            // ========= 多語言跳轉：繁體(zh-HK)、簡體(zh-CN)、英文(en) 跳轉至對應語言的 faq.html =========
+            // 語言切換：所有語言按鈕都跳回對應首頁
             const langBtns = document.querySelectorAll('.lang-option, .drawer-lang-option');
             langBtns.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     const lang = btn.getAttribute('data-lang');
-                    let langFolder = '';
-                    if (lang === 'zh') {
-                        langFolder = 'zh-CN';
-                    } else if (lang === 'en') {
-                        langFolder = 'en';
-                    } else if (lang === 'hk') {
-                        langFolder = 'zh-HK';
-                    } else {
-                        return;
-                    }
-                    // 獲取當前路徑的目錄前綴（支援子目錄部署）
-                    let currentPath = window.location.pathname;
-                    let baseDir = '';
-                    const lastSlash = currentPath.lastIndexOf('/');
-                    if (lastSlash > 0) {
-                        const lastSegment = currentPath.substring(lastSlash + 1);
-                        if (lastSegment === 'faq.html' || lastSegment === 'index.html' || lastSegment === '') {
-                            baseDir = currentPath.substring(0, lastSlash);
-                        } else {
-                            baseDir = currentPath.substring(0, lastSlash);
-                        }
-                    } else {
-                        baseDir = '';
-                    }
-                    // 組裝目標 URL (例如: /zh-CN/faq.html 或 /subdir/zh-CN/faq.html)
-                    let targetUrl = baseDir ? (baseDir + '/' + langFolder + '/faq.html') : ('/' + langFolder + '/faq.html');
-                    const currentUrlWithoutHash = window.location.href.split('#')[0].split('?')[0];
-                    const targetFullUrl = window.location.origin + targetUrl;
-                    if (currentUrlWithoutHash !== targetFullUrl) {
-                        window.location.href = targetUrl;
-                    }
+                    const targetUrl = lang === 'zh' ? 'zh-CN/index.html' : (lang === 'en' ? 'en/index.html' : 'index.html');
+                    if (targetUrl) window.location.href = targetUrl;
                 });
             });
         })();

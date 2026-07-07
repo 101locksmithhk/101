@@ -8,7 +8,10 @@
     <meta name="description" content="101開鎖最新消息、開鎖知識文章、電子鎖選購指南、鎖匠行業資訊。掌握門鎖安全知識，了解最新開鎖技術和行業動態。">
     <meta name="keywords" content="開鎖新聞, 開鎖知識, 開鎖文章, 電子鎖指南, 換鎖資訊, 鎖匠行業, 門鎖安全">
     <meta name="author" content="101開鎖">
-    <link rel="shortcut icon" href="image/logo.webp">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="image/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="image/favicon.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" sizes="180x180">
     <!-- Performance: preconnect to font providers and CDN -->    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- Preload hero image for faster LCP -->
@@ -31,7 +34,7 @@
         .hero-small {
             position: relative;
             background: url('image/wallpaper.jpeg') no-repeat center center / cover;
-            padding: 80px 0;
+            padding: 56px 0;
             color: white;
             text-align: center;
             isolation: isolate;
@@ -136,9 +139,9 @@
         /* ===== 文章展示 (圖片比例/樣式完全與 locksmith-real-case.html 一致) ===== */
         .news-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 60px;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 48px;
         }
 
         .news-article-link {
@@ -156,7 +159,8 @@
         .news-image-block {
             position: relative;
             width: 100%;
-            height: 320px;
+            height: auto;
+            aspect-ratio: 3 / 4;
             background: linear-gradient(135deg, #e0e7ef 0%, #cbd5e1 100%);
             border-radius: 16px;
             overflow: hidden;
@@ -242,8 +246,9 @@
 
         .news-layout {
             display: flex;
-            gap: 40px;
-            margin-bottom: 60px;
+            flex-direction: column;
+            gap: 32px;
+            margin-bottom: 48px;
         }
 
         .main-content {
@@ -369,57 +374,42 @@
         /* 浮動按鈕 */
         .float-buttons {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1000;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            gap: 15px;
+            gap: 12px;
         }
 
-        /* ========= 手機與平板螢幕：完美實現 3:4 寬高比 (與 locksmith-real-case.html 完全一致) ========= */
-        @media (max-width: 900px) {
-            .news-image-block {
-                height: auto !important;
-                aspect-ratio: 3 / 4;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
-
-        @media (max-width: 600px) {
+        @media (min-width: 601px) {
             .float-buttons {
-                bottom: 20px;
-                right: 20px;
-                gap: 12px;
+                bottom: 30px;
+                right: 30px;
+                gap: 15px;
             }
 
-            .news-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-small h1 {
-                font-size: 1.8rem;
-            }
-
-            .news-image-block {
-                height: auto !important;
-                aspect-ratio: 3 / 4;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
-
-        @media (max-width: 900px) {
             .news-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+        }
+
+        @media (min-width: 901px) {
+            .hero-small {
+                padding: 80px 0;
+            }
+
+            .news-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                margin-bottom: 60px;
+            }
 
             .news-layout {
-                flex-direction: column;
+                flex-direction: row;
+                gap: 40px;
+                margin-bottom: 60px;
             }
         }
     </style>
@@ -744,9 +734,9 @@
                     e.preventDefault();
                     const lang = btn.getAttribute('data-lang');
                     let targetUrl = '';
-                    if (lang === 'zh') targetUrl = '/zh-CN/index.html';
-                    else if (lang === 'en') targetUrl = '/en/index.html';
-                    else if (lang === 'hk') targetUrl = '/zh-HK/index.html';
+                    if (lang === 'zh') targetUrl = 'zh-CN/index.html';
+                    else if (lang === 'en') targetUrl = 'en/index.html';
+                    else if (lang === 'hk') targetUrl = 'index.html';
                     else return;
                     if (window.location.pathname !== targetUrl) window.location.href = targetUrl;
                 });

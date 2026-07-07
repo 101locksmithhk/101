@@ -37,7 +37,7 @@ footer {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 20px;
 }
 
 .breadcrumb-bar {
@@ -131,7 +131,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;
+    padding: 10px 20px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -143,8 +143,8 @@ footer {
 }
 
 .logo img {
-    width: 72px;
-    height: 72px;
+    width: 56px;
+    height: 56px;
     display: block;
     border-radius: 12px;
     object-fit: cover;
@@ -152,7 +152,7 @@ footer {
 }
 
 .logo h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #1e2a3e;
     margin: 0;
@@ -164,7 +164,7 @@ footer {
 }
 
 .desktop-nav {
-    display: flex;
+    display: none;
     gap: 28px;
     align-items: center;
 }
@@ -238,7 +238,7 @@ footer {
 }
 
 .quick-actions {
-    display: flex;
+    display: none;
     gap: 12px;
     align-items: center;
     margin-left: 20px;
@@ -291,7 +291,7 @@ footer {
 }
 
 .mobile-menu-btn {
-    display: none;
+    display: block;
     font-size: 1.8rem;
     cursor: pointer;
     background: none;
@@ -464,9 +464,10 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.2fr;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .footer-col h3 {
@@ -538,6 +539,7 @@ footer {
     display: flex;
     gap: 20px;
     margin: 20px 0;
+    justify-content: center;
 }
 
 .footer-social a {
@@ -551,6 +553,10 @@ footer {
 }
 
 .footer-contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
     margin: 20px 0;
 }
 
@@ -560,7 +566,7 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-right: 20px;
+    margin-right: 0;
     font-size: 0.9rem;
 }
 
@@ -580,15 +586,15 @@ footer {
     position: fixed;
     left: 20px;
     bottom: 20px;
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     background: #d4af37;
     color: #1e2a3e;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
     z-index: 1050;
     text-decoration: none;
@@ -602,8 +608,8 @@ footer {
 
 .whatsapp-wrapper {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 16px;
+    bottom: 16px;
     z-index: 1050;
     display: flex;
     align-items: center;
@@ -611,6 +617,7 @@ footer {
 }
 
 .whatsapp-text {
+    display: none;
     background: rgba(30, 42, 62, 0.92);
     color: white;
     padding: 8px 12px;
@@ -628,15 +635,15 @@ footer {
 }
 
 .float-button-whatsapp {
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     background: #25D366;
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.7rem;
+    font-size: 1.35rem;
     box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
     text-decoration: none;
     transition: transform 0.2s ease, background 0.2s ease;
@@ -647,72 +654,77 @@ footer {
     background: #1ebe5d;
 }
 
-@media (max-width: 900px) {
-    .desktop-nav {
-        display: none;
-    }
-
-    .mobile-menu-btn {
-        display: block;
-    }
-
-    .quick-actions {
-        display: none;
-    }
-
-    .nav-container {
-        padding: 10px 20px;
-    }
-
-    .logo img {
-        width: 56px;
-        height: 56px;
-    }
-
-    .logo h1 {
-        font-size: 1.3rem;
-    }
-
+@media (min-width: 601px) {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-social {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .footer-contact-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .footer-contact-links a {
-        margin-right: 0;
+        align-items: flex-start;
     }
 
     .float-button-phone,
     .float-button-whatsapp {
-        width: 50px;
-        height: 50px;
-        font-size: 1.35rem;
+        width: 56px;
+        height: 56px;
     }
 
     .whatsapp-text {
-        display: none;
+        display: block;
     }
 
     .whatsapp-wrapper {
-        right: 16px;
-        bottom: 16px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (min-width: 901px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .desktop-nav {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .quick-actions {
+        display: flex;
+    }
+
+    .nav-container {
+        padding: 12px 24px;
+    }
+
+    .logo img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1.2fr;
+        gap: 40px;
+    }
+
+    .footer-contact-links {
+        display: block;
+    }
+
+    .footer-contact-links a {
+        margin-right: 20px;
     }
 }
