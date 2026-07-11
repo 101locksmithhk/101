@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://101locksmith.com/price.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -176,9 +176,17 @@
   </url>
   <url>
     <loc>https://101locksmith.com/news/euro-profile-lock-intro.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://101locksmith.com/image/case/case9/wallpaper.jpeg</image:loc>
+      <image:caption>屯門鎖芯斷匙案例</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://101locksmith.com/image/case/case13/wallpaper.jpeg</image:loc>
+      <image:caption>九龍灣鎖體故障案例</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://101locksmith.com/news/iIntegral-lock.html</loc>

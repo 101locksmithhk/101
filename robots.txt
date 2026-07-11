@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://101locksmith.com/sitemap.xml
+Sitemap: https://101locksmith.com/sitemap-static.xml
