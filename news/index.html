@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>開鎖新聞及知識文章 | 101開鎖 | 24小時專業開鎖換鎖</title>
+    <meta name="description" content="101開鎖最新消息、開鎖知識文章、電子鎖選購指南、鎖匠行業資訊。掌握門鎖安全知識，了解最新開鎖技術和行業動態。">
+    <meta name="keywords" content="開鎖新聞, 開鎖知識, 開鎖文章, 電子鎖指南, 換鎖資訊, 鎖匠行業, 門鎖安全">
+    <meta name="author" content="101開鎖">
+    <link rel="shortcut icon" href="../favicon.ico?v=20260707">
+    <link rel="icon" href="../image/favicon-48x48.png?v=20260707" type="image/png" sizes="48x48">
+    <link rel="icon" href="../image/favicon.png?v=20260707" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="../image/apple-touch-icon.png?v=20260707" sizes="180x180">
+    <!-- Performance: preconnect to font providers and CDN -->    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload hero image for faster LCP -->
+    <link rel="preload" as="image" href="../image/wallpaper.jpeg" fetchpriority="high">
+
+    <!-- Local fonts: preload key files and load local CSS -->
+    <link rel="preload" href="../fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../css/site.css">
+
+    <!-- Font Awesome: non-blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </noscript>
+    <style>
+/* ===== Hero 區塊 ===== */
+        .hero-small {
+            position: relative;
+            background: url('../image/wallpaper.jpeg') no-repeat center center / cover;
+            padding: 56px 0;
+            color: white;
+            text-align: center;
+            isolation: isolate;
+        }
+
+        .hero-small::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-small .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-small h1,
+        .hero-small p {
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ===== 分類標籤 ===== */
+        .category-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .answer-paths {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 0 0 36px;
+        }
+
+        .answer-path {
+            align-items: center;
+            background: #ffffff;
+            border: 1px solid #edf2f7;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.05);
+            color: #1e2a3e;
+            display: flex;
+            gap: 12px;
+            min-height: 76px;
+            padding: 16px 18px;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .answer-path:hover {
+            border-color: #d4af37;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+            transform: translateY(-3px);
+        }
+
+        .answer-path i {
+            color: #d4af37;
+            font-size: 1.35rem;
+            text-align: center;
+            width: 28px;
+        }
+
+        .answer-path strong {
+            display: block;
+            font-size: 0.98rem;
+            margin-bottom: 4px;
+        }
+
+        .answer-path span {
+            color: #5a6e7c;
+            display: block;
+            font-size: 0.82rem;
+            line-height: 1.35;
+        }
+
+        .category-tab {
+            background: white;
+            border: 1px solid #e4e9f0;
+            padding: 8px 24px;
+            border-radius: 999px;
+            font-weight: 500;
+            color: #2c3e4e;
+            text-decoration: none;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .category-tab.active,
+        .category-tab:hover {
+            background: #d4af37;
+            border-color: #d4af37;
+            color: #1e2a3e;
+        }
+
+        /* ===== 文章展示 (圖片比例/樣式完全與 locksmith-real-case 一致) ===== */
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .news-article-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.25s ease;
+        }
+
+        .news-article-link:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 圖片容器：完全複製 real-case 樣式，無日期標籤，只有分類標籤 */
+        .news-image-block {
+            position: relative;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3 / 4;
+            background: linear-gradient(135deg, #e0e7ef 0%, #cbd5e1 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .news-card-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .news-article-link:hover .news-image-block {
+            box-shadow: 0 14px 24px rgba(30, 42, 62, 0.12);
+            transform: scale(1.01);
+        }
+
+        /* 分類標籤 (與 real-case 地區標籤樣式相同) */
+        .news-tag {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(4px);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #d4af37;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+
+        .news-text-block {
+            background: transparent;
+            padding: 8px 0 0 0;
+        }
+
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 12px;
+            color: #1e2a3e;
+            transition: color 0.2s;
+        }
+
+        .news-article-link:hover .news-title {
+            color: #d4af37;
+        }
+
+        .news-excerpt {
+            font-size: 0.85rem;
+            color: #4a5568;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .read-more-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #d4af37;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: gap 0.2s ease;
+        }
+
+        .read-more-link i {
+            font-size: 0.75rem;
+        }
+
+        .news-article-link:hover .read-more-link {
+            gap: 12px;
+        }
+
+        .news-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .main-content {
+            flex: 2.5;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .sidebar-widget {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 30px;
+            border: 1px solid #edf2f7;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #d4af37;
+            display: inline-block;
+        }
+
+        .popular-list {
+            list-style: none;
+        }
+
+        .popular-list li {
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #f0f2f5;
+        }
+
+        .popular-list li a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #1e2a3e;
+            transition: color 0.2s;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .popular-list li a:hover {
+            color: #d4af37;
+        }
+
+        .popular-list small {
+            font-size: 0.7rem;
+            color: #8a9aa8;
+        }
+
+        .category-list {
+            list-style: none;
+        }
+
+        .category-list li {
+            margin-bottom: 12px;
+        }
+
+        .category-list li a {
+            text-decoration: none;
+            color: #2c3e4e;
+            display: flex;
+            justify-content: space-between;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        .category-list li a:hover {
+            color: #d4af37;
+        }
+
+        .category-count {
+            background: #eef2fa;
+            padding: 2px 8px;
+            border-radius: 16px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .page-link {
+            min-width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: white;
+            text-decoration: none;
+            color: #1e2a3e;
+            font-weight: 500;
+            transition: all 0.2s;
+            border: 1px solid #e4e9f0;
+            cursor: pointer;
+            padding: 0 12px;
+        }
+
+        .page-link.active,
+        .page-link:hover {
+            background: #d4af37;
+            border-color: #d4af37;
+            color: #1e2a3e;
+        }
+
+        .page-link.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        /* 浮動按鈕 */
+        .float-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 12px;
+        }
+
+        @media (min-width: 601px) {
+            .float-buttons {
+                bottom: 30px;
+                right: 30px;
+                gap: 15px;
+            }
+
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 901px) {
+            .hero-small {
+                padding: 80px 0;
+            }
+
+            .news-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                margin-bottom: 60px;
+            }
+
+            .news-layout {
+                flex-direction: row;
+                gap: 40px;
+                margin-bottom: 60px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://101locksmithhk.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "開鎖知識",
+          "item": "https://101locksmithhk.com/news"
+        }
+      ]
+    }
+    </script>
+        <!-- JSON-LD 結構化資料：核心 SEO Schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "Locksmith"
+      ],
+      "@id": "https://101locksmithhk.com/#locksmith",
+      "name": "101開鎖",
+      "url": "https://101locksmithhk.com/",
+      "logo": "https://101locksmithhk.com/image/logo.webp",
+      "image": "https://101locksmithhk.com/image/logo.webp",
+      "telephone": "+85266101101",
+      "priceRange": "HKD 500+",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "香港"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "香港",
+        "addressCountry": "HK"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61589121282796",
+        "https://www.instagram.com/101_locksmith_hk"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+85266101101",
+          "contactType": "customer service",
+          "areaServed": "HK",
+          "availableLanguage": [
+            "zh-HK",
+            "zh",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://101locksmithhk.com/news#webpage",
+      "url": "https://101locksmithhk.com/news",
+      "name": "開鎖新聞及知識文章 | 101開鎖 | 24小時專業開鎖換鎖",
+      "description": "101開鎖最新消息、開鎖知識文章、電子鎖選購指南、鎖匠行業資訊。掌握門鎖安全知識，了解最新開鎖技術和行業動態。",
+      "isPartOf": {
+        "@id": "https://101locksmithhk.com/#website"
+      },
+      "about": {
+        "@id": "https://101locksmithhk.com/#locksmith"
+      }
+    }
+  ]
+}
+    </script>
+    <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
+    <!-- SEO 社群分享與 canonical -->
+    <link rel="canonical" href="https://101locksmithhk.com/news">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://101locksmithhk.com/news">
+    <meta property="og:title" content="開鎖新聞及知識文章 | 101開鎖 | 24小時專業開鎖換鎖">
+    <meta property="og:description" content="101開鎖最新消息、開鎖知識文章、電子鎖選購指南、鎖匠行業資訊。掌握門鎖安全知識，了解最新開鎖技術和行業動態。">
+    <meta property="og:image" content="https://101locksmithhk.com/image/logo.webp">
+    <meta property="og:site_name" content="101開鎖">
+    <meta property="og:locale" content="zh_HK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="開鎖新聞及知識文章 | 101開鎖 | 24小時專業開鎖換鎖">
+    <meta name="twitter:description" content="101開鎖最新消息、開鎖知識文章、電子鎖選購指南、鎖匠行業資訊。掌握門鎖安全知識，了解最新開鎖技術和行業動態。">
+    <meta name="twitter:image" content="https://101locksmithhk.com/image/logo.webp">
+    <!-- /SEO 社群分享與 canonical -->
+</head>
+
+<body>
+    <!-- 浮動按鈕 -->
+    <!-- Shared floating CTA: generated from src/_data/site.json -->
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="../" aria-label="返回首頁">
+                <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <div class="brand-name">101<span>開鎖</span></div>
+            </a>
+            <div class="desktop-nav">
+                <a href="../">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../service">開鎖</a>
+                        <a href="../service">換鎖</a>
+                        <a href="../service">電子鎖</a>
+                        <a href="../service">門禁系統</a>
+                        <a href="../service">車鎖</a>
+                        <a href="../service">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../faq">常見問題</a>
+                        <a href="../news">知識文章</a>
+                    </div>
+                </div>
+                <a href="../locksmith-real-case">真實案例</a>
+                <a href="../price">收費參考</a>
+                <a href="../#about">關於我們</a>
+                <a href="../#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="../" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub">
+                <li><a href="../service">開鎖</a></li>
+                <li><a href="../service">換鎖</a></li>
+                <li><a href="../service">電子鎖</a></li>
+                <li><a href="../service">門禁系統</a></li>
+                <li><a href="../service">車鎖</a></li>
+                <li><a href="../service">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="../faq">常見問題</a></li>
+                <li><a href="../news">知識文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../price" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="../#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero 區塊 -->
+    <nav class="breadcrumb-bar" aria-label="麵包屑">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">開鎖知識</span><meta itemprop="position" content="2"></li>
+            </ol>
+        </div>
+    </nav>
+    <section class="hero-small">
+        <div class="container">
+            <h1>開鎖新聞及知識文章</h1>
+            <p>最新資訊・開鎖知識・電子鎖指南・鎖匠行業動態</p>
+        </div>
+    </section>
+
+    <!-- 主要內容區塊 -->
+    <section style="padding:60px 0;">
+        <div class="container">
+            <div class="answer-paths" aria-label="按問題快速找到內容">
+                <a href="../price" class="answer-path"><i class="fas fa-dollar-sign"></i><span><strong>想先知價錢</strong>查看開鎖、換鎖、電子鎖收費參考</span></a>
+                <a href="../faq" class="answer-path"><i class="fas fa-circle-question"></i><span><strong>有即時疑問</strong>文件、到場時間、會否整壞門鎖</span></a>
+                <a href="../locksmith-real-case" class="answer-path"><i class="fas fa-location-dot"></i><span><strong>想睇真實個案</strong>按地區查看處理方法與結果</span></a>
+                <a href="../service" class="answer-path"><i class="fas fa-screwdriver-wrench"></i><span><strong>需要師傅處理</strong>開鎖、換鎖、電子鎖、車鎖服務</span></a>
+            </div>
+            <div class="category-tabs" id="categoryTabs">
+                <div class="category-tab active" data-cat="all">全部文章</div>
+                <div class="category-tab" data-cat="開鎖知識">開鎖知識</div>
+                <div class="category-tab" data-cat="門鎖知識">門鎖知識</div>
+                <div class="category-tab" data-cat="電子鎖指南">電子鎖指南</div>
+                <div class="category-tab" data-cat="門鎖保養">門鎖保養</div>
+                <div class="category-tab" data-cat="其他">其他</div>
+            </div>
+            <div class="news-layout">
+                <div class="main-content">
+                    <div class="news-grid" id="newsGrid"></div>
+                    <div class="pagination" id="pagination"></div>
+                </div>
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">🔥 熱門文章</h3>
+                        <ul class="popular-list">
+                            <li><a href="change-digital-lock">更換電子鎖前必讀！指紋、密碼點揀好？</a><small>1,280 次閱讀</small></li>
+                            <li><a href="unlock-method">專業開鎖與破壞開鎖有何分別？</a><small>945 次閱讀</small></li>
+                            <li><a href="clutter-behind-door">門後雜物卡門點處理？</a><small>872 次閱讀</small></li>
+                            <li><a href="broken-key">鎖匙斷咗喺鎖膽入面點算？</a><small>763 次閱讀</small></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">文章分類</h3>
+                        <ul class="category-list" id="dynamicCategoryList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= Footer ========= -->
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>開鎖</span></div>
+                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <h4>Blog</h4>
+                <a href="../news" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="../locksmith-real-case" class="footer-blog-link">真實個案</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                    <li><a href="../service">服務項目</a></li>
+                    <li><a href="../area">地區服務</a></li>
+                    <li><a href="../#commitment">服務承諾</a></li>
+                    <li><a href="../price">收費參考</a></li>
+                    <li><a href="../faq">常見問題</a></li>
+                    <li><a href="../#about">關於我們</a></li>
+                    <li><a href="../#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>追蹤我們</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 101開鎖 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function initLanguageSwitcher() {
+            const langBtns = document.querySelectorAll('.lang-option, .drawer-lang-option');
+            langBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = btn.getAttribute('data-lang');
+                    let targetUrl = '';
+                    if (lang === 'zh') targetUrl = 'zh-CN/';
+                    else if (lang === 'en') targetUrl = 'en/';
+                    else if (lang === 'hk') targetUrl = '/';
+                    else return;
+                    if (window.location.pathname !== targetUrl) window.location.href = targetUrl;
+                });
+            });
+        }
+
+        // ---------- 文章數據庫 ----------
+        const articles = [{
+                id: 1,
+                title: "開鎖收費指南",
+                excerpt: "開鎖收費指南, 了解開鎖收費",
+                category: "開鎖知識",
+                link: "../price",
+                tag: "開鎖知識",
+                img: "../image/news/new1/wallpaper.jpeg"
+            },
+            {
+                id: 2,
+                title: "三大開鎖方法",
+                excerpt: "技術・鬼馬・破壞 — 鎖匠工具箱嘅三大絕技（詳細解構",
+                category: "開鎖知識",
+                link: "unlock-method",
+                tag: "開鎖知識",
+                img: "../image/news/new2/wallpaper.jpeg"
+            },
+            {
+                id: 3,
+                title: "租客可以自己換電子鎖嗎？",
+                excerpt: "拆解租客自行更換電子鎖嘅權利、限制同正確步驟",
+                category: "電子鎖指南",
+                link: "change-digital-lock",
+                tag: "電子鎖指南",
+                img: "../image/news/new3/wallpaper.jpeg"
+            },
+            {
+                id: 4,
+                title: "如何避免電子鎖電池出問題？",
+                excerpt: "正確選用電池・主動更換習慣・避免鎖具損壞",
+                category: "電子鎖指南",
+                link: "battery",
+                tag: "電子鎖指南",
+                img: "../image/news/new4/wallpaper.jpeg"
+            },
+            {
+                id: 5,
+                title: "鎖匙斷咗點算？",
+                excerpt: "正確處理斷匙步驟",
+                category: "門鎖保養",
+                link: "broken-key",
+                tag: "門鎖保養",
+                img: "../image/news/new5/wallpaper.jpeg"
+            },
+            {
+                id: 6,
+                title: "壞房門鎖應該處理？",
+                excerpt: "門鎖突然故障不用驚慌，簡單地說壞鎖原因",
+                category: "開鎖知識",
+                link: "broken-room-door",
+                tag: "開鎖知識",
+                img: "../image/news/new6/wallpaper.jpeg"
+            },
+            {
+                id: 7,
+                title: "點解房門鎖又壞？",
+                excerpt: "廁所鎖特別易壞？點判斷真係壞咗？",
+                category: "門鎖知識",
+                link: "room-lock",
+                tag: "門鎖知識",
+                img: "../image/news/new7/wallpaper.jpeg"
+            },
+            {
+                id: 8,
+                title: "海關鎖匙做咩會流出?教識左你D咩?",
+                excerpt: "鎖匙流出真相・點解絕不能向他人展示鎖匙",
+                category: "其他",
+                link: "tsa-key",
+                tag: "其他",
+                img: "../image/news/new8/wallpaper.jpeg"
+            },
+            {
+                id: 9,
+                title: "十字鎖鎖匙插唔入？",
+                excerpt: "詳細原因拆解・日常保養・標記對位教學",
+                category: "門鎖知識",
+                link: "x-lock-intro",
+                tag: "門鎖知識",
+                img: "../image/news/new9/wallpaper.jpeg"
+            },
+            {
+                id: 10,
+                title: "用電子鎖點解還要帶鎖匙",
+                excerpt: "點解用電子鎖唔帶鎖匙一定會後悔",
+                category: "電子鎖指南",
+                link: "digital-lock-key",
+                tag: "電子鎖指南",
+                img: "../image/news/new10/wallpaper.jpeg"
+            },
+            {
+                id: 11,
+                title: "定期清潔地鎖鎖口",
+                excerpt: "有鎖匙開唔到既元兇。",
+                category: "門鎖保養",
+                link: "dust-in-lock-strike",
+                tag: "門鎖保養",
+                img: "../image/news/new11/wallpaper.jpeg"
+            },
+            {
+                id: 12,
+                title: "傳統機械鎖轉換成電子鎖",
+                excerpt: "傳統機械鎖轉換成電子鎖（如飛利浦、耶魯、Panasonic、施耐德、樂信、鹿客、小米 等品牌）",
+                category: "門鎖知識",
+                link: "philips-to-mechanical",
+                tag: "門鎖知識",
+                img: "../image/news/new16/wallpaper.jpeg"
+            },
+            {
+                id: 13,
+                title: "談談老虎鎖",
+                excerpt: "三開鎖終極升級版，加強保安不二之算",
+                category: "門鎖安全",
+                link: "jimmy-proof-deadlock-intro",
+                tag: "門鎖安全",
+                img: "../image/news/new13/wallpaper.jpeg"
+            },
+            {
+                id: 14,
+                title: "談談三開鎖",
+                excerpt: "教你三開鎖點樣可以用得好安全。",
+                category: "門鎖知識",
+                link: "rim-lock-intro",
+                tag: "門鎖知識",
+                img: "../image/news/new14/wallpaper.jpeg"
+            },
+            {
+                id: 15,
+                title: "談談歐式鎖",
+                excerpt: "歐洲標準鎖芯的選購技巧與安全建議。",
+                category: "門鎖知識",
+                link: "euro-profile-lock-intro",
+                tag: "門鎖知識",
+                img: "../image/news/new15/wallpaper.jpeg"
+            },
+            {
+                id: 16,
+                title: "談談機械密碼鎖",
+                excerpt: "一體化門鎖的安裝要點與注意事項。",
+                category: "門鎖知識",
+                link: "iIntegral-lock",
+                tag: "門鎖知識",
+                img: "../image/news/new16/wallpaper.jpeg"
+            },
+            {
+                id: 17,
+                title: "談談美式鎖",
+                excerpt: "美式插芯鎖的結構及安全性能評估。",
+                category: "門鎖知識",
+                link: "american-mortise-lock-intro",
+                tag: "門鎖知識",
+                img: "../image/news/new17/wallpaper.jpeg"
+            },
+            {
+                id: 18,
+                title: "三星電子鎖型號介紹",
+                excerpt: "三星電子鎖各型號功能與選購建議。",
+                category: "電子鎖指南",
+                link: "samsung-lock-intro-model",
+                tag: "電子鎖指南",
+                img: "../image/news/new18/wallpaper.jpeg"
+            },
+            {
+                id: 19,
+                title: "談談三星電子鎖",
+                excerpt: "三星電子鎖基礎功能介紹。",
+                category: "電子鎖指南",
+                link: "samsung-lock-intro",
+                tag: "電子鎖指南",
+                img: "../image/news/new19/wallpaper.jpeg"
+            },
+            {
+                id: 20,
+                title: "美式鎖 : 螺絲膽 vs 插針膽",
+                excerpt: "螺絲鎖芯與彈珠鎖芯的結構差異。",
+                category: "門鎖知識",
+                link: "different-between-Screw-and-pin-cylinder",
+                tag: "門鎖知識",
+                img: "../image/news/new20/wallpaper.jpeg"
+            },
+            {
+                id: 21,
+                title: "門後雜物影響安全",
+                excerpt: "門後堆積雜物可能造成的安全隱患。",
+                category: "其他",
+                link: "clutter-behind-door",
+                tag: "其他",
+                img: "../image/news/new21/wallpaper.jpeg"
+            },
+            {
+                id: 22,
+                title: "用萬字夾開鎖？",
+                excerpt: "電影橋段未必可靠，了解胡亂嘗試開鎖的風險與正確求助方法。",
+                category: "開鎖知識",
+                link: "clip-for-unlock",
+                tag: "開鎖知識",
+                img: "../image/news/new22/wallpaper.jpeg"
+            },
+            {
+                id: 23,
+                title: "房門自動鎖?",
+                excerpt: "房門鎖自動鎖上、反鎖或卡死時的原因與處理建議。",
+                category: "門鎖知識",
+                link: "room-lock-intro",
+                tag: "門鎖知識",
+                img: "../image/news/new23/wallpaper.jpeg"
+            }
+        ];
+
+        let currentCategory = "all";
+        let currentPage = 1;
+        let displayStartPage = 1;
+        // 修改為每頁顯示 12 篇文章，不影響三欄排版（3x4）
+        const itemsPerPage = 12;
+
+        function sortArticlesNewestFirst(list) {
+            return [...list].sort((a, b) => Number(b.id) - Number(a.id));
+        }
+
+        function filterArticlesByCategory(cat) {
+            const filtered = cat === "all" ? articles : articles.filter(a => a.category === cat);
+            return sortArticlesNewestFirst(filtered);
+        }
+
+        function getPaginatedArticles(articlesArray, page) {
+            const start = (page - 1) * itemsPerPage;
+            return articlesArray.slice(start, start + itemsPerPage);
+        }
+
+        function renderNewsGrid() {
+            const filtered = filterArticlesByCategory(currentCategory);
+            const totalPages = Math.ceil(filtered.length / itemsPerPage);
+            if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+            const pageArticles = getPaginatedArticles(filtered, currentPage);
+            const grid = document.getElementById('newsGrid');
+            if (!grid) return;
+            if (pageArticles.length === 0) {
+                grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:60px;">暫無文章，請選擇其他分類</div>`;
+                renderPagination(filtered.length);
+                return;
+            }
+            // 渲染時只包含分類標籤，無 publishDate 元素
+            grid.innerHTML = pageArticles.map(article => `
+                <a href="${article.link}" class="news-article-link">
+                    <div class="news-image-block">
+                        <img class="news-card-image" src="${article.img}" alt="${escapeHtml(article.title)}" width="1200" height="1600" loading="lazy" decoding="async">
+                        <span class="news-tag">${article.tag}</span>
+                    </div>
+                    <div class="news-text-block">
+                        <h3 class="news-title">${escapeHtml(article.title)}</h3>
+                        <p class="news-excerpt">${escapeHtml(article.excerpt)}</p>
+                        <span class="read-more-link">閱讀全文 <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            `).join('');
+            renderPagination(filtered.length);
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+
+        function renderPagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            if (!paginationDiv) return;
+            if (totalPages <= 1) {
+                paginationDiv.innerHTML = '';
+                return;
+            }
+            if (displayStartPage < 1) displayStartPage = 1;
+            if (displayStartPage > totalPages - 2 && totalPages > 3) displayStartPage = totalPages - 2;
+            if (totalPages <= 3) displayStartPage = 1;
+            let pagesToShow = [];
+            if (totalPages <= 3) {
+                for (let i = 1; i <= totalPages; i++) pagesToShow.push(i);
+            } else {
+                pagesToShow = [displayStartPage, displayStartPage + 1, displayStartPage + 2];
+            }
+            let html = '';
+            const canMoveLeft = displayStartPage > 1;
+            html += `<div class="page-link ${!canMoveLeft ? 'disabled' : ''}" data-action="prev-range"><i class="fas fa-chevron-left"></i></div>`;
+            pagesToShow.forEach(page => {
+                html += `<div class="page-link ${currentPage === page ? 'active' : ''}" data-page="${page}">${page}</div>`;
+            });
+            const canMoveRight = displayStartPage + 2 < totalPages;
+            html += `<div class="page-link ${!canMoveRight ? 'disabled' : ''}" data-action="next-range"><i class="fas fa-chevron-right"></i></div>`;
+            paginationDiv.innerHTML = html;
+        }
+
+        document.getElementById('pagination')?.addEventListener('click', (e) => {
+            let target = e.target.closest('.page-link');
+            if (!target || target.classList.contains('disabled')) return;
+            const action = target.dataset.action;
+            if (action === 'prev-range') {
+                displayStartPage--;
+                renderPagination(filterArticlesByCategory(currentCategory).length);
+            } else if (action === 'next-range') {
+                displayStartPage++;
+                renderPagination(filterArticlesByCategory(currentCategory).length);
+            } else {
+                const page = parseInt(target.dataset.page);
+                if (!isNaN(page) && page >= 1) {
+                    const filteredTotal = filterArticlesByCategory(currentCategory).length;
+                    const totalPages = Math.ceil(filteredTotal / itemsPerPage);
+                    if (page <= totalPages && page !== currentPage) {
+                        currentPage = page;
+                        if (totalPages > 3) {
+                            if (currentPage <= 2) displayStartPage = 1;
+                            else if (currentPage >= totalPages - 1) displayStartPage = totalPages - 2;
+                            else displayStartPage = currentPage - 1;
+                        } else {
+                            displayStartPage = 1;
+                        }
+                        renderNewsGrid();
+                        window.scrollTo({
+                            top: document.getElementById('newsGrid').offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            }
+        });
+
+        function updateSidebarCategoryCounts() {
+            const counts = {
+                all: articles.length,
+                門鎖知識: articles.filter(a => a.category === '門鎖知識').length,
+                開鎖知識: articles.filter(a => a.category === '開鎖知識').length,
+                電子鎖指南: articles.filter(a => a.category === '電子鎖指南').length,
+                門鎖保養: articles.filter(a => a.category === '門鎖保養').length,
+                其他: articles.filter(a => a.category === '其他').length
+            };
+            const listContainer = document.getElementById('dynamicCategoryList');
+            if (listContainer) {
+                listContainer.innerHTML = `
+                    <li><a data-cat="all">全部文章 <span class="category-count">${counts.all}</span></a></li>
+                    <li><a data-cat="門鎖知識">門鎖知識 <span class="category-count">${counts['門鎖知識']}</span></a></li>
+                    <li><a data-cat="開鎖知識">開鎖知識 <span class="category-count">${counts['開鎖知識']}</span></a></li>
+                    <li><a data-cat="電子鎖指南">電子鎖指南 <span class="category-count">${counts['電子鎖指南']}</span></a></li>
+                    <li><a data-cat="門鎖保養">門鎖保養 <span class="category-count">${counts['門鎖保養']}</span></a></li>
+                    <li><a data-cat="其他">其他 <span class="category-count">${counts['其他']}</span></a></li>
+                `;
+                document.querySelectorAll('#dynamicCategoryList a').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        const cat = link.getAttribute('data-cat');
+                        if (cat) {
+                            currentCategory = cat;
+                            currentPage = 1;
+                            displayStartPage = 1;
+                            renderNewsGrid();
+                            document.querySelectorAll('.category-tab').forEach(tab => {
+                                if (tab.dataset.cat === cat) tab.classList.add('active');
+                                else tab.classList.remove('active');
+                            });
+                        }
+                    });
+                });
+            }
+        }
+
+        function initCategoryTabs() {
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const cat = tab.dataset.cat;
+                    if (cat) {
+                        currentCategory = cat;
+                        currentPage = 1;
+                        displayStartPage = 1;
+                        renderNewsGrid();
+                        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                    }
+                });
+            });
+        }
+
+        // 抽屜及滾動邏輯
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+            document.getElementById('mobileDrawer').classList.add('open');
+            document.getElementById('drawerOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('closeDrawerBtn')?.addEventListener('click', () => {
+            document.getElementById('mobileDrawer').classList.remove('open');
+            document.getElementById('drawerOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('drawerOverlay')?.addEventListener('click', () => {
+            document.getElementById('mobileDrawer').classList.remove('open');
+            document.getElementById('drawerOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        document.querySelectorAll('.drawer-nav-item[data-has-sub="true"]').forEach(item => {
+            const btn = item.querySelector('.drawer-nav-link');
+            const submenu = item.querySelector('.drawer-submenu');
+            if (btn && submenu) {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    submenu.classList.toggle('show');
+                    const icon = btn.querySelector('i');
+                    if (icon) icon.style.transform = submenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+                });
+            }
+        });
+
+        const wText = document.getElementById('whatsappText');
+        if (wText) {
+            let timer;
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    if (!wText.classList.contains('hide-on-scroll')) wText.classList.add('hide-on-scroll');
+                    if (timer) clearTimeout(timer);
+                    timer = setTimeout(() => {
+                        wText.classList.remove('hide-on-scroll');
+                    }, 20000);
+                } else {
+                    wText.classList.remove('hide-on-scroll');
+                    if (timer) clearTimeout(timer);
+                }
+            });
+        }
+
+        initLanguageSwitcher();
+        initCategoryTabs();
+        updateSidebarCategoryCounts();
+        renderNewsGrid();
+    </script>
+<!-- Local pretty URL preview shim -->
+
+<script>
+(function () {
+    const host = window.location.hostname;
+    if (host !== 'localhost' && host !== '127.0.0.1') return;
+    document.addEventListener('click', function (event) {
+        const link = event.target.closest('a[href]');
+        if (!link) return;
+        const rawHref = link.getAttribute('href');
+        if (!rawHref || rawHref.startsWith('#') || rawHref.startsWith('tel:') || rawHref.startsWith('mailto:')) return;
+        const url = new URL(rawHref, window.location.href);
+        if (url.origin !== window.location.origin) return;
+        const lastSegment = url.pathname.split('/').filter(Boolean).pop() || '';
+        if (!lastSegment || lastSegment.includes('.') || url.pathname.endsWith('/')) return;
+        event.preventDefault();
+        url.pathname = url.pathname + '.html';
+        window.location.href = url.href;
+    });
+})();
+</script>
+</body>
+
+</html>

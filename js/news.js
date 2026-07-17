@@ -114,8 +114,8 @@
             const isNestedPage = window.location.pathname.includes('/news/') || window.location.pathname.includes('/case/');
             const prefix = isNestedPage ? '../' : '';
             const targetUrl = lang === 'zh'
-                ? `${prefix}zh-CN/index.html`
-                : (lang === 'en' ? `${prefix}en/index.html` : `${prefix}index.html`);
+                ? `${prefix}zh-CN/`
+                : (lang === 'en' ? `${prefix}en/` : `${prefix}`);
             if (targetUrl) window.location.href = targetUrl;
         });
     });

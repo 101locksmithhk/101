@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://101locksmithhk.com/</loc>
@@ -68,13 +67,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/faq.html</loc>
+    <loc>https://101locksmithhk.com/faq</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/locksmith-real-case.html</loc>
+    <loc>https://101locksmithhk.com/locksmith-real-case</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -83,7 +82,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news.html</loc>
+    <loc>https://101locksmithhk.com/news</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -92,19 +91,19 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/price.html</loc>
+    <loc>https://101locksmithhk.com/price</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/service.html</loc>
+    <loc>https://101locksmithhk.com/service</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/american-mortise-lock-intro.html</loc>
+    <loc>https://101locksmithhk.com/news/american-mortise-lock-intro</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -122,37 +121,37 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/battery.html</loc>
+    <loc>https://101locksmithhk.com/news/battery</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/broken-key.html</loc>
+    <loc>https://101locksmithhk.com/news/broken-key</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/broken-room-door.html</loc>
+    <loc>https://101locksmithhk.com/news/broken-room-door</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/change-digital-lock.html</loc>
+    <loc>https://101locksmithhk.com/news/change-digital-lock</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/clip-for-unlock.html</loc>
+    <loc>https://101locksmithhk.com/news/clip-for-unlock</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/clutter-behind-door.html</loc>
+    <loc>https://101locksmithhk.com/news/clutter-behind-door</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -174,7 +173,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/different-between-Screw-and-pin-cylinder.html</loc>
+    <loc>https://101locksmithhk.com/news/different-between-Screw-and-pin-cylinder</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -184,19 +183,19 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/digital-lock-key.html</loc>
+    <loc>https://101locksmithhk.com/news/digital-lock-key</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/dust-in-lock-strike.html</loc>
+    <loc>https://101locksmithhk.com/news/dust-in-lock-strike</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/euro-profile-lock-intro.html</loc>
+    <loc>https://101locksmithhk.com/news/euro-profile-lock-intro</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -210,19 +209,19 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/iIntegral-lock.html</loc>
+    <loc>https://101locksmithhk.com/news/iIntegral-lock</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/jimmy-proof-deadlock-intro.html</loc>
+    <loc>https://101locksmithhk.com/news/jimmy-proof-deadlock-intro</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/philips-to-mechanical.html</loc>
+    <loc>https://101locksmithhk.com/news/philips-to-mechanical</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -232,25 +231,25 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/rim-lock-intro.html</loc>
+    <loc>https://101locksmithhk.com/news/rim-lock-intro</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/room-lock-intro.html</loc>
+    <loc>https://101locksmithhk.com/news/room-lock-intro</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/room-lock.html</loc>
+    <loc>https://101locksmithhk.com/news/room-lock</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/samsung-lock-intro-model.html</loc>
+    <loc>https://101locksmithhk.com/news/samsung-lock-intro-model</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -264,7 +263,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/samsung-lock-intro.html</loc>
+    <loc>https://101locksmithhk.com/news/samsung-lock-intro</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -278,7 +277,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/tsa-key.html</loc>
+    <loc>https://101locksmithhk.com/news/tsa-key</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -288,13 +287,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/unlock-method.html</loc>
+    <loc>https://101locksmithhk.com/news/unlock-method</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/x-lock-intro.html</loc>
+    <loc>https://101locksmithhk.com/news/x-lock-intro</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -312,627 +311,307 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case10.html</loc>
+    <loc>https://101locksmithhk.com/case/tai-kok-tsui-locksmith-wooden-door-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case10/hand.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/yau-tsim-mong/tai-kok-tsui-locksmith-wooden-door-lock/tai-kok-tsui-locksmith-wooden-door-lock-locksmith-service.jpeg</image:loc>
       <image:caption>大角咀木門鎖膽完全扭出導致卡死示意圖</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case10/before.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/yau-tsim-mong/tai-kok-tsui-locksmith-wooden-door-lock/tai-kok-tsui-locksmith-wooden-door-lock-before-service.jpeg</image:loc>
       <image:caption>鎖膽甩左，門鎖無法開門</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case10/after.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/yau-tsim-mong/tai-kok-tsui-locksmith-wooden-door-lock/tai-kok-tsui-locksmith-wooden-door-lock-after-service.jpeg</image:loc>
       <image:caption>維修後鎖膽重新固定，門鎖完好無損</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case11.html</loc>
+    <loc>https://101locksmithhk.com/case/sai-kung-locksmith-yale-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case11/wallpaper.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sai-kung/sai-kung-locksmith-yale-lock/sai-kung-locksmith-yale-lock-hero.jpeg</image:loc>
       <image:caption>西貢獨立屋Yale美式鎖示意，客人忘記帶鎖匙</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case11/outdoor.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sai-kung/sai-kung-locksmith-yale-lock/sai-kung-locksmith-yale-lock-outside-lock.jpeg</image:loc>
       <image:caption>技術開Yale鎖膽，完好零損壞</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case11/indoor.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sai-kung/sai-kung-locksmith-yale-lock/sai-kung-locksmith-yale-lock-inside-lock.jpeg</image:loc>
       <image:caption>原裝鎖匙可正常開關，無需換鎖</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case12.html</loc>
+    <loc>https://101locksmithhk.com/case/hung-hom-locksmith-lock-replacement</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case12/wallpaper.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kowloon-city/hung-hom-locksmith-lock-replacement/hung-hom-locksmith-lock-replacement-hero.jpeg</image:loc>
       <image:caption>紅磡單位珠鎖故障，客人有鎖匙無法轉動，鎖匠到場檢查</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case12/before.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kowloon-city/hung-hom-locksmith-lock-replacement/hung-hom-locksmith-lock-replacement-before-service.jpeg</image:loc>
       <image:caption>珠鎖有鎖匙開唔到門，細匙筒突出</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case12/after.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kowloon-city/hung-hom-locksmith-lock-replacement/hung-hom-locksmith-lock-replacement-after-service.jpeg</image:loc>
       <image:caption>拆下舊鎖，換上全新珠鎖，門鎖恢復正常</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case13.html</loc>
+    <loc>https://101locksmithhk.com/case/kowloon-bay-locksmith-bathroom-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case13/wallpaper.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-bathroom-lock/kowloon-bay-locksmith-bathroom-lock-hero.jpeg</image:loc>
       <image:caption>九龍灣單位廁所磁吸鎖，客人鎖匙放廁所內關門上鎖，鎖匠到場技術開鎖</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case13/outside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-bathroom-lock/kowloon-bay-locksmith-bathroom-lock-outside-lock.jpeg</image:loc>
       <image:caption>磁吸鎖廁所門已上鎖，鎖匙放喺廁所內</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case13/inside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-bathroom-lock/kowloon-bay-locksmith-bathroom-lock-inside-lock.jpeg</image:loc>
       <image:caption>技術開鎖成功，門鎖完好，客人取回鎖匙</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case14.html</loc>
+    <loc>https://101locksmithhk.com/case/tseung-kwan-o-locksmith-bonco-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case14/outside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sai-kung/tseung-kwan-o-locksmith-bonco-lock/tseung-kwan-o-locksmith-bonco-lock-outside-lock.jpeg</image:loc>
       <image:caption>Bonco美式鎖大門已上鎖，鎖匙留喺屋內</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case14/inside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sai-kung/tseung-kwan-o-locksmith-bonco-lock/tseung-kwan-o-locksmith-bonco-lock-inside-lock.jpeg</image:loc>
       <image:caption>技術開鎖成功，原鎖膽保留，原裝鎖匙可正常使用</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case15.html</loc>
+    <loc>https://101locksmithhk.com/case/cheung-sha-wan-locksmith-jetko-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case15/wallpaper.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sham-shui-po/cheung-sha-wan-locksmith-jetko-lock/cheung-sha-wan-locksmith-jetko-lock-hero.jpeg</image:loc>
       <image:caption>長沙灣單位JETKO附加鎖，客人用鎖匙鎖過後鎖匙漏公司，附加鎖已上鎖</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case15/outside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sham-shui-po/cheung-sha-wan-locksmith-jetko-lock/cheung-sha-wan-locksmith-jetko-lock-outside-lock.jpeg</image:loc>
       <image:caption>JETKO附加鎖已上鎖狀態，鎖匙漏喺公司</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case15/inside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sham-shui-po/cheung-sha-wan-locksmith-jetko-lock/cheung-sha-wan-locksmith-jetko-lock-inside-lock.jpeg</image:loc>
       <image:caption>技術開鎖成功，原鎖膽保留，原裝鎖匙可正常使用</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case16.html</loc>
+    <loc>https://101locksmithhk.com/case/nam-cheong-locksmith-public-housing-gate-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case17.html</loc>
+    <loc>https://101locksmithhk.com/case/central-locksmith-renovation-site-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case17/hand.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/central-western/central-locksmith-renovation-site-lock/central-locksmith-renovation-site-lock-locksmith-service.jpeg</image:loc>
       <image:caption>中環裝修單位有鎖匙開唔到，不破壞門鎖成功開鎖案例</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case17/inside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/central-western/central-locksmith-renovation-site-lock/central-locksmith-renovation-site-lock-inside-lock.jpeg</image:loc>
       <image:caption>中環裝修單位開鎖完成後室內照片，門鎖沒有被破壞</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case17/ouside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/central-western/central-locksmith-renovation-site-lock/central-locksmith-renovation-site-lock-outside-lock.jpeg</image:loc>
       <image:caption>中環裝修單位開鎖完成後室外照片，不破壞門鎖成功開門</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case18.html</loc>
+    <loc>https://101locksmithhk.com/case/sai-ying-pun-locksmith-euro-cylinder-replacement</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case18/hand.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/central-western/sai-ying-pun-locksmith-euro-cylinder-replacement/sai-ying-pun-locksmith-euro-cylinder-replacement-locksmith-service.jpeg</image:loc>
       <image:caption>西營盤更換歐式鎖鎖膽服務案例</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case18/inside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/central-western/sai-ying-pun-locksmith-euro-cylinder-replacement/sai-ying-pun-locksmith-euro-cylinder-replacement-inside-lock.jpeg</image:loc>
       <image:caption>西營盤更換歐式鎖鎖膽完成後室內照片，新匙可正常開關</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case18/outside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/central-western/sai-ying-pun-locksmith-euro-cylinder-replacement/sai-ying-pun-locksmith-euro-cylinder-replacement-outside-lock.jpeg</image:loc>
       <image:caption>西營盤更換歐式鎖鎖膽完成後室外照片，舊匙已失效</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case19.html</loc>
+    <loc>https://101locksmithhk.com/case/wan-chai-locksmith-diamond-door-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case19/hand.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wan-chai/wan-chai-locksmith-diamond-door-lock/wan-chai-locksmith-diamond-door-lock-locksmith-service.jpeg</image:loc>
       <image:caption>灣仔Diamond木門三開鎖緊急技術開鎖服務案例</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case19/inside.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wan-chai/wan-chai-locksmith-diamond-door-lock/wan-chai-locksmith-diamond-door-lock-inside-lock.jpeg</image:loc>
       <image:caption>灣仔Diamond木門三開鎖緊急開鎖完成後室內照片，原鎖正常使用</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case19/oustide.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wan-chai/wan-chai-locksmith-diamond-door-lock/wan-chai-locksmith-diamond-door-lock-outside-lock.jpeg</image:loc>
       <image:caption>灣仔Diamond木門三開鎖緊急開鎖完成後室外照片，技術開鎖後門鎖完整</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case20.html</loc>
+    <loc>https://101locksmithhk.com/case/happy-valley-locksmith-gate-deadlock</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case20/IMG_7472.JPEG</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wan-chai/happy-valley-locksmith-gate-deadlock/happy-valley-locksmith-gate-deadlock-outside-lock.jpeg</image:loc>
       <image:caption>跑馬地電子鎖開鎖服務案例</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case21.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case9/before.jpeg</image:loc>
-      <image:caption>北角鐵閘鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case22.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case21/hand.JPEG</image:loc>
-      <image:caption>太古城智能電子鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case23.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case19/hand.jpeg</image:loc>
-      <image:caption>香港仔村屋大閘鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case24.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case12/before.jpeg</image:loc>
-      <image:caption>鴨脷洲木門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case25.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case5/indoor.jpeg</image:loc>
-      <image:caption>尖沙咀房門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case26.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case6/hand.jpeg</image:loc>
-      <image:caption>旺角三開鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case27.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case22/hand.jpeg</image:loc>
-      <image:caption>荔枝角倉門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case28.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case16/outside.jpeg</image:loc>
-      <image:caption>石硤尾公屋鐵閘鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case29.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case27/hand.jpeg</image:loc>
-      <image:caption>啟德電子鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case3.html</loc>
+    <loc>https://101locksmithhk.com/case/kowloon-bay-locksmith-american-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case3/wallpaper.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-hero.jpeg</image:loc>
       <image:caption>九龍灣開鎖案例：美式老虎鎖配電腦匙技術開鎖後門鎖完好</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case3/5-stars-review.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-five-star-review.jpeg</image:loc>
       <image:caption>九龍灣開鎖客人WhatsApp五星好評截圖</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case30.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case25/hand.jpeg</image:loc>
-      <image:caption>九龍塘美式鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case31.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case12/hand.jpeg</image:loc>
-      <image:caption>樂富珠鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case32.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case13/inside.jpeg</image:loc>
-      <image:caption>新蒲崗辦公室門禁開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case33.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case13/outside.jpeg</image:loc>
-      <image:caption>牛頭角磁力門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case34.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case24/outside.jpeg</image:loc>
-      <image:caption>油塘Yale美式鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case35.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case29/hand.jpeg</image:loc>
-      <image:caption>葵芳捲閘鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case36.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case30/hand.jpeg</image:loc>
-      <image:caption>青衣電子密碼鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case37.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case28/hand.jpeg</image:loc>
-      <image:caption>荃灣鐵閘鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case38.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case4/after.jpeg</image:loc>
-      <image:caption>深井木門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case39.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case22/hand.jpeg</image:loc>
-      <image:caption>兆康Yale美式鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case4.html</loc>
+    <loc>https://101locksmithhk.com/case/to-kwa-wan-locksmith-yale-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case4/wallpaper.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kowloon-city/to-kwa-wan-locksmith-yale-lock/to-kwa-wan-locksmith-yale-lock-hero.jpeg</image:loc>
       <image:caption>土瓜環開鎖案例：美式鎖Yale電腦匙鎖膽異物處理完成記錄</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case4/before.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kowloon-city/to-kwa-wan-locksmith-yale-lock/to-kwa-wan-locksmith-yale-lock-before-service.jpeg</image:loc>
       <image:caption>土瓜環開鎖案例：美式鎖Yale電腦匙鎖膽有異物導致鎖匙插唔入</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case4/after.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kowloon-city/to-kwa-wan-locksmith-yale-lock/to-kwa-wan-locksmith-yale-lock-after-service.jpeg</image:loc>
       <image:caption>土瓜環開鎖完成後取出異物，Yale電腦匙可正常插入使用</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case3/5-stars-review.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-five-star-review.jpeg</image:loc>
       <image:caption>土瓜環開鎖客人WhatsApp五星好評及表揚原匙可繼續使用</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case40.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case19/wallpaper.jpeg</image:loc>
-      <image:caption>掃管笏村屋大閘鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case41.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case20/IMG_7473.JPEG</image:loc>
-      <image:caption>元朗趟閘鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case42.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case21/hand.JPEG</image:loc>
-      <image:caption>天水圍Cambridge美式鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case43.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case17/hand.jpeg</image:loc>
-      <image:caption>上水美式防盜鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case44.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case18/outside.jpeg</image:loc>
-      <image:caption>粉嶺玻璃門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case45.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case18/inside.jpeg</image:loc>
-      <image:caption>大埔墟歐式鎖膽開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case46.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case26/hand.jpeg</image:loc>
-      <image:caption>白石角電子鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case47.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case23/hand.jpeg</image:loc>
-      <image:caption>火炭倉門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case48.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case13/hand.jpeg</image:loc>
-      <image:caption>馬鞍山磁吸房門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case49.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case11/outdoor.jpeg</image:loc>
-      <image:caption>清水灣Yale美式鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case5.html</loc>
+    <loc>https://101locksmithhk.com/case/prince-edward-locksmith-metal-gate-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case5/indoor.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/yau-tsim-mong/prince-edward-locksmith-metal-gate-lock/prince-edward-locksmith-metal-gate-lock-inside-lock.jpeg</image:loc>
       <image:caption>鐵閘上密封玻璃完好無損</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case5/outdoor.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/yau-tsim-mong/prince-edward-locksmith-metal-gate-lock/prince-edward-locksmith-metal-gate-lock-outside-lock.jpeg</image:loc>
       <image:caption>鐵閘鎖成功開啟，客人可使用原有鎖匙</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case3/5-stars-review.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-five-star-review.jpeg</image:loc>
       <image:caption>客人WhatsApp五星好評：密封玻璃難度照開鎖</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case50.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case14/inside.jpeg</image:loc>
-      <image:caption>將軍澳電子鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case51.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case10/before.jpeg</image:loc>
-      <image:caption>佐敦木門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case52.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case13/wallpaper.jpeg</image:loc>
-      <image:caption>觀塘辦公室門鎖開鎖服務案例</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://101locksmithhk.com/case/case6.html</loc>
+    <loc>https://101locksmithhk.com/case/wong-tai-sin-locksmith-high-security-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case6/hand.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wong-tai-sin/wong-tai-sin-locksmith-high-security-lock/wong-tai-sin-locksmith-high-security-lock-locksmith-service.jpeg</image:loc>
       <image:caption>黃大仙木門鎖雙排珠防攝鎖示意</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case6/outdoor.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wong-tai-sin/wong-tai-sin-locksmith-high-security-lock/wong-tai-sin-locksmith-high-security-lock-outside-lock.jpeg</image:loc>
       <image:caption>門鎖完整保留，零損壞</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case6/indoor.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wong-tai-sin/wong-tai-sin-locksmith-high-security-lock/wong-tai-sin-locksmith-high-security-lock-inside-lock.jpeg</image:loc>
       <image:caption>高保安雙排膽鎖技術開鎖，完整保留，零損壞</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case3/5-stars-review.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-five-star-review.jpeg</image:loc>
       <image:caption>客人WhatsApp五星好評：防攝鎖技術開鎖成功</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case7.html</loc>
+    <loc>https://101locksmithhk.com/case/sha-tin-locksmith-medeco-high-security-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case7/after.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/sha-tin/sha-tin-locksmith-medeco-high-security-lock/sha-tin-locksmith-medeco-high-security-lock-after-service.jpeg</image:loc>
       <image:caption>高保安雙排膽鎖技術開鎖，完整保留，零損壞</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case3/5-stars-review.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-five-star-review.jpeg</image:loc>
       <image:caption>客人WhatsApp五星好評：防攝鎖技術開鎖成功</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case8.html</loc>
+    <loc>https://101locksmithhk.com/case/diamond-hill-car-locksmith-honda</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case8/hand.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wong-tai-sin/diamond-hill-car-locksmith-honda/diamond-hill-car-locksmith-honda-locksmith-service.jpeg</image:loc>
       <image:caption>鑽石山停車場車輛反鎖</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case8/before.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wong-tai-sin/diamond-hill-car-locksmith-honda/diamond-hill-car-locksmith-honda-before-service.jpeg</image:loc>
       <image:caption>開鎖後車門及車漆完好無損</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case8/after.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/wong-tai-sin/diamond-hill-car-locksmith-honda/diamond-hill-car-locksmith-honda-after-service.jpeg</image:loc>
       <image:caption>技術開鎖後客人可取回車匙及物品</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case3/5-stars-review.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-five-star-review.jpeg</image:loc>
       <image:caption>客人WhatsApp五星好評：技術開鎖零花損</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/case9.html</loc>
+    <loc>https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case9/before.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/tuen-mun/tuen-mun-locksmith-metal-gate-lock/tuen-mun-locksmith-metal-gate-lock-before-service.jpeg</image:loc>
       <image:caption>鐵閘鎖膽C型扣鬆脫，上珠下珠及彈弓彈出</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/case/case9/after.jpeg</image:loc>
+      <image:loc>https://101locksmithhk.com/image/case/tuen-mun/tuen-mun-locksmith-metal-gate-lock/tuen-mun-locksmith-metal-gate-lock-after-service.jpeg</image:loc>
       <image:caption>更換全新鎖膽，鐵閘功能恢復</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/central-western.html</loc>
+    <loc>https://101locksmithhk.com/area/central-western</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -941,7 +620,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/eastern.html</loc>
+    <loc>https://101locksmithhk.com/area/eastern</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -950,7 +629,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/</loc>
+    <loc>https://101locksmithhk.com/area</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -959,7 +638,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/kowloon-city.html</loc>
+    <loc>https://101locksmithhk.com/area/kowloon-city</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -968,7 +647,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/kwai-tsing.html</loc>
+    <loc>https://101locksmithhk.com/area/kwai-tsing</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -977,7 +656,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/kwun-tong.html</loc>
+    <loc>https://101locksmithhk.com/area/kwun-tong</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -986,7 +665,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/north.html</loc>
+    <loc>https://101locksmithhk.com/area/north</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -995,7 +674,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/sai-kung.html</loc>
+    <loc>https://101locksmithhk.com/area/sai-kung</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1004,7 +683,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/sha-tin.html</loc>
+    <loc>https://101locksmithhk.com/area/sha-tin</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1013,7 +692,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/sham-shui-po.html</loc>
+    <loc>https://101locksmithhk.com/area/sham-shui-po</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1022,7 +701,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/southern.html</loc>
+    <loc>https://101locksmithhk.com/area/southern</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1031,7 +710,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/tai-po.html</loc>
+    <loc>https://101locksmithhk.com/area/tai-po</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1040,7 +719,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/tsuen-wan.html</loc>
+    <loc>https://101locksmithhk.com/area/tsuen-wan</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1049,7 +728,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/tuen-mun.html</loc>
+    <loc>https://101locksmithhk.com/area/tuen-mun</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1058,7 +737,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/wan-chai.html</loc>
+    <loc>https://101locksmithhk.com/area/wan-chai</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1067,7 +746,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/wong-tai-sin.html</loc>
+    <loc>https://101locksmithhk.com/area/wong-tai-sin</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1076,7 +755,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/yau-tsim-mong.html</loc>
+    <loc>https://101locksmithhk.com/area/yau-tsim-mong</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1085,7 +764,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/yuen-long.html</loc>
+    <loc>https://101locksmithhk.com/area/yuen-long</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
