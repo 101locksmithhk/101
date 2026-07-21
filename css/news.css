@@ -714,17 +714,15 @@ footer {
 
 /* 浮動按鈕 */
 .float-buttons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: static !important;
     z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 12px;
 }
 
 .float-button-phone {
+    position: fixed !important;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1050;
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -733,10 +731,10 @@ footer {
     justify-content: center;
     font-size: 24px;
     text-decoration: none;
-    background: linear-gradient(145deg, #e0e0e0, #ffffff);
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), inset 0 -1px 2px rgba(0, 0, 0, 0.1);
+    background: #d4af37;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease;
-    color: #d4af37;
+    color: #1e2a3e;
 }
 
 .float-button-phone:hover {
@@ -744,6 +742,10 @@ footer {
 }
 
 .whatsapp-wrapper {
+    position: fixed !important;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1050;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -792,12 +794,6 @@ footer {
 }
 
 @media (min-width: 601px) {
-    .float-buttons {
-        bottom: 30px;
-        right: 30px;
-        gap: 15px;
-    }
-
     .float-button-phone,
     .float-button-whatsapp {
         width: 60px;
@@ -1395,4 +1391,69 @@ footer {
     margin-top: 28px;
     font-size: 0.85rem;
     color: #5a6e7c;
+}
+.site-contact-section {
+    padding: 42px 14px;
+    background: #f9fafc;
+}
+
+.site-contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px clamp(16px, 5vw, 32px);
+    border-radius: 16px;
+    background: #fff7e5;
+    text-align: center;
+}
+
+.site-contact-card p {
+    width: 100%;
+    margin: 0;
+    color: #1e2a3e;
+    font-size: clamp(0.82rem, 3.6vw, 1.05rem);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.site-contact-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(8px, 2vw, 12px);
+    width: min(100%, 600px);
+}
+
+.site-contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 10px 8px;
+    border-radius: 999px;
+    background: #d4af37;
+    color: #1e2a3e;
+    font-size: clamp(0.72rem, 3.1vw, 0.95rem);
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.site-contact-button:hover {
+    background: #c4a228;
+    transform: translateY(-2px);
+}
+
+.site-contact-button--whatsapp,
+.site-contact-button--whatsapp:hover {
+    background: #25d366;
+    color: #fff;
 }

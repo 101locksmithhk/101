@@ -84,7 +84,7 @@
 
         .img-placeholder {
             width: 100%;
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 3 / 4;
             background: #eef2fa;
             display: flex;
             align-items: center;
@@ -94,6 +94,17 @@
             flex-direction: column;
             gap: 12px;
             border-bottom: 1px solid #e2e8f0;
+        }
+
+        .img-placeholder img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-placeholder.has-image {
+            padding: 0;
         }
 
         .img-placeholder i {
@@ -140,11 +151,17 @@
             box-shadow: 0 16px 28px rgba(30, 42, 62, 0.12);
         }
 
-        .case-image {
-            width: 100%;
+        .case-image-frame {
             aspect-ratio: 3 / 4;
-            object-fit: cover;
+            overflow: hidden;
             background: #e2e8f0;
+        }
+
+        .case-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .case-content {
@@ -337,34 +354,34 @@
     <!-- Shared header: generated from src/_data/site.json -->
     <div class="navbar">
         <div class="nav-container">
-            <a class="logo" href="../" aria-label="返回首頁">
+            <a class="logo" href="../index.html" aria-label="返回首頁">
                 <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
                 <div class="brand-name">101<span>開鎖</span></div>
             </a>
             <div class="desktop-nav">
-                <a href="../">首頁</a>
+                <a href="../index.html">首頁</a>
                 <div class="dropdown">
                     <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../service">開鎖</a>
-                        <a href="../service">換鎖</a>
-                        <a href="../service">電子鎖</a>
-                        <a href="../service">門禁系統</a>
-                        <a href="../service">車鎖</a>
-                        <a href="../service">夾萬</a>
+                        <a href="../service.html">開鎖</a>
+                        <a href="../service.html">換鎖</a>
+                        <a href="../service.html">電子鎖</a>
+                        <a href="../service.html">門禁系統</a>
+                        <a href="../service.html">車鎖</a>
+                        <a href="../service.html">夾萬</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../faq">常見問題</a>
+                        <a href="../faq.html">常見問題</a>
                         <a href="../news">知識文章</a>
                     </div>
                 </div>
                 <a href="../locksmith-real-case">真實案例</a>
                 <a href="../price">收費參考</a>
-                <a href="../#about">關於我們</a>
-                <a href="../#contact">聯絡我們</a>
+                <a href="../index.html#about">關於我們</a>
+                <a href="../index.html#contact">聯絡我們</a>
                 <div class="quick-actions">
                     <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
                     <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
@@ -385,29 +402,29 @@
     <div class="mobile-drawer" id="mobileDrawer">
         <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
         <ul class="drawer-nav-list">
-            <li class="drawer-nav-item"><a href="../" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
             <li class="drawer-nav-item" data-has-sub="true">
                 <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="service-sub">
-                <li><a href="../service">開鎖</a></li>
-                <li><a href="../service">換鎖</a></li>
-                <li><a href="../service">電子鎖</a></li>
-                <li><a href="../service">門禁系統</a></li>
-                <li><a href="../service">車鎖</a></li>
-                <li><a href="../service">夾萬</a></li>
+                <li><a href="../service.html">開鎖</a></li>
+                <li><a href="../service.html">換鎖</a></li>
+                <li><a href="../service.html">電子鎖</a></li>
+                <li><a href="../service.html">門禁系統</a></li>
+                <li><a href="../service.html">車鎖</a></li>
+                <li><a href="../service.html">夾萬</a></li>
                 </ul>
             </li>
             <li class="drawer-nav-item" data-has-sub="true">
                 <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="knowledge-sub">
-                <li><a href="../faq">常見問題</a></li>
+                <li><a href="../faq.html">常見問題</a></li>
                 <li><a href="../news">知識文章</a></li>
                 </ul>
             </li>
         <li class="drawer-nav-item"><a href="../locksmith-real-case" class="drawer-nav-link"><span>真實案例</span></a></li>
         <li class="drawer-nav-item"><a href="../price" class="drawer-nav-link"><span>收費參考</span></a></li>
-        <li class="drawer-nav-item"><a href="../#about" class="drawer-nav-link"><span>關於我們</span></a></li>
-        <li class="drawer-nav-item"><a href="../#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
         </ul>
         <div class="drawer-quick">
             <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
@@ -424,7 +441,7 @@
     <nav class="breadcrumb-bar" aria-label="麵包屑">
         <div class="container">
             <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../news"><span itemprop="name">開鎖知識</span></a><meta itemprop="position" content="2"></li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">門後雜物安全警示：避免家居意外卡死門口</span><meta itemprop="position" content="3"></li>
             </ol>
@@ -446,7 +463,16 @@
             <div class="card">
                 <h2> 二.「卡門元兇」：木梯、吸塵機、洗衣機 · 櫃桶</h2>
                 <div class="compare-grid">
-                    <div class="compare-card"><div class="img-placeholder"><i class="fas fa-ladder"></i><span>🪜 木梯 / 摺梯示意圖</span><small style="font-size:12px;">靠牆放置容易倒下頂住門板</small></div><div class="compare-content"><div class="badge-type">木梯・吸塵機</div><p><strong>危險成因：</strong> 直立式木梯靠牆擺放，一旦受到輕微碰撞或風吹，容易傾倒橫跨門軌位置，導致門只能打開幾厘米就卡死。吸塵機、地拖等長柄雜物同樣高危。</p><p><strong>預防方法：</strong> 將梯子平放於儲物櫃內或固定在牆鉤，避免豎立喺門後範圍。吸塵機應收納至指定儲物區，遠離門嘅開啟路徑。</p></div></div>
+                    <div class="compare-card">
+                        <div class="img-placeholder has-image">
+                            <img src="../image/news/new21/wallpaper.jpeg" alt="木梯倒下卡住大門" width="900" height="1200" loading="lazy" decoding="async">
+                        </div>
+                        <div class="compare-content">
+                            <div class="badge-type">木梯・吸塵機</div>
+                            <p><strong>危險成因：</strong> 直立式木梯靠牆擺放，一旦受到輕微碰撞或風吹，容易傾倒橫跨門軌位置，導致門只能打開幾厘米就卡死。吸塵機、地拖等長柄雜物同樣高危。</p>
+                            <p><strong>預防方法：</strong> 將梯子平放於儲物櫃內或固定在牆鉤，避免豎立喺門後範圍。吸塵機應收納至指定儲物區，遠離門嘅開啟路徑。</p>
+                        </div>
+                    </div>
                     <div class="compare-card"><div class="img-placeholder"><span>洗衣機移位風險示意圖</span><small style="font-size:12px;">脫水震動可令洗衣機逐漸移向門口</small></div><div class="compare-content"><div class="badge-type">洗衣機固定不當</div><p><strong>危險成因：</strong> 脫水/高速轉動時，洗衣機產生強烈震動，如果冇安裝防滑膠墊或固定碼，機器會慢慢「行走出位」，一旦頂住隻門，外邊開唔到門。</p><p><strong>預防方法：</strong> 確保洗衣機四腳調平並用專用防滑墊，必要時使用固定支架或L型碼鎖定位置，定期檢查有冇移位跡象。</p></div></div>
                 </div>
                 <div class="grid-2">
@@ -467,22 +493,57 @@
             <div class="card">
                 <h2>五、真人真事：雜物卡門實錄，睇完即刻檢查屋企</h2>
                 <div class="case-grid">
-                    <div class="case-card"><img class="case-image" src="../image/news/new21/wallpaper.jpeg" alt="木梯倒下卡住大門" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 沙田 · 第一城</div><h3>木梯倒下困住戶主</h3><div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-exclamation-triangle"></i> <strong>經過：</strong> 戶主將摺梯豎立門後，大風吹門導致梯子橫向倒下頂實大門，戶主被困屋內無法外出上班。</div><p>101師傅到場後透過門縫用特製勾桿移開木梯，全程唔使破壞門鎖，15分鐘解困。並建議戶主以後平放梯具。</p></div></div>
-                    <div class="case-card"><img class="case-image" src="../image/news/new22/wallpaper.jpeg" alt="洗衣機移位堵住門口" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 屯門 · 翠寧花園</div><h3>洗衣機震動移位 大門內外無法開</h3><div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-microchip"></i> <strong>經過：</strong> 洗衣機脫水時震到移前50cm，完全頂死木門，住戶被困屋內，最終要拆門鉸才可入內移機。</div><p>師傅利用門隙充氣袋擴闊空間，再從外側頂回洗衣機，並免費幫客戶安裝防滑固定墊，徹底解決問題。</p></div></div>
-                    <div class="case-card"><img class="case-image" src="../image/news/new23/wallpaper.jpeg" alt="櫃桶彈出卡住房門" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 荔枝角 · 昇悅居</div><h3>書枱櫃桶彈出卡住房門</h3><div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-exclamation-circle"></i> <strong>經過：</strong> 小朋友拉開櫃桶後冇關好，櫃桶突出部分頂住房門，導致門外家長無法入房。</div><p>開鎖師傅從門縫用鋼尺慢慢推回櫃桶，並教導客戶安裝「防彈出鎖扣」，避免同類事件。</p></div></div>
-                    <div class="case-card"><img class="case-image" src="../image/news/new24/wallpaper.jpeg" alt="吸塵機卡死大門" loading="lazy" decoding="async" width="600" height="800"><div class="case-content"><div class="case-region"><i class="fas fa-map-marker-alt"></i> 將軍澳 · 維景灣畔</div><h3>吸塵機倒下大門卡一半</h3><div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-broom"></i> <strong>經過：</strong> 直立式吸塵機倚靠門邊，家人開門時推倒機器，底部滑輪頂住門底罅隙。</div><p>師傅到達後用長臂鉗拉出吸塵機，過程5分鐘。提醒客戶使用掛牆架固定吸塵機。</p></div></div>
+                    <div class="case-card">
+                        <div class="case-image-frame">
+                            <img class="case-image" src="../image/news/new21/wallpaper.jpeg" alt="木梯倒下卡住大門" width="900" height="1200" loading="lazy" decoding="async">
+                        </div>
+                        <div class="case-content">
+                            <div class="case-region"><i class="fas fa-map-marker-alt"></i> 沙田 · 第一城</div>
+                            <h3>木梯倒下困住戶主</h3>
+                            <div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-exclamation-triangle"></i> <strong>經過：</strong> 戶主將摺梯豎立門後，大風吹門導致梯子橫向倒下頂實大門，戶主被困屋內無法外出上班。</div>
+                            <p>101師傅到場後透過門縫用特製勾桿移開木梯，全程唔使破壞門鎖，15分鐘解困。並建議戶主以後平放梯具。</p>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-image-frame">
+                            <img class="case-image" src="../image/news/new22/wallpaper.jpeg" alt="洗衣機移位堵住門口" width="1200" height="1598" loading="lazy" decoding="async">
+                        </div>
+                        <div class="case-content">
+                            <div class="case-region"><i class="fas fa-map-marker-alt"></i> 屯門 · 翠寧花園</div>
+                            <h3>洗衣機震動移位 大門內外無法開</h3>
+                            <div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-microchip"></i> <strong>經過：</strong> 洗衣機脫水時震到移前50cm，完全頂死木門，住戶被困屋內，最終要拆門鉸才可入內移機。</div>
+                            <p>師傅利用門隙充氣袋擴闊空間，再從外側頂回洗衣機，並免費幫客戶安裝防滑固定墊，徹底解決問題。</p>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-image-frame">
+                            <img class="case-image" src="../image/news/new23/wallpaper.jpeg" alt="櫃桶彈出卡住房門" width="1200" height="1600" loading="lazy" decoding="async">
+                        </div>
+                        <div class="case-content">
+                            <div class="case-region"><i class="fas fa-map-marker-alt"></i> 荔枝角 · 昇悅居</div>
+                            <h3>書枱櫃桶彈出卡住房門</h3>
+                            <div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-exclamation-circle"></i> <strong>經過：</strong> 小朋友拉開櫃桶後冇關好，櫃桶突出部分頂住房門，導致門外家長無法入房。</div>
+                            <p>開鎖師傅從門縫用鋼尺慢慢推回櫃桶，並教導客戶安裝「防彈出鎖扣」，避免同類事件。</p>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-image-frame">
+                            <img class="case-image" src="../image/news/new24/wallpaper.jpeg" alt="吸塵機卡死大門" width="1200" height="1602" loading="lazy" decoding="async">
+                        </div>
+                        <div class="case-content">
+                            <div class="case-region"><i class="fas fa-map-marker-alt"></i> 將軍澳 · 維景灣畔</div>
+                            <h3>吸塵機倒下大門卡一半</h3>
+                            <div class="highlight" style="margin:12px 0; padding:12px;"><i class="fas fa-broom"></i> <strong>經過：</strong> 直立式吸塵機倚靠門邊，家人開門時推倒機器，底部滑輪頂住門底罅隙。</div>
+                            <p>師傅到達後用長臂鉗拉出吸塵機，過程5分鐘。提醒客戶使用掛牆架固定吸塵機。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="card" style="background:#eef2fa;">
                 <h3><i class="fas fa-handshake"></i> 101開鎖｜全天候卡門緊急支援</h3>
                 <p>無論係木梯、吸塵機、洗衣機移位定係櫃桶彈出導致無法開門，101開鎖師傅快速到達全港各區，使用專業工具安全移除障礙物，並提供家居安全改善建議。收費合理，絕不濫收。</p>
-                <div style="text-align: center; margin-top: 24px;">
-                    <div class="contact-buttons" style="margin-top: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-                        <a href="tel:+85266101101" class="btn btn-primary btn-split"><span class="btn-line1"><i class="fas fa-phone-alt"></i> 24小時 緊急熱線</span><span class="btn-line2">66 101 101</span></a>
-                        <a href="https://wa.me/85266101101?text=開鎖查詢報價" target="_blank" class="btn btn-outline btn-split"><span class="btn-line1"><i class="fab fa-whatsapp"></i> WhatsApp</span><span class="btn-line2">即時查詢報價</span></a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -492,6 +553,15 @@
 
     <!-- 頁腳 -->
     <!-- Shared footer: generated from src/_data/site.json -->
+    <section class="site-contact-section" aria-label="聯絡101開鎖">
+        <div class="site-contact-card">
+            <p><i class="fas fa-phone-alt"></i> 仲有疑問？立即聯絡專人解答</p>
+            <div class="site-contact-actions">
+                <a href="tel:+85266101101" class="site-contact-button"><i class="fas fa-phone"></i> 24小時緊急熱線</a>
+                <a href="https://wa.me/85266101101?text=請問關於開鎖的問題..." class="site-contact-button site-contact-button--whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -505,13 +575,13 @@
                 <div class="footer-col">
                     <h3>支援</h3>
                     <ul>
-                    <li><a href="../service">服務項目</a></li>
+                    <li><a href="../service.html">服務項目</a></li>
                     <li><a href="../area">地區服務</a></li>
-                    <li><a href="../#commitment">服務承諾</a></li>
+                    <li><a href="../index.html#commitment">服務承諾</a></li>
                     <li><a href="../price">收費參考</a></li>
-                    <li><a href="../faq">常見問題</a></li>
-                    <li><a href="../#about">關於我們</a></li>
-                    <li><a href="../#contact">聯絡我們</a></li>
+                    <li><a href="../faq.html">常見問題</a></li>
+                    <li><a href="../index.html#about">關於我們</a></li>
+                    <li><a href="../index.html#contact">聯絡我們</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

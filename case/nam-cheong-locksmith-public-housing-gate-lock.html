@@ -432,92 +432,6 @@
                 display: block;
             }
         }
-        footer {
-            background: #0e1a24;
-            color: #ccd7e4;
-            padding: 48px 0 24px;
-            text-align: center;
-        }
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 28px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        .footer-links a {
-            color: #d4af37;
-            text-decoration: none;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
-            text-align: left;
-            margin-bottom: 32px;
-        }
-        .footer-brand {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #fff;
-        }
-        .footer-brand span {
-            color: #d4af37;
-        }
-        .footer-col h3 {
-            color: #fff;
-            margin-bottom: 16px;
-            font-size: 1.1rem;
-        }
-        .footer-col ul {
-            list-style: none;
-            padding: 0;
-        }
-        .footer-col ul li {
-            margin-bottom: 8px;
-        }
-        .footer-col ul li a {
-            color: #ccd7e4;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-        .footer-col ul li a:hover {
-            color: #d4af37;
-        }
-        .footer-social {
-            display: flex;
-            gap: 16px;
-            margin: 16px 0;
-        }
-        .footer-social a {
-            color: #ccd7e4;
-            font-size: 1.4rem;
-            transition: 0.2s;
-        }
-        .footer-social a:hover {
-            color: #d4af37;
-        }
-        .footer-contact-links {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .footer-contact-links a {
-            color: #d4af37;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .footer-copyright {
-            border-top: 1px solid rgba(255,255,255,0.06);
-            padding-top: 24px;
-            margin-top: 16px;
-            font-size: 0.9rem;
-        }
-        .footer-blog-link {
-            color: #d4af37;
-            text-decoration: none;
-            font-weight: 500;
-        }
         @media (max-width: 768px) {
             .nav-links {
                 position: fixed;
@@ -563,16 +477,6 @@
             .completion-card {
                 width: 100%;
                 max-width: 320px;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .footer-social {
-                justify-content: center;
-            }
-            .footer-contact-links {
-                align-items: center;
             }
             .whatsapp-text {
                 display: none;
@@ -858,34 +762,34 @@
     <!-- Shared header: generated from src/_data/site.json -->
     <div class="navbar">
         <div class="nav-container">
-            <a class="logo" href="../" aria-label="返回首頁">
+            <a class="logo" href="../index.html" aria-label="返回首頁">
                 <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
                 <div class="brand-name">101<span>開鎖</span></div>
             </a>
             <div class="desktop-nav">
-                <a href="../">首頁</a>
+                <a href="../index.html">首頁</a>
                 <div class="dropdown">
                     <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../service">開鎖</a>
-                        <a href="../service">換鎖</a>
-                        <a href="../service">電子鎖</a>
-                        <a href="../service">門禁系統</a>
-                        <a href="../service">車鎖</a>
-                        <a href="../service">夾萬</a>
+                        <a href="../service.html">開鎖</a>
+                        <a href="../service.html">換鎖</a>
+                        <a href="../service.html">電子鎖</a>
+                        <a href="../service.html">門禁系統</a>
+                        <a href="../service.html">車鎖</a>
+                        <a href="../service.html">夾萬</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../faq">常見問題</a>
+                        <a href="../faq.html">常見問題</a>
                         <a href="../news">知識文章</a>
                     </div>
                 </div>
                 <a href="../locksmith-real-case">真實案例</a>
                 <a href="../price">收費參考</a>
-                <a href="../#about">關於我們</a>
-                <a href="../#contact">聯絡我們</a>
+                <a href="../index.html#about">關於我們</a>
+                <a href="../index.html#contact">聯絡我們</a>
                 <div class="quick-actions">
                     <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
                     <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
@@ -906,29 +810,29 @@
     <div class="mobile-drawer" id="mobileDrawer">
         <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
         <ul class="drawer-nav-list">
-            <li class="drawer-nav-item"><a href="../" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
             <li class="drawer-nav-item" data-has-sub="true">
                 <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="service-sub">
-                <li><a href="../service">開鎖</a></li>
-                <li><a href="../service">換鎖</a></li>
-                <li><a href="../service">電子鎖</a></li>
-                <li><a href="../service">門禁系統</a></li>
-                <li><a href="../service">車鎖</a></li>
-                <li><a href="../service">夾萬</a></li>
+                <li><a href="../service.html">開鎖</a></li>
+                <li><a href="../service.html">換鎖</a></li>
+                <li><a href="../service.html">電子鎖</a></li>
+                <li><a href="../service.html">門禁系統</a></li>
+                <li><a href="../service.html">車鎖</a></li>
+                <li><a href="../service.html">夾萬</a></li>
                 </ul>
             </li>
             <li class="drawer-nav-item" data-has-sub="true">
                 <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="knowledge-sub">
-                <li><a href="../faq">常見問題</a></li>
+                <li><a href="../faq.html">常見問題</a></li>
                 <li><a href="../news">知識文章</a></li>
                 </ul>
             </li>
         <li class="drawer-nav-item"><a href="../locksmith-real-case" class="drawer-nav-link"><span>真實案例</span></a></li>
         <li class="drawer-nav-item"><a href="../price" class="drawer-nav-link"><span>收費參考</span></a></li>
-        <li class="drawer-nav-item"><a href="../#about" class="drawer-nav-link"><span>關於我們</span></a></li>
-        <li class="drawer-nav-item"><a href="../#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
         </ul>
         <div class="drawer-quick">
             <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
@@ -956,7 +860,7 @@
     <nav class="breadcrumb-bar" aria-label="麵包屑">
         <div class="container">
             <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../locksmith-real-case"><span itemprop="name">真實案例</span></a><meta itemprop="position" content="2"></li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">南昌開鎖案例：忘記帶鎖匙・公屋鐵閘鎖</span><meta itemprop="position" content="3"></li>
             </ol>
@@ -1085,8 +989,7 @@
             <i class="fas fa-file-contract"></i> 本頁個案源自101開鎖真實服務記錄（南昌公屋鐵閘鎖忘記帶鎖匙，技術開鎖保留鎖膽），已獲客戶同意分享（遮蓋個人資料）。家居安全有賴良好習慣，如需轉載或查詢，請聯絡我哋。
         </div>
     </div>
-    <!-- Shared footer: generated from src/_data/site.json -->
-    <footer>
+    <!-- Shared footer: generated from src/_data/site.json -->    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -1099,13 +1002,13 @@
                 <div class="footer-col">
                     <h3>支援</h3>
                     <ul>
-                    <li><a href="../service">服務項目</a></li>
+                    <li><a href="../service.html">服務項目</a></li>
                     <li><a href="../area">地區服務</a></li>
-                    <li><a href="../#commitment">服務承諾</a></li>
+                    <li><a href="../index.html#commitment">服務承諾</a></li>
                     <li><a href="../price">收費參考</a></li>
-                    <li><a href="../faq">常見問題</a></li>
-                    <li><a href="../#about">關於我們</a></li>
-                    <li><a href="../#contact">聯絡我們</a></li>
+                    <li><a href="../faq.html">常見問題</a></li>
+                    <li><a href="../index.html#about">關於我們</a></li>
+                    <li><a href="../index.html#contact">聯絡我們</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
