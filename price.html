@@ -109,6 +109,32 @@
             border-left: 5px solid #d4af37;
         }
 
+        .price-factor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .price-factor-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+        }
+
+        .price-factor-list li::marker {
+            content: '';
+        }
+
+        .price-factor-list i {
+            flex: 0 0 28px;
+            margin-top: 4px;
+            color: #d4af37;
+            text-align: center;
+        }
+
         .pricing-wrapper {
             overflow-x: auto;
             margin: 30px 0 20px;
@@ -251,13 +277,13 @@
           "@type": "ListItem",
           "position": 1,
           "name": "首頁",
-          "item": "https://101locksmithhk.com/"
+          "item": "https://101locksmithhk.com/index.html"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "收費參考",
-          "item": "https://101locksmithhk.com/price"
+          "item": "https://101locksmithhk.com/price.html"
         }
       ]
     }
@@ -272,9 +298,9 @@
         "LocalBusiness",
         "Locksmith"
       ],
-      "@id": "https://101locksmithhk.com/#locksmith",
+      "@id": "https://101locksmithhk.com/index.html#locksmith",
       "name": "101開鎖",
-      "url": "https://101locksmithhk.com/",
+      "url": "https://101locksmithhk.com/index.html",
       "logo": "https://101locksmithhk.com/image/logo.webp",
       "image": "https://101locksmithhk.com/image/logo.webp",
       "telephone": "+85266101101",
@@ -324,25 +350,25 @@
     },
     {
       "@type": "WebPage",
-      "@id": "https://101locksmithhk.com/price#webpage",
-      "url": "https://101locksmithhk.com/price",
+      "@id": "https://101locksmithhk.com/price.html#webpage",
+      "url": "https://101locksmithhk.com/price.html",
       "name": "101開鎖 | 透明收費・誠信服務・開鎖價錢一覧",
       "description": "需要開鎖或換鎖？查看家居、電子鎖及商業門鎖收費參考。101開鎖先了解現場情況及報價，確認收費後才上門施工。",
       "isPartOf": {
-        "@id": "https://101locksmithhk.com/#website"
+        "@id": "https://101locksmithhk.com/index.html#website"
       },
       "about": {
-        "@id": "https://101locksmithhk.com/#locksmith"
+        "@id": "https://101locksmithhk.com/index.html#locksmith"
       }
     },
     {
       "@type": "Service",
-      "@id": "https://101locksmithhk.com/price#locksmith-service",
+      "@id": "https://101locksmithhk.com/price.html#locksmith-service",
       "name": "101開鎖 | 透明收費・誠信服務・開鎖價錢一覧",
       "description": "需要開鎖或換鎖？查看家居、電子鎖及商業門鎖收費參考。101開鎖先了解現場情況及報價，確認收費後才上門施工。",
       "serviceType": "Locksmith service",
       "provider": {
-        "@id": "https://101locksmithhk.com/#locksmith"
+        "@id": "https://101locksmithhk.com/index.html#locksmith"
       },
       "areaServed": {
         "@type": "AdministrativeArea",
@@ -359,7 +385,7 @@
               "name": "24小時緊急開鎖",
               "description": "住宅、商舖及辦公室緊急上門開鎖服務。",
               "provider": {
-                "@id": "https://101locksmithhk.com/#locksmith"
+                "@id": "https://101locksmithhk.com/index.html#locksmith"
               }
             }
           },
@@ -370,7 +396,7 @@
               "name": "換鎖及門鎖維修",
               "description": "更換門鎖、鎖芯、維修壞鎖及保安升級建議。",
               "provider": {
-                "@id": "https://101locksmithhk.com/#locksmith"
+                "@id": "https://101locksmithhk.com/index.html#locksmith"
               }
             }
           },
@@ -381,7 +407,7 @@
               "name": "電子鎖安裝維修",
               "description": "Samsung、Yale、Philips 等智能電子鎖安裝、重置及故障處理。",
               "provider": {
-                "@id": "https://101locksmithhk.com/#locksmith"
+                "@id": "https://101locksmithhk.com/index.html#locksmith"
               }
             }
           },
@@ -392,7 +418,7 @@
               "name": "門禁系統服務",
               "description": "商業門禁、密碼鎖、拍卡系統安裝及維護。",
               "provider": {
-                "@id": "https://101locksmithhk.com/#locksmith"
+                "@id": "https://101locksmithhk.com/index.html#locksmith"
               }
             }
           },
@@ -403,7 +429,7 @@
               "name": "汽車開鎖",
               "description": "車門反鎖、車匙留車內等汽車開鎖支援。",
               "provider": {
-                "@id": "https://101locksmithhk.com/#locksmith"
+                "@id": "https://101locksmithhk.com/index.html#locksmith"
               }
             }
           },
@@ -414,7 +440,7 @@
               "name": "夾萬及保險箱開鎖",
               "description": "電子及機械夾萬、保險箱開啟與密碼重設。",
               "provider": {
-                "@id": "https://101locksmithhk.com/#locksmith"
+                "@id": "https://101locksmithhk.com/index.html#locksmith"
               }
             }
           }
@@ -426,10 +452,10 @@
     </script>
     <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
     <!-- SEO 社群分享與 canonical -->
-    <link rel="canonical" href="https://101locksmithhk.com/price">
+    <link rel="canonical" href="https://101locksmithhk.com/price.html">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://101locksmithhk.com/price">
+    <meta property="og:url" content="https://101locksmithhk.com/price.html">
     <meta property="og:title" content="101開鎖 | 透明收費・誠信服務・開鎖價錢一覧">
     <meta property="og:description" content="需要開鎖或換鎖？查看家居、電子鎖及商業門鎖收費參考。101開鎖先了解現場情況及報價，確認收費後才上門施工。">
     <meta property="og:image" content="https://101locksmithhk.com/image/logo.webp">
@@ -480,11 +506,11 @@
                     <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="faq.html">常見問題</a>
-                        <a href="news">知識文章</a>
+                        <a href="news.html">知識文章</a>
                     </div>
                 </div>
-                <a href="locksmith-real-case">真實案例</a>
-                <a href="price">收費參考</a>
+                <a href="locksmith-real-case.html">真實案例</a>
+                <a href="price.html">收費參考</a>
                 <a href="index.html#about">關於我們</a>
                 <a href="index.html#contact">聯絡我們</a>
                 <div class="quick-actions">
@@ -523,11 +549,11 @@
                 <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="knowledge-sub">
                 <li><a href="faq.html">常見問題</a></li>
-                <li><a href="news">知識文章</a></li>
+                <li><a href="news.html">知識文章</a></li>
                 </ul>
             </li>
-        <li class="drawer-nav-item"><a href="locksmith-real-case" class="drawer-nav-link"><span>真實案例</span></a></li>
-        <li class="drawer-nav-item"><a href="price" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
         <li class="drawer-nav-item"><a href="index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
         <li class="drawer-nav-item"><a href="index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
         </ul>
@@ -631,15 +657,23 @@
                 <h3 style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
                     <i class="fas fa-chart-line" style="color: #d4af37;"></i> 影響價格的因素（誠實透明）
                 </h3>
-                <ul style="margin-left: 20px; display: flex; flex-direction: column; gap: 14px;">
-                    <li><i class="fas fa-clock" style="color:#d4af37; width: 28px;"></i> <strong>時間時段：</strong> 深夜凌晨時段
-                        (23:00 - 07:00) 或公眾假期緊急開鎖，開鎖費可能比一般時間多額外$200-$600，報價時向客人講解收費細節。</li>
-                    <li><i class="fas fa-map-marker-alt" style="color:#d4af37; width: 28px;"></i> <strong>地區位置：</strong>
-                        偏遠地區例如禁區、離島等可能產生額外費用，報價時會清楚列明。</li>
-                    <li><i class="fas fa-shield-alt" style="color:#d4af37; width: 28px;"></i> <strong>門鎖等級：</strong>
-                        高保安鎖膽、多段式鎖芯、防撬葉片鎖等技術難度增加，費用會按實際情況上調，但必定事前溝通。</li>
-                    <li><i class="fas fa-cloud-rain" style="color:#d4af37; width: 28px;"></i> <strong>惡劣天氣：</strong>
-                        八號風球或黑色暴雨警告期間，基於師傅安全或交通限制可能需加收緊急服務費，仍然堅持24小時支援。</li>
+                <ul class="price-factor-list">
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span><strong>時間時段：</strong> 深夜凌晨時段 (23:00 - 07:00) 或公眾假期緊急開鎖，開鎖費可能比一般時間多額外$200-$600，報價時向客人講解收費細節。</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><strong>地區位置：</strong> 偏遠地區例如禁區、離島等可能產生額外費用，報價時會清楚列明。</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <span><strong>門鎖等級：</strong> 高保安鎖膽、多段式鎖芯、防撬葉片鎖等技術難度增加，費用會按實際情況上調，但必定事前溝通。</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-cloud-rain"></i>
+                        <span><strong>惡劣天氣：</strong> 八號風球或黑色暴雨警告期間，基於師傅安全或交通限制可能需加收緊急服務費，仍然堅持24小時支援。</span>
+                    </li>
                 </ul>
                 <div style="background: #fff0db; margin-top: 24px; padding: 16px 20px; border-radius: 16px;">
                     <i class="fas fa-check-circle" style="color:#b38f2a;"></i> <strong>101開鎖額外保障：</strong>
@@ -672,16 +706,16 @@
                     <div class="footer-brand">101<span>開鎖</span></div>
                     <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
                     <h4>Blog</h4>
-                <a href="news" class="footer-blog-link">開鎖知識庫</a>
-                <br><a href="locksmith-real-case" class="footer-blog-link">真實個案</a>
+                <a href="news.html" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="locksmith-real-case.html" class="footer-blog-link">真實個案</a>
                 </div>
                 <div class="footer-col">
                     <h3>支援</h3>
                     <ul>
                     <li><a href="service.html">服務項目</a></li>
-                    <li><a href="area">地區服務</a></li>
+                    <li><a href="area.html">地區服務</a></li>
                     <li><a href="index.html#commitment">服務承諾</a></li>
-                    <li><a href="price">收費參考</a></li>
+                    <li><a href="price.html">收費參考</a></li>
                     <li><a href="faq.html">常見問題</a></li>
                     <li><a href="index.html#about">關於我們</a></li>
                     <li><a href="index.html#contact">聯絡我們</a></li>
@@ -746,7 +780,7 @@
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     const lang = btn.getAttribute('data-lang');
-                    const targetUrl = lang === 'zh' ? 'zh-CN/' : (lang === 'en' ? 'en/' : '/');
+                    const targetUrl = lang === 'zh' ? 'zh-CN/index.html' : (lang === 'en' ? 'en/index.html' : 'index.html');
                     if (targetUrl) window.location.href = targetUrl;
                 });
             });

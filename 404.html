@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>頁面不存在｜101開鎖</title>
+    <meta name="description" content="你要尋找的 101開鎖 頁面可能已移動、改名或不存在。請返回首頁、查看服務項目，或即時 WhatsApp 查詢 24 小時開鎖服務。">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="shortcut icon" href="favicon.ico?v=20260707">
+    <link rel="icon" href="image/favicon-48x48.png?v=20260707" type="image/png" sizes="48x48">
+    <link rel="icon" href="image/favicon.png?v=20260707" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png?v=20260707" sizes="180x180">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/site.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </noscript>
+
+    <style>
+        .not-found {
+            min-height: 72vh;
+            display: flex;
+            align-items: center;
+            padding: 140px 0 80px;
+            background:
+                radial-gradient(circle at 18% 20%, rgba(212, 175, 55, 0.18), transparent 28rem),
+                linear-gradient(135deg, #f9fafc 0%, #ffffff 52%, #eef2f7 100%);
+        }
+
+        .not-found-card {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: clamp(28px, 6vw, 56px);
+            border: 1px solid rgba(212, 175, 55, 0.32);
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: 0 22px 55px rgba(30, 42, 62, 0.1);
+            text-align: center;
+        }
+
+        .error-code {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(212, 175, 55, 0.14);
+            color: #8a6b10;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        .not-found h1 {
+            margin: 22px 0 16px;
+            color: #1e2a3e;
+            font-size: clamp(2.1rem, 6vw, 4.5rem);
+            line-height: 1.08;
+        }
+
+        .not-found p {
+            max-width: 680px;
+            margin: 0 auto;
+            color: #65758b;
+            font-size: 1.08rem;
+        }
+
+        .not-found-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 30px;
+        }
+
+        .not-found-links {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .not-found-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            border: 1px solid #edf2f7;
+            border-radius: 16px;
+            background: #ffffff;
+            color: #1e2a3e;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .not-found-link:hover {
+            transform: translateY(-3px);
+            border-color: #d4af37;
+            box-shadow: 0 10px 24px rgba(30, 42, 62, 0.08);
+        }
+
+        .not-found-link i {
+            color: #d4af37;
+        }
+
+        @media (max-width: 760px) {
+            .not-found {
+                padding: 112px 0 56px;
+            }
+
+            .not-found-links {
+                grid-template-columns: 1fr;
+            }
+
+            .not-found-actions .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0"
+                target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="index.html" aria-label="返回首頁">
+                <img src="image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <div class="brand-name">101<span>開鎖</span></div>
+            </a>
+
+            <div class="desktop-nav">
+                <a href="index.html">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="service.html">開鎖</a>
+                        <a href="service.html">換鎖</a>
+                        <a href="service.html">電子鎖</a>
+                        <a href="service.html">門禁系統</a>
+                        <a href="service.html">車鎖</a>
+                        <a href="service.html">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="faq.html">常見問題</a>
+                        <a href="news.html">知識文章</a>
+                    </div>
+                </div>
+                <a href="locksmith-real-case.html">真實案例</a>
+                <a href="price.html">收費參考</a>
+                <a href="index.html#about">關於我們</a>
+                <a href="index.html#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0"
+                        target="_blank" rel="noopener" class="whatsapp-quick">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="開啟選單">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <button class="close-drawer" id="closeDrawerBtn" aria-label="關閉選單">&times;</button>
+        </div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item">
+                <a href="index.html" class="drawer-nav-link"><span>首頁</span></a>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub">
+                    <span>服務項目</span> <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="drawer-submenu" id="service-sub">
+                    <li><a href="service.html">開鎖</a></li>
+                    <li><a href="service.html">換鎖</a></li>
+                    <li><a href="service.html">電子鎖</a></li>
+                    <li><a href="service.html">門禁系統</a></li>
+                    <li><a href="service.html">車鎖</a></li>
+                    <li><a href="service.html">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub">
+                    <span>開鎖知識</span> <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                    <li><a href="faq.html">常見問題</a></li>
+                    <li><a href="news.html">知識文章</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item">
+                <a href="locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a>
+            </li>
+            <li class="drawer-nav-item">
+                <a href="price.html" class="drawer-nav-link"><span>收費參考</span></a>
+            </li>
+            <li class="drawer-nav-item">
+                <a href="index.html#about" class="drawer-nav-link"><span>關於我們</span></a>
+            </li>
+            <li class="drawer-nav-item">
+                <a href="index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a>
+            </li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item">
+                <i class="fas fa-phone-alt"></i> 即撥 24h 熱線
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0"
+                target="_blank" rel="noopener" class="drawer-quick-item">
+                <i class="fab fa-whatsapp"></i> WhatsApp 查詢
+            </a>
+        </div>
+    </div>
+
+    <main class="not-found">
+        <div class="container">
+            <section class="not-found-card" aria-labelledby="not-found-title">
+                <span class="error-code"><i class="fas fa-unlink"></i> 404 PAGE NOT FOUND</span>
+                <h1 id="not-found-title">呢一頁暫時搵唔到</h1>
+                <p>
+                    你輸入的網址可能已移動、改名，或者連結已經失效。
+                    如果你正在搵香港開鎖、換鎖、電子鎖或車鎖服務，可以直接返回主要頁面或即時聯絡我們。
+                </p>
+
+                <div class="not-found-actions">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> 返回首頁
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0"
+                        target="_blank" rel="noopener" class="btn btn-outline">
+                        <i class="fab fa-whatsapp"></i> WhatsApp 即時查詢
+                    </a>
+                    <a href="tel:+85266101101" class="btn btn-outline">
+                        <i class="fas fa-phone-alt"></i> 致電 66 101 101
+                    </a>
+                </div>
+
+                <div class="not-found-links" aria-label="常用頁面">
+                    <a href="service.html" class="not-found-link">
+                        <i class="fas fa-tools"></i> 服務項目
+                    </a>
+                    <a href="locksmith-real-case.html" class="not-found-link">
+                        <i class="fas fa-briefcase"></i> 真實案例
+                    </a>
+                    <a href="price.html" class="not-found-link">
+                        <i class="fas fa-tags"></i> 收費參考
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>開鎖</span></div>
+                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <h4>Blog</h4>
+                    <a href="news.html" class="footer-blog-link">開鎖知識庫</a>
+                    <br>
+                    <a href="locksmith-real-case.html" class="footer-blog-link">真實個案</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                        <li><a href="service.html">服務項目</a></li>
+                        <li><a href="area.html">地區服務</a></li>
+                        <li><a href="index.html#commitment">服務承諾</a></li>
+                        <li><a href="price.html">收費參考</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                        <li><a href="index.html#about">關於我們</a></li>
+                        <li><a href="index.html#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>追蹤我們</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0"
+                            target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 101開鎖 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/news.js" defer></script>
+</body>
+
+</html>

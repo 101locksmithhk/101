@@ -111,11 +111,13 @@
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const lang = btn.getAttribute('data-lang');
-            const isNestedPage = window.location.pathname.includes('/news/') || window.location.pathname.includes('/case/');
+            const isNestedPage = window.location.pathname.includes('/news/')
+                || window.location.pathname.includes('/case/')
+                || window.location.pathname.includes('/area/');
             const prefix = isNestedPage ? '../' : '';
             const targetUrl = lang === 'zh'
-                ? `${prefix}zh-CN/`
-                : (lang === 'en' ? `${prefix}en/` : `${prefix}`);
+                ? `${prefix}zh-CN/index.html`
+                : (lang === 'en' ? `${prefix}en/index.html` : `${prefix}index.html`);
             if (targetUrl) window.location.href = targetUrl;
         });
     });

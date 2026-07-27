@@ -524,6 +524,12 @@ h1, h2, h3, h4 {
     color: #1e2a3e;
 }
 
+/* 案例頁聯絡方法與頁腳之間的視覺分隔 */
+.case-footer-separator {
+    height: clamp(40px, 5vw, 64px);
+    background: #f9fafc;
+}
+
 /* 頁腳 */
 footer {
     background: #0e1a24;

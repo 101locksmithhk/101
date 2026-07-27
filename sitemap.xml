@@ -2,12 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://101locksmithhk.com/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://101locksmithhk.com/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://101locksmithhk.com/zh-CN/" />
-    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/" />
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://101locksmithhk.com/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://101locksmithhk.com/zh-CN/index.html" />
+    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/index.html" />
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -24,12 +24,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/zh-CN/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://101locksmithhk.com/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://101locksmithhk.com/zh-CN/" />
-    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/" />
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/zh-CN/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://101locksmithhk.com/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://101locksmithhk.com/zh-CN/index.html" />
+    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/index.html" />
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -46,12 +46,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://101locksmithhk.com/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://101locksmithhk.com/zh-CN/" />
-    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/" />
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://101locksmithhk.com/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://101locksmithhk.com/zh-CN/index.html" />
+    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/index.html" />
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -68,14 +68,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/faq</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/faq.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/locksmith-real-case</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/locksmith-real-case.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -83,8 +83,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -92,20 +92,20 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/price</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/price.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/service</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/service.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/american-mortise-lock-intro</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://101locksmithhk.com/news/american-mortise-lock-intro.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -122,38 +122,38 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/battery</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/battery.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/broken-key</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/broken-key.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/broken-room-door</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/broken-room-door.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/change-digital-lock</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/change-digital-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/clip-for-unlock</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/clip-for-unlock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/clutter-behind-door</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://101locksmithhk.com/news/clutter-behind-door.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -174,8 +174,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/different-between-Screw-and-pin-cylinder</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://101locksmithhk.com/news/different-between-Screw-and-pin-cylinder.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -184,20 +184,20 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/digital-lock-key</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/digital-lock-key.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/dust-in-lock-strike</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/dust-in-lock-strike.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/euro-profile-lock-intro</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://101locksmithhk.com/news/euro-profile-lock-intro.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -210,20 +210,20 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/iIntegral-lock</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/iIntegral-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/jimmy-proof-deadlock-intro</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/jimmy-proof-deadlock-intro.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/philips-to-mechanical</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://101locksmithhk.com/news/philips-to-mechanical.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -232,26 +232,26 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/rim-lock-intro</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/rim-lock-intro.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/room-lock-intro</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/room-lock-intro.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/room-lock</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/room-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/samsung-lock-intro-model</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://101locksmithhk.com/news/samsung-lock-intro-model.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -264,8 +264,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/samsung-lock-intro</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://101locksmithhk.com/news/samsung-lock-intro.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -278,8 +278,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/tsa-key</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/tsa-key.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -288,14 +288,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/unlock-method</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/unlock-method.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/news/x-lock-intro</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/news/x-lock-intro.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -312,8 +312,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/tai-kok-tsui-locksmith-wooden-door-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/tai-kok-tsui-locksmith-wooden-door-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -330,8 +330,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/sai-kung-locksmith-yale-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/sai-kung-locksmith-yale-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -348,8 +348,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/hung-hom-locksmith-lock-replacement</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/hung-hom-locksmith-lock-replacement.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -366,8 +366,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/kowloon-bay-locksmith-bathroom-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/kowloon-bay-locksmith-bathroom-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -384,8 +384,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/tseung-kwan-o-locksmith-bonco-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/tseung-kwan-o-locksmith-bonco-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -398,8 +398,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/cheung-sha-wan-locksmith-jetko-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/cheung-sha-wan-locksmith-jetko-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -416,14 +416,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/nam-cheong-locksmith-public-housing-gate-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/nam-cheong-locksmith-public-housing-gate-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/central-locksmith-renovation-site-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/central-locksmith-renovation-site-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -440,8 +440,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/sai-ying-pun-locksmith-euro-cylinder-replacement</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/sai-ying-pun-locksmith-euro-cylinder-replacement.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -458,8 +458,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/wan-chai-locksmith-diamond-door-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/wan-chai-locksmith-diamond-door-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -476,8 +476,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/happy-valley-locksmith-gate-deadlock</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/case/happy-valley-locksmith-gate-deadlock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -486,8 +486,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/kowloon-bay-locksmith-american-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/kowloon-bay-locksmith-american-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -500,8 +500,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/to-kwa-wan-locksmith-yale-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/to-kwa-wan-locksmith-yale-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -522,8 +522,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/prince-edward-locksmith-metal-gate-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/prince-edward-locksmith-metal-gate-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -540,8 +540,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/wong-tai-sin-locksmith-high-security-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/wong-tai-sin-locksmith-high-security-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -562,8 +562,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/sha-tin-locksmith-medeco-high-security-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/sha-tin-locksmith-medeco-high-security-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -576,8 +576,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/diamond-hill-car-locksmith-honda</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/diamond-hill-car-locksmith-honda.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -598,8 +598,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -612,8 +612,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/central-western</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/central-western.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -621,8 +621,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/eastern</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area/eastern.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -630,8 +630,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -639,8 +639,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/kowloon-city</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/kowloon-city.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -648,8 +648,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/kwai-tsing</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area/kwai-tsing.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -657,8 +657,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/kwun-tong</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/kwun-tong.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -666,8 +666,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/north</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area/north.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -675,8 +675,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/sai-kung</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/sai-kung.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -684,8 +684,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/sha-tin</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/sha-tin.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -693,8 +693,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/sham-shui-po</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/sham-shui-po.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -702,8 +702,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/southern</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area/southern.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -711,8 +711,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/tai-po</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area/tai-po.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -720,8 +720,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/tsuen-wan</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area/tsuen-wan.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -729,8 +729,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/tuen-mun</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/tuen-mun.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -738,8 +738,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/wan-chai</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/wan-chai.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -747,8 +747,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/wong-tai-sin</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/wong-tai-sin.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -756,8 +756,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/yau-tsim-mong</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://101locksmithhk.com/area/yau-tsim-mong.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -765,8 +765,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://101locksmithhk.com/area/yuen-long</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://101locksmithhk.com/area/yuen-long.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>

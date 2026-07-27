@@ -86,6 +86,40 @@
             background: #d4af37;
             color: #1e2a3e;
         }
+        .emergency-actions {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            width: min(100%, 900px);
+            margin: 24px auto 0;
+        }
+        .emergency-actions .btn {
+            width: 100%;
+            min-height: 58px;
+            justify-content: center;
+            white-space: normal;
+            text-align: center;
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            border: 2px solid #25d366;
+            color: #ffffff;
+        }
+        .btn-whatsapp:hover {
+            background: #1fbd5b;
+            border-color: #1fbd5b;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 640px) {
+            .emergency-actions {
+                gap: 8px;
+            }
+            .emergency-actions .btn {
+                padding: 11px 8px;
+                font-size: 0.82rem;
+            }
+        }
         .navbar {
             background: white;
             box-shadow: 0 2px 12px rgba(0,0,0,0.05);
@@ -306,6 +340,27 @@
             background: white;
             margin: 0;
         }
+        .case-fault-photo {
+            margin: 0 0 24px;
+            overflow: hidden;
+            border-radius: 16px;
+            background: #eef2f7;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+        }
+        .case-fault-photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .case-fault-photo figcaption {
+            padding: 8px 16px;
+            border-top: 1px solid #edf2f7;
+            background: #f8fafc;
+            color: #4a5568;
+            font-size: 0.8rem;
+            text-align: center;
+        }
         /* 好评排版上下结构 */
         .review-box {
             background: #fffcf0;
@@ -455,19 +510,19 @@
           "@type": "ListItem",
           "position": 1,
           "name": "首頁",
-          "item": "https://101locksmithhk.com/"
+          "item": "https://101locksmithhk.com/index.html"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "真實案例",
-          "item": "https://101locksmithhk.com/locksmith-real-case"
+          "item": "https://101locksmithhk.com/locksmith-real-case.html"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "屯門開鎖案例：有鎖匙開唔到・鐵閘鎖膽故障",
-          "item": "https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock"
+          "item": "https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock.html"
         }
       ]
     }
@@ -479,10 +534,10 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": "https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock#article",
+      "@id": "https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock.html#article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock"
+        "@id": "https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock.html"
       },
       "headline": "屯門開鎖｜有鎖匙開唔到・鐵閘鎖膽故障｜101開鎖",
       "description": "屯門鐵閘鎖有鎖匙都開唔到？參考101開鎖檢查鎖膽鬆脫、開門及更換鎖膽案例；遇到鐵閘鎖故障可發相查詢上門。",
@@ -491,7 +546,7 @@
       ],
       "author": {
         "@type": "Organization",
-        "@id": "https://101locksmithhk.com/#locksmith",
+        "@id": "https://101locksmithhk.com/index.html#locksmith",
         "name": "101開鎖",
         "logo": {
           "@type": "ImageObject",
@@ -500,7 +555,7 @@
       },
       "publisher": {
         "@type": "Organization",
-        "@id": "https://101locksmithhk.com/#locksmith",
+        "@id": "https://101locksmithhk.com/index.html#locksmith",
         "name": "101開鎖",
         "logo": {
           "@type": "ImageObject",
@@ -514,10 +569,10 @@
     </script>
     <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
     <!-- SEO 社群分享與 canonical -->
-    <link rel="canonical" href="https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock">
+    <link rel="canonical" href="https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock.html">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock">
+    <meta property="og:url" content="https://101locksmithhk.com/case/tuen-mun-locksmith-metal-gate-lock.html">
     <meta property="og:title" content="屯門開鎖｜有鎖匙開唔到・鐵閘鎖膽故障｜101開鎖">
     <meta property="og:description" content="屯門鐵閘鎖有鎖匙都開唔到？參考101開鎖檢查鎖膽鬆脫、開門及更換鎖膽案例；遇到鐵閘鎖故障可發相查詢上門。">
     <meta property="og:image" content="https://placehold.co/1200x900/ECEFF1/D4AF37?text=鐵閘鎖膽故障+細匙筒抽出&amp;font=montserrat">
@@ -566,11 +621,11 @@
                     <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="../faq.html">常見問題</a>
-                        <a href="../news">知識文章</a>
+                        <a href="../news.html">知識文章</a>
                     </div>
                 </div>
-                <a href="../locksmith-real-case">真實案例</a>
-                <a href="../price">收費參考</a>
+                <a href="../locksmith-real-case.html">真實案例</a>
+                <a href="../price.html">收費參考</a>
                 <a href="../index.html#about">關於我們</a>
                 <a href="../index.html#contact">聯絡我們</a>
                 <div class="quick-actions">
@@ -609,11 +664,11 @@
                 <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="knowledge-sub">
                 <li><a href="../faq.html">常見問題</a></li>
-                <li><a href="../news">知識文章</a></li>
+                <li><a href="../news.html">知識文章</a></li>
                 </ul>
             </li>
-        <li class="drawer-nav-item"><a href="../locksmith-real-case" class="drawer-nav-link"><span>真實案例</span></a></li>
-        <li class="drawer-nav-item"><a href="../price" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
         <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
         <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
         </ul>
@@ -633,7 +688,7 @@
         <div class="container">
             <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../index.html"><span itemprop="name">首頁</span></a><meta itemprop="position" content="1"></li>
-                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../locksmith-real-case"><span itemprop="name">真實案例</span></a><meta itemprop="position" content="2"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="../locksmith-real-case.html"><span itemprop="name">真實案例</span></a><meta itemprop="position" content="2"></li>
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">屯門開鎖案例：有鎖匙開唔到・鐵閘鎖膽故障</span><meta itemprop="position" content="3"></li>
             </ol>
         </div>
@@ -641,7 +696,7 @@
     <section id="home" style="background: linear-gradient(115deg, #ffffff 0%, #fef7e8 100%);">
         <div class="container">
             <div class="section-title">
-                <span><i class="fas fa-lock" style="color:#d4af37; margin-right: 12px;"></i> 屯門開鎖案例 · 鐵閘有鎖匙開唔到｜C字扣鬆脫導致全組珠仔彈出｜更換鎖膽徹底解決</span>
+                <span>屯門開鎖案例 · 鐵閘有鎖匙開唔到｜C字扣鬆脫導致全組珠仔彈出｜更換鎖膽徹底解決</span>
                 <div style="font-size: 1rem; font-weight: normal; margin-top: 8px;">有鎖匙都開唔到？更換鎖膽徹底解決</div>
             </div>
 
@@ -649,12 +704,12 @@
                 <div class="badge"></i> 鐵閘鎖膽故障｜C型扣鬆脫個案</div>
                 
                 <!-- 案例情景圖片：鐵閘與故障零件示意 -->
-                <div style="margin-bottom: 24px; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);">
-                    <img src="https://placehold.co/1200x900/ECEFF1/D4AF37?text=鐵閘鎖膽故障+細匙筒抽出&font=montserrat" alt="鐵閘鎖膽細匙筒抽出故障示意" style="width: 100%; height: 100%; display: block; object-fit: cover; aspect-ratio: 1200/900;" decoding="async" width="1200" height="900">
-                    <div style="background: #f8fafc; padding: 8px 16px; font-size: 0.8rem; color: #4a5568; text-align: center; border-top: 1px solid #edf2f7;">
+                <figure class="case-fault-photo">
+                    <img src="../image/case/tuen-mun/tuen-mun-locksmith-metal-gate-lock/tuen-mun-locksmith-metal-gate-lock-hero.jpeg" alt="鎖膽內部C字扣鬆脫，令上珠、下珠及彈弓彈出，導致鎖匙無法轉動" decoding="async" width="900" height="1200">
+                    <figcaption>
                         <i class="fas fa-camera"></i> 鎖膽內部C字扣鬆脫導致上珠、下珠及彈弓彈出，鎖匙無法轉動
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
 
                 <h2 style="margin-bottom: 12px;">真實鐵閘個案：有鎖匙但開唔到門｜C字扣鬆脫・鎖膽細匙筒移位</h2>
                 
@@ -694,11 +749,11 @@
                     </div>
                     <div class="completion-grid">
                         <div class="completion-card">
-                            <img src="/image/case/tuen-mun/tuen-mun-locksmith-metal-gate-lock/tuen-mun-locksmith-metal-gate-lock-before-service.jpeg" alt="鐵閘鎖膽C型扣鬆脫，上珠下珠及彈弓彈出" decoding="async" loading="lazy" width="1200" height="1600">
+                            <img src="../image/case/tuen-mun/tuen-mun-locksmith-metal-gate-lock/tuen-mun-locksmith-metal-gate-lock-before-service.jpeg" alt="鐵閘鎖膽C型扣鬆脫，上珠下珠及彈弓彈出" decoding="async" loading="lazy" width="1200" height="1600">
                             <p>C型扣鬆脫｜上珠下珠＋彈弓全彈出</p>
                         </div>
                         <div class="completion-card">
-                            <img src="/image/case/tuen-mun/tuen-mun-locksmith-metal-gate-lock/tuen-mun-locksmith-metal-gate-lock-after-service.jpeg" alt="更換全新鎖膽，鐵閘功能恢復" decoding="async" loading="lazy" width="1200" height="1600">
+                            <img src="../image/case/tuen-mun/tuen-mun-locksmith-metal-gate-lock/tuen-mun-locksmith-metal-gate-lock-after-service.jpeg" alt="更換全新鎖膽，鐵閘功能恢復" decoding="async" loading="lazy" width="1200" height="1600">
                             <p>更換全新鎖膽｜鐵閘暢順如新</p>
                         </div>
                     </div>
@@ -749,9 +804,9 @@
             <div class="card" style="background:#eef2fa;">
                 <h3><i class="fas fa-handshake"></i> 101開鎖｜鐵閘鎖膽急修專家・C型扣鬆脫／零件彈出即時更換</h3>
                 <p>無論鐵閘鎖匙插入無法轉動、細匙筒鬆脫、上下珠彈簧散落，101開鎖師傅均能快速診斷，採用無損方式更換鎖膽，保留鐵閘結構及外觀。即call即到，明碼實價，杜絕因不良習慣衍生的鎖具危機。</p>
-                <div style="text-align: center; margin-top: 24px;">
-                    <a href="tel:+85266101101" class="btn btn-primary" style="gap:12px;"><i class="fas fa-phone-alt"></i> 緊急開鎖熱線 66 101 101</a>
-                    <a href="https://wa.me/85266101101?text=你好，我鐵閘有鎖匙但開唔到，懷疑鎖膽零件鬆脫" target="_blank" class="btn btn-outline" style="margin-left: 16px;"><i class="fab fa-whatsapp"></i> WhatsApp 即時求援</a>
+                <div class="emergency-actions">
+                    <a href="tel:+85266101101" class="btn btn-primary"><i class="fas fa-phone-alt"></i> 緊急開鎖熱線 66 101 101</a>
+                    <a href="https://wa.me/85266101101?text=你好，我鐵閘有鎖匙但開唔到，懷疑鎖膽零件鬆脫" target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp 即時求援</a>
                 </div>
             </div>
         </div>
@@ -762,23 +817,25 @@
             <i class="fas fa-file-contract"></i> 本頁個案源自101開鎖真實服務記錄（屯門鐵閘鎖膽C字扣鬆脫，更換鎖膽），已獲客戶同意分享（遮蓋個人資料）。提醒各位業主：避免用鎖匙拉動鐵閘，可延長鎖膽壽命。如需轉載或查詢，請聯絡我哋。
         </div>
     </div>
-    <!-- Shared footer: generated from src/_data/site.json -->    <footer>
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <div class="case-footer-separator" aria-hidden="true"></div>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-brand">101<span>開鎖</span></div>
                     <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
                     <h4>Blog</h4>
-                <a href="../news" class="footer-blog-link">開鎖知識庫</a>
-                <br><a href="../locksmith-real-case" class="footer-blog-link">真實個案</a>
+                <a href="../news.html" class="footer-blog-link">開鎖知識庫</a>
+                <br><a href="../locksmith-real-case.html" class="footer-blog-link">真實個案</a>
                 </div>
                 <div class="footer-col">
                     <h3>支援</h3>
                     <ul>
                     <li><a href="../service.html">服務項目</a></li>
-                    <li><a href="../area">地區服務</a></li>
+                    <li><a href="../area.html">地區服務</a></li>
                     <li><a href="../index.html#commitment">服務承諾</a></li>
-                    <li><a href="../price">收費參考</a></li>
+                    <li><a href="../price.html">收費參考</a></li>
                     <li><a href="../faq.html">常見問題</a></li>
                     <li><a href="../index.html#about">關於我們</a></li>
                     <li><a href="../index.html#contact">聯絡我們</a></li>
