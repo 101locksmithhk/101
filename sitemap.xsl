@@ -258,7 +258,6 @@
           <section class="table-card">
             <div class="table-head">
               <h2>URL 清單</h2>
-              <span class="hint">美化顯示不會改變 sitemap XML 結構</span>
             </div>
             <table>
               <thead>
