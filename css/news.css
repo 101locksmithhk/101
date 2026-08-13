@@ -219,7 +219,8 @@ h1, h2, h3, h4 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo h1 {
+.logo h1,
+.logo .brand-name {
     font-size: 1.3rem;
     font-weight: 700;
     color: #1e2a3e;
@@ -227,7 +228,8 @@ h1, h2, h3, h4 {
     line-height: 1.2;
 }
 
-.logo h1 span {
+.logo h1 span,
+.logo .brand-name span {
     color: #d4af37;
 }
 
@@ -718,7 +720,8 @@ footer {
         height: 72px;
     }
 
-    .logo h1 {
+    .logo h1,
+    .logo .brand-name {
         font-size: 1.6rem;
     }
 
