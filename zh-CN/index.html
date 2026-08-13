@@ -27,14 +27,13 @@
     <!-- 效能：预先连线首屏会用到的第三方图示 CDN -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- 效能：预先载入 Largest Contentful Paint 元素（Hero 背景图片） -->
-    <link rel="preload" as="image" href="../image/wallpaper.jpeg" fetchpriority="high">
+    <!-- Preload only the WebP hero image used at the current viewport size. -->
+    <link rel="preload" as="image" href="../image/wallpaper-768.webp" type="image/webp" media="(max-width: 900px)" fetchpriority="high">
+    <link rel="preload" as="image" href="../image/wallpaper-1200.webp" type="image/webp" media="(min-width: 901px)" fetchpriority="high">
 
-    <!-- Local fonts: preload key files and load local CSS -->
-    <link rel="preload" href="../fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../fonts/fonts.css">
-    <link rel="stylesheet" href="../css/site.css">
+    <!-- The full shared shell can load after the first paint; critical shell styles are inlined below. -->
+    <link rel="stylesheet" href="../css/site.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../css/site.css"></noscript>
 
     <!-- Font Awesome：非阻塞载入 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -44,10 +43,20 @@
     </noscript>
 
     <style>
+        /* Critical first-paint shell. Use system fonts to avoid a font request chain. */
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; background: #f9fafc; color: #1e2a3e; line-height: 1.5; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+        .navbar { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+        .nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 1400px; min-height: 76px; margin: 0 auto; padding: 10px 20px; }
+        .logo { display: flex; align-items: center; gap: 12px; color: #1e2a3e; text-decoration: none; }.logo img { display: block; width: 56px; height: 56px; border-radius: 12px; }.logo .brand-name { margin: 0; color: #1e2a3e; font-size: 1.3rem; font-weight: 700; line-height: 1.2; }.logo .brand-name span { color: #d4af37; }
+        .desktop-nav { display: none; }.mobile-menu-btn { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; color: #1e2a3e; font-size: 1.55rem; }.drawer-overlay { position: fixed; inset: 0; z-index: 1090; visibility: hidden; background: rgba(0,0,0,.42); opacity: 0; }.mobile-drawer { position: fixed; top: 0; bottom: 0; left: -100%; z-index: 1100; width: min(84vw,360px); background: #fff; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 999px; font-weight: 600; text-decoration: none; cursor: pointer; }.btn-primary { background: #d4af37; color: #1e2a3e; }.btn-outline { background: transparent; border: 2px solid #d4af37; color: #d4af37; }
+        @media (min-width: 901px) { .desktop-nav { display: flex; align-items: center; gap: 28px; }.desktop-nav > a, .dropdown > a { color: #2c3e4e; font-weight: 500; text-decoration: none; }.dropdown { position: relative; }.dropdown-content { display: none; }.quick-actions { display: flex; align-items: center; gap: 10px; }.mobile-menu-btn { display: none; }.nav-container { min-height: 92px; } .logo img { width: 72px; height: 72px; } }
         /* ===== Hero 区块（背景图已预载）===== */
         .hero {
             background-color: #1e2a3e;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../image/wallpaper.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../image/wallpaper-768.webp');
             background-size: cover;
             background-position: center 20%;
             padding: 76px 0 84px;
@@ -115,6 +124,7 @@
 
         @media (min-width: 901px) {
             .hero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../image/wallpaper-1200.webp');
                 padding: 100px 0 120px;
                 min-height: 650px;
             }
@@ -307,16 +317,11 @@
             background-position: center;
         }
 
-        .article-item:nth-child(1) .article-image-frame {
-            background-image: url('../image/news/new1/wallpaper.jpeg');
-        }
-
-        .article-item:nth-child(2) .article-image-frame {
-            background-image: url('../image/news/new2/wallpaper.jpeg');
-        }
-
-        .article-item:nth-child(3) .article-image-frame {
-            background-image: url('../image/news/new3/wallpaper.jpeg');
+        .article-image-frame img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .article-item:hover .article-image-frame {
@@ -734,7 +739,7 @@
     <div class="navbar">
         <div class="nav-container">
             <a class="logo" href="../index.html" aria-label="返回首頁">
-                <img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100" decoding="async">
+                <img src="../image/logo-128.webp" alt="101開鎖 Logo" width="128" height="128" decoding="async">
                 <div class="brand-name">101<span>開鎖</span></div>
             </a>
             <div class="desktop-nav">
@@ -773,13 +778,13 @@
                     </div>
                 </div>
             </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="打开导航菜单" aria-controls="mobileDrawer" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
         </div>
     </div>
     <!-- Shared mobile drawer: generated from src/_data/site.json -->
     <div class="drawer-overlay" id="drawerOverlay"></div>
     <div class="mobile-drawer" id="mobileDrawer">
-        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn" type="button" aria-label="关闭导航菜单">&times;</button></div>
         <ul class="drawer-nav-list">
             <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
             <li class="drawer-nav-item" data-has-sub="true">
@@ -968,7 +973,7 @@
             <div class="articles-section-wrapper">
                 <div class="articles-grid">
                     <div class="article-item">
-                        <div class="article-image-frame"><span class="article-topic">开锁知识</span></div>
+                        <div class="article-image-frame"><img src="../image/news/price/locksmith-pricing-card.webp" alt="开锁收费指南" width="600" height="800" loading="lazy" decoding="async"><span class="article-topic">开锁知识</span></div>
                         <div class="article-text">
                             <h3 class="article-title">开锁收费指南</h3>
                             <p class="article-excerpt">了解不同锁类的开锁收费标准，深夜时段附加费说明，明码实价绝不取巧。</p><a href="../price.html"
@@ -976,7 +981,7 @@
                         </div>
                     </div>
                     <div class="article-item">
-                        <div class="article-image-frame"><span class="article-topic">开锁知识</span></div>
+                        <div class="article-image-frame"><img src="../image/news/unlock-method/unlocking-methods-card.webp" alt="三大开锁方法" width="600" height="800" loading="lazy" decoding="async"><span class="article-topic">开锁知识</span></div>
                         <div class="article-text">
                             <h3 class="article-title">三大开锁方法</h3>
                             <p class="article-excerpt">技术・巧妙・破坏 — 锁匠工具箱的三大技巧（詳细解构）</p><a href="../news/unlock-method.html"
@@ -984,7 +989,7 @@
                         </div>
                     </div>
                     <div class="article-item">
-                        <div class="article-image-frame"><span class="article-topic">电子锁指南</span></div>
+                        <div class="article-image-frame"><img src="../image/news/change-digital-lock/digital-lock-tenant-card.webp" alt="租客更换电子锁指南" width="600" height="800" loading="lazy" decoding="async"><span class="article-topic">电子锁指南</span></div>
                         <div class="article-text">
                             <h3 class="article-title">租客可以自己换电子锁嗎？</h3>
                             <p class="article-excerpt">拆解租客自行更换电子锁的权利、限制同正确步骤</p><a href="../news/change-digital-lock.html"
