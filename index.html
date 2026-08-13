@@ -2,14 +2,24 @@
 <html lang="zh-HK">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QDDHCBDHWQ');
+  (function(){
+    let loaded=false;
+    function loadAnalytics(){
+      if(loaded)return;
+      loaded=true;
+      const script=document.createElement('script');
+      script.async=true;
+      script.src='https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ';
+      document.head.appendChild(script);
+      gtag('js',new Date());
+      gtag('config','G-QDDHCBDHWQ');
+    }
+    ['pointerdown','keydown','touchstart'].forEach(function(eventName){window.addEventListener(eventName,loadAnalytics,{once:true,passive:true});});
+    window.addEventListener('load',function(){setTimeout(loadAnalytics,3500);},{once:true});
+  })();
 </script>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -31,9 +41,7 @@
     <link rel="preload" as="image" href="image/wallpaper-768.webp" type="image/webp" media="(max-width: 900px)" fetchpriority="high">
     <link rel="preload" as="image" href="image/wallpaper-1200.webp" type="image/webp" media="(min-width: 901px)" fetchpriority="high">
 
-    <!-- The full shared shell can load after the first paint; critical shell styles are inlined below. -->
-    <link rel="stylesheet" href="css/site.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="css/site.css"></noscript>
+    <link rel="stylesheet" href="css/site.css">
 
     <!-- Font Awesome：非阻塞載入 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -55,16 +63,21 @@
         @media (min-width: 901px) { .desktop-nav { display: flex; align-items: center; gap: 28px; }.desktop-nav > a, .dropdown > a { color: #2c3e4e; font-weight: 500; text-decoration: none; }.dropdown { position: relative; }.dropdown-content { display: none; }.quick-actions { display: flex; align-items: center; gap: 10px; }.mobile-menu-btn { display: none; }.nav-container { min-height: 92px; } .logo img { width: 72px; height: 72px; } }
         /* ===== Hero 區塊（背景圖已預載）===== */
         .hero {
+            position: relative;
+            isolation: isolate;
             background-color: #1e2a3e;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('image/wallpaper-768.webp');
-            background-size: cover;
-            background-position: center 20%;
             padding: 76px 0 84px;
             color: white;
             min-height: 560px;
             display: flex;
             align-items: flex-end;
         }
+
+        .hero-media { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+        .hero-media:after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.5)); }
+        .hero-media img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+        .hero .hero-content { position: relative; z-index: 1; }
+        .fas,.fab { display: inline-block; min-width: 1em; text-align: center; }
 
         .hero .hero-content {
             width: 100%;
@@ -131,7 +144,6 @@
 
         @media (min-width: 901px) {
             .hero {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('image/wallpaper-1200.webp');
                 padding: 100px 0 120px;
                 min-height: 650px;
             }
@@ -372,20 +384,22 @@
         }
 
         .read-more {
-            color: #d4af37;
+            color: #7a6114;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            transition: gap 0.2s ease;
         }
 
+        .read-more i { transition: transform .2s ease; }
+
         .read-more:hover {
-            gap: 10px;
             color: #b38f2a;
         }
+
+        .read-more:hover i { transform: translateX(4px); }
 
         .read-all-wrapper {
             display: flex;
@@ -394,26 +408,28 @@
         }
 
         .read-all-btn {
-            color: #d4af37;
+            color: #7a6114;
             text-decoration: none;
             font-weight: 600;
             font-size: 1rem;
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            transition: gap 0.2s ease;
             background: transparent;
             padding: 8px 16px;
             border-radius: 999px;
             border: 1px solid #d4af37;
         }
 
+        .read-all-btn i { transition: transform .2s ease; }
+
         .read-all-btn:hover {
-            gap: 12px;
             background: #d4af37;
             color: #1e2a3e;
             border-color: #d4af37;
         }
+
+        .read-all-btn:hover i { transform: translateX(4px); }
 
         @media (min-width: 601px) {
             .articles-grid {
@@ -832,8 +848,10 @@
         </div>
     </div>
 
+    <main>
     <!-- Hero 區塊 -->
     <section id="home" class="hero">
+        <picture class="hero-media" aria-hidden="true"><source media="(min-width: 901px)" srcset="image/wallpaper-1200.webp"><img src="image/wallpaper-768.webp" alt="" width="768" height="419" fetchpriority="high" decoding="async"></picture>
         <div class="container hero-content">
             <div class="hero-text">
                 <div class="badge">香港專業鎖匠團隊・365日・24小時無休・18區</div>
@@ -851,7 +869,7 @@
     <!-- 專業服務項目 -->
     <section id="services" style="background:#fefcf5;">
         <div class="container">
-            <div class="section-title">專業服務項目</div>
+            <h2 class="section-title">專業服務項目</h2>
             <div class="services-grid">
                 <a href="service.html" class="service-card-link">
                     <div class="service-card"><i class="fas fa-lock-open"></i>
@@ -896,7 +914,7 @@
     <!-- 服務承諾專區 -->
     <section id="commitment" style="background:#ffffff;">
         <div class="container">
-            <div class="section-title">服務承諾</div>
+            <h2 class="section-title">服務承諾</h2>
             <div class="commitment-grid" id="commitmentGrid">
                 <div class="commit-card">
                     <div class="commit-icon"><i class="fas fa-hand-holding-usd"></i></div>
@@ -938,7 +956,7 @@
     <!-- 收費參考 -->
     <section id="pricing" style="background:#ffffff;">
         <div class="container">
-            <div class="section-title">服務收費透明</div>
+            <h2 class="section-title">服務收費透明</h2>
             <div class="price-table">
                 <table>
                     <thead>
@@ -981,7 +999,7 @@
     <!-- 開鎖文章專區 -->
     <section id="articles-section" style="background:#f8fafd;">
         <div class="container">
-            <div class="section-title">開鎖文章</div>
+            <h2 class="section-title">開鎖文章</h2>
             <div class="articles-section-wrapper">
                 <div class="articles-grid">
                     <div class="article-item">
@@ -1018,7 +1036,7 @@
     <!-- 關於101開鎖 -->
     <section id="about" style="background:#ffffff;">
         <div class="container">
-            <div class="section-title">關於101開鎖</div>
+            <h2 class="section-title">關於101開鎖</h2>
             <div class="about-grid">
                 <div class="about-text">
                     <p style="font-size:1.1rem; margin-bottom:20px;">
@@ -1050,7 +1068,7 @@
     <!-- 原有聯絡我們區塊 -->
     <section id="contact" style="background:#fefcf5;">
         <div class="container">
-            <div class="section-title">聯絡我們・極速支援</div>
+            <h2 class="section-title">聯絡我們・極速支援</h2>
             <div class="contact-wrap">
                 <div class="contact-info">
                     <h3>24小時熱線</h3><br>
@@ -1088,6 +1106,7 @@
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <!-- Shared footer: generated from src/_data/site.json -->
     <footer>
@@ -1096,7 +1115,7 @@
                 <div class="footer-col">
                     <div class="footer-brand">101<span>開鎖</span></div>
                     <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
-                    <h4>Blog</h4>
+                    <h3>Blog</h3>
                 <a href="news.html" class="footer-blog-link">開鎖知識庫</a>
                 <br><a href="locksmith-real-case.html" class="footer-blog-link">真實個案</a>
                 </div>
@@ -1115,9 +1134,9 @@
                 <div class="footer-col">
                     <h3>追蹤我們</h3>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                     <div class="footer-contact-links">
                         <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
