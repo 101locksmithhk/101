@@ -589,13 +589,17 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin: 0;
+    margin: 10px 0 0;
     font-size: 0.9rem;
     line-height: 1.5;
 }
 
 .footer-contact-address i {
-    color: #d4af37;
+    color: inherit;
+}
+
+.footer-contact-links .footer-contact-address:hover {
+    color: #ccd7e4;
 }
 
 .footer-copyright {
@@ -751,6 +755,10 @@ footer {
 
     .footer-contact-links a {
         margin-right: 20px;
+    }
+
+    .footer-contact-address {
+        margin-top: 16px;
     }
 }
 .site-contact-section {

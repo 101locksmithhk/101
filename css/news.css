@@ -650,6 +650,24 @@ footer {
     color: #d4af37;
 }
 
+.footer-contact-address {
+    color: #ccd7e4;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-contact-address i {
+    color: inherit;
+}
+
+.footer-contact-links .footer-contact-address:hover {
+    color: #ccd7e4;
+}
+
 .footer-copyright {
     border-top: 1px solid #2a3a44;
     padding-top: 30px;
@@ -715,6 +733,10 @@ footer {
 
     .footer-contact-links a {
         margin-right: 20px;
+    }
+
+    .footer-contact-address {
+        margin-top: 16px;
     }
 }
 

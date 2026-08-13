@@ -106,18 +106,25 @@
         });
     }
 
-    // 語言切換按鈕：所有語言都跳回對應首頁
+    // 語言切換：有同篇翻譯時使用 hreflang，否則返回該語言首頁
     document.querySelectorAll('.lang-option, .drawer-lang-option').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const lang = btn.getAttribute('data-lang');
-            const isNestedPage = window.location.pathname.includes('/news/')
-                || window.location.pathname.includes('/case/')
-                || window.location.pathname.includes('/area/');
-            const prefix = isNestedPage ? '../' : '';
-            const targetUrl = lang === 'zh'
-                ? `${prefix}zh-CN/index.html`
-                : (lang === 'en' ? `${prefix}en/index.html` : `${prefix}index.html`);
+            const hreflangMap = {
+                zh: ['zh-Hans-CN', 'zh-CN', 'zh-Hans'],
+                en: ['en-HK', 'en'],
+                hk: ['zh-Hant-HK', 'zh-HK', 'zh-Hant']
+            };
+            const fallbackMap = {
+                zh: '/zh-CN/index.html',
+                en: '/en/index.html',
+                hk: '/index.html'
+            };
+            const alternate = (hreflangMap[lang] || [])
+                .map(code => document.querySelector(`link[rel="alternate"][hreflang="${code}"]`))
+                .find(link => link && link.href);
+            const targetUrl = alternate ? alternate.href : fallbackMap[lang];
             if (targetUrl) window.location.href = targetUrl;
         });
     });
