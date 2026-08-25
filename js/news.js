@@ -8,12 +8,14 @@
     function openDrawer() {
         if (drawer) drawer.classList.add('open');
         if (overlay) overlay.classList.add('active');
+        if (mobileBtn) mobileBtn.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
     }
 
     function closeDrawer() {
         if (drawer) drawer.classList.remove('open');
         if (overlay) overlay.classList.remove('active');
+        if (mobileBtn) mobileBtn.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
     }
 
@@ -29,6 +31,7 @@
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 submenu.classList.toggle('show');
+                btn.setAttribute('aria-expanded', submenu.classList.contains('show') ? 'true' : 'false');
                 const icon = btn.querySelector('i');
                 if (icon) {
                     icon.style.transform = submenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';

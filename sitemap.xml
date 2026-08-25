@@ -359,12 +359,48 @@
   </url>
   <url>
     <loc>https://101locksmithhk.com/news/tsa-key.html</loc>
-    <lastmod>2026-08-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://101locksmithhk.com/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans-CN" href="https://101locksmithhk.com/zh-CN/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/news/tsa-key.html" />
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://101locksmithhk.com/image/news/new8/show.jpeg</image:loc>
-      <image:caption>TSA海關鎖示意圖｜行李箱與TSA認證鎖</image:caption>
+      <image:loc>https://101locksmithhk.com/image/news/tsa-key/%E6%B5%B7%E9%97%9C%E5%8C%99.jpeg</image:loc>
+      <image:caption>行李箱開鎖與TSA海關鎖示意圖</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://101locksmithhk.com/image/news/tsa-key/%E6%B5%B7%E9%97%9C%E9%8E%96%E5%8C%99.jpeg</image:loc>
+      <image:caption>TSA海關鎖匙與行李鎖安全示意圖</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://101locksmithhk.com/en/news/tsa-key.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://101locksmithhk.com/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans-CN" href="https://101locksmithhk.com/zh-CN/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/news/tsa-key.html" />
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://101locksmithhk.com/image/news/tsa-key/%E6%B5%B7%E9%97%9C%E5%8C%99.jpeg</image:loc>
+      <image:caption>Luggage lock opening and TSA lock illustration</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://101locksmithhk.com/zh-CN/news/tsa-key.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://101locksmithhk.com/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans-CN" href="https://101locksmithhk.com/zh-CN/news/tsa-key.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/news/tsa-key.html" />
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://101locksmithhk.com/image/news/tsa-key/%E6%B5%B7%E9%97%9C%E5%8C%99.jpeg</image:loc>
+      <image:caption>行李箱开锁与TSA海关锁示意图</image:caption>
     </image:image>
   </url>
   <url>
