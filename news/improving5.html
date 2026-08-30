@@ -33,6 +33,8 @@
     </style>
     <link rel="preload" href="../css/news.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="../css/news.css"></noscript>
+    <link rel="stylesheet" href="../css/contact-cta.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../css/contact-cta.css"></noscript>
     <link rel="preload" href="../js/news.js" as="script">
     <style>
         :root {
@@ -729,6 +731,572 @@
                 align-items: flex-start;
             }
         }
+
+        /* Align this article with the established long-form layout used by the lock-upgrade guide. */
+        :root {
+            --line: #e5eaf0;
+            --page: #f9fafc;
+        }
+
+        body {
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1120px;
+            padding: 0 16px;
+        }
+
+        .article-hero {
+            padding: 44px 0 36px;
+            background: #eef3fa;
+            border: 0;
+        }
+
+        .hero-grid {
+            gap: 26px;
+        }
+
+        .eyebrow {
+            margin: 0 0 14px;
+            padding: 5px 12px;
+            border: 0;
+            background: #fff6d8;
+            color: #71530b;
+        }
+
+        .article-hero h1 {
+            margin: 0 0 16px;
+            font-size: 2.25rem;
+            line-height: 1.14;
+            letter-spacing: 0;
+        }
+
+        .hero-lead {
+            max-width: 62ch;
+            margin: 0 0 22px;
+            color: #3f5267;
+            font-size: 1rem;
+        }
+
+        .hero-actions,
+        .section-actions {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 0;
+        }
+
+        .action-btn {
+            width: 100%;
+            min-height: 48px;
+            box-sizing: border-box;
+            padding: 10px 18px;
+            border: 0;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(30, 42, 62, 0.14);
+        }
+
+        .action-btn.primary {
+            background: var(--ink);
+            color: #fff;
+        }
+
+        .action-btn.whatsapp {
+            background: #25d366;
+        }
+
+        .hero-media {
+            max-width: 520px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0 18px 34px rgba(30, 42, 62, 0.18);
+        }
+
+        .hero-photo-frame {
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .hero-media figcaption {
+            margin: 0;
+            padding: 11px 14px;
+            background: #fff;
+            color: #52657a;
+            font-size: 0.78rem;
+            text-align: left;
+        }
+
+        .quick-check {
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .check-pill {
+            border-color: #dce4ed;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: none;
+            padding: 12px;
+            font-size: 0.9rem;
+        }
+
+        main {
+            padding: 40px 0 0;
+        }
+
+        .article-section {
+            margin: 0 0 40px;
+            padding: 0;
+        }
+
+        .article-section.alt {
+            background: transparent;
+            border: 0;
+        }
+
+        .section-kicker {
+            margin-bottom: 8px;
+            color: #285e8e;
+            font-size: 0.82rem;
+            letter-spacing: 0;
+        }
+
+        .article-section h2 {
+            margin: 0 0 8px;
+            font-size: 1.55rem;
+            line-height: 1.25;
+        }
+
+        .section-intro {
+            margin: 0 0 20px;
+            color: #52657a;
+        }
+
+        .decision-grid,
+        .warning-grid,
+        .process-grid,
+        .related-grid,
+        .price-panel,
+        .local-proof {
+            gap: 14px;
+        }
+
+        .decision-card,
+        .warning-card,
+        .process-card,
+        .info-card,
+        .related-card {
+            border-color: var(--line);
+            border-radius: 16px;
+            box-shadow: none;
+            padding: 20px;
+        }
+
+        .decision-card.safe,
+        .decision-card.urgent,
+        .decision-card.follow {
+            border-top-width: 1px;
+        }
+
+        .decision-card.safe {
+            background: #edf8f1;
+            border-color: #cfe9d9;
+        }
+
+        .decision-card.urgent {
+            background: #fff4ef;
+            border-color: #f2d5c8;
+        }
+
+        .decision-card.follow {
+            background: #f2f7fd;
+            border-color: #d5e4f2;
+        }
+
+        .card-label {
+            margin-bottom: 10px;
+        }
+
+        .warning-card .card-label {
+            background: #fff0ee;
+            color: #bd5832;
+        }
+
+        .process-card {
+            position: relative;
+            padding: 20px 18px 18px 62px;
+        }
+
+        .process-card .card-label {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            margin: 0;
+            background: var(--gold);
+            color: var(--ink);
+        }
+
+        .decision-card h3,
+        .warning-card h3,
+        .process-card h3,
+        .info-card h3,
+        .related-card h3 {
+            margin: 0 0 7px;
+            font-size: 1.05rem;
+        }
+
+        .decision-card p,
+        .warning-card p,
+        .process-card p,
+        .info-card p,
+        .related-card p {
+            color: #53667a;
+            font-size: 0.92rem;
+        }
+
+        .callout {
+            margin-top: 18px;
+            padding: 20px;
+            border-radius: 16px;
+            background: var(--ink);
+        }
+
+        .price-note {
+            border-color: #e9dcae;
+            border-radius: 16px;
+            background: #fffaf0;
+            padding: 20px;
+        }
+
+        .district-row span {
+            border-radius: 999px;
+        }
+
+        .faq-list {
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            border-color: var(--line);
+            border-radius: 16px;
+            box-shadow: none;
+        }
+
+        .faq-item[open] {
+            border-color: #e9dcae;
+            box-shadow: none;
+        }
+
+        .faq-question {
+            min-height: 0;
+            padding: 17px 54px 17px 18px;
+        }
+
+        .faq-question::after {
+            width: auto;
+            height: auto;
+            background: transparent;
+            color: #ac8520;
+            font-size: 1.4rem;
+        }
+
+        .faq-item[open] > .faq-question::after,
+        .faq-question:hover::after,
+        .faq-question:focus-visible::after {
+            background: transparent;
+        }
+
+        .faq-heading {
+            gap: 5px;
+        }
+
+        .faq-heading h3 {
+            font-size: 1rem;
+        }
+
+        .faq-answer {
+            padding: 0 18px 18px;
+            color: #53667a;
+        }
+
+        .broken-key-contact-section {
+            padding: 0 0 42px;
+            background: var(--page);
+        }
+
+        .broken-key-contact {
+            border-color: rgba(212, 175, 55, 0.45);
+            border-radius: 18px;
+            background: #1e2a3e;
+            box-shadow: 0 18px 34px rgba(30, 42, 62, 0.18);
+        }
+
+        .broken-key-contact__content {
+            gap: 22px;
+            padding: 22px;
+        }
+
+        .broken-key-contact__action {
+            border-color: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .broken-key-contact__button {
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .broken-key-contact__button:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 601px) {
+            .container {
+                padding: 0 24px;
+            }
+
+            .article-hero {
+                padding: 54px 0 44px;
+            }
+
+            .article-hero h1 {
+                font-size: 2.7rem;
+            }
+
+            .hero-lead {
+                font-size: 1.08rem;
+            }
+
+            .hero-actions,
+            .section-actions {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .action-btn {
+                width: auto;
+            }
+
+            .quick-check {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .hero-media figcaption {
+                padding: 12px 16px;
+                font-size: 0.82rem;
+            }
+
+            .article-section {
+                margin-bottom: 52px;
+            }
+
+            .decision-grid,
+            .warning-grid,
+            .process-grid,
+            .related-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 16px;
+            }
+
+            .price-panel,
+            .local-proof {
+                gap: 20px;
+            }
+
+            .broken-key-contact__content {
+                padding: 28px;
+            }
+        }
+
+        @media (min-width: 901px) {
+            .article-hero {
+                padding: 64px 0 46px;
+            }
+
+            .hero-grid {
+                grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+                gap: 36px;
+            }
+
+            .hero-media {
+                max-width: none;
+            }
+
+            .article-hero h1 {
+                font-size: 3.25rem;
+            }
+
+            .decision-grid,
+            .process-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .price-panel,
+            .local-proof {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 24px;
+            }
+
+            .broken-key-contact-section {
+                padding-bottom: 60px;
+            }
+
+            .broken-key-contact__content {
+                grid-template-columns: minmax(0, 1.22fr) minmax(320px, 0.78fr);
+                gap: 44px;
+                align-items: center;
+                padding: 42px;
+            }
+
+            .broken-key-contact h2 {
+                font-size: 2.35rem;
+            }
+
+            .broken-key-contact__steps {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 12px;
+            }
+        }
+
+        /* Final enquiry panel: mirrors the established service CTA hierarchy. */
+        .broken-key-contact {
+            border-color: rgba(212, 175, 55, 0.36);
+            border-radius: 26px;
+            background: #1e2a3e;
+        }
+
+        .broken-key-contact__content {
+            gap: 28px;
+            padding: 30px 24px;
+        }
+
+        .broken-key-contact__eyebrow {
+            width: fit-content;
+            margin-bottom: 18px;
+            padding: 7px 13px;
+            border-color: rgba(244, 213, 114, 0.35);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .broken-key-contact h2 {
+            margin-bottom: 14px;
+            font-size: 2rem;
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .broken-key-contact__intro {
+            max-width: 46ch;
+            color: #d7e0ec;
+            font-size: 1rem;
+        }
+
+        .broken-key-contact__steps {
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .broken-key-contact__steps li {
+            gap: 11px;
+            color: #f0f4f9;
+            line-height: 1.45;
+        }
+
+        .broken-key-contact__steps i {
+            flex-basis: 38px;
+            width: 38px;
+            height: 38px;
+            background: rgba(244, 213, 114, 0.18);
+            color: #f4d572;
+        }
+
+        .broken-key-contact__action {
+            gap: 16px;
+            padding: 24px;
+            border-color: rgba(219, 230, 242, 0.25);
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .broken-key-contact__trust {
+            color: #f4d572;
+            font-size: 0.92rem;
+        }
+
+        .broken-key-contact__button {
+            min-height: 62px;
+            padding: 14px 18px;
+            font-size: 1.08rem;
+        }
+
+        .broken-key-contact__button--phone {
+            border-color: rgba(255, 255, 255, 0.36);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .broken-key-contact__hint {
+            color: #d4deea;
+            font-size: 0.82rem;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 601px) {
+            .broken-key-contact__content {
+                padding: 36px;
+            }
+        }
+
+        @media (min-width: 901px) {
+            .broken-key-contact__content {
+                grid-template-columns: minmax(0, 1.28fr) minmax(360px, 0.72fr);
+                gap: 56px;
+                padding: 56px 72px;
+            }
+
+            .broken-key-contact h2 {
+                font-size: 3.05rem;
+            }
+
+            .broken-key-contact__action {
+                padding: 30px;
+            }
+
+            .broken-key-contact__steps {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 20px;
+            }
+        }
+
+        .contact-box .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            box-sizing: border-box;
+            border-radius: 999px;
+            font-weight: 800;
+            line-height: 1.2;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .contact-box .button:hover {
+            transform: translateY(-2px);
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -869,7 +1437,7 @@
               "name": "斷匙取出價錢在香港通常怎樣估算？",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "斷匙取出價錢不應只看一個固定數字，因為會受鎖型、斷匙深度、是否被鎖在門外、時段、地區，以及曾否用膠水或硬物影響。較可靠做法是先發相片，確認是單純斷匙取出、需要先緊急開鎖，還是要同時配匙或換鎖膽。"
+                "text": "斷匙取出價錢不應只看一個固定數字，因為會受鎖型、斷匙深度、是否被鎖在門外、時段、地區，以及曾否用膠水或硬物影響。較可靠做法是先發鎖孔近照和門外全相，說明是否被鎖在門外、是否已試過膠水或工具，再由師傅確認可處理方案和總費用。"
               }
             },
             {
@@ -925,7 +1493,7 @@
         </a>
         <div class="whatsapp-wrapper">
             <span class="whatsapp-text" id="whatsappText">斷匙卡住？發相先初步判斷</span>
-            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=%E9%8E%96%E5%8C%99%E6%96%B7%E5%9C%A8%E9%8E%96%E5%AD%94%EF%BC%8C%E6%83%B3%E7%99%BC%E7%9B%B8%E6%9F%A5%E8%A9%A2%E6%96%B7%E5%8C%99%E5%8F%96%E5%87%BA&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
+            <a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
@@ -962,7 +1530,7 @@
                 <a href="../index.html#contact">聯絡我們</a>
                 <div class="quick-actions">
                     <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
-                    <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=%E6%96%B7%E5%8C%99%E5%8F%96%E5%87%BA%E6%9F%A5%E8%A9%A2&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     <div class="lang-switch-group">
                         <button class="lang-option" data-lang="zh">中</button>
                         <span style="color:#9aa9b9">|</span>
@@ -1005,7 +1573,7 @@
         </ul>
         <div class="drawer-quick">
             <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
-            <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=%E6%96%B7%E5%8C%99%E5%8F%96%E5%87%BA%E6%9F%A5%E8%A9%A2&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
             <div class="drawer-lang-group">
                 <button class="drawer-lang-option" data-lang="zh">中</button>
                 <button class="drawer-lang-option" data-lang="en">EN</button>
@@ -1033,7 +1601,7 @@
                     <p class="hero-lead">鎖匙斷咗喺鎖膽入面，最重要不是即刻用工具亂撬，而是先確認：門能否打開、斷匙有沒有露出、鎖匙之前是否已經卡住或扭唔到。判斷錯一步，可能由可取斷匙變成要換鎖膽。</p>
                     <div class="hero-actions">
                         <a class="action-btn primary" href="tel:+85266101101"><i class="fas fa-phone-alt"></i> 即撥 66 101 101</a>
-                        <a class="action-btn whatsapp" href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=%E6%88%91%E6%9C%89%E9%8E%96%E5%8C%99%E6%96%B7%E5%9C%A8%E9%8E%96%E5%AD%94%EF%BC%8C%E6%83%B3%E7%99%BC%E9%8E%96%E5%AD%94%E7%9B%B8%E7%89%87%E5%85%88%E8%A9%95%E4%BC%B0&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp 發相初評</a>
+                        <a class="action-btn whatsapp" href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp 發相初評</a>
                     </div>
                     <div class="quick-check" aria-label="快速判斷">
                         <div class="check-pill"><i class="fas fa-door-open"></i><span><strong>門是否已開？</strong><br>門開到和被鎖在門外，處理風險不同。</span></div>
@@ -1134,8 +1702,7 @@
                     </div>
                 </div>
                 <div class="section-actions">
-                    <a class="action-btn whatsapp" href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=%E6%88%91%E6%83%B3%E7%99%BC%E9%8E%96%E5%AD%94%E8%BF%91%E7%85%A7%E5%92%8C%E9%96%80%E5%A4%96%E5%85%A8%E7%9B%B8%EF%BC%8C%E6%9F%A5%E8%A9%A2%E6%96%B7%E5%8C%99%E5%8F%96%E5%87%BA&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> 發鎖孔相片查詢</a>
-                    <a class="action-btn secondary" href="../price.html"><i class="fas fa-file-invoice-dollar"></i> 查看收費參考</a>
+                    <a class="action-btn whatsapp" href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> 發鎖孔相片查詢</a>
                 </div>
             </div>
         </section>
@@ -1144,7 +1711,7 @@
             <div class="container">
                 <div class="section-kicker">香港本地服務流程</div>
                 <h2>斷匙取出、緊急開鎖與換鎖膽如何安排？</h2>
-                <p class="section-intro">本地 SEO 不是只加「香港」兩個字。真正有用的是讓用戶知道到場前後會發生甚麼，尤其是身份核實、報價和是否保留鎖膽。</p>
+                <p class="section-intro">先確認斷匙位置、門是否仍可打開、是否被鎖在門外，以及有沒有試過膠水或硬物；再判斷可否取出斷匙、是否需要緊急開鎖，及後續要不要配匙或換鎖膽。</p>
                 <div class="process-grid">
                     <article class="process-card">
                         <div class="card-label">1</div>
@@ -1164,7 +1731,7 @@
                     <article class="process-card">
                         <div class="card-label">4</div>
                         <h3>先取斷匙，再檢查鎖膽</h3>
-                        <p>目標是盡量保留原有鎖膽，但要視乎鎖膽是否卡死、磨損或被膠水影響，不應保證每次都可保留。</p>
+                        <p>目標是盡量保留原有鎖膽，但要視乎鎖膽是否卡死、磨損或被膠水影響，不能保證每次都可保留。</p>
                     </article>
                     <article class="process-card">
                         <div class="card-label">5</div>
@@ -1174,7 +1741,7 @@
                     <article class="process-card">
                         <div class="card-label">6</div>
                         <h3>完成後測試開關</h3>
-                        <p>完成後應測試門內門外開關、鎖舌回彈和備用匙順暢度，減少短期內再次卡匙或斷匙。</p>
+                        <p>完成後應測試門內門外開關、斜利回彈和備用匙順暢度，減少短期內再次卡匙或斷匙。</p>
                     </article>
                 </div>
                 <div class="local-proof" style="margin-top:18px;">
@@ -1217,7 +1784,7 @@
                     </div>
                     <div class="price-note">
                         <p><strong>較可靠的報價方式：</strong>先發鎖孔近照和門外全相，說明是否被鎖在門外、是否已試過膠水或工具，再由師傅確認可處理方案和總費用。</p>
-                        <p>如最後需要更換鎖膽，可參考網站的 <a class="text-link" href="../price.html">開鎖及換鎖收費參考</a>。實際收費仍以鎖型、現場情況和出發前確認為準。</p>
+                        <p>如最後需要更換鎖膽，可參考網站的 <a class="text-link" href="../price.html#change-lock-price">開鎖及換鎖收費參考</a>。實際收費仍以鎖型、現場情況和出發前確認為準。</p>
                     </div>
                 </div>
             </div>
@@ -1245,7 +1812,7 @@
             <div class="container">
                 <div class="section-kicker">常見問題</div>
                 <h2>鎖匙斷在鎖孔 FAQ：斷匙取出、價錢與香港緊急開鎖</h2>
-                <p class="section-intro">以下問題按香港用戶常見搜尋意圖整理，包括「鎖匙斷咗入唔到屋」、「斷匙取出價錢」和英文旅客查詢 broken key removal Hong Kong。答案重點是減少二次損壞，並說清楚何時需要鎖匠判斷。</p>
+                <p class="section-intro">以下問題經常被搜尋，包括「鎖匙斷咗入唔到屋」、「斷匙取出價錢」和英文旅客查詢 broken key removal Hong Kong，可見鎖匙斷的情況經常發生。答案重點是減少二次損壞，並說清楚何時需要鎖匠判斷。</p>
                 <div class="faq-list">
                     <details class="faq-item" name="broken-key-faq" open>
                         <summary class="faq-question"><span class="faq-heading"><span class="faq-meta"><i class="fas fa-door-open"></i> 門仍可打開</span><h3>鎖匙斷在鎖孔，但門仍然開到，可以自己取出嗎？</h3></span></summary>
@@ -1257,7 +1824,7 @@
                     </details>
                     <details class="faq-item" name="broken-key-faq">
                         <summary class="faq-question"><span class="faq-heading"><span class="faq-meta"><i class="fas fa-file-invoice-dollar"></i> 收費查詢</span><h3>斷匙取出價錢在香港通常怎樣估算？</h3></span></summary>
-                        <div class="faq-answer"><p>斷匙取出價錢不應只看一個固定數字，因為會受鎖型、斷匙深度、是否被鎖在門外、時段、地區，以及曾否用膠水或硬物影響。較可靠做法是先發相片，確認是單純斷匙取出、需要先緊急開鎖，還是要同時配匙或換鎖膽；可配合查看 <a class="text-link" href="../price.html">開鎖及換鎖收費參考</a>。</p></div>
+                        <div class="faq-answer"><p>斷匙取出價錢不應只看一個固定數字，因為會受鎖型、斷匙深度、是否被鎖在門外、時段、地區，以及曾否用膠水或硬物影響。較可靠做法是先發鎖孔近照和門外全相，說明是否被鎖在門外、是否已試過膠水或工具，再由師傅確認可處理方案和總費用；可配合查看 <a class="text-link" href="../price.html#change-lock-price">開鎖及換鎖收費參考</a>。</p></div>
                     </details>
                     <details class="faq-item" name="broken-key-faq">
                         <summary class="faq-question"><span class="faq-heading"><span class="faq-meta"><i class="fas fa-key"></i> 後續處理</span><h3>斷匙取出後是否一定要換鎖膽或重新配匙？</h3></span></summary>
@@ -1277,25 +1844,25 @@
 
     </main>
 
-    <section class="broken-key-contact-section" aria-label="斷匙取出及緊急開鎖查詢">
+    <section class="contact-box-section" aria-label="斷匙取出及緊急開鎖查詢">
         <div class="container">
-            <section class="broken-key-contact">
-                <div class="broken-key-contact__content">
+            <section class="contact-box">
+                <div class="contact-box__content">
                     <div>
-                        <p class="broken-key-contact__eyebrow"><i class="fas fa-comments"></i> 斷匙取出查詢</p>
+                        <p class="contact-box__eyebrow"><i class="fas fa-comments"></i> 斷匙取出查詢</p>
                         <h2>鎖匙斷在鎖膽入面？先不要再推入去</h2>
-                        <p class="broken-key-contact__intro">發鎖孔近照、門外全相和剩低半截鎖匙相片，先判斷可否非破壞取出、是否需要緊急開鎖，以及是否有需要更換鎖膽。</p>
-                        <ul class="broken-key-contact__steps">
+                        <p class="contact-box__intro">發鎖孔近照、門外全相和剩低半截鎖匙相片，先判斷可否非破壞取出、是否需要緊急開鎖，以及是否有需要更換鎖膽。</p>
+                        <ul class="contact-box__steps">
                             <li><i class="fas fa-camera"></i><span>發送鎖孔近照</span></li>
                             <li><i class="fas fa-door-closed"></i><span>補充門外全相</span></li>
                             <li><i class="fas fa-shield-alt"></i><span>先核實使用權</span></li>
                         </ul>
                     </div>
-                    <div class="broken-key-contact__action">
-                        <span class="broken-key-contact__trust"><i class="fas fa-shield-alt"></i> 不提供未授權開鎖</span>
-                        <a class="broken-key-contact__button broken-key-contact__button--whatsapp" href="https://wa.me/85266101101?text=%E6%88%91%E6%9C%89%E9%8E%96%E5%8C%99%E6%96%B7%E5%9C%A8%E9%8E%96%E8%86%BD%E5%85%A5%E9%9D%A2%EF%BC%8C%E6%83%B3%E7%99%BC%E9%8E%96%E5%AD%94%E8%BF%91%E7%85%A7%E5%92%8C%E9%96%80%E5%A4%96%E5%85%A8%E7%9B%B8%E5%85%88%E8%A9%95%E4%BC%B0%E3%80%82" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp 發相初判</a>
-                        <a class="broken-key-contact__button broken-key-contact__button--phone" href="tel:+85266101101"><i class="fas fa-phone"></i> 致電 66 101 101</a>
-                        <p class="broken-key-contact__hint">相片只作初步溝通；最終方案及收費以實際鎖具、授權及現場情況確認。</p>
+                    <div class="contact-box__action">
+                        <span class="contact-box__trust"><i class="fas fa-shield-alt"></i> 不提供未授權開鎖</span>
+                        <a class="button button-primary js-cta" data-cta-location="footer-whatsapp" href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp 發相初判</a>
+                        <a class="button button-secondary js-cta" data-cta-location="footer-phone" href="tel:+85266101101"><i class="fas fa-phone"></i> 致電 66 101 101</a>
+                        <p class="contact-box__hint">相片只作初步溝通；最終方案及收費以實際鎖具、授權及現場情況確認。</p>
                     </div>
                 </div>
             </section>
@@ -1328,11 +1895,11 @@
                     <div class="footer-social">
                         <a href="https://www.facebook.com/profile.php?id=61589121282796" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <div class="footer-contact-links">
                         <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
-                        <a href="https://api.whatsapp.com/send/?phone=85266101101&amp;text=開鎖查詢&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                         <a class="footer-contact-address" href="https://www.google.com/maps/search/?api=1&amp;query=101%E9%96%8B%E9%8E%96%20%E8%A7%80%E5%A1%98%E9%B4%BB%E5%9C%96%E9%81%9342%E8%99%9F%E5%AF%B6%E8%8F%AF%E4%B8%AD%E5%BF%8319%E6%A8%9301%E5%AE%A4" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> 地址：觀塘鴻圖道42號寶華中心19樓01室</a>
                     </div>
                 </div>
