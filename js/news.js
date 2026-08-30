@@ -1,6 +1,6 @@
 (function() {
     // WhatsApp 現為群組入口：所有群組 CTA 使用一致且如實的文案。
-    const groupCtaText = '加入群組・師傅們即時回覆☺️';
+    const groupCtaText = '加入群組・師傅們即時回覆';
     const groupLinkSelector = 'a[href*="chat.whatsapp.com/"]';
 
     function normaliseGroupCtas() {

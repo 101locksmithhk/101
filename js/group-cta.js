@@ -1,5 +1,5 @@
 (function () {
-    const groupCtaText = '加入群組・師傅們即時回覆☺️';
+    const groupCtaText = '加入群組・師傅們即時回覆';
     const groupLinkSelector = 'a[href*="chat.whatsapp.com/"]';
 
     function normaliseGroupCtas() {
