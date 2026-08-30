@@ -55,7 +55,7 @@
     body .contact-box .button{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;width:100%!important;min-height:54px!important;margin:0!important;padding:10px 16px!important;border-radius:999px!important;font-weight:700!important;text-decoration:none!important}
     body .contact-box .button-wa{background:#25d366!important;color:#fff!important;box-shadow:0 8px 18px rgba(37,211,102,.25)!important}
     body .contact-box .button-phone{border:1px solid rgba(255,255,255,.28)!important;background:#1e2a3e!important;color:#fff!important}
-    .hero-photo{max-width:340px}.hero-photo img{display:block;width:100%;aspect-ratio:3 / 4;object-fit:cover}.hero-photo figcaption{margin:0;padding:10px 12px;background:#fff;color:var(--copy);font-size:.78rem;line-height:1.5}@media(max-width:768px){.hero-photo{max-width:240px}.hero-photo img{height:280px;aspect-ratio:auto;object-position:center top}.hero-photo figcaption{display:none}}
+    .hero-photo{max-width:240px}.hero-photo img{display:block;width:100%;height:280px;object-fit:cover;object-position:center top}.hero-photo figcaption{display:none}@media(min-width:769px){.hero-photo{max-width:340px}.hero-photo img{height:auto;aspect-ratio:3 / 4}.hero-photo figcaption{display:block;margin:0;padding:10px 12px;background:#fff;color:var(--copy);font-size:.78rem;line-height:1.5}}
     /* Original leakage check remade as one practical information panel. */
     article > .article-section:nth-of-type(6){padding:24px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 12px 32px rgba(30,42,62,.05)}article > .article-section:nth-of-type(6) .section-heading{margin-bottom:26px}article > .article-section:nth-of-type(6) .section-heading h2{font-size:clamp(1.4rem,6vw,2rem)}article > .article-section:nth-of-type(6) .leak-grid{gap:24px}article > .article-section:nth-of-type(6) .check-card{padding:0;border:0;border-radius:0;box-shadow:none}article > .article-section:nth-of-type(6) .check-card__icon{display:none}article > .article-section:nth-of-type(6) .check-card h3{margin:0 0 14px;font-size:1.1rem;line-height:1.55}article > .article-section:nth-of-type(6) .check-list{gap:16px}article > .article-section:nth-of-type(6) .check-list li{padding-left:0;font-size:1rem}article > .article-section:nth-of-type(6) .check-list li:before{display:none}article > .article-section:nth-of-type(6) .action-panel{display:flex;align-items:center;min-height:0;box-sizing:border-box;padding:24px 26px;border:1px solid #f3d7a2;border-radius:20px;background:#fff6eb;color:var(--ink)}article > .article-section:nth-of-type(6) .action-panel strong{margin:0;color:#a6422f;font-size:1.05rem;line-height:1.65}article > .article-section:nth-of-type(6) .action-panel i{display:none}@media(min-width:901px){article > .article-section:nth-of-type(6){padding:38px 46px}article > .article-section:nth-of-type(6) .leak-grid{grid-template-columns:1fr 1fr;align-items:center;gap:48px}article > .article-section:nth-of-type(6) .action-panel{min-height:216px}}
     article > .article-section:nth-of-type(5) .leak-guidance{display:none}article > .article-section:nth-of-type(6) .action-panel{display:block}article > .article-section:nth-of-type(6) .action-panel p{margin:8px 0 0;color:var(--copy)}
@@ -79,9 +79,95 @@
   </script>
 </head>
 <body>
-  <div class="float-buttons"><a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話"><i class="fas fa-phone"></i></a><div class="whatsapp-wrapper"><span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span><a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡"><i class="fab fa-whatsapp"></i></a></div></div>
-  <div class="navbar"><div class="nav-container"><a class="logo" href="../index.html" aria-label="返回首頁"><img src="../image/logo.webp" alt="101開鎖 Logo" width="100" height="100"><div class="brand-name">101<span>開鎖</span></div></a><div class="desktop-nav"><a href="../index.html">首頁</a><div class="dropdown"><a href="#">服務項目 <i class="fas fa-chevron-down"></i></a><div class="dropdown-content"><a href="../service.html">開鎖</a><a href="../service.html">換鎖</a><a href="../service.html">電子鎖</a><a href="../service.html">門禁系統</a><a href="../service.html">車鎖</a><a href="../service.html">夾萬</a></div></div><div class="dropdown"><a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a><div class="dropdown-content"><a href="../faq.html">常見問題</a><a href="../news.html">知識文章</a></div></div><a href="../locksmith-real-case.html">真實案例</a><a href="../price.html">收費參考</a><a href="../index.html#about">關於我們</a><a href="../index.html#contact">聯絡我們</a><div class="quick-actions"><a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> 即撥</a><a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a></div></div><button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="開啟導覽選單"><i class="fas fa-bars"></i></button></div></div>
-  <div class="drawer-overlay" id="drawerOverlay"></div><div class="mobile-drawer" id="mobileDrawer"><div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn" type="button">&times;</button></div><ul class="drawer-nav-list"><li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link">首頁</a></li><li class="drawer-nav-item"><a href="../service.html" class="drawer-nav-link">服務項目</a></li><li class="drawer-nav-item"><a href="../news.html" class="drawer-nav-link">開鎖知識</a></li><li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link">真實案例</a></li><li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link">收費參考</a></li><li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link">關於我們</a></li><li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link">聯絡我們</a></li></ul></div></div>
+  <div class="float-buttons" aria-label="快速聯絡">
+    <a href="tel:+85266101101" class="float-button-phone js-cta" data-cta-location="floating-phone" aria-label="致電 101 開鎖"><i class="fas fa-phone" aria-hidden="true"></i></a>
+    <div class="whatsapp-wrapper"><span class="whatsapp-text" id="whatsappText">傳門外、門邊、鎖頭相片，先作初步判斷</span><a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="float-button-whatsapp js-cta" data-cta-location="floating-whatsapp" aria-label="WhatsApp 查詢老虎鎖安裝"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div>
+  </div>
+  <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="../index.html" aria-label="返回首頁">
+                <img src="../image/logo-128.webp" alt="101開鎖 Logo" width="128" height="128" decoding="async">
+                <div class="brand-name">101<span>開鎖</span></div>
+            </a>
+            <div class="desktop-nav">
+                <a href="../index.html">首頁</a>
+                <div class="dropdown">
+                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../service.html">開鎖</a>
+                        <a href="../service.html">換鎖</a>
+                        <a href="../service.html">電子鎖</a>
+                        <a href="../service.html">門禁系統</a>
+                        <a href="../service.html">車鎖</a>
+                        <a href="../service.html">夾萬</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../faq.html">常見問題</a>
+                        <a href="../news.html">知識文章</a>
+                    </div>
+                </div>
+                <a href="../locksmith-real-case.html">真實案例</a>
+                <a href="../price.html">收費參考</a>
+                <a href="../index.html#about">關於我們</a>
+                <a href="../index.html#contact">聯絡我們</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="開啟導覽選單" aria-controls="mobileDrawer" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="../index.html" class="drawer-nav-link"><span>首頁</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub">
+                <li><a href="../service.html">開鎖</a></li>
+                <li><a href="../service.html">換鎖</a></li>
+                <li><a href="../service.html">電子鎖</a></li>
+                <li><a href="../service.html">門禁系統</a></li>
+                <li><a href="../service.html">車鎖</a></li>
+                <li><a href="../service.html">夾萬</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="../faq.html">常見問題</a></li>
+                <li><a href="../news.html">知識文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../index.html#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
   <nav class="breadcrumb-bar" aria-label="麵包屑"><div class="container"><ol class="breadcrumb-list"><li><a href="../index.html">首頁</a></li><li><a href="../news.html">開鎖知識</a></li><li><span aria-current="page">電子鎖電池注意事項</span></li></ol></div></nav>
   <header class="hero"><div class="container hero-grid"><div><h1>電子鎖電池注意事項</h1></div><figure class="hero-photo"><img src="../image/news/battery/electronic-lock-battery-360.jpeg" srcset="../image/news/battery/electronic-lock-battery-360.jpeg 360w, ../image/news/battery/electronic-lock-battery-540.jpeg 540w, ../image/news/battery/electronic-lock-battery-680.jpeg 680w, ../image/news/battery/電子鎖電池.jpeg 900w" sizes="(max-width: 768px) 240px, 340px" alt="電子鎖電池倉及門鎖面板" width="900" height="1200" fetchpriority="high"><figcaption>不同型號的電子鎖供電設計可能不同；處理前先確認品牌與型號。</figcaption></figure></div></header>
   <main class="article"><div class="container"><article>
