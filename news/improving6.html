@@ -108,9 +108,6 @@
     .compare-row{display:grid;gap:6px;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff}
     .compare-row strong{color:#344c63}
     .compare-row span{color:var(--copy);font-size:.91rem}
-    .emergency{display:flex;gap:12px;align-items:flex-start;margin-top:15px;padding:15px;border-radius:14px;background:#fceae5;color:#713729}
-    .emergency i{margin-top:4px}
-    .emergency p{margin:0}
     .inline-cta{display:grid;gap:17px;margin:28px 0;padding:22px;border-radius:18px;background:linear-gradient(120deg,#243752,#172438);color:#fff}
     .inline-cta h2{margin:0 0 6px;font-size:1.35rem}
     .inline-cta p{margin:0;color:#d1dce8}
@@ -129,15 +126,9 @@
     .source-card a{color:#365b7f;font-weight:800}
     .byline{display:flex;gap:10px;margin:0 0 46px;padding:15px;border-radius:13px;background:#eff3f7;color:#506176;font-size:.84rem}
     .byline i{margin-top:4px;color:var(--gold)}
-    .float-buttons{position:fixed;right:18px;bottom:18px;z-index:1080;display:flex;flex-direction:column;gap:10px}
-    .float-button-phone,.float-button-whatsapp{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;color:#fff;box-shadow:0 5px 14px rgba(0,0,0,.2);text-decoration:none}
-    .float-button-phone{background:var(--ink)}
-    .float-button-whatsapp{background:#25d366}
-    .whatsapp-wrapper{position:relative}
-    .whatsapp-text{display:none}
     main>.container>.section,main>.container>.inline-cta,.contact-box-section,footer{content-visibility:auto;contain-intrinsic-size:auto 640px}
-    @media(max-width:768px){.float-button-phone,.whatsapp-wrapper{display:none!important}.hero .cta-row{grid-template-columns:minmax(0,1fr)!important}.hero .button{width:100%!important}}
-    @media(min-width:640px){.container{width:min(100% - 48px,1120px)}.step-grid,.symptom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.related-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.whatsapp-text{display:block}}
+    @media(max-width:768px){.hero .cta-row{grid-template-columns:minmax(0,1fr)!important}.hero .button{width:100%!important}}
+    @media(min-width:640px){.container{width:min(100% - 48px,1120px)}.step-grid,.symptom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.related-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     @media(min-width:769px){.hero{padding:62px 0 50px}.hero-grid{grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}.cta-row{grid-template-columns:max-content max-content}.button{width:auto}.section{margin-bottom:52px}.step-card,.symptom-card,.notice-card,.source-card{padding:24px}.step-card{padding-top:57px}.inline-cta{grid-template-columns:1fr auto;align-items:center;padding:28px}.comparison{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(min-width:901px){.nav-container{min-height:92px;padding:10px 24px}.logo img{width:72px;height:72px}.logo .brand-name{font-size:1.6rem}.desktop-nav{display:flex;align-items:center;gap:18px}.desktop-nav>a,.dropdown>a{color:var(--ink);font-weight:700;text-decoration:none;white-space:nowrap}.dropdown{position:relative}.dropdown-content{display:none}.quick-actions{display:flex;align-items:center;gap:10px}.quick-actions>a{color:var(--ink);text-decoration:none;white-space:nowrap}.mobile-menu-btn{display:none}.step-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.symptom-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
   </style>
@@ -163,9 +154,9 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-QDDHCBDHWQ');</script>
 </head>
 <body>
-  <div class="float-buttons" aria-label="快速聯絡">
-    <a href="tel:+85266101101" class="float-button-phone js-cta" data-cta="floating_phone" aria-label="致電 101 開鎖"><i class="fas fa-phone" aria-hidden="true"></i></a>
-    <div class="whatsapp-wrapper"><span class="whatsapp-text" id="whatsappText">門鎖打唔開？可先 WhatsApp 發送門鎖照片及所在地區</span><a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="float-button-whatsapp js-cta" data-cta="floating_whatsapp" aria-label="WhatsApp 查詢門鎖打唔開"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div>
+  <div class="float-buttons">
+    <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話"><i class="fas fa-phone"></i></a>
+    <div class="whatsapp-wrapper"><span class="whatsapp-text" id="whatsappText">24小時開鎖換鎖熱線，即時真人跟進</span><a href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp聯絡"><i class="fab fa-whatsapp"></i></a></div>
   </div>
 
   <!-- Shared header: generated from src/_data/site.json -->
@@ -221,7 +212,7 @@
         <p class="lead">電影、電視劇成日見到主角隨手拎起一個萬字夾，拗兩拗就打開道門。現實中，門鎖打唔開、鎖匙插唔入或鎖膽卡住時，最重要不是再找一件更尖的工具，而是停止把異物推入鎖孔。</p>
         <p class="answer-strip">直接答案：萬字夾、回形針、髮夾及扣針都不是門匙。亂試只會增加壞鎖、斷片卡死或後續需要換鎖的風險。</p>
         <div class="cta-row"><a class="button button-primary js-cta" data-cta="hero_whatsapp" href="https://chat.whatsapp.com/HJYO5bBeuLv28Qp8KNcDSS?mode=gi_t" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp 發相評估</a><a class="button button-secondary js-cta" data-cta="hero_phone" href="tel:+85266101101"><i class="fas fa-phone" aria-hidden="true"></i> 致電 66 101 101</a></div>
-        <small class="cta-note">請提供所在地區、門鎖正面相片、問題描述及曾否插入異物。相片只作初步溝通，安排、方案及收費須按實際情況確認。</small>
+        <small class="cta-note">請提供所在地區、門鎖正面相片、問題描述及曾否插入異物。相片只作初步溝通。</small>
       </div>
       <figure class="hero-photo"><div class="hero-photo-frame"><img src="../image/news/clip-for-unlock/萬字夾開鎖.jpeg" alt="萬字夾靠近門鎖，提醒門鎖打唔開時不要把異物插入鎖孔" width="1200" height="1598" fetchpriority="high" decoding="async"></div><figcaption>萬字夾開鎖是影視作品常見橋段，不是可靠的緊急處理；異物一旦卡入鎖膽，後續檢查可能更複雜。</figcaption></figure>
     </div>
@@ -231,14 +222,13 @@
     <div class="container">
       <article>
         <section class="section" id="first">
-          <div class="section-heading"><h2>被鎖門外，應該要點做？</h2><p>以下只包括冇帶鎖匙而且環境安全的情況；如有人身危險，應立即使用緊急求助渠道。</p></div>
+          <div class="section-heading"><h2>被鎖門外，應該要點做？</h2><p>以下只包括冇帶鎖匙而且環境安全的情況，重點是先停止自行亂試，避免令門鎖問題變得更複雜。</p></div>
           <div class="step-grid">
             <section class="step-card"><span class="step-number">1</span><h3>停止插入異物</h3><p>不要再用萬字夾、髮夾、扣針或其他尖物試探鎖孔，也不要強扭鎖匙。</p></section>
             <section class="step-card"><span class="step-number">2</span><h3>找合法替代入口</h3><p>聯絡同住者、業主或物業管理處，確認是否有後備鎖匙或既定的緊急進入安排。</p></section>
             <section class="step-card"><span class="step-number">3</span><h3>記錄門鎖情況</h3><p>拍攝門鎖正面並 WhatsApp 發送照片給 101開鎖；同時告知曾否自行處理及所在區域。</p></section>
             <section class="step-card"><span class="step-number">4</span><h3>準備使用權證明</h3><p>住宅、租客、業主、辦公室或管理處個案都應先核實合法使用權，再安排後續處理。</p></section>
           </div>
-          <div class="emergency"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><p><strong>有人身危險時不要等待一般上門服務：</strong>如屋內有人受傷、失去聯絡、出現火警、煮食爐未關或其他即時危險，應致電香港緊急求助電話 <a href="tel:999">999</a>。</p></div>
         </section>
 
         <section class="section" id="symptoms">
@@ -254,7 +244,7 @@
         </section>
 
         <section class="section">
-          <div class="section-heading"><h2>萬字夾開鎖，只是影視神話</h2><p>電影入面幾秒開到門，通常是劇情效果；現實中的門鎖、鎖匙、門框和故障原因都不會按劇本配合。</p></div>
+          <div class="section-heading"><h2>電影橋段不等於現實開鎖</h2><p>電影入面幾秒開到門，通常是劇情效果；現實中的門鎖、鎖匙、門框和故障原因都不會按劇本配合。</p></div>
           <div class="comparison">
             <div class="compare-row"><strong>「拗兩拗就開門」不代表真實情況</strong><span>用萬字夾試鎖並不是可靠的緊急方法。就算只是冇帶或遺失鎖匙，而且鎖具本身完全正常，對一般人而言仍然不應把它當成處理方法。</span></div>
             <div class="compare-row"><strong>無限猴子定理 (Infinite Monkey Theorem)</strong><span>定理係咁樣講嘅：「一隻猴子隨機咁亂打字機，喺無限嘅時間入面，總有一刻可以打出一部完整嘅《莎士比亞全集》。」呢個定理說明了概率嘅本質：只要試驗次數趨向無限，即使概率極細嘅事件都終會發生。但重點係，你需要無限嘅時間同無限嘅嘗試。現實中，你冇可能喺門外企足幾百萬年，不斷用萬字夾亂捅，去撞正一次開到鎖嘅機會。</span></div>
@@ -297,7 +287,7 @@
 
         <section class="section">
           <div class="section-heading"><h2>101開鎖總結</h2><p>用萬字夾開鎖是影視作品帶出的常見誤解；現實中，門鎖是精密機械，故障原因亦不一定在鎖膽。</p></div>
-          <aside class="notice-card"><h3>記住：開鎖不是隨機撞彩的遊戲</h3><p>下次門鎖打唔開、鎖匙插唔入或被鎖門外，不要再嘥時間拗萬字夾。先確認是否有人身危險，再停止插入異物、找合法後備入口；如仍需要協助，可致電 101開鎖或 WhatsApp 傳送門鎖情況作初步溝通。全港 18 區及「最快 30 分鐘」一類安排，需按地區、時段、鎖具狀態及使用權核實確認；能否無損處理亦不能一概保證。</p></aside>
+          <aside class="notice-card"><h3>記住：開鎖不是隨機撞彩的遊戲</h3><p>下次門鎖打唔開、鎖匙插唔入或被鎖門外，不要再嘥時間拗萬字夾。先停止插入異物、找合法後備入口；如仍需要協助，可致電 101開鎖或 WhatsApp 傳送門鎖情況作初步溝通。全港 18 區及「最快 30 分鐘」一類安排，需按地區、時段、鎖具狀態及使用權核實確認；能否無損處理亦不能一概保證。</p></aside>
         </section>
 
         <section class="section">

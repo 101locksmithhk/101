@@ -1504,6 +1504,441 @@
                 max-width: none;
             }
         }
+
+        /* Sample 1: a calmer editorial layout built around the urgent decision flow. */
+        .sample1-page {
+            background: #f6f8fb;
+        }
+
+        .sample1-page main {
+            background: #f6f8fb;
+        }
+
+        .sample1-page .hero {
+            border-bottom: 1px solid #e1e8ef;
+            background: linear-gradient(135deg, #ffffff 0%, #f7f9fc 58%, #fff3c7 100%);
+        }
+
+        .sample1-page .hero .eyebrow {
+            box-shadow: inset 0 0 0 1px rgba(174, 131, 22, 0.12);
+        }
+
+        .sample1-page .hero h1 {
+            max-width: 12ch;
+        }
+
+        .sample1-page .hero .lead {
+            max-width: 56ch;
+            color: #455b71;
+        }
+
+        .sample1-page .hero-points {
+            gap: 9px;
+        }
+
+        .sample1-page .hero-points li {
+            border-color: #d7e1eb;
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: 0 4px 10px rgba(30, 42, 62, 0.04);
+        }
+
+        .sample1-page .hero-photo {
+            border-color: rgba(212, 175, 55, 0.45);
+            box-shadow: 0 24px 46px rgba(30, 42, 62, 0.19);
+        }
+
+        .sample1-page .hero-photo figcaption {
+            border-top: 1px solid #edf0f3;
+        }
+
+        .sample1-page .article-section,
+        .sample1-page .article-section.alt {
+            margin: 0;
+            padding: 46px 0;
+            border: 0;
+            background: transparent;
+        }
+
+        .sample1-page .hero + .article-section {
+            margin-top: 0;
+        }
+
+        .sample1-page .article-section.alt {
+            background: #eef3f7;
+        }
+
+        .sample1-page #stop {
+            background: #fff5ef;
+        }
+
+        .sample1-page #hong-kong {
+            background: #edf4f0;
+        }
+
+        .sample1-page .section-kicker {
+            display: inline-flex;
+            align-items: center;
+            min-height: 28px;
+            margin-bottom: 11px;
+            padding: 0 10px;
+            border-radius: 999px;
+            background: #e9f1fa;
+            color: #2c5f88;
+            font-size: 0.78rem;
+        }
+
+        .sample1-page #stop .section-kicker {
+            background: #fee4d6;
+            color: #a24326;
+        }
+
+        .sample1-page #hong-kong .section-kicker {
+            background: #dcefe4;
+            color: #2c7353;
+        }
+
+        .sample1-page .article-section h2 {
+            max-width: 30ch;
+            margin-bottom: 10px;
+            font-size: 1.85rem;
+            line-height: 1.2;
+        }
+
+        .sample1-page .section-intro {
+            max-width: 68ch;
+            margin-bottom: 26px;
+            color: #536a80;
+        }
+
+        .sample1-page .decision-grid,
+        .sample1-page .warning-grid,
+        .sample1-page .process-grid,
+        .sample1-page .related-grid {
+            gap: 12px;
+        }
+
+        .sample1-page .decision-card,
+        .sample1-page .warning-card,
+        .sample1-page .process-card,
+        .sample1-page .info-card,
+        .sample1-page .related-card {
+            position: relative;
+            overflow: hidden;
+            min-height: 100%;
+            padding: 20px;
+            border: 1px solid #dce5ed;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: none;
+        }
+
+        .sample1-page .decision-card::before,
+        .sample1-page .warning-card::before,
+        .sample1-page .process-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #b8c7d6;
+        }
+
+        .sample1-page .decision-card.safe {
+            background: #f2fbf6;
+            border-color: #cce9d9;
+        }
+
+        .sample1-page .decision-card.safe::before {
+            background: #2e7d5b;
+        }
+
+        .sample1-page .decision-card.urgent {
+            background: #fff7f2;
+            border-color: #f0d3c5;
+        }
+
+        .sample1-page .decision-card.urgent::before,
+        .sample1-page .warning-card::before {
+            background: #c65a3d;
+        }
+
+        .sample1-page .decision-card.follow {
+            background: #f1f7fd;
+            border-color: #cfe0ef;
+        }
+
+        .sample1-page .decision-card.follow::before {
+            background: #2c6c9a;
+        }
+
+        .sample1-page .card-label {
+            width: 34px;
+            min-width: 34px;
+            height: 34px;
+            margin-bottom: 13px;
+            background: #eef3f8;
+            color: #31485f;
+        }
+
+        .sample1-page .process-card {
+            padding: 21px 20px 20px 66px;
+            background: rgba(255, 255, 255, 0.86);
+        }
+
+        .sample1-page .process-card::before {
+            background: #d4af37;
+        }
+
+        .sample1-page .process-card .card-label {
+            top: 21px;
+            left: 20px;
+            background: #d4af37;
+            color: #1e2a3e;
+        }
+
+        .sample1-page .service-process-table-wrap {
+            overflow: hidden;
+            border: 1px solid #d8e5dc;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        .sample1-page .service-process-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .sample1-page .service-process-table caption {
+            padding: 17px 20px 13px;
+            color: #263f57;
+            font-size: 1.03rem;
+            font-weight: 800;
+            text-align: left;
+        }
+
+        .sample1-page .service-process-table th,
+        .sample1-page .service-process-table td {
+            padding: 15px 20px;
+            border-top: 1px solid #e1ebe4;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .sample1-page .service-process-table thead th {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: #f1f7f3;
+            color: #37624c;
+            font-size: 0.79rem;
+            font-weight: 800;
+        }
+
+        .sample1-page .service-process-table thead th:first-child,
+        .sample1-page .service-process-table tbody th {
+            width: 170px;
+        }
+
+        .sample1-page .service-process-table tbody th {
+            color: #253c53;
+            font-size: 0.9rem;
+            font-weight: 800;
+        }
+
+        .sample1-page .process-step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            margin-right: 8px;
+            border-radius: 50%;
+            background: #d4af37;
+            color: #1e2a3e;
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+
+        .sample1-page .service-process-table h3 {
+            margin: 0 0 5px;
+            color: #1e2a3e;
+            font-size: 1rem;
+            line-height: 1.35;
+        }
+
+        .sample1-page .service-process-table p {
+            margin: 0;
+            color: #536a80;
+            font-size: 0.93rem;
+            line-height: 1.65;
+        }
+
+        .sample1-page .warning-card {
+            background: rgba(255, 255, 255, 0.82);
+        }
+
+        .sample1-page .warning-card .card-label {
+            background: #fff0e9;
+            color: #b04b2f;
+        }
+
+        .sample1-page .callout {
+            position: relative;
+            overflow: hidden;
+            margin-top: 16px;
+            padding: 24px;
+            border-radius: 12px;
+            background: #1e2a3e;
+        }
+
+        .sample1-page .callout h3 {
+            color: #f5d572;
+        }
+
+        .sample1-page .price-panel,
+        .sample1-page .local-proof {
+            gap: 14px;
+        }
+
+        .sample1-page .info-card h3,
+        .sample1-page .related-card h3 {
+            color: #263d55;
+        }
+
+        .sample1-page .price-note {
+            display: grid;
+            align-content: center;
+            min-height: 100%;
+            border: 1px solid #ead798;
+            border-radius: 12px;
+            background: #fff9e8;
+            padding: 22px;
+        }
+
+        .sample1-page .price-note p + p {
+            margin-top: 16px;
+        }
+
+        .sample1-page .district-row span {
+            background: #fff;
+            border-color: #cfe2d7;
+            color: #35654f;
+        }
+
+        .sample1-page #faq .container {
+            max-width: 980px;
+        }
+
+        .sample1-page .faq-list {
+            gap: 10px;
+            max-width: none;
+        }
+
+        .sample1-page .faq-item {
+            border-color: #d8e3ed;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        .sample1-page .faq-item[open] {
+            border-color: #dcc06a;
+            box-shadow: inset 4px 0 0 #d4af37;
+        }
+
+        .sample1-page .faq-question {
+            padding: 17px 52px 17px 18px;
+        }
+
+        .sample1-page .faq-question::after {
+            color: #a47a11;
+        }
+
+        .sample1-page .contact-box-section {
+            background: #f6f8fb;
+        }
+
+        .sample1-page .contact-box {
+            border-color: rgba(212, 175, 55, 0.38);
+        }
+
+        @media (max-width: 600px) {
+            .sample1-page .service-process-table caption {
+                padding: 15px 14px 11px;
+                font-size: 0.96rem;
+            }
+
+            .sample1-page .service-process-table th,
+            .sample1-page .service-process-table td {
+                padding: 13px 12px;
+            }
+
+            .sample1-page .service-process-table thead th:first-child,
+            .sample1-page .service-process-table tbody th {
+                width: 108px;
+            }
+
+            .sample1-page .service-process-table tbody th {
+                font-size: 0.8rem;
+                line-height: 1.35;
+            }
+
+            .sample1-page .process-step-number {
+                width: 24px;
+                height: 24px;
+                margin-right: 4px;
+                font-size: 0.72rem;
+            }
+
+            .sample1-page .service-process-table h3 {
+                font-size: 0.92rem;
+            }
+
+            .sample1-page .service-process-table p {
+                font-size: 0.86rem;
+                line-height: 1.55;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .sample1-page .article-section,
+            .sample1-page .article-section.alt {
+                padding: 62px 0;
+            }
+
+            .sample1-page .article-section h2 {
+                font-size: 2.3rem;
+            }
+
+            .sample1-page .decision-grid,
+            .sample1-page .warning-grid,
+            .sample1-page .process-grid,
+            .sample1-page .related-grid {
+                gap: 16px;
+            }
+        }
+
+        @media (min-width: 901px) {
+            .sample1-page .hero-grid {
+                grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
+                gap: 48px;
+            }
+
+            .sample1-page .decision-grid,
+            .sample1-page .process-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .sample1-page .warning-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .sample1-page .price-panel,
+            .sample1-page .local-proof {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 20px;
+            }
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -1677,7 +2112,7 @@
     }
     </script>
     <link rel="canonical" href="https://101locksmithhk.com/news/broken-key.html">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, nofollow">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://101locksmithhk.com/news/broken-key.html">
     <meta property="og:title" content="鎖匙斷在鎖孔點算？香港斷匙取出及緊急開鎖 | 101開鎖">
@@ -1693,7 +2128,7 @@
     <meta name="twitter:image" content="https://101locksmithhk.com/image/news/broken-key/%E6%96%B7%E9%8E%96%E5%8C%99.jpeg">
 </head>
 
-<body>
+<body class="sample1-page">
     <div class="float-buttons">
         <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
             <i class="fas fa-phone"></i>
@@ -1917,37 +2352,42 @@
                 <div class="section-kicker">香港本地服務流程</div>
                 <h2>斷匙取出、緊急開鎖與換鎖膽如何安排？</h2>
                 <p class="section-intro">先確認斷匙位置、門是否仍可打開、是否被鎖在門外，以及有沒有試過膠水或硬物；再判斷可否取出斷匙、是否需要緊急開鎖，及後續要不要配匙或換鎖膽。</p>
-                <div class="process-grid">
-                    <article class="process-card">
-                        <div class="card-label">1</div>
-                        <h3>相片初評及說明風險</h3>
-                        <p>先看鎖型、斷匙位置和你曾否自行處理，說明可否嘗試非破壞取出，或是否要先處理開門。</p>
-                    </article>
-                    <article class="process-card">
-                        <div class="card-label">2</div>
-                        <h3>確認報價和到場條件</h3>
-                        <p>斷匙取出價錢會受時段、地區、鎖型、斷匙深度和是否要換鎖膽影響。出發前應先確認總費用範圍。</p>
-                    </article>
-                    <article class="process-card">
-                        <div class="card-label">3</div>
-                        <h3>核實住戶或使用權</h3>
-                        <p>緊急開鎖涉及財物安全。師傅到場前後會按情況核實住戶、租客、公司職員或相關授權。</p>
-                    </article>
-                    <article class="process-card">
-                        <div class="card-label">4</div>
-                        <h3>先取斷匙，再檢查鎖膽</h3>
-                        <p>目標是盡量保留原有鎖膽，但要視乎鎖膽是否卡死、磨損或被膠水影響，不能保證每次都可保留。</p>
-                    </article>
-                    <article class="process-card">
-                        <div class="card-label">5</div>
-                        <h3>需要時配匙或換鎖膽</h3>
-                        <p>斷掉的原匙不能繼續使用。若沒有備用匙，或鎖膽已磨損，可能需要重新配匙或更換鎖膽。</p>
-                    </article>
-                    <article class="process-card">
-                        <div class="card-label">6</div>
-                        <h3>完成後測試開關</h3>
-                        <p>完成後應測試門內門外開關、斜利回彈和備用匙順暢度，減少短期內再次卡匙或斷匙。</p>
-                    </article>
+                <div class="service-process-table-wrap">
+                    <table class="service-process-table">
+                        <caption>斷匙取出及後續處理流程</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">步驟</th>
+                                <th scope="col">處理安排及確認事項</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><span class="process-step-number">1</span>初步評估</th>
+                                <td><h3>相片初評及說明風險</h3><p>先看鎖型、斷匙位置和你曾否自行處理，說明可否嘗試非破壞取出，或是否要先處理開門。</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="process-step-number">2</span>確認報價</th>
+                                <td><h3>確認報價和到場條件</h3><p>斷匙取出價錢會受時段、地區、鎖型、斷匙深度和是否要換鎖膽影響。出發前應先確認總費用範圍。</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="process-step-number">3</span>核實授權</th>
+                                <td><h3>核實住戶或使用權</h3><p>緊急開鎖涉及財物安全。師傅到場前後會按情況核實住戶、租客、公司職員或相關授權。</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="process-step-number">4</span>處理斷匙</th>
+                                <td><h3>先取斷匙，再檢查鎖膽</h3><p>目標是盡量保留原有鎖膽，但要視乎鎖膽是否卡死、磨損或被膠水影響，不能保證每次都可保留。</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="process-step-number">5</span>後續處理</th>
+                                <td><h3>需要時配匙或換鎖膽</h3><p>斷掉的原匙不能繼續使用。若沒有備用匙，或鎖膽已磨損，可能需要重新配匙或更換鎖膽。</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="process-step-number">6</span>完成測試</th>
+                                <td><h3>完成後測試開關</h3><p>完成後應測試門內門外開關、斜利回彈和備用匙順暢度，減少短期內再次卡匙或斷匙。</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="local-proof" style="margin-top:18px;">
                     <div class="info-card">

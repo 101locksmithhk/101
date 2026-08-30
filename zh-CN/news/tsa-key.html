@@ -137,15 +137,7 @@
     .source-card a{color:#365b7f;font-weight:800}
     .byline{display:flex;gap:10px;margin:0 0 46px;padding:15px;border-radius:13px;background:#eff3f7;color:#506176;font-size:.84rem}
     .byline i{margin-top:4px;color:var(--gold)}
-    .float-buttons{position:fixed;right:18px;bottom:18px;z-index:1100;display:flex;flex-direction:column;gap:10px}
-    .float-button-phone,.float-button-whatsapp{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;color:#fff;box-shadow:0 5px 14px rgba(0,0,0,.2);text-decoration:none}
-    .float-button-phone{background:var(--ink)}
-    .float-button-whatsapp{background:#25d366}
-    .whatsapp-wrapper{position:relative}
-    .whatsapp-text{display:none}
-    .whatsapp-text.hide-on-scroll{display:none}
     @media (max-width:768px){
-      .float-button-phone,.whatsapp-wrapper{display:none!important}
       .hero .cta-row{display:grid!important;grid-template-columns:minmax(0,1fr)!important}
       .hero .cta-row .button{width:100%!important}
     }
@@ -154,7 +146,6 @@
       .container{padding:0 24px}
       .hero-points,.quick-summary{grid-template-columns:repeat(3,minmax(0,1fr))}
       .truth-grid,.step-grid,.intent-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .whatsapp-text{display:block}
     }
     @media (min-width:769px){
       .hero{padding:62px 0 50px}
