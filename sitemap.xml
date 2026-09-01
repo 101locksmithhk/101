@@ -165,9 +165,33 @@
   </url>
   <url>
     <loc>https://101locksmithhk.com/news/broken-key.html</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://101locksmithhk.com/image/news/broken-key/%E6%96%B7%E9%8E%96%E5%8C%99.jpeg</image:loc>
+      <image:caption>鎖匙斷在鎖孔的斷匙情況</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://101locksmithhk.com/en/news/broken-key.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://101locksmithhk.com/image/news/broken-key/%E6%96%B7%E9%8E%96%E5%8C%99.jpeg</image:loc>
+      <image:caption>Broken key near a lock keyway</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://101locksmithhk.com/zh-CN/news/broken-key.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://101locksmithhk.com/image/news/broken-key/%E6%96%B7%E9%8E%96%E5%8C%99.jpeg</image:loc>
+      <image:caption>钥匙断在锁孔附近的情况</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://101locksmithhk.com/news/broken-room-door.html</loc>
