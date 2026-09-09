@@ -1216,7 +1216,7 @@
             setupLangSwitching(document.querySelectorAll('.lang-option'));
             setupLangSwitching(document.querySelectorAll('.drawer-lang-option'));
 
-            // WhatsApp 文字滚动隐藏 + 20秒后自动显示
+            // WhatsApp 文字滚动隐藏 + 5秒后自动显示
             const whatsappTextEl = document.getElementById('whatsappText');
             if (whatsappTextEl) {
                 let hideTimer = null, isHiddenByScroll = false;
@@ -1233,7 +1233,7 @@
                         isHiddenByScroll = true;
                     }
                     if (hideTimer) clearTimeout(hideTimer);
-                    hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 20000);
+                    hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 5000);
                 };
                 let scrollTimeout = null;
                 window.addEventListener('scroll', () => {

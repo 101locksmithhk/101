@@ -1232,7 +1232,7 @@
                         isHiddenByScroll = true;
                     }
                     if (hideTimer) clearTimeout(hideTimer);
-                    hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 20000);
+                    hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 5000);
                 };
                 let scrollTimeout = null;
                 window.addEventListener('scroll', () => {

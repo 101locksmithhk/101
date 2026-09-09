@@ -4,6 +4,12 @@
 
     function normaliseGroupCtas() {
         document.querySelectorAll(groupLinkSelector).forEach((link) => {
+            // 導航列是簡短的服務入口，維持品牌名稱；其他群組 CTA 才顯示回覆說明。
+            if (link.classList.contains('whatsapp-quick')) {
+                link.setAttribute('aria-label', 'WhatsApp');
+                return;
+            }
+
             const icon = link.querySelector(':scope > i');
             const hasVisibleText = Array.from(link.childNodes).some((node) =>
                 node.nodeType === Node.TEXT_NODE && node.textContent.trim()

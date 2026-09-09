@@ -652,7 +652,7 @@
             if (whatsappTextEl) {
                 let hideTimer = null, isHiddenByScroll = false;
                 function showText() { if (whatsappTextEl.classList.contains('hide-on-scroll')) { whatsappTextEl.classList.remove('hide-on-scroll'); isHiddenByScroll = false; } if (hideTimer) clearTimeout(hideTimer); }
-                function hideTextAndStartTimer() { if (!whatsappTextEl.classList.contains('hide-on-scroll')) { whatsappTextEl.classList.add('hide-on-scroll'); isHiddenByScroll = true; } if (hideTimer) clearTimeout(hideTimer); hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 20000); }
+                function hideTextAndStartTimer() { if (!whatsappTextEl.classList.contains('hide-on-scroll')) { whatsappTextEl.classList.add('hide-on-scroll'); isHiddenByScroll = true; } if (hideTimer) clearTimeout(hideTimer); hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 5000); }
                 let scrollTimeout = null;
                 window.addEventListener('scroll', () => { if (scrollTimeout) cancelAnimationFrame(scrollTimeout); scrollTimeout = requestAnimationFrame(() => { if (window.scrollY > 100) hideTextAndStartTimer(); else showText(); }); });
                 showText();

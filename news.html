@@ -148,7 +148,7 @@
         /* ===== 文章展示 (圖片比例/樣式完全與 locksmith-real-case 一致) ===== */
         .news-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 32px;
             margin-bottom: 48px;
         }
@@ -728,12 +728,12 @@
             },
             {
                 id: 6,
-                title: "壞房門鎖應該處理？",
-                excerpt: "門鎖突然故障不用驚慌，簡單地說壞鎖原因",
+                title: "房門鎖壞咗點算？",
+                excerpt: "房門鎖打唔開、斜利卡住或門柄鬆？先辨認症狀，再比較開鎖、維修或更換。",
                 category: "開鎖知識",
                 link: "news/broken-room-door.html",
                 tag: "開鎖知識",
-                img: "image/news/room-lock/房門鎖.jpeg"
+                img: "image/news/broken-room-door/房門壞鎖.jpeg"
             },
             {
                 id: 7,
@@ -1102,7 +1102,7 @@
                     if (timer) clearTimeout(timer);
                     timer = setTimeout(() => {
                         wText.classList.remove('hide-on-scroll');
-                    }, 20000);
+                    }, 5000);
                 } else {
                     wText.classList.remove('hide-on-scroll');
                     if (timer) clearTimeout(timer);

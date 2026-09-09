@@ -641,7 +641,7 @@
                 function showText() { whatsappTextEl.style.opacity = '1'; }
                 function hideText() { whatsappTextEl.style.opacity = '0'; }
                 window.addEventListener('scroll', () => {
-                    if (window.scrollY > 100) { hideText(); if (hideTimer) clearTimeout(hideTimer); hideTimer = setTimeout(showText, 20000); }
+                    if (window.scrollY > 100) { hideText(); if (hideTimer) clearTimeout(hideTimer); hideTimer = setTimeout(showText, 5000); }
                     else { showText(); if (hideTimer) clearTimeout(hideTimer); }
                 });
             }

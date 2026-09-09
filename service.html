@@ -813,7 +813,7 @@ section {
                     if (targetUrl) window.location.href = targetUrl;
                 });
             });
-            // WhatsApp 文字滾動隱藏 + 20秒後自動顯示
+            // WhatsApp 文字滾動隱藏 + 5秒後自動顯示
             const whatsappTextEl = document.getElementById('whatsappText');
             if (whatsappTextEl) {
                 let hideTimer = null;
@@ -831,7 +831,7 @@ section {
                         isHiddenByScroll = true;
                     }
                     if (hideTimer) { clearTimeout(hideTimer); }
-                    hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 20 * 1000);
+                    hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 5000);
                 }
                 let scrollTimeout = null;
                 function handleScroll() { if (window.scrollY > 100) { if (!whatsappTextEl.classList.contains('hide-on-scroll')) hideTextAndStartTimer(); } else { if (whatsappTextEl.classList.contains('hide-on-scroll')) showText(); } }
