@@ -186,7 +186,7 @@
         /* ===== 專業服務項目 ===== */
         .services-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 16px;
         }
 
@@ -247,6 +247,10 @@
         .commitment-grid.in-view .commit-card {
             opacity: 1;
             transform: translateX(0);
+        }
+
+        .commit-icon {
+            display: none;
         }
 
         .commitment-grid.in-view .commit-card:nth-child(1) {
@@ -745,7 +749,7 @@
 
         .area-links-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 14px;
         }
 
@@ -792,16 +796,26 @@
 
         .case-proof-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(4, minmax(250px, 82vw));
             gap: 18px;
+            overflow-x: auto;
+            padding: 4px 2px 18px;
+            scroll-snap-type: x mandatory;
+            overscroll-behavior-inline: contain;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
         }
 
         .case-proof-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
             overflow: hidden;
             border: 1px solid #e6eaf0;
             border-radius: 18px;
             background: #fff;
             box-shadow: 0 7px 20px rgba(30, 42, 62, .07);
+            scroll-snap-align: start;
         }
 
         .case-proof-frame {
@@ -818,12 +832,19 @@
             object-fit: cover;
         }
 
-        .case-proof-body { padding: 22px; }
+        .case-proof-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 22px;
+        }
 
         .case-proof-meta {
             display: flex;
             flex-wrap: wrap;
+            align-content: flex-start;
             gap: 8px;
+            min-height: 58px;
             margin-bottom: 12px;
         }
 
@@ -836,9 +857,26 @@
             font-weight: 700;
         }
 
-        .case-proof-card h3 { margin: 0 0 10px; font-size: 1.15rem; }
-        .case-proof-card p { margin: 0 0 18px; color: #5a6874; }
-        .case-proof-card .read-more { font-weight: 700; }
+        .case-proof-card h3 {
+            min-height: 3em;
+            margin: 0 0 10px;
+            font-size: 1.15rem;
+            line-height: 1.5;
+        }
+
+        .case-proof-card p {
+            flex: 1;
+            min-height: 4.5em;
+            margin: 0 0 18px;
+            color: #5a6874;
+            line-height: 1.5;
+        }
+
+        .case-proof-card .read-more {
+            align-self: flex-start;
+            margin-top: auto;
+            font-weight: 700;
+        }
 
         .local-actions {
             display: flex;
@@ -861,14 +899,63 @@
             font-size: .9rem;
         }
 
+        @media (max-width: 600px) {
+            .services-grid { gap: 12px; }
+
+            .service-card {
+                padding: 22px 12px;
+                border-radius: 14px;
+            }
+
+            .service-card i {
+                margin-bottom: 12px;
+                font-size: 2rem;
+            }
+
+            .service-card h3 {
+                margin: 0 0 8px;
+                font-size: 1.05rem;
+            }
+
+            .service-card p {
+                margin: 0;
+                font-size: .82rem;
+                line-height: 1.45;
+            }
+
+            .area-links-grid { gap: 12px; }
+
+            .area-link-card {
+                flex-direction: column;
+                justify-content: flex-start;
+                min-height: 210px;
+                padding: 18px 12px;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .area-link-card i {
+                flex: 0 0 auto;
+                font-size: 1.35rem;
+            }
+
+            .area-link-card strong { font-size: 1rem; }
+            .area-link-card span { font-size: .82rem; line-height: 1.5; }
+        }
+
         @media (min-width: 601px) {
             .area-links-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-            .case-proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .case-proof-grid { grid-template-columns: repeat(4, minmax(280px, 42vw)); }
         }
 
         @media (min-width: 901px) {
             .area-links-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-            .case-proof-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+            .case-proof-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                overflow: visible;
+                padding: 0;
+                scroll-snap-type: none;
+            }
         }
     </style>
         <!-- JSON-LD 結構化資料：核心 SEO Schema -->
