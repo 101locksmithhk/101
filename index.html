@@ -26,8 +26,6 @@
     <title>101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠</title>
     <meta name="description"
         content="101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。">
-    <meta name="keywords"
-        content="香港開鎖,24小時開鎖,緊急開鎖,換鎖,換鎖膽,電子鎖維修,電子鎖安裝,車鎖開鎖,夾萬開鎖,鎖匠服務,101開鎖">
     <meta name="author" content="101開鎖公司">
     <link rel="shortcut icon" href="favicon.ico?v=20260707">
     <link rel="icon" href="image/favicon-48x48.png?v=20260707" type="image/png" sizes="48x48">
@@ -186,7 +184,7 @@
         /* ===== 專業服務項目 ===== */
         .services-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 16px;
         }
 
@@ -247,6 +245,10 @@
         .commitment-grid.in-view .commit-card {
             opacity: 1;
             transform: translateX(0);
+        }
+
+        .commit-icon {
+            display: none;
         }
 
         .commitment-grid.in-view .commit-card:nth-child(1) {
@@ -315,13 +317,20 @@
         /* ===== 開鎖文章 ===== */
         .articles-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
+            grid-template-columns: repeat(3, minmax(250px, 82vw));
+            gap: 18px;
+            overflow-x: auto;
+            padding: 4px 2px 18px;
+            scroll-snap-type: x mandatory;
+            overscroll-behavior-inline: contain;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
         }
 
         .article-item {
             display: flex;
             flex-direction: column;
+            scroll-snap-align: start;
         }
 
         .article-image-frame {
@@ -404,7 +413,7 @@
 
         .read-all-wrapper {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             margin-top: 40px;
         }
 
@@ -436,6 +445,9 @@
             .articles-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 30px;
+                overflow: visible;
+                padding: 0;
+                scroll-snap-type: none;
             }
 
             .read-all-wrapper {
@@ -724,6 +736,232 @@
                 gap: 15px;
             }
         }
+
+        /* ===== Local SEO 示例：熱門地區及真實案例 ===== */
+        .local-intro {
+            max-width: 780px;
+            margin: -10px auto 28px;
+            color: #5a6874;
+            text-align: center;
+        }
+
+        .area-links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .area-link-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-height: 118px;
+            padding: 22px;
+            border: 1px solid #e6eaf0;
+            border-radius: 16px;
+            background: #fff;
+            color: #1e2a3e;
+            text-decoration: none;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, .06);
+            transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+        }
+
+        .area-link-card:hover {
+            transform: translateY(-3px);
+            border-color: #d4af37;
+            box-shadow: 0 10px 24px rgba(30, 42, 62, .1);
+        }
+
+        .area-link-card i {
+            flex: 0 0 42px;
+            color: #d4af37;
+            font-size: 1.55rem;
+            text-align: center;
+        }
+
+        .area-link-card strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.08rem;
+        }
+
+        .area-link-card span {
+            display: block;
+            color: #647284;
+            font-size: .92rem;
+            line-height: 1.55;
+        }
+
+        .case-proof-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(250px, 82vw));
+            gap: 18px;
+            overflow-x: auto;
+            padding: 4px 2px 18px;
+            scroll-snap-type: x mandatory;
+            overscroll-behavior-inline: contain;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
+
+        .case-proof-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid #e6eaf0;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 7px 20px rgba(30, 42, 62, .07);
+            scroll-snap-align: start;
+        }
+
+        .case-proof-frame {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            background: #eef2f7;
+        }
+
+        .case-proof-frame img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .case-proof-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 22px;
+        }
+
+        .case-proof-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 8px;
+            min-height: 58px;
+            margin-bottom: 12px;
+        }
+
+        .case-proof-meta span {
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: #f6edcf;
+            color: #6f5710;
+            font-size: .8rem;
+            font-weight: 700;
+        }
+
+        .case-proof-card h3 {
+            min-height: 3em;
+            margin: 0 0 10px;
+            font-size: 1.15rem;
+            line-height: 1.5;
+        }
+
+        .case-proof-card p {
+            flex: 1;
+            min-height: 4.5em;
+            margin: 0 0 18px;
+            color: #5a6874;
+            line-height: 1.5;
+        }
+
+        .case-proof-card .read-more {
+            align-self: flex-start;
+            margin-top: auto;
+            font-weight: 700;
+        }
+
+        .local-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .local-actions .btn { padding: 12px 22px; }
+
+        .evidence-note {
+            max-width: 900px;
+            margin: 24px auto 0;
+            padding: 15px 18px;
+            border-left: 4px solid #d4af37;
+            border-radius: 0 12px 12px 0;
+            background: #fff9e8;
+            color: #596675;
+            font-size: .9rem;
+        }
+
+        @media (max-width: 600px) {
+            .services-grid { gap: 12px; }
+
+            .service-card {
+                padding: 22px 12px;
+                border-radius: 14px;
+            }
+
+            .service-card i {
+                margin-bottom: 12px;
+                font-size: 2rem;
+            }
+
+            .service-card h3 {
+                margin: 0 0 8px;
+                font-size: 1.05rem;
+            }
+
+            .service-card p {
+                margin: 0;
+                font-size: .82rem;
+                line-height: 1.45;
+            }
+
+            .area-links-grid { gap: 12px; }
+
+            .area-link-card {
+                flex-direction: column;
+                justify-content: flex-start;
+                min-height: 0;
+                padding: 14px 10px;
+                gap: 6px;
+                text-align: center;
+            }
+
+            .area-link-card i {
+                flex: 0 0 auto;
+                font-size: 1.2rem;
+            }
+
+            .area-link-card strong {
+                margin-bottom: 3px;
+                font-size: .95rem;
+            }
+
+            .area-link-card span {
+                font-size: .78rem;
+                line-height: 1.4;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .area-links-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .case-proof-grid { grid-template-columns: repeat(4, minmax(280px, 42vw)); }
+        }
+
+        @media (min-width: 901px) {
+            .area-links-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .case-proof-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                overflow: visible;
+                padding: 0;
+                scroll-snap-type: none;
+            }
+        }
     </style>
         <!-- JSON-LD 結構化資料：核心 SEO Schema -->
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Locksmith"],"@id":"https://101locksmithhk.com/#locksmith","name":"101開鎖","url":"https://101locksmithhk.com/","logo":"https://101locksmithhk.com/image/logo.webp","image":"https://101locksmithhk.com/image/logo.webp","telephone":"+85266101101","priceRange":"HKD 500+","areaServed":{"@type":"AdministrativeArea","name":"香港"},"hasMap":"https://www.google.com/maps/search/?api=1&query=101%E9%96%8B%E9%8E%96%20%E8%A7%80%E5%A1%98%E9%B4%BB%E5%9C%96%E9%81%9342%E8%99%9F%E5%AF%B6%E8%8F%AF%E4%B8%AD%E5%BF%8319%E6%A8%9301%E5%AE%A4","address":{"@type":"PostalAddress","streetAddress":"觀塘鴻圖道42號寶華中心19樓01室","addressLocality":"觀塘","addressRegion":"九龍","addressCountry":"HK"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.facebook.com/profile.php?id=61575695398246","https://www.instagram.com/101_locksmith_hk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+85266101101","contactType":"customer service","areaServed":"HK","availableLanguage":["zh-HK","zh","en"]}]},{"@type":"WebSite","@id":"https://101locksmithhk.com/#website","url":"https://101locksmithhk.com/","name":"101開鎖","publisher":{"@id":"https://101locksmithhk.com/#locksmith"},"inLanguage":"zh-HK"},{"@type":"WebPage","@id":"https://101locksmithhk.com/#webpage","url":"https://101locksmithhk.com/","name":"101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠","description":"101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。","isPartOf":{"@id":"https://101locksmithhk.com/#website"},"about":{"@id":"https://101locksmithhk.com/#locksmith"}},{"@type":"Service","@id":"https://101locksmithhk.com/#locksmith-service","name":"香港24小時開鎖及換鎖服務","description":"101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。","serviceType":"Locksmith service","provider":{"@id":"https://101locksmithhk.com/#locksmith"},"areaServed":{"@type":"AdministrativeArea","name":"香港"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"101開鎖服務項目","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"24小時緊急開鎖","description":"住宅、商舖及辦公室緊急上門開鎖服務。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"換鎖及鎖具維修","description":"更換門鎖、鎖芯、維修壞鎖及保安升級建議。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"電子鎖安裝維修","description":"Samsung、Yale、Philips 等智能電子鎖安裝、重置及故障處理。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"門禁系統服務","description":"商業門禁、密碼鎖、拍卡系統安裝及維護。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"汽車開鎖","description":"車門反鎖、車匙留車內等汽車開鎖支援。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"夾萬及保險箱開鎖","description":"電子及機械夾萬、保險箱開啟與密碼重設。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}}]}}]}</script>
@@ -912,6 +1150,43 @@
         </div>
     </section>
 
+    <!-- Local SEO 示例：熱門服務地區 -->
+    <section id="popular-areas" style="background:#f8fafd;">
+        <div class="container">
+            <h2 class="section-title">香港熱門開鎖服務地區</h2>
+            <p class="local-intro">101開鎖提供全港上門服務。以下地區設有專屬服務資訊；實際到達時間會按師傅位置、交通、時段及現場情況確認。</p>
+            <div class="area-links-grid">
+                <a class="area-link-card" href="area/kwun-tong.html">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span><strong>觀塘開鎖</strong>觀塘、九龍灣、牛頭角及油塘；住宅門鎖、商業門禁及緊急開鎖。</span>
+                </a>
+                <a class="area-link-card" href="area/sai-kung.html">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span><strong>將軍澳開鎖</strong>將軍澳、坑口、寶琳及調景嶺；美式鎖、電子鎖及忘記帶匙支援。</span>
+                </a>
+                <a class="area-link-card" href="area/yau-tsim-mong.html">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span><strong>旺角開鎖</strong>旺角、太子、尖沙咀及大角咀；住宅、商舖與鐵閘門鎖處理。</span>
+                </a>
+                <a class="area-link-card" href="area/sha-tin.html">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span><strong>沙田開鎖</strong>沙田、大圍、馬鞍山及火炭；高保安鎖、木門鎖及鎖膽故障。</span>
+                </a>
+                <a class="area-link-card" href="area/sha-tin.html">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span><strong>大圍開鎖</strong>大圍、顯徑、美林及田心；住宅門鎖、高保安鎖及緊急開鎖。</span>
+                </a>
+                <a class="area-link-card" href="area/kowloon-city.html">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span><strong>九龍城開鎖</strong>九龍城、土瓜灣、紅磡及啟德；住宅門鎖、換鎖與緊急支援。</span>
+                </a>
+            </div>
+            <div class="local-actions">
+                <a class="btn btn-primary" href="area.html"><i class="fas fa-map" aria-hidden="true"></i> 查看全港服務地區</a>
+            </div>
+        </div>
+    </section>
+
     <!-- 服務承諾專區 -->
     <section id="commitment" style="background:#ffffff;">
         <div class="container">
@@ -937,7 +1212,7 @@
                 <div class="commit-card">
                     <div class="commit-icon"><i class="fas fa-rocket"></i></div>
                     <h3><span class="badge-number">4</span> 極速到達・24小時支援</h3>
-                    <p><strong>開鎖服務時間：</strong>接單後鎖匠多數能於30分鐘內到達全港大部分地區。<br><b>全年無休：</b>27/7開鎖公司，包括公眾假期及深夜時段，均提供緊急開鎖服務。
+                    <p><b>開鎖服務時間：</b>接單後鎖匠多數能於30分鐘內到達全港大部分地區。<br><b>全年無休：</b>24/7開鎖公司，包括公眾假期及深夜時段，均提供緊急開鎖服務。
                     </p>
                 </div>
                 <div class="commit-card">
@@ -950,6 +1225,56 @@
                     <h3><span class="badge-number">6</span> 售後保養・安心使用</h3>
                     <p><strong>換鎖後保養：</strong>門鎖14日保養，電子鎖2年原廠自攜保養（視乎品牌）。換鎖有售後服務，客戶有問必應。</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local SEO 示例：真實服務案例 -->
+    <section id="featured-cases" style="background:#fefcf5;">
+        <div class="container">
+            <h2 class="section-title">香港真實開鎖及換鎖案例</h2>
+            <p class="local-intro">以下為101開鎖曾處理的真實服務個案，涵蓋不同地區、門鎖類型及故障情況。個人資料已作遮蓋；實際處理方式、到達時間及收費會因地點、交通、時段和鎖具狀況而異。</p>
+            <div class="case-proof-grid">
+                <article class="case-proof-card">
+                    <div class="case-proof-frame"><img src="image/case/sai-kung/tseung-kwan-o-locksmith-bonco-lock/tseung-kwan-o-locksmith-bonco-lock-locksmith-service.jpeg" alt="將軍澳Bonco美式鎖忘記帶鎖匙真實開鎖案例" width="900" height="1200" loading="lazy" decoding="async"></div>
+                    <div class="case-proof-body">
+                        <div class="case-proof-meta"><span>將軍澳</span><span>12分鐘到達</span></div>
+                        <h3>Bonco高保安美式鎖忘記帶匙</h3>
+                        <p>師傅以技術方式完成開鎖，保留原有鎖膽及原裝鎖匙。</p>
+                        <a class="read-more" href="case/tseung-kwan-o-locksmith-bonco-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="case-proof-card">
+                    <div class="case-proof-frame"><img src="image/case/sha-tin/sha-tin-locksmith-medeco-high-security-lock/sha-tin-locksmith-medeco-high-security-lock-hero.jpeg" alt="沙田Medeco高保安鎖防攝生效真實開鎖案例" width="900" height="1200" loading="lazy" decoding="async"></div>
+                    <div class="case-proof-body">
+                        <div class="case-proof-meta"><span>沙田</span><span>20分鐘到達</span></div>
+                        <h3>Medeco高保安鎖防攝生效</h3>
+                        <p>鎖匙無法插入，師傅以純技術方式開門並完整保留門鎖。</p>
+                        <a class="read-more" href="case/sha-tin-locksmith-medeco-high-security-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="case-proof-card">
+                    <div class="case-proof-frame"><img src="image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-hero.jpeg" alt="九龍灣美式老虎鎖配電腦匙真實開鎖案例" width="900" height="1200" loading="lazy" decoding="async"></div>
+                    <div class="case-proof-body">
+                        <div class="case-proof-meta"><span>九龍灣／觀塘區</span><span>約15分鐘到達</span></div>
+                        <h3>美式老虎鎖配電腦匙</h3>
+                        <p>住戶忘記帶鎖匙，師傅到場後以技術開鎖方式完成開門。</p>
+                        <a class="read-more" href="case/kowloon-bay-locksmith-american-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="case-proof-card">
+                    <div class="case-proof-frame"><img src="image/case/wan-chai/wan-chai-locksmith-diamond-door-lock/wan-chai-locksmith-diamond-door-lock-locksmith-service.jpeg" alt="灣仔Diamond木門三開鎖真實緊急開鎖案例" width="900" height="1200" loading="lazy" decoding="async"></div>
+                    <div class="case-proof-body">
+                        <div class="case-proof-meta"><span>灣仔／港島</span><span>住宅木門鎖</span></div>
+                        <h3>Diamond木門三開鎖緊急處理</h3>
+                        <p>客人急需入屋，師傅檢查後以技術開鎖方式成功處理。</p>
+                        <a class="read-more" href="case/wan-chai-locksmith-diamond-door-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+            </div>
+            <p class="evidence-note"><strong>開鎖案例說明：</strong>案例內容來自現有服務記錄；到達時間只在原案例已有紀錄時展示，不代表所有訂單均可在相同時間內到達。</p>
+            <div class="local-actions">
+                <a class="btn btn-primary" href="locksmith-real-case.html">查看全部真實案例</a>
             </div>
         </div>
     </section>
@@ -1050,7 +1375,7 @@
                         <p>服務覆蓋</p>
                     </div>
                     <div class="stat-card"><i class="fas fa-trophy" style="font-size:2rem; color:#d4af37;"></i>
-                        <h3>15年</h3>
+                        <h3>16年</h3>
                         <p>業界經驗</p>
                     </div>
                     <div class="stat-card"><i class="fas fa-users" style="font-size:2rem; color:#d4af37;"></i>

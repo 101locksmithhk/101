@@ -1,0 +1,122 @@
+/* Related case, area and service links shared across formal site pages. */
+.topic-links {
+  padding: 48px 0;
+  background: #fefaf0;
+  border-top: 1px solid rgba(30, 42, 62, .08);
+  border-bottom: 1px solid rgba(30, 42, 62, .08);
+}
+
+.topic-links__container {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.topic-links__title {
+  margin: 0 0 10px;
+  color: #1e2a3e;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.topic-links__intro {
+  max-width: 760px;
+  margin: 0 auto 26px;
+  color: #5c6b7b;
+  text-align: center;
+}
+
+.topic-links__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.topic-links__grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.topic-link-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 23px;
+  color: #1e2a3e;
+  background: #fff;
+  border: 1px solid #eadb9c;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(30, 42, 62, .06);
+  text-decoration: none;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.topic-link-card:hover,
+.topic-link-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: #d4af37;
+  box-shadow: 0 12px 25px rgba(30, 42, 62, .1);
+}
+
+.topic-link-card__type {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  padding: 4px 10px;
+  color: #705700;
+  background: #fbf3d5;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.topic-link-card strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+
+.topic-link-card p {
+  margin: 0 0 15px;
+  color: #5c6b7b;
+  line-height: 1.65;
+}
+
+.topic-link-card__action {
+  margin-top: auto;
+  color: #755b00;
+  font-weight: 800;
+}
+
+.topic-links__subheading {
+  margin: 30px 0 14px;
+  color: #1e2a3e;
+  font-size: 1.2rem;
+}
+
+.topic-links__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topic-links__pills a {
+  padding: 8px 13px;
+  color: #604b00;
+  background: #fff;
+  border: 1px solid #d4af37;
+  border-radius: 999px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.topic-links__pills a:hover,
+.topic-links__pills a:focus-visible {
+  color: #1e2a3e;
+  background: #fbf3d5;
+}
+
+@media (max-width: 760px) {
+  .topic-links { padding: 38px 0; }
+  .topic-links__grid,
+  .topic-links__grid--three { grid-template-columns: 1fr; }
+}
