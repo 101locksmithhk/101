@@ -2,32 +2,22 @@
 <html lang="zh-CN">
 
 <head>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  (function(){
-    let loaded=false;
-    function loadAnalytics(){
-      if(loaded)return;
-      loaded=true;
-      const script=document.createElement('script');
-      script.async=true;
-      script.src='https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ';
-      document.head.appendChild(script);
-      gtag('js',new Date());
-      gtag('config','G-QDDHCBDHWQ');
-    }
-    ['pointerdown','keydown','touchstart'].forEach(function(eventName){window.addEventListener(eventName,loadAnalytics,{once:true,passive:true});});
-    window.addEventListener('load',function(){setTimeout(loadAnalytics,3500);},{once:true});
-  })();
-</script>
+    <!-- Google Analytics 4: load immediately without blocking page rendering -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-QDDHCBDHWQ");
+    </script>
+    <script src="../js/analytics-events.js" defer></script>
+    <link rel="stylesheet" href="../css/home-local-sections.css">
+
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>101开锁 | 24小时专业开锁换锁・全港极速上门</title>
     <meta name="description"
         content="101开锁提供香港24小时紧急开锁、换锁、电子锁安装维修、汽车开锁及保险箱服务。可通过WhatsApp发送照片询价，上门前确认收费，全港均可安排。">
-    <meta name="keywords"
-        content="开锁, 三星电子锁,101开锁, 24小时开锁, 66101101, 24小时紧急开锁, 换锁, 电子锁, 开锁佬, 锁匠, 锁匠, 坏锁, , 开锁佬, 锁匙, 紧急开锁, LOCKSMITH, LOCK PICK, 香港开锁, 电子锁安装, 开锁服务, 门锁, 车锁, 保险箱开锁, 夹万, 锁匠服务, 换锁服务, 24小时开锁, 开锁公司, 专业开锁, 快速开锁, 上门开锁, 开锁价格, 开锁费用, 开锁推荐, 开锁评价, 开锁专家, 开锁技术, 开锁工具, 开锁方法, 开锁技巧, 开锁知识, 开锁常见问题, 开锁安全建议, 开锁注意事项,开锁服务范围, 开锁服务地区, 开锁服务时间, 开锁服务价格, 开锁服务评价, 开锁服务推荐">
     <meta name="author" content="101开锁公司">
     <link rel="shortcut icon" href="../favicon.ico?v=20260707">
     <link rel="icon" href="../image/favicon-48x48.png?v=20260707" type="image/png" sizes="48x48">
@@ -731,12 +721,19 @@
     <meta property="og:url" content="https://101locksmithhk.com/zh-CN/">
     <meta property="og:title" content="101开锁 | 24小时专业开锁换锁・全港极速上门">
     <meta property="og:description" content="101开锁提供香港24小时紧急开锁、换锁、电子锁安装维修、汽车开锁及保险箱服务。可通过WhatsApp发送照片询价，上门前确认收费，全港均可安排。">
-    <meta property="og:image" content="https://101locksmithhk.com/image/logo.webp">
+    <meta property="og:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta property="og:image:secure_url" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="101开锁香港24小时紧急开锁换锁服务及真实服务案例">
     <meta property="og:site_name" content="101开锁">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="101开锁 | 24小时专业开锁换锁・全港极速上门">
     <meta name="twitter:description" content="101开锁提供香港24小时紧急开锁、换锁、电子锁安装维修、汽车开锁及保险箱服务。可通过WhatsApp发送照片询价，上门前确认收费，全港均可安排。">
+    <meta name="twitter:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta name="twitter:image:alt" content="101开锁香港24小时紧急开锁换锁服务及真实服务案例">
     <meta name="twitter:image" content="https://101locksmithhk.com/image/logo.webp">
     <!-- /SEO 社群分享与 canonical -->
 </head>
@@ -759,33 +756,33 @@
     <div class="navbar">
         <div class="nav-container">
             <a class="logo" href="/zh-CN/" aria-label="返回首頁">
-                <img src="../image/logo-128.webp" alt="101開鎖 Logo" width="128" height="128" decoding="async">
-                <div class="brand-name">101<span>開鎖</span></div>
+                <img src="../image/logo-128.webp" alt="101开锁 Logo" width="128" height="128" decoding="async">
+                <div class="brand-name">101<span>开锁</span></div>
             </a>
             <div class="desktop-nav">
                 <a href="/zh-CN/">首頁</a>
                 <div class="dropdown">
-                    <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="../service.html">開鎖</a>
-                        <a href="../service.html">換鎖</a>
-                        <a href="../service.html">電子鎖</a>
-                        <a href="../service.html">門禁系統</a>
-                        <a href="../service.html">車鎖</a>
-                        <a href="../service.html">夾萬</a>
+                    <a href="#">服务项目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content"><a href="../service.html">开锁服务范围</a>
+                        <a href="../service/unlock.html">开锁</a>
+                        <a href="../service/lock-replacement.html">换锁</a>
+                        <a href="../service/electronic-lock.html">电子锁</a>
+                        <a href="../service/access-control.html">门禁系统</a>
+                        <a href="../service/car-lock.html">车锁</a>
+                        <a href="../service/safe.html">夹万</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="#">開鎖知識 <i class="fas fa-chevron-down"></i></a>
+                    <a href="#">开锁知识 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="../faq.html">常見問題</a>
                         <a href="../news.html">知識文章</a>
                     </div>
                 </div>
-                <a href="../locksmith-real-case.html">真實案例</a>
+                <a href="../locksmith-real-case.html">真实案例</a>
                 <a href="../price.html">收費參考</a>
-                <a href="/zh-CN/#about">關於我們</a>
-                <a href="/zh-CN/#contact">聯絡我們</a>
+                <a href="../area.html">服务地区</a>
+                <a href="/zh-CN/#contact">联系我们</a>
                 <div class="quick-actions">
                     <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
                     <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
@@ -808,27 +805,27 @@
         <ul class="drawer-nav-list">
             <li class="drawer-nav-item"><a href="/zh-CN/" class="drawer-nav-link"><span>首頁</span></a></li>
             <li class="drawer-nav-item" data-has-sub="true">
-                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
-                <ul class="drawer-submenu" id="service-sub">
-                <li><a href="../service.html">開鎖</a></li>
-                <li><a href="../service.html">換鎖</a></li>
-                <li><a href="../service.html">電子鎖</a></li>
-                <li><a href="../service.html">門禁系統</a></li>
-                <li><a href="../service.html">車鎖</a></li>
-                <li><a href="../service.html">夾萬</a></li>
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服务项目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub"><li><a href="../service.html">开锁服务范围</a></li>
+                <li><a href="../service/unlock.html">开锁</a></li>
+                <li><a href="../service/lock-replacement.html">换锁</a></li>
+                <li><a href="../service/electronic-lock.html">电子锁</a></li>
+                <li><a href="../service/access-control.html">门禁系统</a></li>
+                <li><a href="../service/car-lock.html">车锁</a></li>
+                <li><a href="../service/safe.html">夹万</a></li>
                 </ul>
             </li>
             <li class="drawer-nav-item" data-has-sub="true">
-                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>开锁知识</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="knowledge-sub">
                 <li><a href="../faq.html">常見問題</a></li>
                 <li><a href="../news.html">知識文章</a></li>
                 </ul>
             </li>
-        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
+        <li class="drawer-nav-item"><a href="../locksmith-real-case.html" class="drawer-nav-link"><span>真实案例</span></a></li>
         <li class="drawer-nav-item"><a href="../price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
-        <li class="drawer-nav-item"><a href="/zh-CN/#about" class="drawer-nav-link"><span>關於我們</span></a></li>
-        <li class="drawer-nav-item"><a href="/zh-CN/#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
+        <li class="drawer-nav-item"><a href="../area.html" class="drawer-nav-link"><span>服务地区</span></a></li>
+        <li class="drawer-nav-item"><a href="/zh-CN/#contact" class="drawer-nav-link"><span>联系我们</span></a></li>
         </ul>
         <div class="drawer-quick">
             <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
@@ -864,43 +861,60 @@
         <div class="container">
             <h2 class="section-title">专业服务项目</h2>
             <div class="services-grid">
-                <a href="../service.html" class="service-card-link">
+                <a href="../service/unlock.html" class="service-card-link" data-service="unlock">
                     <div class="service-card"><i class="fas fa-lock-open"></i>
                         <h3>开锁</h3>
-                        <p>住宅、汽车、夹万任何锁类专业无损开启</p>
+                        <p>住宅、商铺及办公室门锁；按锁具状况评估，无损开启优先</p>
                     </div>
                 </a>
-                <a href="../service.html" class="service-card-link">
+                <a href="../service/lock-replacement.html" class="service-card-link" data-service="lock_replacement">
                     <div class="service-card"><i class="fas fa-exchange-alt"></i>
                         <h3>换锁</h3>
                         <p>升级锁芯、更换全新门锁</p>
                     </div>
                 </a>
-                <a href="../service.html" class="service-card-link">
+                <a href="../service/electronic-lock.html" class="service-card-link" data-service="electronic_lock">
                     <div class="service-card"><i class="fas fa-microchip"></i>
                         <h3>电子锁</h3>
                         <p>Samsung、Yale、Philips指紋/密码锁安装维修</p>
                     </div>
                 </a>
-                <a href="../service.html" class="service-card-link">
+                <a href="../service/access-control.html" class="service-card-link" data-service="access_control">
                     <div class="service-card"><i class="fas fa-building"></i>
                         <h3>门禁系统</h3>
                         <p>商业大廈门禁卡/密码系统安装维护</p>
                     </div>
                 </a>
-                <a href="../service.html" class="service-card-link">
+                <a href="../service/car-lock.html" class="service-card-link" data-service="car_lock">
                     <div class="service-card"><i class="fas fa-car"></i>
                         <h3>车锁</h3>
                         <p>各类私家车、货车开锁，晶片钥匙配制</p>
                     </div>
                 </a>
-                <a href="../service.html" class="service-card-link">
+                <a href="../service/safe.html" class="service-card-link" data-service="safe">
                     <div class="service-card"><i class="fas fa-vault"></i>
                         <h3>夹万</h3>
                         <p>传统密码夹万、电子保险箱专业开启</p>
                     </div>
                 </a>
             </div>
+        </div>
+    </section>
+
+    <!-- 热门服务地区 -->
+    <section id="popular-areas" style="background:#f8fafd;">
+        <div class="container">
+            <h2 class="section-title">香港热门开锁服务地区</h2>
+            <p class="local-intro">101开锁提供全港上门服务。以下地区设有专属服务信息；实际到达时间会按师傅位置、交通、时段及现场情况确认。</p>
+            <div class="area-links-grid">
+                <a class="area-link-card" href="../area/kwun-tong.html"><i class="fas fa-location-dot" aria-hidden="true"></i><span><strong>观塘开锁</strong>观塘、九龙湾、牛头角及油塘；住宅门锁、商业门禁及紧急开锁。</span></a>
+                <a class="area-link-card" href="../area/sai-kung.html"><i class="fas fa-location-dot" aria-hidden="true"></i><span><strong>将军澳开锁</strong>将军澳、坑口、宝琳及调景岭；美式锁、电子锁及忘记带钥匙支援。</span></a>
+                <a class="area-link-card" href="../area/yau-tsim-mong.html"><i class="fas fa-location-dot" aria-hidden="true"></i><span><strong>旺角开锁</strong>旺角、太子、尖沙咀及大角咀；住宅、商铺与铁闸门锁处理。</span></a>
+                <a class="area-link-card" href="../area/tai-po.html"><i class="fas fa-location-dot" aria-hidden="true"></i><span><strong>大埔开锁</strong>大埔、太和、大埔墟及白石角；住宅门锁、村屋铁闸及电子锁支援。</span></a>
+                <a class="area-link-card" href="../area/sha-tin.html"><i class="fas fa-location-dot" aria-hidden="true"></i><span><strong>大围开锁</strong>大围、显径、美林及田心；住宅门锁、高保安锁及紧急开锁。</span></a>
+                <a class="area-link-card" href="../area/kowloon-city.html"><i class="fas fa-location-dot" aria-hidden="true"></i><span><strong>九龙城开锁</strong>九龙城、土瓜湾、红磡及启德；住宅门锁、换锁与紧急支援。</span></a>
+            </div>
+            <div class="local-actions"><a class="btn btn-primary" href="../area.html"><i class="fas fa-map" aria-hidden="true"></i> 查看全港服务地区</a></div>
         </div>
     </section>
 
@@ -912,7 +926,7 @@
                 <div class="commit-card">
                     <div class="commit-icon"><i class="fas fa-hand-holding-usd"></i></div>
                     <h3><span class="badge-number">1</span> 不成功、不收费</h3>
-                    <p>如果锁匠到达現场后无法打开指定的门锁，<strong>绝不收取开锁服务费、车馬费或上门费</strong>。这份保障让您绝对安心。</p>
+                    <p>如果锁匠到达现场后无法打开指定的门锁，<strong>绝不收取开锁服务费、车马费或上门费</strong>。这份保障让您绝对安心。</p>
                 </div>
                 <div class="commit-card">
                     <div class="commit-icon"><i class="fas fa-file-invoice-dollar"></i></div>
@@ -946,6 +960,22 @@
         </div>
     </section>
 
+    <!-- 真实服务案例 -->
+    <section id="featured-cases" style="background:#fefcf5;">
+        <div class="container">
+            <h2 class="section-title">香港真实开锁及换锁案例</h2>
+            <p class="local-intro">以下为101开锁曾处理的真实服务案例，涵盖不同地区、门锁类型及故障情况。个人资料已作遮盖；实际处理方式、到达时间及收费会因地点、交通、时段和锁具状况而异。</p>
+            <div class="case-proof-grid">
+                <article class="case-proof-card"><div class="case-proof-frame"><img src="../image/case/sai-kung/tseung-kwan-o-locksmith-bonco-lock/tseung-kwan-o-locksmith-bonco-lock-locksmith-service.jpeg" alt="将军澳美式锁忘记带钥匙真实开锁案例" width="900" height="1200" loading="lazy" decoding="async"></div><div class="case-proof-body"><div class="case-proof-meta"><span>将军澳</span><span>记录到达时间12分钟</span></div><h3>美式高保安锁忘记带钥匙</h3><p>以技术方式完成开门，保留原有锁胆及钥匙。</p><a class="read-more" href="../case/tseung-kwan-o-locksmith-bonco-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+                <article class="case-proof-card"><div class="case-proof-frame"><img src="../image/case/sha-tin/sha-tin-locksmith-medeco-high-security-lock/sha-tin-locksmith-medeco-high-security-lock-hero.jpeg" alt="沙田高保安锁防摄生效真实开锁案例" width="900" height="1200" loading="lazy" decoding="async"></div><div class="case-proof-body"><div class="case-proof-meta"><span>沙田</span><span>记录到达时间20分钟</span></div><h3>高保安锁防摄机制生效</h3><p>以技术方式完成开门，完整保留门锁及原有锁胆。</p><a class="read-more" href="../case/sha-tin-locksmith-medeco-high-security-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+                <article class="case-proof-card"><div class="case-proof-frame"><img src="../image/case/kwun-tong/kowloon-bay-locksmith-american-lock/kowloon-bay-locksmith-american-lock-hero.jpeg" alt="九龙湾美式门锁真实开锁案例" width="900" height="1200" loading="lazy" decoding="async"></div><div class="case-proof-body"><div class="case-proof-meta"><span>九龙湾</span><span>美式门锁</span></div><h3>美式门锁及电脑钥匙处理</h3><p>师傅先检查锁具情况，再确认所需处理方式。</p><a class="read-more" href="../case/kowloon-bay-locksmith-american-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+                <article class="case-proof-card"><div class="case-proof-frame"><img src="../image/case/wan-chai/wan-chai-locksmith-diamond-door-lock/wan-chai-locksmith-diamond-door-lock-locksmith-service.jpeg" alt="湾仔住宅门锁真实紧急开锁案例" width="900" height="1200" loading="lazy" decoding="async"></div><div class="case-proof-body"><div class="case-proof-meta"><span>湾仔</span><span>住宅门锁</span></div><h3>住宅门锁紧急开锁服务</h3><p>师傅检查门锁后，优先采用无损方式处理。</p><a class="read-more" href="../case/wan-chai-locksmith-diamond-door-lock.html">查看完整案例 <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+            </div>
+            <p class="evidence-note"><strong>案例说明：</strong>案例内容来自现有服务记录；到达时间只在原案例已有记录时展示，不代表所有订单均可在相同时间内到达。</p>
+            <div class="local-actions"><a class="btn btn-primary" href="../locksmith-real-case.html">查看全部真实案例</a></div>
+        </div>
+    </section>
+
     <!-- 收费参考 -->
     <section id="pricing" style="background:#ffffff;">
         <div class="container">
@@ -954,8 +984,9 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>服务类別</th>
+                            <th>服务类别</th>
                             <th>参考价格 (HKD)</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -985,7 +1016,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="price-note"><i class="fas fa-moon"></i> 深夜时段(22:00-08:00)附加$200-$700，开锁前确认总费用。</div>
+            <div class="price-note"><strong>深夜开锁有什么附加费？</strong><span>深夜时段（22:00–08:00）附加 $200–$700，开锁前会先确认总费用。</span></div>
         </div>
     </section>
 
@@ -1000,7 +1031,7 @@
                         <div class="article-text">
                             <h3 class="article-title">开锁收费指南</h3>
                             <p class="article-excerpt">了解不同锁类的开锁收费标准，深夜时段附加费说明，明码实价绝不取巧。</p><a href="../price.html"
-                                class="read-more">閱读更多 <i class="fas fa-arrow-right"></i></a>
+                                class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="article-item">
@@ -1008,7 +1039,7 @@
                         <div class="article-text">
                             <h3 class="article-title">三大开锁方法</h3>
                             <p class="article-excerpt">技术・巧妙・破坏 — 锁匠工具箱的三大技巧（詳细解构）</p><a href="../news/unlock-method.html"
-                                class="read-more">閱读更多 <i class="fas fa-arrow-right"></i></a>
+                                class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="article-item">
@@ -1016,11 +1047,11 @@
                         <div class="article-text">
                             <h3 class="article-title">租客可以自己换电子锁嗎？</h3>
                             <p class="article-excerpt">拆解租客自行更换电子锁的权利、限制同正确步骤</p><a href="../news/change-digital-lock.html"
-                                class="read-more">閱读更多 <i class="fas fa-arrow-right"></i></a>
+                                class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="read-all-wrapper"><a href="../news.html" class="read-all-btn">閱读全部文章 <i
+                <div class="read-all-wrapper"><a href="../news.html" class="read-all-btn">阅读全部文章 <i
                             class="fas fa-arrow-right"></i></a></div>
             </div>
         </div>
@@ -1034,7 +1065,7 @@
                 <div class="about-text">
                     <p style="font-size:1.1rem; margin-bottom:20px;">
                         101开锁成立于2010年，是香港最具信誉的锁匠团队之一。我们坚持「一秒解困，一诺千金」的理念，提供24小时无休开锁、换锁、电子锁安装及门禁系统服务。</p>
-                    <p>团队所有师傅均持有香港警务处认可的锁匠牌照，严格遵守开锁前核实身份的程序，保障客户家居安全。至今已服务超过5万名客户，客户满意度高达98%。</p>
+                    <p>我们的开锁师傅是美国锁匠协会会员，并持有香港锁匠牌照。我们严格遵守开锁流程，开锁前会核实身份，确认锁匠能合法地开锁，保障客户家居安全。至今团队在16年间已服务超过5万名客户，客户满意度高达98%。</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card"><i class="fas fa-map-marker-alt" style="font-size:2rem; color:#d4af37;"></i>
@@ -1042,7 +1073,7 @@
                         <p>服务覆盖</p>
                     </div>
                     <div class="stat-card"><i class="fas fa-trophy" style="font-size:2rem; color:#d4af37;"></i>
-                        <h3>15年</h3>
+                        <h3>16年</h3>
                         <p>业界经验</p>
                     </div>
                     <div class="stat-card"><i class="fas fa-users" style="font-size:2rem; color:#d4af37;"></i>
@@ -1075,8 +1106,8 @@
                 </div>
                 <div class="map-box">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.760362950278!2d114.16940471495446!3d22.319290985303363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400b4cee9ab2b%3A0xc9cf6c08d6abcee!2sCentral%2C%20Hong%20Kong!5e0!3m2!1sen!2shk!4v1712750000000!5m2!1sen!2shk"
-                        title="101开锁服务范围地图" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps?q=%E8%A7%80%E5%A1%98%E9%B4%BB%E5%9C%96%E9%81%9342%E8%99%9F%E5%AF%B6%E8%8F%AF%E4%B8%AD%E5%BF%83&amp;output=embed"
+                        title="101开锁地址地图：观塘鸿图道42号宝华中心" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         allowfullscreen></iframe>
                 </div>
             </div>
@@ -1106,26 +1137,26 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="footer-brand">101<span>開鎖</span></div>
-                    <p>香港最具信譽鎖匠團隊・24小時專業開鎖換鎖</p>
+                    <div class="footer-brand">101<span>开锁</span></div>
+                    <p>香港具丰富经验的锁匠团队・24小时专业开锁换锁</p>
                     <h3>Blog</h3>
-                <a href="../news.html" class="footer-blog-link">開鎖知識庫</a>
-                <br><a href="../locksmith-real-case.html" class="footer-blog-link">真實個案</a>
+                <a href="../news.html" class="footer-blog-link">开锁知识库</a>
+                <br><a href="../locksmith-real-case.html" class="footer-blog-link">真实案例</a>
                 </div>
                 <div class="footer-col">
                     <h3>支援</h3>
                     <ul>
-                    <li><a href="../service.html">服務項目</a></li>
-                    <li><a href="../area.html">地區服務</a></li>
-                    <li><a href="/zh-CN/#commitment">服務承諾</a></li>
-                    <li><a href="../price.html">收費參考</a></li>
-                    <li><a href="../faq.html">常見問題</a></li>
-                    <li><a href="/zh-CN/#about">關於我們</a></li>
-                    <li><a href="/zh-CN/#contact">聯絡我們</a></li>
+                    <li><a href="../service.html">服务项目</a></li>
+                    <li><a href="../area.html">地区服务</a></li>
+                    <li><a href="/zh-CN/#commitment">服务承诺</a></li>
+                    <li><a href="../price.html">收费参考</a></li>
+                    <li><a href="../faq.html">常见问题</a></li>
+                    <li><a href="/zh-CN/#about">关于我们</a></li>
+                    <li><a href="/zh-CN/#contact">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h3>追蹤我們</h3>
+                    <h3>关注我们</h3>
                     <div class="footer-social">
                         <a href="https://www.facebook.com/profile.php?id=61575695398246" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
@@ -1134,12 +1165,12 @@
                     <div class="footer-contact-links">
                         <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
                         <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                        <a class="footer-contact-address" href="https://www.google.com/maps/search/?api=1&query=101%E9%96%8B%E9%8E%96%20%E8%A7%80%E5%A1%98%E9%B4%BB%E5%9C%96%E9%81%9342%E8%99%9F%E5%AF%B6%E8%8F%AF%E4%B8%AD%E5%BF%8319%E6%A8%9301%E5%AE%A4" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> 地址：觀塘鴻圖道42號寶華中心19樓01室</a>
+                        <a class="footer-contact-address" href="https://www.google.com/maps/search/?api=1&amp;query=101%E9%96%8B%E9%8E%96%20%E8%A7%80%E5%A1%98%E9%B4%BB%E5%9C%96%E9%81%9342%E8%99%9F%E5%AF%B6%E8%8F%AF%E4%B8%AD%E5%BF%8319%E6%A8%9301%E5%AE%A4" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> 地址：观塘鸿图道42号宝华中心19楼01室</a>
                     </div>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>© 2026 香港101開鎖公司 版權所有</p>
+                <p>© 2026 香港101开锁公司 版权所有</p>
             </div>
         </div>
     </footer>

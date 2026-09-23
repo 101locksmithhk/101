@@ -2,25 +2,16 @@
 <html lang="zh-HK">
 
 <head>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  (function(){
-    let loaded=false;
-    function loadAnalytics(){
-      if(loaded)return;
-      loaded=true;
-      const script=document.createElement('script');
-      script.async=true;
-      script.src='https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ';
-      document.head.appendChild(script);
-      gtag('js',new Date());
-      gtag('config','G-QDDHCBDHWQ');
-    }
-    ['pointerdown','keydown','touchstart'].forEach(function(eventName){window.addEventListener(eventName,loadAnalytics,{once:true,passive:true});});
-    window.addEventListener('load',function(){setTimeout(loadAnalytics,3500);},{once:true});
-  })();
-</script>
+    <!-- Google Analytics 4: load immediately without blocking page rendering -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-QDDHCBDHWQ");
+    </script>
+    <script src="js/analytics-events.js" defer></script>
+
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠</title>
@@ -535,6 +526,13 @@
             font-size: 0.9rem;
         }
 
+        .price-note strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #1e2a3e;
+            font-size: 1rem;
+        }
+
         /* ===== 聯絡我們 ===== */
         .contact-wrap {
             display: flex;
@@ -977,13 +975,19 @@
     <meta property="og:url" content="https://101locksmithhk.com/">
     <meta property="og:title" content="101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠">
     <meta property="og:description" content="101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。">
-    <meta property="og:image" content="https://101locksmithhk.com/image/logo.webp">
+    <meta property="og:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta property="og:image:secure_url" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="101開鎖香港24小時緊急開鎖換鎖服務；真實門鎖服務案例照片">
     <meta property="og:site_name" content="101開鎖">
     <meta property="og:locale" content="zh_HK">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠">
     <meta name="twitter:description" content="101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。">
-    <meta name="twitter:image" content="https://101locksmithhk.com/image/logo.webp">
+    <meta name="twitter:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta name="twitter:image:alt" content="101開鎖香港24小時緊急開鎖換鎖服務；真實門鎖服務案例照片">
     <!-- /SEO 社群分享與 canonical -->
 </head>
 
@@ -1013,12 +1017,13 @@
                 <div class="dropdown">
                     <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="service.html">開鎖</a>
-                        <a href="service.html">換鎖</a>
-                        <a href="service.html">電子鎖</a>
-                        <a href="service.html">門禁系統</a>
-                        <a href="service.html">車鎖</a>
-                        <a href="service.html">夾萬</a>
+                        <a href="service.html">開鎖服務範圍</a>
+                        <a href="service.html#unlock">開鎖</a>
+                        <a href="service.html#lock-replacement">換鎖</a>
+                        <a href="service.html#electronic-lock">電子鎖</a>
+                        <a href="service.html#access-control">門禁系統</a>
+                        <a href="service.html#car-lock">車鎖</a>
+                        <a href="service.html#safe">夾萬</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -1030,7 +1035,7 @@
                 </div>
                 <a href="locksmith-real-case.html">真實案例</a>
                 <a href="price.html">收費參考</a>
-                <a href="/#about">關於我們</a>
+                <a href="area.html">服務地區</a>
                 <a href="/#contact">聯絡我們</a>
                 <div class="quick-actions">
                     <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
@@ -1056,12 +1061,13 @@
             <li class="drawer-nav-item" data-has-sub="true">
                 <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="service-sub">
-                <li><a href="service.html">開鎖</a></li>
-                <li><a href="service.html">換鎖</a></li>
-                <li><a href="service.html">電子鎖</a></li>
-                <li><a href="service.html">門禁系統</a></li>
-                <li><a href="service.html">車鎖</a></li>
-                <li><a href="service.html">夾萬</a></li>
+                <li><a href="service.html">開鎖服務範圍</a></li>
+                <li><a href="service.html#unlock">開鎖</a></li>
+                <li><a href="service.html#lock-replacement">換鎖</a></li>
+                <li><a href="service.html#electronic-lock">電子鎖</a></li>
+                <li><a href="service.html#access-control">門禁系統</a></li>
+                <li><a href="service.html#car-lock">車鎖</a></li>
+                <li><a href="service.html#safe">夾萬</a></li>
                 </ul>
             </li>
             <li class="drawer-nav-item" data-has-sub="true">
@@ -1073,7 +1079,7 @@
             </li>
         <li class="drawer-nav-item"><a href="locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
         <li class="drawer-nav-item"><a href="price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
-        <li class="drawer-nav-item"><a href="/#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="area.html" class="drawer-nav-link"><span>服務地區</span></a></li>
         <li class="drawer-nav-item"><a href="/#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
         </ul>
         <div class="drawer-quick">
@@ -1095,7 +1101,7 @@
             <div class="hero-text">
                 <div class="badge">香港專業鎖匠團隊・365日・24小時無休・18區</div>
                 <h1>香港24小時緊急開鎖換鎖服務</h1>
-                <p>24小時專業開鎖換鎖・全港18區極速上門・明碼實價不濫收<br><br>最快30分鐘到達 ｜ 不成功不收費 ｜ WhatsApp發圖即報價</p>
+                <p>24小時專業開鎖換鎖・全港18區極速上門・明碼實價不濫收<br><br>全港各區最快30分鐘到達 ｜ 不成功不收費 ｜ WhatsApp發圖即報價</p>
                 <div class="hero-buttons">
                     <a href="tel:+85266101101" class="btn btn-primary"><i class="fas fa-phone-alt"></i> 24小時緊急開鎖</a>
                     <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4"
@@ -1108,39 +1114,39 @@
     <!-- 專業服務項目 -->
     <section id="services" style="background:#fefcf5;">
         <div class="container">
-            <h2 class="section-title">專業服務項目</h2>
+            <h2 class="section-title">專業開鎖服務項目</h2>
             <div class="services-grid">
-                <a href="service.html" class="service-card-link">
+                <a href="service.html#unlock" class="service-card-link" data-service="unlock">
                     <div class="service-card"><i class="fas fa-lock-open"></i>
                         <h3>開鎖</h3>
-                        <p>住宅、汽車、夾萬任何鎖類專業無損開啟</p>
+                        <p>住宅、商舖及辦公室門鎖；按鎖具狀況評估，無損開啟優先</p>
                     </div>
                 </a>
-                <a href="service.html" class="service-card-link">
+                <a href="service.html#lock-replacement" class="service-card-link" data-service="lock_replacement">
                     <div class="service-card"><i class="fas fa-exchange-alt"></i>
                         <h3>換鎖</h3>
                         <p>升級鎖芯、更換全新門鎖</p>
                     </div>
                 </a>
-                <a href="service.html" class="service-card-link">
+                <a href="service.html#electronic-lock" class="service-card-link" data-service="electronic_lock">
                     <div class="service-card"><i class="fas fa-microchip"></i>
                         <h3>電子鎖</h3>
                         <p>Samsung、Yale、Philips指紋/密碼鎖安裝維修</p>
                     </div>
                 </a>
-                <a href="service.html" class="service-card-link">
+                <a href="service.html#access-control" class="service-card-link" data-service="access_control">
                     <div class="service-card"><i class="fas fa-building"></i>
                         <h3>門禁系統</h3>
                         <p>商業大廈門禁卡/密碼系統安裝維護</p>
                     </div>
                 </a>
-                <a href="service.html" class="service-card-link">
+                <a href="service.html#car-lock" class="service-card-link" data-service="car_lock">
                     <div class="service-card"><i class="fas fa-car"></i>
                         <h3>車鎖</h3>
                         <p>各類私家車、貨車開鎖，晶片鑰匙配製</p>
                     </div>
                 </a>
-                <a href="service.html" class="service-card-link">
+                <a href="service.html#safe" class="service-card-link" data-service="safe">
                     <div class="service-card"><i class="fas fa-vault"></i>
                         <h3>夾萬</h3>
                         <p>傳統密碼夾萬、電子保險箱專業開啟</p>
@@ -1168,9 +1174,9 @@
                     <i class="fas fa-location-dot" aria-hidden="true"></i>
                     <span><strong>旺角開鎖</strong>旺角、太子、尖沙咀及大角咀；住宅、商舖與鐵閘門鎖處理。</span>
                 </a>
-                <a class="area-link-card" href="area/sha-tin.html">
+                <a class="area-link-card" href="area/tai-po.html">
                     <i class="fas fa-location-dot" aria-hidden="true"></i>
-                    <span><strong>沙田開鎖</strong>沙田、大圍、馬鞍山及火炭；高保安鎖、木門鎖及鎖膽故障。</span>
+                    <span><strong>大埔開鎖</strong>大埔、太和、大埔墟及白石角；住宅門鎖、村屋鐵閘及電子鎖支援。</span>
                 </a>
                 <a class="area-link-card" href="area/sha-tin.html">
                     <i class="fas fa-location-dot" aria-hidden="true"></i>
@@ -1211,7 +1217,7 @@
                 </div>
                 <div class="commit-card">
                     <div class="commit-icon"><i class="fas fa-rocket"></i></div>
-                    <h3><span class="badge-number">4</span> 極速到達・24小時支援</h3>
+                    <h3><span class="badge-number">4</span> 極速到達・24小時開鎖</h3>
                     <p><b>開鎖服務時間：</b>接單後鎖匠多數能於30分鐘內到達全港大部分地區。<br><b>全年無休：</b>24/7開鎖公司，包括公眾假期及深夜時段，均提供緊急開鎖服務。
                     </p>
                 </div>
@@ -1223,7 +1229,7 @@
                 <div class="commit-card">
                     <div class="commit-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3><span class="badge-number">6</span> 售後保養・安心使用</h3>
-                    <p><strong>換鎖後保養：</strong>門鎖14日保養，電子鎖2年原廠自攜保養（視乎品牌）。換鎖有售後服務，客戶有問必應。</p>
+                    <p><strong>換鎖後保養：</strong>門鎖有14日101開鎖公司保養，電子鎖有2年品牌原廠自攜保養（視乎品牌）。換鎖有售後服務，客戶有問必應。</p>
                 </div>
             </div>
         </div>
@@ -1289,6 +1295,7 @@
                         <tr>
                             <th>服務類別</th>
                             <th>參考價格 (HKD)</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -1318,7 +1325,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="price-note">深夜時段(22:00-08:00)附加$200-$700，開鎖前確認總費用。</div>
+            <div class="price-note">
+                <strong>深夜開鎖有甚麼附加費？</strong>
+                <span>深夜時段（22:00–08:00）附加 $200–$700，開鎖前會先確認總費用。</span>
+            </div>
         </div>
     </section>
 
@@ -1367,7 +1377,7 @@
                 <div class="about-text">
                     <p style="font-size:1.1rem; margin-bottom:20px;">
                         101開鎖成立於2010年，是香港具有資深經驗的鎖匠團隊之一。我們堅持「一秒解困，一諾千金」的理念，提供24小時開鎖、換鎖、電子鎖安裝及門禁系統服務。</p>
-                    <p>團隊所有師傅均持有鎖匠牌照，嚴格遵守開鎖前核實身份的程序，保障客戶家居安全。至今團隊已服務超過5萬名客戶，客戶滿意度高達98%。</p>
+                    <p>我哋嘅開鎖師傅是美國鎖匠協會會員，並持有香港鎖匠牌照。我們嚴格遵守開鎖流程，開鎖前會核實身份，確認鎖匠能合法地開鎖，保障客戶家居安全。至今團隊在16年間已服務超過5萬名客戶，客戶滿意度高達98%。</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card"><i class="fas fa-map-marker-alt" style="font-size:2rem; color:#d4af37;"></i>

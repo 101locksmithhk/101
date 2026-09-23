@@ -826,3 +826,70 @@ footer {
     background: #25d366;
     color: #fff;
 }
+
+/* Compact, accessible breadcrumb used by the district landing pages. */
+main > .breadcrumbs {
+    line-height: 1.35;
+}
+
+main > .breadcrumbs ol {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    list-style: none;
+    scrollbar-width: none;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+main > .breadcrumbs ol::-webkit-scrollbar {
+    display: none;
+}
+
+main > .breadcrumbs li {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+main > .breadcrumbs li:not(:last-child)::after {
+    margin: 0 10px;
+    color: #9aa7b5;
+    content: "›";
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+main > .breadcrumbs a {
+    text-underline-offset: 3px;
+}
+
+main > .breadcrumbs a:hover,
+main > .breadcrumbs a:focus-visible {
+    color: #8a6d0a;
+    text-decoration: underline;
+}
+
+main > .breadcrumbs [aria-current="page"] {
+    color: #5a6e7c;
+    font-weight: 700;
+}
+
+.service-card[id] {
+    scroll-margin-top: 112px;
+}
+
+@media (max-width: 600px) {
+    main > .breadcrumbs {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-size: 0.82rem;
+    }
+
+    main > .breadcrumbs li:not(:last-child)::after {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}

@@ -2,15 +2,18 @@
 <html lang="zh-HK">
 
 <head>
+    <!-- Google Analytics 4: load immediately without blocking page rendering -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-QDDHCBDHWQ");
+    </script>
+    <script src="js/analytics-events.js" defer></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QDDHCBDHWQ');
-</script>
+
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>101開鎖 | 地區服務專區 — 香港十八區開鎖換鎖資訊</title>
@@ -100,8 +103,8 @@
 
         .news-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 32px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px 12px;
             margin-bottom: 48px;
         }
 
@@ -211,6 +214,64 @@
 
         .news-article-link:hover .read-more-link {
             gap: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .news-image-block {
+                margin-bottom: 10px;
+                border-radius: 12px;
+            }
+
+            .news-date {
+                top: 6px;
+                right: 6px;
+                padding: 2px 6px;
+                font-size: 0.52rem;
+                letter-spacing: 0;
+            }
+
+            .news-tag {
+                bottom: 8px;
+                left: 8px;
+                max-width: calc(100% - 16px);
+                padding: 4px 8px;
+                overflow: hidden;
+                font-size: 0.62rem;
+                letter-spacing: 0;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .news-text-block {
+                padding-top: 4px;
+            }
+
+            .news-title {
+                display: -webkit-box;
+                min-height: 2.7em;
+                margin-bottom: 7px;
+                overflow: hidden;
+                font-size: 0.92rem;
+                line-height: 1.35;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+
+            .news-excerpt {
+                display: -webkit-box;
+                min-height: 4.35em;
+                margin-bottom: 10px;
+                overflow: hidden;
+                font-size: 0.72rem;
+                line-height: 1.45;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+            }
+
+            .read-more-link {
+                gap: 4px;
+                font-size: 0.72rem;
+            }
         }
 
         .news-layout {
@@ -466,7 +527,7 @@
                 <a href="/">首頁</a>
                 <div class="dropdown">
                     <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content"><a href="service.html">開鎖服務範圍</a>
                         <a href="service.html">開鎖</a>
                         <a href="service.html">換鎖</a>
                         <a href="service.html">電子鎖</a>
@@ -484,7 +545,7 @@
                 </div>
                 <a href="locksmith-real-case.html">真實案例</a>
                 <a href="price.html">收費參考</a>
-                <a href="/#about">關於我們</a>
+                <a href="area.html">服務地區</a>
                 <a href="/#contact">聯絡我們</a>
                 <div class="quick-actions">
                     <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
@@ -509,7 +570,7 @@
             <li class="drawer-nav-item"><a href="/" class="drawer-nav-link"><span>首頁</span></a></li>
             <li class="drawer-nav-item" data-has-sub="true">
                 <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
-                <ul class="drawer-submenu" id="service-sub">
+                <ul class="drawer-submenu" id="service-sub"><li><a href="service.html">開鎖服務範圍</a></li>
                 <li><a href="service.html">開鎖</a></li>
                 <li><a href="service.html">換鎖</a></li>
                 <li><a href="service.html">電子鎖</a></li>
@@ -527,7 +588,7 @@
             </li>
         <li class="drawer-nav-item"><a href="locksmith-real-case.html" class="drawer-nav-link"><span>真實案例</span></a></li>
         <li class="drawer-nav-item"><a href="price.html" class="drawer-nav-link"><span>收費參考</span></a></li>
-        <li class="drawer-nav-item"><a href="/#about" class="drawer-nav-link"><span>關於我們</span></a></li>
+        <li class="drawer-nav-item"><a href="area.html" class="drawer-nav-link"><span>服務地區</span></a></li>
         <li class="drawer-nav-item"><a href="/#contact" class="drawer-nav-link"><span>聯絡我們</span></a></li>
         </ul>
         <div class="drawer-quick">
