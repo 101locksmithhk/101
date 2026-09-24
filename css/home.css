@@ -1,0 +1,694 @@
+/* ===== 通用區塊樣式 ===== */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+ .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 28px;
+    position: relative;
+}
+ .section-title:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #d4af37;
+    margin: 16px auto 0;
+    border-radius: 2px;
+}
+ /* ===== 專業服務項目 ===== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+ .service-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s;
+}
+ .service-card-link:hover {
+    transform: translateY(-4px);
+}
+ .service-card {
+    background: white;
+    padding: 32px 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+    border: 1px solid #edf2f7;
+    height: 100%;
+    transition: box-shadow 0.2s;
+}
+ .service-card-link:hover .service-card {
+    box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+    border-color: #d4af37;
+}
+ .service-card i {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+ /* ===== 服務承諾（滾動動畫）===== */
+.commitment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+}
+ .commit-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+    border: 1px solid #edf2f7;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+ .commitment-grid.in-view .commit-card {
+    opacity: 1;
+    transform: translateX(0);
+}
+ .commit-icon {
+    display: none;
+}
+ .commitment-grid.in-view .commit-card:nth-child(1) {
+    transition-delay: 0s;
+}
+ .commitment-grid.in-view .commit-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+ .commitment-grid.in-view .commit-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+ .commitment-grid.in-view .commit-card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+ .commitment-grid.in-view .commit-card:nth-child(5) {
+    transition-delay: 0.4s;
+}
+ .commitment-grid.in-view .commit-card:nth-child(6) {
+    transition-delay: 0.5s;
+}
+ .commit-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 14px 24px rgba(30, 42, 62, 0.10);
+    border-color: #d4af37;
+}
+ .commit-icon {
+    font-size: 2.2rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+ .commit-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ .badge-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #d4af37;
+    color: #1e2a3e;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+ .commit-card p,
+.commit-card ul {
+    color: #2c3e4e;
+    line-height: 1.5;
+}
+ /* ===== 開鎖文章 ===== */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 82vw));
+    gap: 18px;
+    overflow-x: auto;
+    padding: 4px 2px 18px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+ .article-item {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+ .article-image-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+ .article-image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .article-item:hover .article-image-frame {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 28px rgba(30, 42, 62, 0.12);
+}
+ .article-topic {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #d4af37;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+ .article-text {
+    background: transparent;
+    padding: 0 8px;
+}
+ .article-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1e2a3e;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+ .article-excerpt {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+ .read-more {
+    color: #7a6114;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+ .read-more i { transition: transform .2s ease; }
+ .read-more:hover {
+    color: #b38f2a;
+}
+ .read-more:hover i { transform: translateX(4px); }
+ .read-all-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+ .read-all-btn {
+    color: #7a6114;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid #d4af37;
+}
+ .read-all-btn i { transition: transform .2s ease; }
+ .read-all-btn:hover {
+    background: #d4af37;
+    color: #1e2a3e;
+    border-color: #d4af37;
+}
+ .read-all-btn:hover i { transform: translateX(4px); }
+ @media (min-width: 601px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        overflow: visible;
+        padding: 0;
+        scroll-snap-type: none;
+    }
+     .read-all-wrapper {
+        margin-top: 30px;
+    }
+}
+ @media (min-width: 901px) {
+    .articles-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+     .read-all-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+ /* ===== 關於我們（統計卡片）===== */
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    flex-direction: column;
+}
+ .about-text {
+    flex: 1.5;
+}
+ .about-stats {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+}
+ .stat-card {
+    background: white;
+    padding: 16px 12px;
+    border-radius: 16px;
+    text-align: center;
+}
+ .stat-card h3 {
+    font-size: 1.2rem;
+}
+ .stat-card p {
+    font-size: 0.8rem;
+}
+ /* ===== 收費參考 ===== */
+.price-table {
+    overflow-x: auto;
+}
+ table {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    border-collapse: collapse;
+}
+ th,
+td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e4e9f0;
+}
+ th {
+    background-color: #1e2a3e;
+    color: white;
+}
+.pricing-answers {
+    display: grid;
+    gap: 14px;
+    margin-top: 20px;
+}
+ .price-note {
+    margin: 0;
+    background: #fff7e0;
+    padding: 12px 20px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+}
+ .price-note h3 {
+    display: block;
+    margin: 0 0 6px;
+    color: #1e2a3e;
+    font-size: 1rem;
+}
+ .price-note p {
+    margin: 0;
+ }
+ /* ===== 聯絡我們 ===== */
+.contact-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ .contact-info {
+    flex: 1;
+    background: white;
+    padding: 20px 16px;
+    border-radius: 16px;
+}
+ .contact-info a {
+    color: #000000 !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+ .map-box {
+    flex: 1;
+    min-height: 250px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+ iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+}
+ @media (min-width: 769px) {
+    .contact-wrap {
+        flex-direction: row;
+        gap: 40px;
+    }
+     .contact-info,
+    .map-box {
+        flex: 1;
+        width: auto;
+        min-width: 0;
+    }
+     .map-box {
+        min-height: 300px;
+    }
+     .contact-info {
+        padding: 32px;
+    }
+     section {
+        padding: 80px 0;
+    }
+     .section-title {
+        margin-bottom: 48px;
+        font-size: 2.2rem;
+    }
+     .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+     .commitment-grid {
+        gap: 30px;
+    }
+     .articles-grid {
+        gap: 30px;
+    }
+     .about-grid {
+        gap: 40px;
+        flex-direction: row;
+    }
+     .about-stats {
+        width: auto;
+        gap: 20px;
+    }
+     .price-table {
+        margin-bottom: 16px;
+    }
+     .price-note {
+        padding: 16px 20px;
+    }
+     .stat-card {
+        padding: 24px;
+    }
+     .stat-card h3 {
+        font-size: inherit;
+    }
+     .stat-card p {
+        font-size: inherit;
+    }
+}
+ /* ===== 預約服務或查詢區塊 ===== */
+.booking-section {
+    background: #1e2a3a;
+    color: white;
+    padding: 50px 0;
+    border-bottom: none;
+}
+ .booking-section .section-title {
+    color: white;
+}
+ .booking-section .section-title:after {
+    background: #d4af37;
+}
+ .booking-contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 24px 0 32px;
+}
+ .booking-contact-icons a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+ .booking-contact-icons a:hover {
+    opacity: 0.8;
+}
+ .booking-contact-icons i {
+    margin-right: 8px;
+}
+ .booking-promise {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.85rem;
+}
+ @media (min-width: 769px) {
+    .booking-section {
+        padding: 80px 0;
+    }
+     .booking-contact-icons {
+        gap: 32px;
+    }
+     .booking-contact-icons a {
+        font-size: 1.1rem;
+    }
+     .booking-promise {
+        padding: 20px;
+        font-size: 0.95rem;
+    }
+}
+ /* ===== 浮動按鈕 ===== */
+.float-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+ @media (min-width: 601px) {
+    .float-buttons {
+        bottom: 30px;
+        right: 30px;
+        gap: 15px;
+    }
+}
+ /* ===== Local SEO 示例：熱門地區及真實案例 ===== */
+.local-intro {
+    max-width: 780px;
+    margin: -10px auto 28px;
+    color: #5a6874;
+    text-align: center;
+}
+ .area-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+ .area-link-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 118px;
+    padding: 22px;
+    border: 1px solid #e6eaf0;
+    border-radius: 16px;
+    background: #fff;
+    color: #1e2a3e;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(30, 42, 62, .06);
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+ .area-link-card:hover {
+    transform: translateY(-3px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 24px rgba(30, 42, 62, .1);
+}
+ .area-link-card i {
+    flex: 0 0 42px;
+    color: #d4af37;
+    font-size: 1.55rem;
+    text-align: center;
+}
+ .area-link-card strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.08rem;
+}
+ .area-link-card span {
+    display: block;
+    color: #647284;
+    font-size: .92rem;
+    line-height: 1.55;
+}
+ .case-proof-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 82vw));
+    gap: 18px;
+    overflow-x: auto;
+    padding: 4px 2px 18px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+ .case-proof-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #e6eaf0;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 7px 20px rgba(30, 42, 62, .07);
+    scroll-snap-align: start;
+}
+ .case-proof-frame {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: #eef2f7;
+}
+ .case-proof-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .case-proof-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 22px;
+}
+ .case-proof-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 8px;
+    min-height: 58px;
+    margin-bottom: 12px;
+}
+ .case-proof-meta span {
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #f6edcf;
+    color: #6f5710;
+    font-size: .8rem;
+    font-weight: 700;
+}
+ .case-proof-card h3 {
+    min-height: 3em;
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+ .case-proof-card p {
+    flex: 1;
+    min-height: 4.5em;
+    margin: 0 0 18px;
+    color: #5a6874;
+    line-height: 1.5;
+}
+ .case-proof-card .read-more {
+    align-self: flex-start;
+    margin-top: auto;
+    font-weight: 700;
+}
+ .local-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+ .local-actions .btn { padding: 12px 22px; }
+ .evidence-note {
+    max-width: 900px;
+    margin: 24px auto 0;
+    padding: 15px 18px;
+    border-left: 4px solid #d4af37;
+    border-radius: 0 12px 12px 0;
+    background: #fff9e8;
+    color: #596675;
+    font-size: .9rem;
+}
+ @media (max-width: 600px) {
+    .services-grid { gap: 12px; }
+     .service-card {
+        padding: 22px 12px;
+        border-radius: 14px;
+    }
+     .service-card i {
+        margin-bottom: 12px;
+        font-size: 2rem;
+    }
+     .service-card h3 {
+        margin: 0 0 8px;
+        font-size: 1.05rem;
+    }
+     .service-card p {
+        margin: 0;
+        font-size: .82rem;
+        line-height: 1.45;
+    }
+     .area-links-grid { gap: 12px; }
+     .area-link-card {
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 0;
+        padding: 14px 10px;
+        gap: 6px;
+        text-align: center;
+    }
+     .area-link-card i {
+        flex: 0 0 auto;
+        font-size: 1.2rem;
+    }
+     .area-link-card strong {
+        margin-bottom: 3px;
+        font-size: .95rem;
+    }
+     .area-link-card span {
+        font-size: .78rem;
+        line-height: 1.4;
+    }
+}
+ @media (min-width: 601px) {
+    .area-links-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .case-proof-grid { grid-template-columns: repeat(4, minmax(280px, 42vw)); }
+}
+ @media (min-width: 901px) {
+    .area-links-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .case-proof-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        overflow: visible;
+        padding: 0;
+        scroll-snap-type: none;
+    }
+}

@@ -11,13 +11,14 @@
       gtag("config", "G-QDDHCBDHWQ");
     </script>
     <script src="../js/analytics-events.js" defer></script>
-    <link rel="stylesheet" href="../css/home-local-sections.css">
+    <link rel="stylesheet" href="../css/home-local-sections.css" media="print" onload="this.media='all'">
 
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>101 Locksmith | 24/7 Professional Locksmith Service in Hong Kong</title>
+    <title>24-Hour Unlocking &amp; Lock Replacement｜Professional Locksmith｜Fast Hong Kong Service｜101 Locksmith</title>
     <meta name="description"
-        content="24/7 locksmith service across Hong Kong for emergency lockouts, lock replacement, digital locks, car lockouts and safes. Send photos by WhatsApp for a quote.">
+        content="101 Locksmith - 66 101 101. Our experienced locksmith team provides 24/7 emergency lock opening, lock replacement, digital lock installation and repair, car lockout and safe services across Hong Kong. Fastest arrival in 20 minutes, no success no fee, non-destructive unlocking, no extra charges, clear pricing and no on-site price increases.">
+    <meta name="keywords" content="Hong Kong locksmith, 24 hour locksmith Hong Kong, emergency locksmith, lock opening, lock replacement, digital lock installation, access control, car lockout, safe opening, 101 Locksmith">
     <meta name="author" content="101 Locksmith Company">
     <link rel="shortcut icon" href="../favicon.ico?v=20260707">
     <link rel="icon" href="../image/favicon-48x48.png?v=20260707" type="image/png" sizes="48x48">
@@ -31,7 +32,14 @@
     <link rel="preload" as="image" href="../image/wallpaper-768.webp" type="image/webp" media="(max-width: 900px)" fetchpriority="high">
     <link rel="preload" as="image" href="../image/wallpaper-1200.webp" type="image/webp" media="(min-width: 901px)" fetchpriority="high">
 
-    <link rel="stylesheet" href="../css/site.css">
+    <!-- Shared and below-the-fold styles load without delaying the first hero paint. -->
+    <link rel="stylesheet" href="../css/site.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/home-localized.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../css/site.css">
+        <link rel="stylesheet" href="../css/home-local-sections.css">
+        <link rel="stylesheet" href="../css/home-localized.css">
+    </noscript>
 
     <!-- Font Awesome: non-blocking load -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -47,8 +55,8 @@
         .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
         .navbar { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
         .nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 1400px; min-height: 76px; margin: 0 auto; padding: 10px 20px; }
-        .logo { display: flex; align-items: center; gap: 12px; color: #1e2a3e; text-decoration: none; }.logo img { display: block; width: 56px; height: 56px; border-radius: 12px; }.logo .brand-name { margin: 0; color: #1e2a3e; font-size: 1.3rem; font-weight: 700; line-height: 1.2; }.logo .brand-name span { color: #d4af37; }
-        .desktop-nav { display: none; }.mobile-menu-btn { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; color: #1e2a3e; font-size: 1.55rem; }.drawer-overlay { position: fixed; inset: 0; z-index: 1090; visibility: hidden; background: rgba(0,0,0,.42); opacity: 0; }.mobile-drawer { position: fixed; top: 0; bottom: 0; left: -100%; z-index: 1100; width: min(84vw,360px); background: #fff; }
+        .logo { display: flex; align-items: center; gap: 12px; color: #1e2a3e; text-decoration: none; }.logo img { display: block; width: 56px; height: 56px; border-radius: 12px; }.logo .brand-name { margin: 0; color: #1e2a3e; font-size: 1.3rem; font-weight: 700; line-height: 1.2; }.logo .brand-name span { color: #806500; }
+        .desktop-nav { display: none; }.mobile-menu-btn { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; color: #1e2a3e; font-size: 1.55rem; }.drawer-overlay { position: fixed; inset: 0; z-index: 1090; visibility: hidden; background: rgba(0,0,0,.42); opacity: 0; }.mobile-drawer { position: fixed; top: 0; bottom: 0; left: 0; transform: translateX(-100%); z-index: 1100; width: min(84vw,360px); background: #fff; }
         .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 999px; font-weight: 600; text-decoration: none; cursor: pointer; }.btn-primary { background: #d4af37; color: #1e2a3e; }.btn-outline { background: transparent; border: 2px solid #d4af37; color: #d4af37; }
         @media (min-width: 901px) { .desktop-nav { display: flex; align-items: center; gap: 28px; }.desktop-nav > a, .dropdown > a { color: #2c3e4e; font-weight: 500; text-decoration: none; }.dropdown { position: relative; }.quick-actions { display: flex; align-items: center; gap: 10px; }.mobile-menu-btn { display: none; }.nav-container { min-height: 92px; } .logo img { width: 72px; height: 72px; } }
         /* ===== Hero section with preloaded background image===== */
@@ -142,574 +150,7 @@
             color: #1e2a3e;
         }
 
-        /* ===== Shared section styles ===== */
-        section {
-            padding: 40px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 28px;
-            position: relative;
-        }
-
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 70px;
-            height: 4px;
-            background: #d4af37;
-            margin: 16px auto 0;
-            border-radius: 2px;
-        }
-
-        /* ===== Professional Services ===== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
-
-        .service-card-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: transform 0.2s;
-        }
-
-        .service-card-link:hover {
-            transform: translateY(-4px);
-        }
-
-        .service-card {
-            background: white;
-            padding: 32px 24px;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
-            border: 1px solid #edf2f7;
-            height: 100%;
-            transition: box-shadow 0.2s;
-        }
-
-        .service-card-link:hover .service-card {
-            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
-            border-color: #d4af37;
-        }
-
-        .service-card i {
-            font-size: 2.5rem;
-            color: #d4af37;
-            margin-bottom: 20px;
-        }
-
-        /* ===== Service promise scroll animation===== */
-        .commitment-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-
-        .commit-card {
-            background: white;
-            border-radius: 16px;
-            padding: 32px 24px;
-            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
-            border: 1px solid #edf2f7;
-            transition: all 0.3s ease;
-            height: 100%;
-            opacity: 0;
-            transform: translateX(-30px);
-            transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
-        }
-
-        .commitment-grid.in-view .commit-card {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .commitment-grid.in-view .commit-card:nth-child(1) {
-            transition-delay: 0s;
-        }
-
-        .commitment-grid.in-view .commit-card:nth-child(2) {
-            transition-delay: 0.1s;
-        }
-
-        .commitment-grid.in-view .commit-card:nth-child(3) {
-            transition-delay: 0.2s;
-        }
-
-        .commitment-grid.in-view .commit-card:nth-child(4) {
-            transition-delay: 0.3s;
-        }
-
-        .commitment-grid.in-view .commit-card:nth-child(5) {
-            transition-delay: 0.4s;
-        }
-
-        .commitment-grid.in-view .commit-card:nth-child(6) {
-            transition-delay: 0.5s;
-        }
-
-        .commit-card:hover {
-            transform: translateY(-4px) !important;
-            box-shadow: 0 14px 24px rgba(30, 42, 62, 0.10);
-            border-color: #d4af37;
-        }
-
-        .commit-icon {
-            font-size: 2.2rem;
-            color: #d4af37;
-            margin-bottom: 20px;
-        }
-
-        .commit-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .badge-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #d4af37;
-            color: #1e2a3e;
-            width: 32px;
-            height: 32px;
-            border-radius: 999px;
-            font-weight: 700;
-            margin-right: 8px;
-        }
-
-        .commit-card p,
-        .commit-card ul {
-            color: #2c3e4e;
-            line-height: 1.5;
-        }
-
-        /* ===== Locksmith Articles ===== */
-        .articles-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        .article-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .article-image-frame {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 3 / 4;
-            border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
-            overflow: hidden;
-            margin-bottom: 24px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .article-image-frame img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .article-item:hover .article-image-frame {
-            transform: translateY(-4px);
-            box-shadow: 0 16px 28px rgba(30, 42, 62, 0.12);
-        }
-
-        .article-topic {
-            position: absolute;
-            bottom: 16px;
-            left: 16px;
-            background: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(4px);
-            padding: 6px 16px;
-            border-radius: 999px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #d4af37;
-            letter-spacing: 0.5px;
-            z-index: 2;
-        }
-
-        .article-text {
-            background: transparent;
-            padding: 0 8px;
-        }
-
-        .article-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #1e2a3e;
-            margin-bottom: 12px;
-            line-height: 1.3;
-        }
-
-        .article-excerpt {
-            font-size: 0.9rem;
-            color: #4a5568;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .read-more {
-            color: #7a6114;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .read-more i { transition: transform .2s ease; }
-
-        .read-more:hover {
-            color: #b38f2a;
-        }
-
-        .read-more:hover i { transform: translateX(4px); }
-
-        .read-all-wrapper {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 40px;
-        }
-
-        .read-all-btn {
-            color: #7a6114;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: transparent;
-            padding: 8px 16px;
-            border-radius: 999px;
-            border: 1px solid #d4af37;
-        }
-
-        .read-all-btn i { transition: transform .2s ease; }
-
-        .read-all-btn:hover {
-            background: #d4af37;
-            color: #1e2a3e;
-            border-color: #d4af37;
-        }
-
-        .read-all-btn:hover i { transform: translateX(4px); }
-
-        @media (min-width: 601px) {
-            .articles-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-            }
-
-            .read-all-wrapper {
-                margin-top: 30px;
-            }
-        }
-
-        @media (min-width: 901px) {
-            .articles-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 40px;
-            }
-
-            .read-all-btn {
-                font-size: 1rem;
-                padding: 8px 16px;
-            }
-        }
-
-        /* ===== About stats cards===== */
-        .about-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .about-text {
-            flex: 1.5;
-        }
-
-        .about-stats {
-            flex: 1;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            width: 100%;
-        }
-
-        .stat-card {
-            background: white;
-            padding: 16px 12px;
-            border-radius: 16px;
-            text-align: center;
-        }
-
-        .stat-card h3 {
-            font-size: 1.2rem;
-        }
-
-        .stat-card p {
-            font-size: 0.8rem;
-        }
-
-        /* ===== Pricing ===== */
-        .price-table {
-            overflow-x: auto;
-        }
-
-        table {
-            width: 100%;
-            background: white;
-            border-radius: 16px;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 16px 20px;
-            text-align: left;
-            border-bottom: 1px solid #e4e9f0;
-        }
-
-        th {
-            background-color: #1e2a3e;
-            color: white;
-        }
-
-        .price-note {
-            margin-top: 20px;
-            background: #fff7e0;
-            padding: 12px 20px;
-            border-radius: 16px;
-            font-size: 0.9rem;
-        }
-
-        /* ===== Contact ===== */
-        .contact-wrap {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .contact-info {
-            flex: 1;
-            background: white;
-            padding: 20px 16px;
-            border-radius: 16px;
-        }
-
-        .contact-info a {
-            color: #000000 !important;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 12px;
-        }
-
-        .map-box {
-            flex: 1;
-            min-height: 250px;
-            border-radius: 16px;
-            overflow: hidden;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            min-height: 300px;
-            border: 0;
-        }
-
-        @media (min-width: 769px) {
-            .contact-wrap {
-                flex-direction: row;
-                gap: 40px;
-            }
-
-            .contact-info,
-            .map-box {
-                flex: 1;
-                width: auto;
-                min-width: 0;
-            }
-
-            .map-box {
-                min-height: 300px;
-            }
-
-            .contact-info {
-                padding: 32px;
-            }
-
-            section {
-                padding: 80px 0;
-            }
-
-            .section-title {
-                margin-bottom: 48px;
-                font-size: 2.2rem;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 30px;
-            }
-
-            .commitment-grid {
-                gap: 30px;
-            }
-
-            .articles-grid {
-                gap: 30px;
-            }
-
-            .about-grid {
-                gap: 40px;
-                flex-direction: row;
-            }
-
-            .about-stats {
-                width: auto;
-                gap: 20px;
-            }
-
-            .price-table {
-                margin-bottom: 16px;
-            }
-
-            .price-note {
-                margin-top: 16px;
-            }
-
-            .stat-card {
-                padding: 24px;
-            }
-
-            .stat-card h3 {
-                font-size: inherit;
-            }
-
-            .stat-card p {
-                font-size: inherit;
-            }
-        }
-
-        /* ===== Book a Service or Make an Enquiry section ===== */
-        .booking-section {
-            background: #1e2a3a;
-            color: white;
-            padding: 50px 0;
-            border-bottom: none;
-        }
-
-        .booking-section .section-title {
-            color: white;
-        }
-
-        .booking-section .section-title:after {
-            background: #d4af37;
-        }
-
-        .booking-contact-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin: 24px 0 32px;
-        }
-
-        .booking-contact-icons a {
-            color: #d4af37;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: opacity 0.2s;
-        }
-
-        .booking-contact-icons a:hover {
-            opacity: 0.8;
-        }
-
-        .booking-contact-icons i {
-            margin-right: 8px;
-        }
-
-        .booking-promise {
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 999px;
-            padding: 16px;
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 0.85rem;
-        }
-
-        @media (min-width: 769px) {
-            .booking-section {
-                padding: 80px 0;
-            }
-
-            .booking-contact-icons {
-                gap: 32px;
-            }
-
-            .booking-contact-icons a {
-                font-size: 1.1rem;
-            }
-
-            .booking-promise {
-                padding: 20px;
-                font-size: 0.95rem;
-            }
-        }
-
-        /* ===== Floating buttons ===== */
-        .float-buttons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 12px;
-        }
-
-        @media (min-width: 601px) {
-            .float-buttons {
-                bottom: 30px;
-                right: 30px;
-                gap: 15px;
-            }
-        }
     </style>
-        <!-- JSON-LD structured data: core SEO schema -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Locksmith"],"@id":"https://101locksmithhk.com/#locksmith","name":"101 Locksmith","url":"https://101locksmithhk.com/","logo":"https://101locksmithhk.com/image/favicon.png","image":"https://101locksmithhk.com/image/favicon.png","telephone":"+85266101101","priceRange":"HKD 500+","areaServed":{"@type":"AdministrativeArea","name":"Hong Kong"},"hasMap":"https://www.google.com/maps/search/?api=1&query=101%E9%96%8B%E9%8E%96%20%E8%A7%80%E5%A1%98%E9%B4%BB%E5%9C%96%E9%81%9342%E8%99%9F%E5%AF%B6%E8%8F%AF%E4%B8%AD%E5%BF%8319%E6%A8%9301%E5%AE%A4","address":{"@type":"PostalAddress","streetAddress":"觀塘鴻圖道42號寶華中心19樓01室","addressLocality":"觀塘","addressRegion":"九龍","addressCountry":"HK"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.facebook.com/profile.php?id=61575695398246","https://www.instagram.com/101_locksmith_hk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+85266101101","contactType":"customer service","areaServed":"HK","availableLanguage":["zh-HK","zh","en"]}]},{"@type":"WebSite","@id":"https://101locksmithhk.com/#website","url":"https://101locksmithhk.com/","name":"101 Locksmith","publisher":{"@id":"https://101locksmithhk.com/#locksmith"},"inLanguage":"en-HK"},{"@type":"WebPage","@id":"https://101locksmithhk.com/en/#webpage","url":"https://101locksmithhk.com/en/","name":"101 Locksmith | 24/7 Professional Locksmith Service in Hong Kong","description":"24/7 locksmith service across Hong Kong for emergency lockouts, lock replacement, digital locks, car lockouts and safes. Send photos by WhatsApp for a quote.","isPartOf":{"@id":"https://101locksmithhk.com/#website"},"about":{"@id":"https://101locksmithhk.com/#locksmith"}},{"@type":"Service","@id":"https://101locksmithhk.com/#locksmith-service","name":"24-Hour Locksmith and Lock Replacement Service in Hong Kong","description":"24/7 locksmith service across Hong Kong for emergency lockouts, lock replacement, digital locks, car lockouts and safes. Send photos by WhatsApp for a quote.","serviceType":"Locksmith service","provider":{"@id":"https://101locksmithhk.com/#locksmith"},"areaServed":{"@type":"AdministrativeArea","name":"Hong Kong"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"101 Locksmith Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"24/7 Emergency Locksmith","description":"Emergency on-site unlocking for homes, shops and offices.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lock Replacement and Lock Repair","description":"Door lock replacement, cylinder replacement, lock repair and security upgrade advice.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Digital Lock Installation and Repair","description":"Installation, reset and troubleshooting for Samsung, Yale, Philips and other smart digital locks.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Access Control Service","description":"Installation and maintenance for commercial access control, keypad locks and card systems.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Car Lockout Service","description":"Vehicle lockout help when doors are locked or keys are left inside.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Safe Opening Service","description":"Opening and code reset support for electronic and mechanical safes.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}}]}}]}</script>
-    <!-- /JSON-LD structured data: core SEO schema -->
     <!-- SEO social sharing and canonical -->
     <link rel="canonical" href="https://101locksmithhk.com/en/">
     <link rel="alternate" hreflang="zh-HK" href="https://101locksmithhk.com/">
@@ -719,10 +160,10 @@
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://101locksmithhk.com/en/">
-    <meta property="og:title" content="101 Locksmith | 24/7 Professional Locksmith Service in Hong Kong">
-    <meta property="og:description" content="24/7 locksmith service across Hong Kong for emergency lockouts, lock replacement, digital locks, car lockouts and safes. Send photos by WhatsApp for a quote.">
-    <meta property="og:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
-    <meta property="og:image:secure_url" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta property="og:title" content="101 Locksmith｜24/7 Emergency Lock Opening &amp; Replacement｜Professional Locksmith｜Fast Service Across Hong Kong">
+    <meta property="og:description" content="101 Locksmith - 66 101 101. Experienced locksmiths provide 24/7 emergency lock opening, replacement, digital lock, car lockout and safe services across Hong Kong. Fastest arrival in 20 minutes, clear pricing and no on-site price increases.">
+    <meta property="og:image" content="https://101locksmithhk.com/image/og-home-share-en.jpg">
+    <meta property="og:image:secure_url" content="https://101locksmithhk.com/image/og-home-share-en.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -730,9 +171,9 @@
     <meta property="og:site_name" content="101 Locksmith">
     <meta property="og:locale" content="en_HK">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="101 Locksmith | 24/7 Professional Locksmith Service in Hong Kong">
-    <meta name="twitter:description" content="24/7 locksmith service across Hong Kong for emergency lockouts, lock replacement, digital locks, car lockouts and safes. Send photos by WhatsApp for a quote.">
-    <meta name="twitter:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta name="twitter:title" content="101 Locksmith｜24/7 Emergency Lock Opening &amp; Replacement｜Fast Hong Kong Service">
+    <meta name="twitter:description" content="Experienced locksmiths provide 24/7 emergency lock opening, replacement, digital lock, car lockout and safe services across Hong Kong. Fastest arrival in 20 minutes with clear pricing.">
+    <meta name="twitter:image" content="https://101locksmithhk.com/image/og-home-share-en.jpg">
     <meta name="twitter:image:alt" content="101 Locksmith 24-hour emergency locksmith and lock replacement service in Hong Kong">
     <!-- /SEO social sharing and canonical -->
 </head>
@@ -746,7 +187,7 @@
         </a>
         <div class="whatsapp-wrapper">
             <span class="whatsapp-text" id="whatsappText">24-hour locksmith hotline, real-person support</span>
-            <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="Contact us on WhatsApp">
+            <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="Contact us on WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
@@ -754,8 +195,8 @@
     <!-- Shared header: generated from src/_data/site.json -->
     <div class="navbar">
         <div class="nav-container">
-            <a class="logo" href="/en/" aria-label="Return to homepage">
-                <img src="../image/logo-128.webp" alt="101 Locksmith logo" width="128" height="128" decoding="async">
+            <a class="logo" href="/en/" aria-label="101 Locksmith homepage">
+                <img src="../image/logo-128.webp" alt="101 Locksmith logo" width="128" height="128" decoding="sync">
                 <div class="brand-name">101<span>Locksmith</span></div>
             </a>
             <div class="desktop-nav">
@@ -784,7 +225,7 @@
                 <a href="/en/#contact">Contact Us</a>
                 <div class="quick-actions">
                     <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>Call</span></a>
-                    <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     <div class="lang-switch-group">
                         <button class="lang-option" data-lang="zh">中</button>
                         <span style="color:#9aa9b9">|</span>
@@ -828,7 +269,7 @@
         </ul>
         <div class="drawer-quick">
             <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> Call 24/7 Hotline</a>
-            <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp Enquiry</a>
+            <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp Enquiry</a>
             <div class="drawer-lang-group">
                 <button class="drawer-lang-option" data-lang="zh">中</button>
                 <button class="drawer-lang-option" data-lang="en">EN</button>
@@ -840,15 +281,15 @@
     <!-- Hero section -->
     <main>
     <section id="home" class="hero">
-        <picture class="hero-media" aria-hidden="true"><source media="(min-width: 901px)" srcset="../image/wallpaper-1200.webp"><img src="../image/wallpaper-768.webp" alt="" width="768" height="419" fetchpriority="high" decoding="async"></picture>
+        <picture class="hero-media" aria-hidden="true"><source media="(min-width: 901px)" srcset="../image/wallpaper-1200.webp"><img src="../image/wallpaper-768.webp" alt="" width="768" height="419" fetchpriority="high" decoding="sync"></picture>
         <div class="container hero-content">
             <div class="hero-text">
                 <div class="badge">Professional Hong Kong Locksmith Team・365 Days・24/7・18 Districts</div>
                 <h1>24/7 Emergency Locksmith and Lock Replacement in Hong Kong</h1>
-                <p>24-hour professional unlocking and lock replacement across all 18 Hong Kong districts<br><br>Fast arrival from 30 minutes | No success, no service fee | Send photos on WhatsApp for a quick quote</p>
+                <p>24-hour professional lock opening and replacement across all 18 Hong Kong districts<br><br>Fastest arrival in 20 minutes | No success, no service fee | Send photos on WhatsApp for a quick quote</p>
                 <div class="hero-buttons">
                     <a href="tel:+85266101101" class="btn btn-primary"><i class="fas fa-phone-alt"></i> 24/7 Emergency Locksmith</a>
-                    <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4"
+                    <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4"
                         target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp Quote</a>
                 </div>
             </div>
@@ -941,7 +382,7 @@
                 <div class="commit-card">
                     <div class="commit-icon"><i class="fas fa-rocket"></i></div>
                     <h3><span class="badge-number">4</span> Fast Arrival, 24-Hour Support</h3>
-                    <p><strong>Response time:</strong> We aim to arrive within <strong>30 minutes</strong> in most Hong Kong districts after accepting the job.<br><strong>365-day support:</strong> Emergency service is available during public holidays and late-night hours.
+                    <p><strong>Response time:</strong> We aim to arrive within <strong>20 minutes</strong> in most Hong Kong districts after accepting the job.<br><strong>365-day support:</strong> Emergency service is available during public holidays and late-night hours.
                     </p>
                 </div>
                 <div class="commit-card">
@@ -1014,7 +455,16 @@
                     </tbody>
                 </table>
             </div>
-            <div class="price-note"><strong>What is the late-night surcharge?</strong><span>Services between 22:00 and 08:00 may add HK$200–HK$700. We confirm the total fee before unlocking.</span></div>
+            <div class="pricing-answers" aria-label="Common questions about locksmith pricing and unlocking methods">
+                <article class="price-note">
+                    <h3>How much does locksmith unlocking cost in Hong Kong?</h3>
+                    <p>Residential mechanical lock opening starts from HK$500. The final price depends on the lock type, fault, service time and whether replacement parts are required. Services between 22:00 and 08:00 may incur a HK$200–HK$700 surcharge; the total fee is confirmed before work begins.</p>
+                </article>
+                <article class="price-note">
+                    <h3>Does unlocking always damage the lock?</h3>
+                    <p>No. The locksmith will inspect the lock first and prioritise non-destructive opening methods. If destructive entry is necessary, the reason and cost will be explained before work begins.</p>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -1095,7 +545,7 @@
                 <div class="contact-info">
                     <h3>24-Hour Hotline</h3><br>
                     <p><a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a></p>
-                    <p><a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4"
+                    <p><a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4"
                             target="_blank"><i class="fab fa-whatsapp" style="color: #25D366;"></i> 66 101 101</a></p>
                     <br>
                     <p><i class="fas fa-map-marker-alt"></i> Service areas: Hong Kong Island, Kowloon and the New Territories</p>
@@ -1120,7 +570,7 @@
             <div class="booking-contact-icons">
                 <div><i class="fas fa-phone-alt"></i> <a href="tel:+85266101101">66 101 101</a></div>
                 <div><i class="fab fa-whatsapp"></i> <a
-                        href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4"
+                        href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4"
                         target="_blank">66 101 101</a></div>
                 <div><i class="fas fa-envelope"></i> 101locksmithhk@gmail.com</div>
             </div>
@@ -1158,12 +608,12 @@
                     <div class="footer-social">
                         <a href="https://www.facebook.com/profile.php?id=61575695398246" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                     <div class="footer-contact-links">
                         <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
-                        <a href="https://chat.whatsapp.com/HGoG6fo6yMm4jLkRaCK8J6?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                        <a class="footer-contact-address" href="https://www.google.com/maps/search/?api=1&amp;query=101%E9%96%8B%E9%8E%96%20%E8%A7%80%E5%A1%98%E9%B4%BB%E5%9C%96%E9%81%9342%E8%99%9F%E5%AF%B6%E8%8F%AF%E4%B8%AD%E5%BF%8319%E6%A8%9301%E5%AE%A4" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> Address: Room 01, 19/F, Po Wah Centre, 42 Hung To Road, Kwun Tong</a>
+                        <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a class="footer-contact-address" href="https://maps.app.goo.gl/ppTEduxxmNe8TPqZ7?g_st=ic" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> Address: Room 01, 19/F, Po Wah Centre, 42 Hung To Road, Kwun Tong</a>
                     </div>
                 </div>
             </div>
@@ -1320,6 +770,9 @@
 })();
 </script>
 <script src="../js/group-cta.js" defer></script>
+        <!-- JSON-LD structured data: core SEO schema -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Locksmith"],"@id":"https://101locksmithhk.com/#locksmith","name":"101 Locksmith","url":"https://101locksmithhk.com/","logo":"https://101locksmithhk.com/image/favicon.png","image":"https://101locksmithhk.com/image/favicon.png","telephone":"+85266101101","priceRange":"HKD 500+","areaServed":{"@type":"AdministrativeArea","name":"Hong Kong"},"hasMap":"https://maps.app.goo.gl/ppTEduxxmNe8TPqZ7?g_st=ic","address":{"@type":"PostalAddress","streetAddress":"觀塘鴻圖道42號寶華中心19樓01室","addressLocality":"觀塘","addressRegion":"九龍","addressCountry":"HK"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://maps.app.goo.gl/ppTEduxxmNe8TPqZ7?g_st=ic","https://www.facebook.com/profile.php?id=61575695398246","https://www.instagram.com/101_locksmith_hk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+85266101101","contactType":"customer service","areaServed":"HK","availableLanguage":["zh-HK","zh","en"]}]},{"@type":"WebSite","@id":"https://101locksmithhk.com/#website","url":"https://101locksmithhk.com/","name":"101 Locksmith","publisher":{"@id":"https://101locksmithhk.com/#locksmith"},"inLanguage":"en-HK"},{"@type":"WebPage","@id":"https://101locksmithhk.com/en/#webpage","url":"https://101locksmithhk.com/en/","name":"101 Locksmith | 24/7 Professional Locksmith Service in Hong Kong","description":"24/7 locksmith service across Hong Kong for emergency lockouts, lock replacement, digital locks, car lockouts and safes. Send photos by WhatsApp for a quote.","isPartOf":{"@id":"https://101locksmithhk.com/#website"},"about":{"@id":"https://101locksmithhk.com/#locksmith"}},{"@type":"Service","@id":"https://101locksmithhk.com/#locksmith-service","name":"24-Hour Locksmith and Lock Replacement Service in Hong Kong","description":"24/7 locksmith service across Hong Kong for emergency lockouts, lock replacement, digital locks, car lockouts and safes. Send photos by WhatsApp for a quote.","serviceType":"Locksmith service","provider":{"@id":"https://101locksmithhk.com/#locksmith"},"areaServed":{"@type":"AdministrativeArea","name":"Hong Kong"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"101 Locksmith Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"24/7 Emergency Locksmith","description":"Emergency on-site unlocking for homes, shops and offices.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lock Replacement and Lock Repair","description":"Door lock replacement, cylinder replacement, lock repair and security upgrade advice.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Digital Lock Installation and Repair","description":"Installation, reset and troubleshooting for Samsung, Yale, Philips and other smart digital locks.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Access Control Service","description":"Installation and maintenance for commercial access control, keypad locks and card systems.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Car Lockout Service","description":"Vehicle lockout help when doors are locked or keys are left inside.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Safe Opening Service","description":"Opening and code reset support for electronic and mechanical safes.","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}}]}}]}</script>
+    <!-- /JSON-LD structured data: core SEO schema -->
 </body>
 
 </html>

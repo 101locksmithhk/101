@@ -90,7 +90,7 @@ footer {
     border-radius: 999px;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.25s ease;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
     font-size: 1rem;
     border: none;
     cursor: pointer;
@@ -164,7 +164,7 @@ footer {
 
 .logo h1 span,
 .logo .brand-name span {
-    color: #d4af37;
+    color: #806500;
 }
 
 .desktop-nav {
@@ -324,14 +324,15 @@ footer {
 .mobile-drawer {
     position: fixed;
     top: 0;
-    left: -70%;
+    left: 0;
     width: 70%;
     max-width: 320px;
     height: 100%;
     background-color: #ffffff;
     z-index: 1200;
     box-shadow: 12px 0 28px rgba(30, 42, 62, 0.12);
-    transition: left 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -339,7 +340,7 @@ footer {
 }
 
 .mobile-drawer.open {
-    left: 0;
+    transform: translateX(0);
 }
 
 .drawer-header {
@@ -607,7 +608,7 @@ footer {
     padding-top: 30px;
     text-align: center;
     font-size: 0.8rem;
-    color: #8a9aa8;
+    color: #596675;
 }
 
 .float-button-phone {

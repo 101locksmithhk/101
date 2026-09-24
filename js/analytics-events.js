@@ -102,7 +102,8 @@
             eventName = 'phone_click';
         } else if (url && url.hostname === 'chat.whatsapp.com') {
             eventName = 'whatsapp_group_click';
-        } else if (url && (/^(www\.)?google\.[^/]+$/.test(url.hostname) || url.hostname === 'maps.app.goo.gl') && /\/maps|maps\//.test(url.href)) {
+        } else if (url && (url.hostname === 'maps.app.goo.gl' ||
+            (/^(www\.)?google\.[^/]+$/.test(url.hostname) && /\/maps|maps\//.test(url.href)))) {
             eventName = 'map_click';
         } else if (/\/(?:case\/[^/]+|locksmith-real-case\.html)$/.test(path)) {
             eventName = 'case_click';
