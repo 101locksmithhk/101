@@ -1,0 +1,187 @@
+/* Electronic-lock gallery: mobile-first, two photos per brand. */
+.lock-gallery-section {
+  background: #fff;
+}
+
+.gallery-eyebrow {
+  color: #9a7612;
+}
+
+.lock-brand-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.lock-brand-card {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(30, 42, 62, .07);
+}
+
+.lock-brand-card,
+.lock-consult-card {
+  align-self: start;
+}
+
+.lock-brand-card h3 {
+  margin: 0 0 14px;
+  font-size: clamp(1.08rem, 4.5vw, 1.35rem);
+}
+
+.lock-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.lock-photo-frame {
+  aspect-ratio: 3 / 4;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #eef2f7;
+}
+
+.lock-photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lock-photo-placeholder {
+  display: grid;
+  aspect-ratio: 3 / 4;
+  place-content: center;
+  gap: 8px;
+  border: 2px dashed #c7d0dc;
+  border-radius: 12px;
+  background: #f5f7fa;
+  color: #667789;
+  text-align: center;
+  font-weight: 700;
+}
+
+.lock-photo-placeholder i {
+  color: #a4afbd;
+  font-size: 1.55rem;
+}
+
+.lock-consult-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #1e2a3e, #34445d);
+  color: #fff;
+  box-shadow: 0 14px 34px rgba(30, 42, 62, .18);
+}
+
+.consult-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 20px;
+  place-items: center;
+  border-radius: 15px;
+  background: #d4af37;
+  color: #1e2a3e;
+  font-size: 1.35rem;
+}
+
+.consult-kicker,
+.other-lock-kicker {
+  margin: 0 0 6px;
+  color: #d4af37;
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.lock-consult-card h3 {
+  margin: 0 0 12px;
+  font-size: clamp(1.45rem, 4vw, 2rem);
+}
+
+.lock-consult-card > p:not(.consult-kicker) {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.consult-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.other-lock-card {
+  grid-column: 1 / -1;
+}
+
+.other-lock-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.other-lock-heading h3,
+.other-lock-heading p {
+  margin: 0;
+}
+
+.other-lock-heading > p {
+  max-width: 420px;
+  color: #5a6e7c;
+  font-size: .92rem;
+  text-align: right;
+}
+
+.other-lock-card .lock-photo-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .lock-brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .lock-brand-card {
+    padding: 20px;
+  }
+
+  .lock-photo-grid {
+    gap: 14px;
+  }
+
+  .other-lock-card .lock-photo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .other-lock-heading {
+    display: block;
+  }
+
+  .other-lock-heading > p {
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .consult-actions .button {
+    width: 100%;
+  }
+}

@@ -99,9 +99,9 @@
         let eventName = '';
 
         if (rawHref.toLowerCase().startsWith('tel:')) {
-            eventName = 'phone_click';
-        } else if (url && url.hostname === 'chat.whatsapp.com') {
-            eventName = 'whatsapp_group_click';
+            eventName = 'click_phone';
+        } else if (url && /(^|\.)whatsapp\.com$|^wa\.me$/i.test(url.hostname)) {
+            eventName = 'click_whatsapp';
         } else if (url && (url.hostname === 'maps.app.goo.gl' ||
             (/^(www\.)?google\.[^/]+$/.test(url.hostname) && /\/maps|maps\//.test(url.href)))) {
             eventName = 'map_click';
@@ -111,7 +111,13 @@
             eventName = 'area_click';
         }
 
-        if (eventName) sendEvent(eventName, eventParameters(link));
+        if (eventName) {
+            const parameters = eventParameters(link);
+            if (eventName === 'click_whatsapp') {
+                parameters.whatsapp_destination = url.hostname === 'chat.whatsapp.com' ? 'group' : 'direct';
+            }
+            sendEvent(eventName, parameters);
+        }
     }, true);
 
     function observePricing() {

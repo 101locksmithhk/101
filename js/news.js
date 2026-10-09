@@ -153,8 +153,9 @@
     // 語言切換：有同篇翻譯時使用 hreflang，否則返回該語言首頁
     document.querySelectorAll('.lang-option, .drawer-lang-option').forEach(btn => {
         btn.addEventListener('click', (e) => {
-            e.preventDefault();
             const lang = btn.getAttribute('data-lang');
+            if (!lang && btn.matches('a[href]')) return;
+            e.preventDefault();
             const hreflangMap = {
                 zh: ['zh-Hans-CN', 'zh-CN', 'zh-Hans'],
                 en: ['en-HK', 'en'],

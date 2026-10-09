@@ -52,10 +52,10 @@
         .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
         .navbar { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
         .nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 1400px; min-height: 76px; margin: 0 auto; padding: 10px 20px; }
-        .logo { display: flex; align-items: center; gap: 12px; color: #1e2a3e; text-decoration: none; }.logo img { display: block; width: 56px; height: 56px; border-radius: 12px; }.logo .brand-name { margin: 0; color: #1e2a3e; font-size: 1.3rem; font-weight: 700; line-height: 1.2; }.logo .brand-name span { color: #806500; }
+        .logo { display: flex; align-items: center; gap: 12px; color: #1e2a3e; text-decoration: none; }.logo img { display: block; width: 56px; height: 56px; border-radius: 12px; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,.1); }.logo .brand-name { margin: 0; color: #1e2a3e; font-size: 1.3rem; font-weight: 700; line-height: 1.2; }.logo .brand-name span { color: #d4af37; }
         .desktop-nav { display: none; }.mobile-menu-btn { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; color: #1e2a3e; font-size: 1.55rem; }.drawer-overlay { position: fixed; inset: 0; z-index: 1090; visibility: hidden; background: rgba(0,0,0,.42); opacity: 0; }.mobile-drawer { position: fixed; top: 0; bottom: 0; left: 0; transform: translateX(-100%); z-index: 1100; width: min(84vw,360px); background: #fff; }
         .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 999px; font-weight: 600; text-decoration: none; cursor: pointer; }.btn-primary { background: #d4af37; color: #1e2a3e; }.btn-outline { background: transparent; border: 2px solid #d4af37; color: #d4af37; }
-        @media (min-width: 901px) { .desktop-nav { display: flex; align-items: center; gap: 28px; }.desktop-nav > a, .dropdown > a { color: #2c3e4e; font-weight: 500; text-decoration: none; }.dropdown { position: relative; }.quick-actions { display: flex; align-items: center; gap: 10px; }.mobile-menu-btn { display: none; }.nav-container { min-height: 92px; } .logo img { width: 72px; height: 72px; } }
+        @media (min-width: 901px) { .desktop-nav { display: flex; align-items: center; gap: 28px; }.desktop-nav > a, .dropdown > a { color: #2c3e4e; font-weight: 500; text-decoration: none; }.dropdown { position: relative; }.quick-actions { display: flex; align-items: center; gap: 10px; }.mobile-menu-btn { display: none; }.nav-container { min-height: 92px; } .logo img { width: 72px; height: 72px; } .logo .brand-name { font-size: 1.6rem; } }
         /* ===== Hero 區塊（背景圖已預載）===== */
         .hero {
             position: relative;
@@ -167,8 +167,8 @@
     <meta property="og:url" content="https://101locksmithhk.com/">
     <meta property="og:title" content="101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠">
     <meta property="og:description" content="101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。">
-    <meta property="og:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
-    <meta property="og:image:secure_url" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta property="og:image" content="https://101locksmithhk.com/image/og/og-home-share.jpg">
+    <meta property="og:image:secure_url" content="https://101locksmithhk.com/image/og/og-home-share.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -178,7 +178,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠">
     <meta name="twitter:description" content="101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。">
-    <meta name="twitter:image" content="https://101locksmithhk.com/image/og-home-share.jpg">
+    <meta name="twitter:image" content="https://101locksmithhk.com/image/og/og-home-share.jpg">
     <meta name="twitter:image:alt" content="101開鎖香港24小時緊急開鎖換鎖服務；真實門鎖服務案例照片">
     <!-- /SEO 社群分享與 canonical -->
 </head>
@@ -186,7 +186,7 @@
 <body>
     <!-- 浮動按鈕 -->
     <!-- Shared floating CTA: generated from src/_data/site.json -->
-    <div class="float-buttons">
+    <div class="float-buttons" aria-label="快速聯絡">
         <a href="tel:+85266101101" class="float-button-phone" aria-label="緊急聯絡電話">
             <i class="fas fa-phone"></i>
         </a>
@@ -210,12 +210,12 @@
                     <a href="#">服務項目 <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="service.html">開鎖服務範圍</a>
-                        <a href="service.html#unlock">開鎖</a>
-                        <a href="service.html#lock-replacement">換鎖</a>
-                        <a href="service.html#electronic-lock">電子鎖</a>
-                        <a href="service.html#access-control">門禁系統</a>
-                        <a href="service.html#car-lock">車鎖</a>
-                        <a href="service.html#safe">夾萬</a>
+                        <a href="service/unlock.html">開鎖</a>
+                        <a href="service/lock-replacement.html">換鎖</a>
+                        <a href="service/electronic-lock.html">電子鎖</a>
+                        <a href="service/access-control.html">門禁系統</a>
+                        <a href="service/car-lock.html">車鎖</a>
+                        <a href="service/safe.html">夾萬</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -251,19 +251,19 @@
         <ul class="drawer-nav-list">
             <li class="drawer-nav-item"><a href="/" class="drawer-nav-link"><span>首頁</span></a></li>
             <li class="drawer-nav-item" data-has-sub="true">
-                <button class="drawer-nav-link" data-sub="service-sub"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
+                <button class="drawer-nav-link" data-sub="service-sub" type="button"><span>服務項目</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="service-sub">
                 <li><a href="service.html">開鎖服務範圍</a></li>
-                <li><a href="service.html#unlock">開鎖</a></li>
-                <li><a href="service.html#lock-replacement">換鎖</a></li>
-                <li><a href="service.html#electronic-lock">電子鎖</a></li>
-                <li><a href="service.html#access-control">門禁系統</a></li>
-                <li><a href="service.html#car-lock">車鎖</a></li>
-                <li><a href="service.html#safe">夾萬</a></li>
+                <li><a href="service/unlock.html">開鎖</a></li>
+                <li><a href="service/lock-replacement.html">換鎖</a></li>
+                <li><a href="service/electronic-lock.html">電子鎖</a></li>
+                <li><a href="service/access-control.html">門禁系統</a></li>
+                <li><a href="service/car-lock.html">車鎖</a></li>
+                <li><a href="service/safe.html">夾萬</a></li>
                 </ul>
             </li>
             <li class="drawer-nav-item" data-has-sub="true">
-                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
+                <button class="drawer-nav-link" data-sub="knowledge-sub" type="button"><span>開鎖知識</span> <i class="fas fa-chevron-down"></i></button>
                 <ul class="drawer-submenu" id="knowledge-sub">
                 <li><a href="faq.html">常見問題</a></li>
                 <li><a href="news.html">知識文章</a></li>
@@ -308,37 +308,37 @@
         <div class="container">
             <h2 class="section-title">專業開鎖服務項目</h2>
             <div class="services-grid">
-                <a href="service.html#unlock" class="service-card-link" data-service="unlock">
+                <a href="service/unlock.html" class="service-card-link" data-service="unlock">
                     <div class="service-card"><i class="fas fa-lock-open"></i>
                         <h3>開鎖</h3>
                         <p>住宅、商舖及辦公室門鎖；按鎖具狀況評估，無損開啟優先</p>
                     </div>
                 </a>
-                <a href="service.html#lock-replacement" class="service-card-link" data-service="lock_replacement">
+                <a href="service/lock-replacement.html" class="service-card-link" data-service="lock_replacement">
                     <div class="service-card"><i class="fas fa-exchange-alt"></i>
                         <h3>換鎖</h3>
                         <p>升級鎖芯、更換全新門鎖</p>
                     </div>
                 </a>
-                <a href="service.html#electronic-lock" class="service-card-link" data-service="electronic_lock">
+                <a href="service/electronic-lock.html" class="service-card-link" data-service="electronic_lock">
                     <div class="service-card"><i class="fas fa-microchip"></i>
                         <h3>電子鎖</h3>
                         <p>Samsung、Yale、Philips指紋/密碼鎖安裝維修</p>
                     </div>
                 </a>
-                <a href="service.html#access-control" class="service-card-link" data-service="access_control">
+                <a href="service/access-control.html" class="service-card-link" data-service="access_control">
                     <div class="service-card"><i class="fas fa-building"></i>
                         <h3>門禁系統</h3>
                         <p>商業大廈門禁卡/密碼系統安裝維護</p>
                     </div>
                 </a>
-                <a href="service.html#car-lock" class="service-card-link" data-service="car_lock">
+                <a href="service/car-lock.html" class="service-card-link" data-service="car_lock">
                     <div class="service-card"><i class="fas fa-car"></i>
                         <h3>車鎖</h3>
                         <p>各類私家車、貨車開鎖，晶片鑰匙配製</p>
                     </div>
                 </a>
-                <a href="service.html#safe" class="service-card-link" data-service="safe">
+                <a href="service/safe.html" class="service-card-link" data-service="safe">
                     <div class="service-card"><i class="fas fa-vault"></i>
                         <h3>夾萬</h3>
                         <p>傳統密碼夾萬、電子保險箱專業開啟</p>
@@ -675,7 +675,7 @@
                     <div class="footer-contact-links">
                         <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
                         <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                        <a class="footer-contact-address" href="https://maps.app.goo.gl/ppTEduxxmNe8TPqZ7?g_st=ic" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> 地址：觀塘鴻圖道42號寶華中心19樓01室</a>
+                        <a class="footer-contact-address" href="https://maps.app.goo.gl/qN9hPMJJ1XUymUZM8?g_st=ic" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> 地址：觀塘鴻圖道42號寶華中心19樓01室</a>
                     </div>
                 </div>
             </div>
@@ -833,7 +833,7 @@
 </script>
 <script src="js/group-cta.js" defer></script>
         <!-- JSON-LD 結構化資料：核心 SEO Schema -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Locksmith"],"@id":"https://101locksmithhk.com/#locksmith","name":"101開鎖","url":"https://101locksmithhk.com/","logo":"https://101locksmithhk.com/image/logo.webp","image":"https://101locksmithhk.com/image/logo.webp","telephone":"+85266101101","priceRange":"HKD 500+","areaServed":{"@type":"AdministrativeArea","name":"香港"},"hasMap":"https://maps.app.goo.gl/ppTEduxxmNe8TPqZ7?g_st=ic","address":{"@type":"PostalAddress","streetAddress":"觀塘鴻圖道42號寶華中心19樓01室","addressLocality":"觀塘","addressRegion":"九龍","addressCountry":"HK"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://maps.app.goo.gl/ppTEduxxmNe8TPqZ7?g_st=ic","https://www.facebook.com/profile.php?id=61575695398246","https://www.instagram.com/101_locksmith_hk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+85266101101","contactType":"customer service","areaServed":"HK","availableLanguage":["zh-HK","zh","en"]}]},{"@type":"WebSite","@id":"https://101locksmithhk.com/#website","url":"https://101locksmithhk.com/","name":"101開鎖","publisher":{"@id":"https://101locksmithhk.com/#locksmith"},"inLanguage":"zh-HK"},{"@type":"WebPage","@id":"https://101locksmithhk.com/#webpage","url":"https://101locksmithhk.com/","name":"101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠","description":"101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。","isPartOf":{"@id":"https://101locksmithhk.com/#website"},"about":{"@id":"https://101locksmithhk.com/#locksmith"}},{"@type":"Service","@id":"https://101locksmithhk.com/#locksmith-service","name":"香港24小時開鎖及換鎖服務","description":"101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。","serviceType":"Locksmith service","provider":{"@id":"https://101locksmithhk.com/#locksmith"},"areaServed":{"@type":"AdministrativeArea","name":"香港"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"101開鎖服務項目","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"24小時緊急開鎖","description":"住宅、商舖及辦公室緊急上門開鎖服務。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"換鎖及鎖具維修","description":"更換門鎖、鎖芯、維修壞鎖及保安升級建議。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"電子鎖安裝維修","description":"Samsung、Yale、Philips 等智能電子鎖安裝、重置及故障處理。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"門禁系統服務","description":"商業門禁、密碼鎖、拍卡系統安裝及維護。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"汽車開鎖","description":"車門反鎖、車匙留車內等汽車開鎖支援。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"夾萬及保險箱開鎖","description":"電子及機械夾萬、保險箱開啟與密碼重設。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}}]}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Locksmith"],"@id":"https://101locksmithhk.com/#locksmith","name":"101開鎖","url":"https://101locksmithhk.com/","logo":"https://101locksmithhk.com/image/logo-128.webp","image":"https://101locksmithhk.com/image/logo-128.webp","telephone":"+85266101101","priceRange":"HKD 500+","areaServed":{"@type":"AdministrativeArea","name":"香港"},"hasMap":"https://maps.app.goo.gl/qN9hPMJJ1XUymUZM8?g_st=ic","address":{"@type":"PostalAddress","streetAddress":"觀塘鴻圖道42號寶華中心19樓01室","addressLocality":"觀塘","addressRegion":"九龍","addressCountry":"HK"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://maps.app.goo.gl/qN9hPMJJ1XUymUZM8?g_st=ic","https://www.facebook.com/profile.php?id=61575695398246","https://www.instagram.com/101_locksmith_hk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+85266101101","contactType":"customer service","areaServed":"HK","availableLanguage":["zh-HK","zh","en"]}]},{"@type":"WebSite","@id":"https://101locksmithhk.com/#website","url":"https://101locksmithhk.com/","name":"101開鎖","publisher":{"@id":"https://101locksmithhk.com/#locksmith"},"inLanguage":"zh-HK"},{"@type":"WebPage","@id":"https://101locksmithhk.com/#webpage","url":"https://101locksmithhk.com/","name":"101開鎖｜香港24小時緊急開鎖換鎖｜全港上門鎖匠","description":"101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。","isPartOf":{"@id":"https://101locksmithhk.com/#website"},"about":{"@id":"https://101locksmithhk.com/#locksmith"}},{"@type":"Service","@id":"https://101locksmithhk.com/#locksmith-service","name":"香港24小時開鎖及換鎖服務","description":"101開鎖提供香港24小時緊急開鎖、換鎖、電子鎖安裝維修、車鎖及夾萬服務。WhatsApp發相報價，到場前確認收費，全港上門支援。","serviceType":"Locksmith service","provider":{"@id":"https://101locksmithhk.com/#locksmith"},"areaServed":{"@type":"AdministrativeArea","name":"香港"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"101開鎖服務項目","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"24小時緊急開鎖","description":"住宅、商舖及辦公室緊急上門開鎖服務。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"換鎖及鎖具維修","description":"更換門鎖、鎖芯、維修壞鎖及保安升級建議。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"電子鎖安裝維修","description":"Samsung、Yale、Philips 等智能電子鎖安裝、重置及故障處理。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"門禁系統服務","description":"商業門禁、密碼鎖、拍卡系統安裝及維護。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"汽車開鎖","description":"車門反鎖、車匙留車內等汽車開鎖支援。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"夾萬及保險箱開鎖","description":"電子及機械夾萬、保險箱開啟與密碼重設。","provider":{"@id":"https://101locksmithhk.com/#locksmith"}}}]}}]}</script>
     <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
 </body>
 
