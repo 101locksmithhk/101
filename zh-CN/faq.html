@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <!-- Google Analytics 4: load immediately without blocking page rendering -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDDHCBDHWQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-QDDHCBDHWQ");
+    </script>
+    <script src="/js/analytics-events.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- 主要 SEO 標籤 -->
+    <title>常见问题｜101开锁｜24小时专业开锁换锁｜香港开锁师傅FAQ</title>
+<link rel="canonical" href="https://101locksmithhk.com/zh-CN/faq.html">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://101locksmithhk.com/faq.html">
+<link rel="alternate" hreflang="en-HK" href="https://101locksmithhk.com/en/faq.html">
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://101locksmithhk.com/zh-CN/faq.html">
+<link rel="alternate" hreflang="x-default" href="https://101locksmithhk.com/faq.html">
+
+<meta name="description" content="门锁开唔到或需要换锁？查看开锁收费、上门时间、证明文件、电子锁故障及智能锁安装等常见问题，101开锁24小时接受查询。">
+    <meta name="keywords" content="开锁常见问题,开锁收费,电子锁开锁,24小时开锁,101开锁,开锁证明文件,智能锁安装,开锁课程">
+    <meta name="author" content="101开锁">
+
+    <!-- Open Graph / Facebook -->
+
+    <!-- Twitter Card -->
+
+    <link rel="shortcut icon" href="/favicon.ico?v=20260707">
+    <link rel="icon" href="/image/favicon-48x48.png?v=20260707" type="image/png" sizes="48x48">
+    <link rel="icon" href="/image/favicon.png?v=20260707" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="/image/apple-touch-icon.png?v=20260707" sizes="180x180">
+
+    <!-- 外部資源 -->    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <link rel="preload" href="/fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/css/site.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </noscript>
+
+    <style>
+/* 浮動按鈕 (與主站一致) */
+        .float-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 12px;
+        }
+
+        @media (min-width: 601px) {
+            .float-buttons {
+                bottom: 30px;
+                right: 30px;
+                gap: 15px;
+            }
+        }
+
+        /* ========= 手風琴專用樣式 (保留原內容) ========= */
+        .faq-accordion-section {
+            background: #f9fafc;
+            padding: 60px 0 80px;
+        }
+
+        .faq-accordion {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+            border-radius: 16px;
+        }
+
+        .accordion-item {
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 16px rgba(30, 42, 62, 0.06);
+            border: 1px solid #edf2f9;
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+
+        .accordion-item:hover {
+            border-color: #d4af37;
+            box-shadow: 0 8px 20px rgba(30, 42, 62, 0.08);
+        }
+
+        .accordion-question {
+            width: 100%;
+            background: white;
+            border: none;
+            text-align: left;
+            padding: 18px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: #1e2a3e;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            transition: background 0.2s;
+        }
+
+        .accordion-question i:first-child {
+            color: #d4af37;
+            font-size: 1.3rem;
+            width: 28px;
+        }
+
+        .accordion-question .question-text {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .accordion-icon {
+            font-size: 1.3rem;
+            color: #8e9eae;
+            transition: transform 0.25s ease;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+            color: #d4af37;
+        }
+
+        .accordion-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1), opacity 0.25s ease;
+            background: #ffffff;
+            border-top: 1px solid transparent;
+        }
+
+        .accordion-item.active .accordion-answer {
+            max-height: 400px;
+            opacity: 1;
+            border-top-color: #f0f2f6;
+        }
+
+        .accordion-answer p {
+            padding: 20px 22px 24px;
+            margin: 0;
+            color: #2c4c6c;
+            line-height: 1.65;
+            font-size: 0.95rem;
+        }
+
+        .faq-contact-card {
+            max-width: 860px;
+            margin: 42px auto 0;
+            background: #fff7e5;
+            border-radius: 16px;
+            padding: 24px clamp(16px, 5vw, 32px);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .faq-contact-card p {
+            width: 100%;
+            margin: 0;
+            font-size: clamp(0.82rem, 3.6vw, 1.05rem);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .faq-contact-actions {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(8px, 2vw, 12px);
+            width: min(100%, 600px);
+        }
+
+        .btn-small {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-width: 0;
+            min-height: 48px;
+            gap: 6px;
+            background: #d4af37;
+            padding: 10px 8px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: clamp(0.72rem, 3.1vw, 0.95rem);
+            white-space: nowrap;
+            text-decoration: none;
+            color: #1e2a3e;
+            transition: 0.2s;
+        }
+
+        .btn-small--whatsapp {
+            background: #25D366;
+            color: #fff;
+        }
+
+        .btn-small:hover {
+            background: #c4a228;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #d4af37;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        h1.section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 48px;
+        }
+
+        @media (min-width: 641px) {
+            .accordion-question {
+                padding: 22px 28px;
+                font-size: 1.1rem;
+            }
+
+            .accordion-answer p {
+                padding: 24px 28px 28px 28px;
+                font-size: 1rem;
+            }
+
+            .section-title,
+            h1.section-title {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD 結構化資料：FAQ Schema (保留) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"开锁后门锁会不会损坏？","acceptedAnswer":{"@type":"Answer","text":"专业师傅采用无损开锁技术，大多数情况下可完整保留锁具，您可继续使用原有门锁。若锁芯已老化或损坏，我们亦会主动告知并建议更换，绝不强迫消费。"}},
+        {"@type":"Question","name":"紧急开锁师傅多久能到？","acceptedAnswer":{"@type":"Answer","text":"确认地址后，最快10-30分钟内抵达！覆盖港岛、九龙、新界全区，设有夜间值班团队，保证24小时极速支援。"}},
+        {"@type":"Question","name":"开锁需要提供什么证明文件？","acceptedAnswer":{"@type":"Answer","text":"根据香港警方指引，必需出示身份证、租约或水电费单以确认合法居住权。若无法提供证明，师傅有权拒绝开锁，保障所有住户安全。"}},
+        {"@type":"Question","name":"电子/智能锁可以开锁吗？","acceptedAnswer":{"@type":"Answer","text":"当然可以。我们熟悉Samsung、Yale、Philips等主流智能锁的构造，支援电子锁技术性开启、指纹模组重置及断电应急处理，无需破坏门板。"}},
+        {"@type":"Question","name":"汽车开锁会刮花内饰或车漆吗？","acceptedAnswer":{"@type":"Answer","text":"请放心！专门配备汽车专用充气开锁工具及防护垫，所有操作均在保护下进行，绝对不伤车漆及内饰。同时支援晶片车匙遗失编程。"}},
+        {"@type":"Question","name":"夹万保险箱忘记密码怎么办？","acceptedAnswer":{"@type":"Answer","text":"专业夹万师傅能透过技术开启大部分电子及机械保险箱（包括入墙夹万），非破坏方式成功率高，并可协助重设密码及更换锁芯。"}},
+        {"@type":"Question","name":"换锁/升级智能锁要多久时间？","acceptedAnswer":{"@type":"Answer","text":"更换一般门锁约15-20分钟；安装电子锁（三星、耶鲁等）含设定约30-45分钟，并且免费教学使用，让您立刻入住安心。"}},
+        {"@type":"Question","name":"收费模式是什么？会滥收费用吗？","acceptedAnswer":{"@type":"Answer","text":"明码实价！开锁前会WhatsApp或当面报价总金额，绝无隐藏「夜间附加费」、「交通费」。深夜时段仅额外+$200起，开工前100%获得客户同意。"}},
+        {"@type":"Question","name":"商业大厦门禁系统可以维护安装吗？","acceptedAnswer":{"@type":"Answer","text":"可以。我们处理多款门禁机、密码卡机、人脸识别系统的安装、维修及升级，并可配合物业管理进行远程权限设定。"}},
+        {"@type":"Question","name":"农历新年或台风天是否照常服务？","acceptedAnswer":{"@type":"Answer","text":"365日无休，包括红日、八号风球及黑色暴雨。只要路面情况许可，师傅会坚持上门为您解决被锁的困境。"}},
+        {"@type":"Question","name":"师傅是否持有专业牌照？安全可靠吗？","acceptedAnswer":{"@type":"Answer","text":"所有开锁师傅均持有香港警察开锁牌照、已登记商业登记证，且经过严格的背景审查。服务全程可录影，保证绝对正规。"}},
+        {"@type":"Question","name":"如果开锁失败或无法开启会收费吗？","acceptedAnswer":{"@type":"Answer","text":"不成功不收费！师傅评估后若无法正常开启（特殊高安全性锁具除外）完全不收取任何费用，包括交通费。"}},
+        {"@type":"Question","name":"智能锁安装后手机连不到网络怎么办？","acceptedAnswer":{"@type":"Answer","text":"安装后我们会完整测试蓝牙/Wi-Fi配对，并提供专属售后支援。若家中路由器距离较远，师傅会建议网关摆放位置，确保连线稳定。"}},
+        {"@type":"Question","name":"更换门锁可以自行买锁请师傅安装吗？","acceptedAnswer":{"@type":"Answer","text":"当然可以。客户可自备门锁，我们仅收安装费用（约$150-$300）。同时也提供代理欧洲/日本锁具，品质保养更安心。"}},
+        {"@type":"Question","name":"开锁课程适合初学者吗？内容有哪些？","acceptedAnswer":{"@type":"Answer","text":"适合零基础！课程涵盖传统弹子锁原理、铝合金门锁维修、电子锁故障排除等，并由资深导师一对一指导，完成后协助考牌。"}}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://101locksmithhk.com/zh-CN/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "常见问题",
+          "item": "https://101locksmithhk.com/zh-CN/faq.html"
+        }
+      ]
+    }
+    </script>
+        <!-- JSON-LD 結構化資料：核心 SEO Schema -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Locksmith"],"@id":"https://101locksmithhk.com/zh-CN/#locksmith","name":"101开锁","url":"https://101locksmithhk.com/zh-CN/","logo":"https://101locksmithhk.com/image/logo-128.webp","image":"https://101locksmithhk.com/image/logo-128.webp","telephone":"+85266101101","priceRange":"HKD 500+","areaServed":{"@type":"AdministrativeArea","name":"香港"},"hasMap":"https://maps.app.goo.gl/qN9hPMJJ1XUymUZM8?g_st=ic","address":{"@type":"PostalAddress","streetAddress":"观塘鸿图道42号宝华中心19楼01室","addressLocality":"观塘","addressRegion":"九龙","addressCountry":"HK"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.facebook.com/profile.php?id=61575695398246","https://www.instagram.com/101_locksmith_hk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+85266101101","contactType":"customer service","areaServed":"HK","availableLanguage":["zh-HK","zh","en"]}]},{"@type":"WebPage","@id":"https://101locksmithhk.com/zh-CN/faq.html#webpage","url":"https://101locksmithhk.com/zh-CN/faq.html","name":"常见问题｜101开锁｜24小时专业开锁换锁｜香港开锁师傅FAQ","description":"门锁开唔到或需要换锁？查看开锁收费、上门时间、证明文件、电子锁故障及智能锁安装等常见问题，101开锁24小时接受查询。","isPartOf":{"@id":"https://101locksmithhk.com/zh-CN/#website"},"about":{"@id":"https://101locksmithhk.com/zh-CN/#locksmith"}}]}</script>
+    <!-- /JSON-LD 結構化資料：核心 SEO Schema -->
+    <!-- SEO 社群分享與 canonical -->
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://101locksmithhk.com/zh-CN/faq.html">
+    <meta property="og:title" content="常见问题｜101开锁｜24小时专业开锁换锁｜香港开锁师傅FAQ">
+    <meta property="og:description" content="门锁开唔到或需要换锁？查看开锁收费、上门时间、证明文件、电子锁故障及智能锁安装等常见问题，101开锁24小时接受查询。">
+    <meta property="og:image" content="https://101locksmithhk.com/image/og/og-home-share.jpg">
+    <meta property="og:site_name" content="101开锁">
+    <meta property="og:locale" content="zh_HK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="常见问题｜101开锁｜24小时专业开锁换锁｜香港开锁师傅FAQ">
+    <meta name="twitter:description" content="门锁开唔到或需要换锁？查看开锁收费、上门时间、证明文件、电子锁故障及智能锁安装等常见问题，101开锁24小时接受查询。">
+    <meta name="twitter:image" content="https://101locksmithhk.com/image/og/og-home-share.jpg">
+    <!-- /SEO 社群分享與 canonical -->
+</head>
+
+<body data-whatsapp-normalise="false">
+
+    <!-- 浮動按鈕 -->
+    <!-- Shared floating CTA: generated from src/_data/site.json -->
+    <div class="float-buttons">
+        <a href="tel:+85266101101" class="float-button-phone" aria-label="紧急联络电话">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="whatsapp-wrapper">
+            <span class="whatsapp-text" id="whatsappText">24小时开锁换锁热线，即时真人跟进</span>
+            <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="float-button-whatsapp" aria-label="WhatsApp联络">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Shared header: generated from src/_data/site.json -->
+    <div class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="/zh-CN/" aria-label="101开锁首页">
+                <img src="/image/logo-128.webp" alt="101开锁 Logo" width="128" height="128" decoding="sync">
+                <div class="brand-name">101<span>开锁</span></div>
+            </a>
+            <div class="desktop-nav">
+                <a href="/zh-CN/">首页</a>
+                <div class="dropdown">
+                    <a href="#">服务项目 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content"><a href="/zh-CN/service.html">开锁服务范围</a>
+                        <a href="/zh-CN/service/unlock.html">开锁</a>
+                        <a href="/zh-CN/service/lock-replacement.html">换锁</a>
+                        <a href="/zh-CN/service/electronic-lock.html">电子锁</a>
+                        <a href="/zh-CN/service/access-control.html">门禁系统</a>
+                        <a href="/zh-CN/service/car-lock.html">车锁</a>
+                        <a href="/zh-CN/service/safe.html">夹万</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">开锁知识 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/zh-CN/faq.html">常见问题</a>
+                        <a href="/zh-CN/news.html">知识文章</a>
+                    </div>
+                </div>
+                <a href="/zh-CN/locksmith-real-case.html">真实案例</a>
+                <a href="/zh-CN/price.html">收费参考</a>
+                <a href="/zh-CN/area.html">服务地区</a>
+                <a href="/zh-CN/#contact">联系我们</a>
+                <div class="quick-actions">
+                    <a href="tel:+85266101101"><i class="fas fa-phone-alt"></i> <span>即撥</span></a>
+                    <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="whatsapp-quick"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div class="lang-switch-group">
+                        <button class="lang-option" data-lang="zh">中</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <span style="color:#9aa9b9">|</span>
+                        <button class="lang-option" data-lang="hk">繁</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="打开导航菜单" aria-controls="mobileDrawer" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    <!-- Shared mobile drawer: generated from src/_data/site.json -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header"><button class="close-drawer" id="closeDrawerBtn" type="button" aria-label="关闭导航菜单">&times;</button></div>
+        <ul class="drawer-nav-list">
+            <li class="drawer-nav-item"><a href="/zh-CN/" class="drawer-nav-link"><span>首页</span></a></li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="service-sub"><span>服务项目</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="service-sub"><li><a href="/zh-CN/service.html">开锁服务范围</a></li>
+                <li><a href="/zh-CN/service/unlock.html">开锁</a></li>
+                <li><a href="/zh-CN/service/lock-replacement.html">换锁</a></li>
+                <li><a href="/zh-CN/service/electronic-lock.html">电子锁</a></li>
+                <li><a href="/zh-CN/service/access-control.html">门禁系统</a></li>
+                <li><a href="/zh-CN/service/car-lock.html">车锁</a></li>
+                <li><a href="/zh-CN/service/safe.html">夹万</a></li>
+                </ul>
+            </li>
+            <li class="drawer-nav-item" data-has-sub="true">
+                <button class="drawer-nav-link" data-sub="knowledge-sub"><span>开锁知识</span> <i class="fas fa-chevron-down"></i></button>
+                <ul class="drawer-submenu" id="knowledge-sub">
+                <li><a href="/zh-CN/faq.html">常见问题</a></li>
+                <li><a href="/zh-CN/news.html">知识文章</a></li>
+                </ul>
+            </li>
+        <li class="drawer-nav-item"><a href="/zh-CN/locksmith-real-case.html" class="drawer-nav-link"><span>真实案例</span></a></li>
+        <li class="drawer-nav-item"><a href="/zh-CN/price.html" class="drawer-nav-link"><span>收费参考</span></a></li>
+        <li class="drawer-nav-item"><a href="/zh-CN/area.html" class="drawer-nav-link"><span>服务地区</span></a></li>
+        <li class="drawer-nav-item"><a href="/zh-CN/#contact" class="drawer-nav-link"><span>联系我们</span></a></li>
+        </ul>
+        <div class="drawer-quick">
+            <a href="tel:+85266101101" class="drawer-quick-item"><i class="fas fa-phone-alt"></i> 即撥 24h 熱線</a>
+            <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" class="drawer-quick-item"><i class="fab fa-whatsapp"></i> WhatsApp 查詢</a>
+            <div class="drawer-lang-group">
+                <button class="drawer-lang-option" data-lang="zh">中</button>
+                <button class="drawer-lang-option" data-lang="en">EN</button>
+                <button class="drawer-lang-option" data-lang="hk">繁</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 手風琴 FAQ 專區 (內容保留) -->
+    <nav class="breadcrumb-bar" aria-label="面包屑">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/zh-CN/"><span itemprop="name">首页</span></a><meta itemprop="position" content="1"></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">常见问题</span><meta itemprop="item" content="https://101locksmithhk.com/faq.html"><meta itemprop="position" content="2"></li>
+            </ol>
+        </div>
+    </nav>
+    <section class="faq-accordion-section" id="faq-accordion-section">
+        <div class="container">
+            <h1 class="section-title">📋 常见问题解答</h1>
+            <div class="faq-accordion" id="faqAccordion">
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-key"></i><span
+                            class="question-text">开锁后门锁会不会损坏？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>✅ 专业师傅采用无损开锁技术，大多数情况下可完整保留锁具，您可继续使用原有门锁。若锁芯已老化或损坏，我们亦会主动告知并建议更换，绝不强迫消费。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-stopwatch"></i><span
+                            class="question-text">紧急开锁师傅多久能到？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>⏱️ 确认地址后，最快10-30分钟内抵达！我们覆盖港岛、九龙、新界全区，并设有夜间值班团队，保证24小时极速支援。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-id-card"></i><span
+                            class="question-text">开锁需要提供什么证明文件？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>📄 根据香港警方指引，必需出示身份证、租约或水电费单以确认合法居住权。若无法提供证明，师傅有权拒绝开锁，保障所有住户安全。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-fingerprint"></i><span
+                            class="question-text">电子/智能锁可以开锁吗？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🔓 当然可以。我们熟悉Samsung、Yale、Philips等主流智能锁的构造，支援电子锁技术性开启、指纹模组重置及断电应急处理，无需破坏门板。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-car"></i><span
+                            class="question-text">汽车开锁会刮花内饰或车漆吗？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🚗 请放心！我们专门配备汽车专用充气开锁工具及防护垫，所有操作均在保护下进行，绝对不伤车漆及内饰。同时支援晶片车匙遗失编程。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-vault"></i><span
+                            class="question-text">夹万保险箱忘记密码怎么办？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🏦 专业夹万师傅能透过技术开启大部分电子及机械保险箱（包括入墙夹万），非破坏方式成功率高，并可协助重设密码及更换锁芯。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-door-open"></i><span
+                            class="question-text">换锁/升级智能锁要多久时间？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>⏲️ 更换一般门锁约15-20分钟；安装电子锁（三星、耶鲁等）含设定约30-45分钟，并且免费教学使用，让您立刻入住安心。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-dollar-sign"></i><span
+                            class="question-text">收费模式是什么？会滥收费用吗？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>💰 明码实价！开锁前会WhatsApp或当面报价总金额，绝无隐藏「夜间附加费」、「交通费」。深夜时段仅额外+$200起，开工前100%获得客户同意。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-building"></i><span
+                            class="question-text">商业大厦门禁系统可以维护安装吗？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🏢 可以。我们处理多款门禁机、密码卡机、人脸识别系统的安装、维修及升级，并可配合物业管理进行远程权限设定。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-clock"></i><span
+                            class="question-text">农历新年或台风天是否照常服务？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🌪️ 365日无休，包括红日、八号风球及黑色暴雨。只要路面情况许可，师傅会坚持上门为您解决被锁的困境。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-file-contract"></i><span
+                            class="question-text">师傅是否持有专业牌照？安全可靠吗？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>✅ 所有开锁师傅均持有香港警察开锁牌照、已登记商业登记证，且经过严格的背景审查。服务全程可录影，保证绝对正规。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-shield-alt"></i><span
+                            class="question-text">如果开锁失败或无法开启会收费吗？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>✔️ 不成功不收费！师傅评估后若无法正常开启（特殊高安全性锁具除外）完全不收取任何费用，包括交通费。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i class="fas fa-wifi"></i><span
+                            class="question-text">智能锁安装后手机连不到网络怎么办？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>📱 安装后我们会完整测试蓝牙/Wi-Fi配对，并提供专属售后支援。若家中路由器距离较远，师傅会建议网关摆放位置，确保连线稳定。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i
+                            class="fas fa-hand-holding-usd"></i><span class="question-text">更换门锁可以自行买锁请师傅安装吗？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🛠️ 当然可以。客户可自备门锁，我们仅收安装费用（约$150-$300）。同时也提供代理欧洲/日本锁具，品质保养更安心。</p>
+                    </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-question"><i
+                            class="fas fa-chalkboard-user"></i><span class="question-text">开锁课程适合初学者吗？内容有哪些？</span><i
+                            class="fas fa-chevron-down accordion-icon"></i></button>
+                    <div class="accordion-answer">
+                        <p>🎓 适合零基础！课程涵盖传统弹子锁原理、铝合金门锁维修、电子锁故障排除等，并由资深导师一对一指导，完成后协助考牌。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-contact-card">
+                <p><i class="fas fa-phone-alt"></i> 仲有疑问？立即联络专人解答</p>
+                <div class="faq-contact-actions">
+                    <a href="tel:+85266101101" class="btn-small"><i class="fas fa-phone"></i> 24小时紧急热线</a>
+                    <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" class="btn-small btn-small--whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp 查询</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (與主站一致) -->
+    <!-- Shared footer: generated from src/_data/site.json -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">101<span>开锁</span></div>
+                    <p>香港具丰富经验的锁匠团队・24小时专业开锁换锁</p>
+                    <h3>Blog</h3>
+                <a href="/zh-CN/news.html" class="footer-blog-link">开锁知识库</a>
+                <br><a href="/zh-CN/locksmith-real-case.html" class="footer-blog-link">真实案例</a>
+                </div>
+                <div class="footer-col">
+                    <h3>支援</h3>
+                    <ul>
+                    <li><a href="/zh-CN/service.html">服务项目</a></li>
+                    <li><a href="/zh-CN/area.html">地区服务</a></li>
+                    <li><a href="/zh-CN/#commitment">服务承诺</a></li>
+                    <li><a href="/zh-CN/price.html">收费参考</a></li>
+                    <li><a href="/zh-CN/faq.html">常见问题</a></li>
+                    <li><a href="/zh-CN/#about">关于我们</a></li>
+                    <li><a href="/zh-CN/#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>关注我们</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61575695398246" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/101_locksmith_hk" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="footer-contact-links">
+                        <a href="tel:+85266101101"><i class="fas fa-phone"></i> 66 101 101</a>
+                        <a href="https://chat.whatsapp.com/JcwV9HCZDtgClP1efe6zGR?s=hd&amp;p=i&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a class="footer-contact-address" href="https://maps.app.goo.gl/qN9hPMJJ1XUymUZM8?g_st=ic" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> 地址：观塘鸿图道42号宝华中心19楼01室</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 香港101开锁公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            // 手風琴功能
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            function closeAllItems() { accordionItems.forEach(item => item.classList.remove('active')); }
+            function toggleItem(item) {
+                if (item.classList.contains('active')) item.classList.remove('active');
+                else { closeAllItems(); item.classList.add('active'); }
+            }
+            accordionItems.forEach(item => {
+                const btn = item.querySelector('.accordion-question');
+                btn.addEventListener('click', (e) => { e.preventDefault(); toggleItem(item); });
+            });
+
+            // 導航欄和抽屜菜單互動
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const drawer = document.getElementById('mobileDrawer');
+            const overlay = document.getElementById('drawerOverlay');
+            const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+            function openDrawer() { drawer.classList.add('open'); overlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+            function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('active'); document.body.style.overflow = ''; }
+            if (mobileBtn) mobileBtn.addEventListener('click', openDrawer);
+            if (closeDrawerBtn) closeDrawerBtn.addEventListener('click', closeDrawer);
+            if (overlay) overlay.addEventListener('click', closeDrawer);
+
+            const drawerItems = document.querySelectorAll('.drawer-nav-item[data-has-sub="true"]');
+            drawerItems.forEach(item => {
+                const btn = item.querySelector('.drawer-nav-link');
+                const submenu = item.querySelector('.drawer-submenu');
+                if (btn && submenu) {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        submenu.classList.toggle('show');
+                        const icon = btn.querySelector('i');
+                        if (icon) icon.style.transform = submenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+                    });
+                }
+            });
+
+            // 平滑滾動 (本頁錨點)
+            const allNavLinks = document.querySelectorAll('.desktop-nav a, .dropdown-content a, .drawer-nav-link, .drawer-submenu a, .quick-actions a');
+            allNavLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#') && !href.includes('/')) {
+                        const targetId = href.substring(1);
+                        const targetEl = document.getElementById(targetId);
+                        if (targetEl) {
+                            e.preventDefault();
+                            closeDrawer();
+                            setTimeout(() => { window.scrollTo({ top: targetEl.offsetTop - 80, behavior: 'smooth' }); }, 100);
+                        }
+                    }
+                });
+            });
+
+            // 浮動WhatsApp文字滾動隱藏
+            const whatsappTextEl = document.getElementById('whatsappText');
+            if (whatsappTextEl) {
+                let hideTimer = null, isHiddenByScroll = false;
+                function showText() { if (whatsappTextEl.classList.contains('hide-on-scroll')) { whatsappTextEl.classList.remove('hide-on-scroll'); isHiddenByScroll = false; } if (hideTimer) clearTimeout(hideTimer); }
+                function hideTextAndStartTimer() { if (!whatsappTextEl.classList.contains('hide-on-scroll')) { whatsappTextEl.classList.add('hide-on-scroll'); isHiddenByScroll = true; } if (hideTimer) clearTimeout(hideTimer); hideTimer = setTimeout(() => { if (isHiddenByScroll) showText(); hideTimer = null; }, 5000); }
+                let scrollTimeout = null;
+                window.addEventListener('scroll', () => { if (scrollTimeout) cancelAnimationFrame(scrollTimeout); scrollTimeout = requestAnimationFrame(() => { if (window.scrollY > 100) hideTextAndStartTimer(); else showText(); }); });
+                showText();
+            }
+
+            // 語言切換：前往本頁的對應語言版本
+            const langBtns = document.querySelectorAll('.lang-option, .drawer-lang-option');
+            langBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = btn.getAttribute('data-lang');
+                    const targetUrl = lang === 'zh' ? '/zh-CN/faq.html' : (lang === 'en' ? '/en/faq.html' : '/faq.html');
+                    if (targetUrl) window.location.href = targetUrl;
+                });
+            });
+        })();
+    </script>
+<!-- Local pretty URL preview shim -->
+
+<script>
+(function () {
+    const host = window.location.hostname;
+    if (host !== 'localhost' && host !== '127.0.0.1') return;
+    document.addEventListener('click', function (event) {
+        const link = event.target.closest('a[href]');
+        if (!link) return;
+        const rawHref = link.getAttribute('href');
+        if (!rawHref || rawHref.startsWith('#') || rawHref.startsWith('tel:') || rawHref.startsWith('mailto:')) return;
+        const url = new URL(rawHref, window.location.href);
+        if (url.origin !== window.location.origin) return;
+        const lastSegment = url.pathname.split('/').filter(Boolean).pop() || '';
+        if (!lastSegment || lastSegment.includes('.') || url.pathname.endsWith('/')) return;
+        event.preventDefault();
+        url.pathname = url.pathname + '.html';
+        window.location.href = url.href;
+    });
+})();
+</script>
+<script src="/js/group-cta.js" defer></script>
+<script src="/js/news.js?v=20261022" defer></script>
+<script id="localizedNavInit">
+(() => {
+  const button = document.getElementById('mobileMenuBtn');
+  const drawer = document.getElementById('mobileDrawer');
+  const overlay = document.getElementById('drawerOverlay');
+  const close = document.getElementById('closeDrawerBtn');
+  const setOpen = open => {
+    drawer?.classList.toggle('open', open);
+    overlay?.classList.toggle('active', open);
+    button?.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+  button?.addEventListener('click', () => setOpen(true));
+  close?.addEventListener('click', () => setOpen(false));
+  overlay?.addEventListener('click', () => setOpen(false));
+})();
+</script>
+</body>
+
+</html>

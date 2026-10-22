@@ -150,7 +150,7 @@
         });
     }
 
-    // 語言切換：有同篇翻譯時使用 hreflang，否則返回該語言首頁
+    // 語言切換：優先使用 hreflang；缺少標記時仍保留目前頁面的相對路徑。
     document.querySelectorAll('.lang-option, .drawer-lang-option').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const lang = btn.getAttribute('data-lang');
@@ -161,16 +161,23 @@
                 en: ['en-HK', 'en'],
                 hk: ['zh-Hant-HK', 'zh-HK', 'zh-Hant']
             };
+            const currentPath = window.location.pathname
+                .replace(/^\/en(?=\/|$)/, '')
+                .replace(/^\/zh-CN(?=\/|$)/, '') || '/';
             const fallbackMap = {
-                zh: '/zh-CN/index.html',
-                en: '/en/index.html',
-                hk: '/index.html'
+                zh: `/zh-CN${currentPath === '/' ? '/' : currentPath}`,
+                en: `/en${currentPath === '/' ? '/' : currentPath}`,
+                hk: currentPath
             };
             const alternate = (hreflangMap[lang] || [])
                 .map(code => document.querySelector(`link[rel="alternate"][hreflang="${code}"]`))
                 .find(link => link && link.href);
-            const targetUrl = alternate ? alternate.href : fallbackMap[lang];
-            if (targetUrl) window.location.href = targetUrl;
+            let targetUrl = alternate ? alternate.href : fallbackMap[lang];
+            if (targetUrl && ['localhost', '127.0.0.1'].includes(window.location.hostname)) {
+                const target = new URL(targetUrl, window.location.href);
+                targetUrl = `${window.location.origin}${target.pathname}${target.search}${target.hash}`;
+            }
+            if (targetUrl) window.location.assign(targetUrl);
         });
     });
 })();

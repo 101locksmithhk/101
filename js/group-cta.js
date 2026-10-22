@@ -31,6 +31,9 @@
         });
     }
 
-    normaliseGroupCtas();
-    window.addEventListener('load', normaliseGroupCtas, { once: true });
+    // Localized pages provide their own CTA copy.
+    if (document.body.dataset.whatsappNormalise !== 'false') {
+        normaliseGroupCtas();
+        window.addEventListener('load', normaliseGroupCtas, { once: true });
+    }
 })();
