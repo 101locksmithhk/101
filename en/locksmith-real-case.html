@@ -917,7 +917,7 @@
                 renderPagination(filtered.length);
                 return;
             }
-            grid.innerHTML = pageArticles.map(art => `\n            <a href="${art.link}" class="news-article-link">\n                <div class="news-image-block" style="background-image: url('/${art.img}'); background-size: cover; background-position: center; background-repeat: no-repeat;">\n                    <span class="news-date">${art.publishDate}</span>\n                    <span class="news-tag">${art.district}</span>\n                </div>\n                <div class="news-text-block"><h3 class="news-title">${escapeHtml(art.title)}</h3><p class="news-excerpt">${escapeHtml(art.excerpt)}</p><span class="read-more-link">Read full text <i class="fas fa-arrow-right"></i></span></div>\n            </a>\n        `).join('');
+            grid.innerHTML = pageArticles.map(art => `\n            <a href="${art.link}" class="news-article-link">\n                <div class="news-image-block" style="background-image: url('${art.img}'); background-size: cover; background-position: center; background-repeat: no-repeat;">\n                    <span class="news-date">${art.publishDate}</span>\n                    <span class="news-tag">${art.district}</span>\n                </div>\n                <div class="news-text-block"><h3 class="news-title">${escapeHtml(art.title)}</h3><p class="news-excerpt">${escapeHtml(art.excerpt)}</p><span class="read-more-link">Read full text <i class="fas fa-arrow-right"></i></span></div>\n            </a>\n        `).join('');
             renderPagination(filtered.length);
         }
 
@@ -1115,7 +1115,7 @@
 })();
 </script>
 <script src="/js/group-cta.js" defer></script>
-<script src="/js/news.js?v=20261022" defer></script>
+<script src="/js/news.js?v=20261023" defer></script>
 <script id="localizedNavInit">
 (() => {
   const button = document.getElementById('mobileMenuBtn');

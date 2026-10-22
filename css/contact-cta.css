@@ -1,5 +1,6 @@
 /* Shared end-of-article consultation panel. */
-.contact-box-section { padding: 0; background: #f9fafc; }
+.contact-box-section { padding: 0 20px; background: #f9fafc; }
+.contact-box-section > .container { width: min(100%, 1320px); margin: 0 auto; }
 
 body .contact-box {
     position: relative;
@@ -50,7 +51,7 @@ body .contact-box__intro { max-width: 590px; margin: 0 !important; color: #d6e0e
 .contact-box__action { display: grid; gap: 12px; padding: 22px; border: 1px solid rgba(255, 255, 255, 0.13); border-radius: 20px; background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(8px); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13); }
 .contact-box__trust { display: flex; align-items: center; gap: 8px; color: #f4d572; font-size: 0.84rem; font-weight: 700; }
 .contact-box__trust i { font-size: 1rem; }
-body .contact-box .button { width: 100%; min-height: 54px; margin: 0; padding: 10px 16px; }
+body .contact-box .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%; min-height: 54px; margin: 0; padding: 10px 16px; border-radius: 999px; font-size: 0.98rem; font-weight: 700; line-height: 1.35; text-align: center; text-decoration: none; }
 body .contact-box .button-green,
 body .contact-box .button-primary { background: #25d366; color: #fff; box-shadow: 0 8px 18px rgba(37, 211, 102, 0.25); }
 body .contact-box .button-dark,
@@ -64,4 +65,10 @@ body .contact-box .button-secondary:hover { background: rgba(255, 255, 255, 0.1)
     .contact-box__steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 18px; }
     .contact-box__steps li { align-items: flex-start; line-height: 1.45; }
     .contact-box__action { padding: 26px; }
+}
+
+@media (max-width: 759px) {
+    .contact-box-section { padding-inline: 14px; }
+    body .contact-box { margin: 34px 0; padding: 26px 20px; border-radius: 22px; }
+    .contact-box__action { padding: 18px; }
 }
