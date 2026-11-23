@@ -563,6 +563,24 @@ footer {
     color: #d4af37;
 }
 
+.footer-social .threads-link {
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.footer-social .threads-icon {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: currentColor;
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/svgs/brands/threads.svg') center / contain no-repeat;
+    mask: url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/svgs/brands/threads.svg') center / contain no-repeat;
+}
+
 .footer-contact-links {
     display: flex;
     flex-direction: column;
